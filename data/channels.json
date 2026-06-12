@@ -2,7 +2,9 @@
   {
     "name": "Raha鐵",
     "url": "https://www.youtube.com/@raha%E9%89%84",
-    "color": "#ff0033",
-    "sub": "YouTube Channel ↗"
+    "color": "#8fce9e",
+    "sub": "YouTube Channel ↗",
+    "image": "/channels/raha.jpg",
+    "imageAlt": "Raha鐵チャンネルのアイコン(列車の写真)"
   }
 ]

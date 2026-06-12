@@ -30,6 +30,7 @@ rail-sign-news/
 │   ├── yanaka/page.js … 谷中鉄道(架空鉄道)のページ。内容は data/yanaka.json の page で管理
 │   └── globals.css    … デザイン(プロトタイプ index.html から移植。yk-〜 は谷中鉄道用)
 ├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, cocks.jpg=コッコーズ優勝エンブレム)
+├── public/channels/   … 動画チャンネルのサムネ画像(raha.jpg=Raha鐵のチャンネルアイコン)
 ├── data/
 │   ├── manual-articles.json … 手動掲載記事(人間が編集する唯一の記事ファイル)
 │   ├── auto-articles.json   … 自動収集記事(自動処理専用・編集禁止)

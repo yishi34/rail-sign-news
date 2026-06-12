@@ -81,6 +81,16 @@ section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .yanaka h3{font-weight:900;font-size:1.2rem}
 .yanaka p{font-size:.92rem;color:var(--caption);max-width:46em}
 
+/* 動画チャンネル: サムネ付き駅名標カード */
+.channel-list{display:grid;gap:12px}
+.channel-card{display:flex;flex-direction:column;background:var(--sign-white);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s}
+.channel-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.channel-card .top-band,.channel-card .bottom-band{height:6px}
+.channel-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.channel-card .ch-body{padding:10px 14px 12px;font-weight:700}
+.channel-card .ch-body small{display:block;font-weight:600;color:var(--caption);font-size:.72rem}
+@media (prefers-reduced-motion:reduce){.channel-card{transition:none}}
+
 /* 谷中鉄道ページ(/yanaka) */
 .yk-header{background:var(--sign-white);border-bottom:6px solid #7a5c3e}
 .yk-sign::before,.yk-sign::after{background:linear-gradient(90deg,#1b7a40 0 34%,#f5a900 34% 67%,#7a5c3e 67% 100%)}

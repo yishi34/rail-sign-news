@@ -147,21 +147,29 @@ export default function Home() {
 
         {/* 右カラム: サイドパネル */}
         <aside className="sidebar">
-          {/* 動画チャンネル */}
+          {/* 動画チャンネル: サムネ付き駅名標カード */}
           <section>
             <div className="line-head">
-              <span className="line-band" style={{ background: "#ff0033" }}></span>
+              <span className="line-band" style={{ background: "#8fce9e" }}></span>
               <h2>動画チャンネル</h2>
               <span className="en-sub en">VIDEO</span>
             </div>
-            <div className="transfer">
+            <div className="channel-list">
               {channels.map((ch) => (
-                <a href={ch.url} target="_blank" rel="noopener noreferrer" key={ch.name}>
-                  <span className="chip" style={{ background: ch.color }}></span>
-                  <span>
+                <a
+                  className="channel-card"
+                  href={ch.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={ch.name}
+                >
+                  <div className="top-band" style={{ background: ch.color }}></div>
+                  <img src={ch.image} alt={ch.imageAlt} />
+                  <div className="ch-body">
                     {ch.name}
                     <small className="en">{ch.sub}</small>
-                  </span>
+                  </div>
+                  <div className="bottom-band" style={{ background: ch.color }}></div>
                 </a>
               ))}
             </div>
