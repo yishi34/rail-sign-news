@@ -1,0 +1,30 @@
+{
+  "note": "ニュース自動収集の情報源リスト。GitHub Actions で毎日 6:00 / 18:00 JST に取得。Yahoo!ニュースはRSS利用規約(個人利用限定・サイトでの利用禁止)のため不採用。",
+  "maxArticles": 200,
+  "sources": [
+    {
+      "id": "tetsudo-ch",
+      "name": "鉄道チャンネル",
+      "feedUrl": "https://tetsudo-ch.com/feed",
+      "filterRequired": true
+    },
+    {
+      "id": "railway-pressnet",
+      "name": "鉄道プレスネット",
+      "feedUrl": "https://news.railway-pressnet.com/feed",
+      "filterRequired": true
+    },
+    {
+      "id": "response",
+      "name": "レスポンス",
+      "feedUrl": "https://response.jp/rss/index.rdf",
+      "filterRequired": true
+    },
+    {
+      "id": "travel-watch",
+      "name": "トラベル Watch",
+      "feedUrl": "https://travel.watch.impress.co.jp/data/rss/1.0/trw/feed.rdf",
+      "filterRequired": true
+    }
+  ]
+}

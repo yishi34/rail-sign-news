@@ -3,37 +3,532 @@
     "title": "【サンプル】新型車両の営業運転開始日が発表",
     "category": "news",
     "date": "2026-06-13",
-    "source": { "name": "公式プレスリリース", "url": "https://example.com/press/001" },
+    "source": {
+      "name": "公式プレスリリース",
+      "url": "https://example.com/press/001"
+    },
     "breaking": true
   },
   {
     "title": "【サンプル記事】○○線、ダイヤ改正の概要を発表",
     "category": "news",
     "date": "2026-06-13",
-    "source": { "name": "公式サイト", "url": "https://example.com/news/001" }
+    "source": {
+      "name": "公式サイト",
+      "url": "https://example.com/news/001"
+    }
   },
   {
     "title": "【サンプル記事】新駅の駅名が決定、開業は来春",
     "category": "news",
     "date": "2026-06-13",
-    "source": { "name": "公式SNS", "url": "https://example.com/news/002" }
+    "source": {
+      "name": "公式SNS",
+      "url": "https://example.com/news/002"
+    }
   },
   {
     "title": "【サンプル記事】新形式の試運転を確認",
     "category": "cars",
     "date": "2026-06-12",
-    "source": { "name": "公式発表", "url": "https://example.com/cars/001" }
+    "source": {
+      "name": "公式発表",
+      "url": "https://example.com/cars/001"
+    }
   },
   {
     "title": "【サンプル記事】臨時列車の運転計画が公開",
     "category": "service",
     "date": "2026-06-12",
-    "source": { "name": "公式サイト", "url": "https://example.com/service/001" }
+    "source": {
+      "name": "公式サイト",
+      "url": "https://example.com/service/001"
+    }
+  },
+  {
+    "title": "令和のブルートレイン 新型 夜行特急「ルナ・アズール」 季節で違う運行ルートや豪華個室･料金など解説【JR東日本】2027年度デビュー",
+    "category": "cars",
+    "date": "2026-06-12",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030558.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "“日本三大車窓”の絶景･姨捨駅周辺、そして奇跡のコラボの撮影なるか！？「新・鉄道ひとり旅」275回目の舞台は「篠ノ井線」",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13029124.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "JR東日本グループが英国での自動販売機事業を拡大！主要空港と駅を合わせ1800台規模へ、ロンドンでおにぎり屋や日本のお茶も展開",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030100.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "水陸両用バス「山中湖のカバ」、6年ぶりの新車両「オープンKABA」に…6月13日運航再開",
+    "category": "cars",
+    "date": "2026-06-12",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/06/12/412629.html"
+    }
+  },
+  {
+    "title": "90kW急速充電器、京浜急行バス久里浜営業所に設置完了…分離型充電器を複数セット運用で効率化",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/06/12/412620.html"
+    }
+  },
+  {
+    "title": "佐川急便がJR西日本と連携協定、手荷物当日配送サービスなど開始…モビリティとロジスティクスの共創めざす",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/06/12/412610.html"
+    }
+  },
+  {
+    "title": "MINI柏、移転オープン…つくばエクスプレス柏の葉キャンパス駅徒歩圏に",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/06/12/412603.html"
+    }
+  },
+  {
+    "title": "明日から変わるモノレール浜松町、コンコース内部を紹介。改札は3階に集約",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2115334.html"
+    }
+  },
+  {
+    "title": "歴史めぐりがお得「（ICOCAでGO）和歌山市って何？周遊パス」。鉄道・バス乗り放題、ラーメン店で特典も",
+    "category": "travel",
+    "date": "2026-06-12",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2116846.html"
+    }
+  },
+  {
+    "title": "ヒルトン、兵庫初進出「コンラッド神戸」を2030年開業。三宮・花時計前駅直結の複合ビル高層階に全136室",
+    "category": "news",
+    "date": "2026-06-12",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2116772.html"
+    }
+  },
+  {
+    "title": "えちごトキめき鉄道全線1日乗り放題「トキ鉄ツアーパス」、my routeでデジタル乗車券を販売開始",
+    "category": "travel",
+    "date": "2026-06-12",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2116724.html"
+    }
+  },
+  {
+    "title": "【週末駅弁】新宿駅「ロマンスカーGSE弁当」",
+    "category": "travel",
+    "date": "2026-06-12",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/ekiben/2116244.html"
+    }
   },
   {
     "title": "【サンプル記事】観光列車の夏季ツアー受付開始",
     "category": "travel",
     "date": "2026-06-11",
-    "source": { "name": "公式サイト", "url": "https://example.com/travel/001" }
+    "source": {
+      "name": "公式サイト",
+      "url": "https://example.com/travel/001"
+    }
+  },
+  {
+    "title": "西武鉄道･過去最大462億円の設備投資計画！新宿線の劇的アップデート、特急「トキイロ」導入、東急譲受「7000系」6月デビューなど",
+    "category": "cars",
+    "date": "2026-06-11",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13029570.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "新幹線はやぶさで「青森ねぶた祭」へ！ 日本屈指の熱気あふれる祭の見どころからアクセス情報や観覧方法、当日参加可能な跳人体験までガイド",
+    "category": "news",
+    "date": "2026-06-11",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030449.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "つくばエクスプレス【駅ぶら】073　流山おおたかの森駅 その15　青田香取神社　平方香取神社",
+    "category": "news",
+    "date": "2026-06-10",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13017144.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "熊本デスティネーションキャンペーン開催！くまモン新幹線・キハ200系の運行ダイヤや “くまもっと！冒険きっぷ” 料金やスケジュール等まとめ",
+    "category": "service",
+    "date": "2026-06-10",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13029703.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "東京都 女子中高生向けオフィスツアー参加者募集中☆ 無料 6/23 締切！ 先行体験会では地下鉄車両基地に潜入☆ STEM分野で働く女性先輩たちに会える聞ける話せるチャンス！",
+    "category": "cars",
+    "date": "2026-06-10",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030436.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "富良野・美瑛ノロッコ号が今年で引退【2026夏 ラストラン】28年の歴史に幕を閉じる運行ダイヤ･お得なきっぷ、富良野からの周遊バスも",
+    "category": "cars",
+    "date": "2026-06-09",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030083.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "特急リバティの夜行列車「尾瀬夜行23:45」で行くガイド付き・初心者向け尾瀬ハイキングツアーを発売中！ 2026年は6～10月に設定日を拡充！",
+    "category": "travel",
+    "date": "2026-06-09",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030369.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "北陸新幹線でGO！「三方五湖梅雨まつり2026」限定クルーズ4選と絶景満喫ルートは？ 地元グルメや愛犬同伴、幻の地酒プランも（6/13・14開催）",
+    "category": "news",
+    "date": "2026-06-09",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030185.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "西武・電車フェスタ2026を予約不要で大満喫！ 話題のサステナ車両7000系初公開＆レストラン列車「52席の至福」にも潜入！（埼玉・日高市）",
+    "category": "cars",
+    "date": "2026-06-08",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030355.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "つくばエクスプレス【駅ぶら】072　流山おおたかの森駅 その14　香取神社が市内に7社",
+    "category": "news",
+    "date": "2026-06-08",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13017126.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "新幹線0系･100系･700系の運転台「リニア・鉄道館」で特別公開！初開催 “パンタグラフの進化展” や “シミュレータ教室” などイベントまとめ",
+    "category": "travel",
+    "date": "2026-06-08",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13029686.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "2034年開業へ!? 新千葉マリンスタジアムは「ドーム化」を視野に！ 幕張豊砂駅直結で激変するアクセスとボールパーク構想",
+    "category": "news",
+    "date": "2026-06-08",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13030292.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "西武「NRA」観光特急にリニューアル　「ガンダム」「ボトムズ」デザイナーが監修",
+    "category": "travel",
+    "date": "2026-04-21",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88584"
+    }
+  },
+  {
+    "title": "遠州鉄道の遠州西ヶ崎駅付近「高架化」浜松市と基本協定、踏切5カ所を解消",
+    "category": "news",
+    "date": "2026-04-19",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88529"
+    }
+  },
+  {
+    "title": "鹿島臨海鉄道「貨物駅とサッカー場を結ぶ特別列車」無料で運行　渋滞緩和の一策",
+    "category": "news",
+    "date": "2026-04-18",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88390"
+    }
+  },
+  {
+    "title": "京王線「高架化工事中」と「地下化済み」のあいだも立体化へ　国交省が着工準備採択",
+    "category": "news",
+    "date": "2026-04-18",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88491"
+    }
+  },
+  {
+    "title": "伊予鉄道高浜線の松山観光港「延伸」松山市が勉強会を設置、協議へ",
+    "category": "travel",
+    "date": "2026-04-12",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88366"
+    }
+  },
+  {
+    "title": "広島県海田町「山陽本線の新駅」経済効果は10年間で40億円以上",
+    "category": "news",
+    "date": "2026-04-08",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88273"
+    }
+  },
+  {
+    "title": "上野動物園「モノレールの代わり」工事着手、3年後に使用開始へ",
+    "category": "news",
+    "date": "2026-04-08",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88238"
+    }
+  },
+  {
+    "title": "ハピライン・福井～森田「新駅」福井市が整備支援の予算計上　周辺道路の整備も",
+    "category": "news",
+    "date": "2026-04-07",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88225"
+    }
+  },
+  {
+    "title": "大阪の新しい鉄道路線「事業化に向けた検討調査」府市共同で開始　新大阪連絡線など",
+    "category": "news",
+    "date": "2026-04-07",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88210"
+    }
+  },
+  {
+    "title": "ホルムズ海峡封鎖で「鉄道貨物輸送ルート」サウジアラビア開設、ヨルダンへ迂回",
+    "category": "news",
+    "date": "2026-04-01",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88091"
+    }
+  },
+  {
+    "title": "東武「自動運転」対応の新型車両12両導入へ　一部編成は地上施設の監視装置も搭載",
+    "category": "cars",
+    "date": "2026-03-31",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88054"
+    }
+  },
+  {
+    "title": "芝山鉄道の3代目車両「また京成3600形」に　ただし「ターボ君」4両編成を借り入れ",
+    "category": "cars",
+    "date": "2026-03-31",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88035"
+    }
+  },
+  {
+    "title": "北陸鉄道「石川線の新型車両」デザイン公表　全13案、一般投票を実施",
+    "category": "cars",
+    "date": "2026-03-31",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/88015"
+    }
+  },
+  {
+    "title": "東京～新潟を結ぶ気動車夜行「ムーンライト」羽越の観光車両で運行、東京で展示も",
+    "category": "cars",
+    "date": "2026-03-31",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87822"
+    }
+  },
+  {
+    "title": "和歌山～徳島を結ぶ「鉄道連絡船」2年後めどに廃止へ　南海フェリーが事業撤退",
+    "category": "news",
+    "date": "2026-03-31",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87997"
+    }
+  },
+  {
+    "title": "仙台地下鉄「タッチ決済」乗車サービス始まる　当面は東西線のみ、南北線は？",
+    "category": "news",
+    "date": "2026-03-17",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87773"
+    }
+  },
+  {
+    "title": "新潟空港アクセス鉄道「空港利用者数などさまざまな課題」知事が認識示す",
+    "category": "news",
+    "date": "2026-03-17",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87765"
+    }
+  },
+  {
+    "title": "JR東海TOICAモバイルサービス「iPhone・Android同時開始」に",
+    "category": "news",
+    "date": "2026-03-17",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87760"
+    }
+  },
+  {
+    "title": "新型13000系「営業運転の開始日」決まる　相鉄線内専用の8両編成",
+    "category": "cars",
+    "date": "2026-03-10",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87628"
+    }
+  },
+  {
+    "title": "西武線・東村山駅の高架化「未完成でも効果現れる」踏切の遮断時間など減少",
+    "category": "news",
+    "date": "2026-03-10",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87613"
+    }
+  },
+  {
+    "title": "静岡鉄道「タッチ決済」まず5駅、サービス開始日が決定　静鉄バスも一部導入",
+    "category": "news",
+    "date": "2026-03-04",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87517"
+    }
+  },
+  {
+    "title": "広島電鉄の循環線「特定車両を特定ダイヤで運行」快速拡充などダイヤ改正",
+    "category": "cars",
+    "date": "2026-03-04",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87503"
+    }
+  },
+  {
+    "title": "路面電車「高速化の可能性」探る　広島電鉄で速度向上試験、10km/hアップ",
+    "category": "news",
+    "date": "2026-03-04",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87487"
+    }
+  },
+  {
+    "title": "ブリュッセル～ミラノの新夜行列車「3カ月延期」アムステルダム発着はさらに遅れ",
+    "category": "news",
+    "date": "2026-03-04",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87477"
+    }
+  },
+  {
+    "title": "錦川鉄道「少なくとも10年存続」へ　鉄道維持ならバスより安く、ただしワケあり",
+    "category": "news",
+    "date": "2026-03-04",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87468"
+    }
+  },
+  {
+    "title": "ことでん琴平線・栗林公園～三条「複線化」切替工事日が決定　一部列車が運休",
+    "category": "service",
+    "date": "2026-02-27",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87379"
+    }
+  },
+  {
+    "title": "芝山鉄道の2代目車両3500形「引退」ヘッドマーク掲出など　後継車両は？",
+    "category": "cars",
+    "date": "2026-02-26",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87351"
+    }
+  },
+  {
+    "title": "八高線・川越線の高麗川駅「東西自由通路」完成　地元自然を採り入れたデザイン",
+    "category": "news",
+    "date": "2026-02-24",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87265"
+    }
+  },
+  {
+    "title": "城端・氷見・富山地鉄「再構築」県が事業費や検討費計上　中古車両の導入助成も",
+    "category": "cars",
+    "date": "2026-02-23",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/87214"
+    }
   }
 ]
