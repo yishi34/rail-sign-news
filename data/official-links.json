@@ -1,0 +1,6 @@
+[
+  { "name": "鉄道会社A", "url": "https://example.com/company-a", "color": "#008803" },
+  { "name": "鉄道会社B", "url": "https://example.com/company-b", "color": "#0072bc" },
+  { "name": "鉄道会社C", "url": "https://example.com/company-c", "color": "#e60012" },
+  { "name": "鉄道会社D", "url": "https://example.com/company-d", "color": "#f39800" }
+]

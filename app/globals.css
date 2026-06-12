@@ -1,0 +1,78 @@
+/* design-tokens.md / プロトタイプ index.html から移植したスタイル */
+:root{
+  --sign-white:#fff; --sign-ink:#1a1a1a; --platform-gray:#f2f3f4;
+  --line-news:#e60012; --line-cars:#0072bc; --line-service:#009944;
+  --line-travel:#f39800; --line-tech:#8f76d6; --caption:#6e7479;
+  --radius:6px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Noto Sans JP",sans-serif;background:var(--platform-gray);color:var(--sign-ink);line-height:1.7}
+.en{font-family:"Barlow Semi Condensed",sans-serif;letter-spacing:.04em}
+
+/* ヘッダー: 駅名標 */
+header{background:var(--sign-white);border-bottom:6px solid var(--sign-ink)}
+.station-sign{max-width:1080px;margin:0 auto;padding:28px 20px 18px;text-align:center;position:relative}
+.station-sign::before,.station-sign::after{content:"";position:absolute;left:20px;right:20px;height:8px;background:linear-gradient(90deg,var(--line-news) 0 20%,var(--line-cars) 20% 40%,var(--line-service) 40% 60%,var(--line-travel) 60% 80%,var(--line-tech) 80% 100%)}
+.station-sign::before{top:0}.station-sign::after{bottom:0}
+.station-sign h1{font-weight:900;font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:.18em;padding:10px 0 2px}
+.station-sign .romaji{color:var(--caption);font-size:.95rem;font-weight:600}
+.station-sign .next{display:flex;justify-content:space-between;max-width:520px;margin:6px auto 0;font-size:.8rem;color:var(--caption)}
+
+/* 方面案内サイン(速報) */
+.direction-sign{background:var(--sign-ink);color:#fff;display:block;text-decoration:none}
+.direction-inner{max-width:1080px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.badge{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;width:46px;height:46px;border-radius:8px;border:3px solid var(--line-news);background:#fff;color:var(--sign-ink);font-weight:700;line-height:1.05;flex:none}
+.badge .code{font-size:.7rem}.badge .num{font-size:1.05rem}
+.direction-inner .label{background:var(--line-news);padding:2px 10px;border-radius:4px;font-weight:700;font-size:.85rem;flex:none}
+.direction-inner .headline{font-weight:700;font-size:1.05rem}
+.direction-inner .arrow{margin-left:auto;font-size:1.4rem;flex:none}
+
+/* 本文 */
+main{max-width:1080px;margin:28px auto 60px;padding:0 20px;display:grid;gap:36px}
+section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.line-band{width:8px;height:34px;border-radius:3px;flex:none}
+.line-head h2{font-weight:900;font-size:1.25rem;letter-spacing:.08em}
+.line-head .en-sub{color:var(--caption);font-size:.85rem;font-weight:600;margin-left:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+
+/* 記事カード = 駅名標 */
+.card{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.card:focus-visible{outline:3px solid var(--sign-ink);outline-offset:2px}
+.card .top-band,.card .bottom-band{height:6px}
+.card .body{padding:16px 18px;flex:1;display:flex;gap:12px}
+.card h3{font-weight:700;font-size:1.02rem;line-height:1.55}
+.card .meta{padding:0 18px 14px;display:flex;justify-content:space-between;align-items:center;color:var(--caption);font-size:.8rem}
+.card .meta .src{font-weight:600}
+.small-badge{width:40px;height:40px;border-width:3px}
+.small-badge .code{font-size:.62rem}.small-badge .num{font-size:.95rem}
+
+.news .line-band,.news .top-band,.news .bottom-band{background:var(--line-news)}
+.news .badge{border-color:var(--line-news)}
+.cars .line-band,.cars .top-band,.cars .bottom-band{background:var(--line-cars)}
+.cars .badge{border-color:var(--line-cars)}
+.service .line-band,.service .top-band,.service .bottom-band{background:var(--line-service)}
+.service .badge{border-color:var(--line-service)}
+.travel .line-band,.travel .top-band,.travel .bottom-band{background:var(--line-travel)}
+.travel .badge{border-color:var(--line-travel)}
+.tech .line-band,.tech .top-band,.tech .bottom-band{background:var(--line-tech)}
+.tech .badge{border-color:var(--line-tech)}
+
+/* 公式リンク: のりかえ案内風タイル */
+.transfer{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.transfer a{display:flex;align-items:center;gap:10px;background:var(--sign-white);border-radius:var(--radius);padding:12px 14px;text-decoration:none;color:inherit;font-weight:700;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.transfer a:hover{box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.transfer .chip{width:14px;height:36px;border-radius:3px;flex:none}
+.transfer small{display:block;font-weight:600;color:var(--caption);font-size:.72rem}
+
+/* 谷中鉄道: 架空鉄道展示 */
+.yanaka{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08);display:block;text-decoration:none;color:inherit}
+.yanaka .band{height:8px;background:#7a5c3e}
+.yanaka .inner{padding:20px;display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.yanaka .badge{border-color:#7a5c3e}
+.fiction-label{display:inline-block;background:#7a5c3e;color:#fff;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:.1em;margin-bottom:6px}
+.yanaka h3{font-weight:900;font-size:1.2rem}
+.yanaka p{font-size:.92rem;color:var(--caption);max-width:46em}
+
+footer{background:var(--sign-ink);color:#cfd3d6;font-size:.8rem;text-align:center;padding:18px}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}

@@ -1,0 +1,39 @@
+[
+  {
+    "title": "【サンプル】新型車両の営業運転開始日が発表",
+    "category": "news",
+    "date": "2026-06-13",
+    "source": { "name": "公式プレスリリース", "url": "https://example.com/press/001" },
+    "breaking": true
+  },
+  {
+    "title": "【サンプル記事】○○線、ダイヤ改正の概要を発表",
+    "category": "news",
+    "date": "2026-06-13",
+    "source": { "name": "公式サイト", "url": "https://example.com/news/001" }
+  },
+  {
+    "title": "【サンプル記事】新駅の駅名が決定、開業は来春",
+    "category": "news",
+    "date": "2026-06-13",
+    "source": { "name": "公式SNS", "url": "https://example.com/news/002" }
+  },
+  {
+    "title": "【サンプル記事】新形式の試運転を確認",
+    "category": "cars",
+    "date": "2026-06-12",
+    "source": { "name": "公式発表", "url": "https://example.com/cars/001" }
+  },
+  {
+    "title": "【サンプル記事】臨時列車の運転計画が公開",
+    "category": "service",
+    "date": "2026-06-12",
+    "source": { "name": "公式サイト", "url": "https://example.com/service/001" }
+  },
+  {
+    "title": "【サンプル記事】観光列車の夏季ツアー受付開始",
+    "category": "travel",
+    "date": "2026-06-11",
+    "source": { "name": "公式サイト", "url": "https://example.com/travel/001" }
+  }
+]

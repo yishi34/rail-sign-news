@@ -1,0 +1,10 @@
+# 依存パッケージ(npm install で再生成できる)
+/node_modules
+
+# ビルド成果物
+/.next
+/out
+
+# 環境変数・ログ
+.env*
+*.log

@@ -1,0 +1,7 @@
+[
+  { "id": "news", "label": "ニュース", "en": "N LINE / NEWS", "code": "N" },
+  { "id": "cars", "label": "車両", "en": "C LINE / ROLLING STOCK", "code": "C" },
+  { "id": "service", "label": "運行・ダイヤ", "en": "S LINE / SERVICE", "code": "S" },
+  { "id": "travel", "label": "旅行・観光", "en": "T LINE / TRAVEL", "code": "T" },
+  { "id": "tech", "label": "技術・新線", "en": "TE LINE / TECH", "code": "TE" }
+]

@@ -1,0 +1,16 @@
+{
+  "name": "rail-sign-news",
+  "version": "1.0.0",
+  "private": true,
+  "description": "鉄道ニュースまとめサイト RAIL SIGN NEWS",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}
