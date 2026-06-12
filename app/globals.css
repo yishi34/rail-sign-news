@@ -117,6 +117,10 @@ main.yk-main{grid-template-columns:1fr}
   .yk-news-text{padding:0 20px 20px}
 }
 .yk-panel .top-band,.yk-panel .bottom-band{height:10px;background:var(--ynr-band)}
+.yk-history{margin-top:10px;display:grid;gap:6px;font-size:.88rem}
+.yk-history div{display:flex;gap:10px;align-items:baseline}
+.yk-history dt{font-weight:700;color:var(--ynr-green);flex:none}
+.yk-history dd{margin:0;color:var(--sign-ink)}
 .yk-panel h3{font-weight:900}
 .yk-panel .en-sub{color:var(--caption);font-size:.78rem;font-weight:600}
 

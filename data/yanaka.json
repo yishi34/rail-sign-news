@@ -20,7 +20,16 @@
     },
     "panels": [
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "ただいま準備中" },
-      { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "03", "status": "ただいま準備中" },
+      {
+        "title": "社史",
+        "en": "COMPANY HISTORY",
+        "code": "YN",
+        "num": "03",
+        "status": "つづきはただいま準備中",
+        "items": [
+          { "year": "西暦950年", "text": "谷中林業として創立" }
+        ]
+      },
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "04", "status": "ただいま準備中" }
     ]
   }

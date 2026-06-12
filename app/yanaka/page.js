@@ -73,6 +73,16 @@ export default function YanakaPage() {
                   <div>
                     <h3>{panel.title}</h3>
                     <span className="en-sub en">{panel.en}</span>
+                    {panel.items && (
+                      <dl className="yk-history">
+                        {panel.items.map((item) => (
+                          <div key={item.year}>
+                            <dt className="en">{item.year}</dt>
+                            <dd>{item.text}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
                   </div>
                 </div>
                 <div className="meta">
