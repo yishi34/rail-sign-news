@@ -1,4 +1,5 @@
-import articles from "../data/articles.json";
+import autoArticles from "../data/auto-articles.json";
+import manualArticles from "../data/manual-articles.json";
 import categories from "../data/categories.json";
 import officialLinks from "../data/official-links.json";
 import yanaka from "../data/yanaka.json";
@@ -60,6 +61,14 @@ function CategorySection({ category, items }) {
 }
 
 export default function Home() {
+  // 手動記事(manual-articles.json)と自動収集記事(auto-articles.json)を
+  // 統合し、新しい順に並べる(同じ日付なら速報を先頭に)
+  const articles = [...manualArticles, ...autoArticles].sort(
+    (a, b) =>
+      b.date.localeCompare(a.date) ||
+      (b.breaking ? 1 : 0) - (a.breaking ? 1 : 0)
+  );
+
   // 速報: "breaking": true の記事を方面案内サインに表示(カード一覧には載せない)
   const breaking = articles.find((a) => a.breaking);
   const normal = articles.filter((a) => !a.breaking);

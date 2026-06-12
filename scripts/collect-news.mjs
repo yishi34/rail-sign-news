@@ -1,7 +1,8 @@
 // ニュース自動収集スクリプト
 //
 // data/sources.json に登録されたRSSフィードから「見出し・URL・配信元・日付」
-// だけを取得し、data/articles.json に追記する。本文の取得・転載・要約は行わない。
+// だけを取得し、data/auto-articles.json に追記する。本文の取得・転載・要約は行わない。
+// 手動記事 data/manual-articles.json には一切書き込まない(重複チェックの参照のみ)。
 //
 // 使い方: node scripts/collect-news.mjs
 // 依存パッケージなし(Node.js 標準機能のみ)
@@ -15,8 +16,9 @@ const readJson = (p) => JSON.parse(readFileSync(path.join(root, p), "utf8"));
 
 const config = readJson("data/sources.json");
 const keywords = readJson("data/keywords.json");
-const articlesPath = path.join(root, "data", "articles.json");
-const existingArticles = readJson("data/articles.json");
+const autoArticlesPath = path.join(root, "data", "auto-articles.json");
+const existingArticles = readJson("data/auto-articles.json");
+const manualArticles = readJson("data/manual-articles.json");
 
 const USER_AGENT =
   "RailSignNewsBot/1.0 (+https://github.com/yishi34/rail-sign-news; RSS headline collector)";
@@ -109,7 +111,10 @@ async function fetchFeed(url) {
   return res.text();
 }
 
-const knownUrls = new Set(existingArticles.map((a) => a.source.url));
+// 重複チェックは自動記事と手動記事の両方のURLが対象
+const knownUrls = new Set(
+  [...existingArticles, ...manualArticles].map((a) => a.source.url)
+);
 const collected = [];
 
 for (const src of config.sources) {
@@ -140,14 +145,12 @@ for (const src of config.sources) {
 }
 
 // 新しい順に並べ、上限件数を超えた古い記事は間引く
-const merged = [...existingArticles, ...collected].sort(
-  (a, b) =>
-    b.date.localeCompare(a.date) ||
-    (b.breaking ? 1 : 0) - (a.breaking ? 1 : 0)
+const merged = [...existingArticles, ...collected].sort((a, b) =>
+  b.date.localeCompare(a.date)
 );
 const pruned = merged.slice(0, config.maxArticles ?? 200);
 
-writeFileSync(articlesPath, JSON.stringify(pruned, null, 2) + "\n");
+writeFileSync(autoArticlesPath, JSON.stringify(pruned, null, 2) + "\n");
 console.log(
   `今回追加 ${collected.length}件 / 合計 ${pruned.length}件 (上限 ${config.maxArticles ?? 200}件)`
 );
