@@ -19,7 +19,8 @@ rail-sign-news/
 │   ├── sources.json         … 自動収集の情報源RSS一覧
 │   ├── keywords.json        … 鉄道フィルタ・分類のキーワードルール
 │   ├── categories.json      … カテゴリ(路線)の定義
-│   ├── official-links.json  … 「公式サイトへのりかえ」のリンク集
+│   ├── official-links.json  … 「公式サイトへのりかえ」のリンク集(サイドパネル)
+│   ├── channels.json        … 動画チャンネルのリンク(サイドパネル)
 │   └── yanaka.json          … 谷中鉄道(架空鉄道)セクションの内容
 └── next.config.mjs    … 静的書き出し(output: "export")の設定
 ```

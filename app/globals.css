@@ -27,8 +27,15 @@ header{background:var(--sign-white);border-bottom:6px solid var(--sign-ink)}
 .direction-inner .headline{font-weight:700;font-size:1.05rem}
 .direction-inner .arrow{margin-left:auto;font-size:1.4rem;flex:none}
 
-/* 本文 */
-main{max-width:1080px;margin:28px auto 60px;padding:0 20px;display:grid;gap:36px}
+/* 本文: 左=ニュース / 右=サイドパネル の2カラム */
+main{max-width:1080px;margin:28px auto 60px;padding:0 20px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px;align-items:start}
+.primary{display:grid;gap:36px;min-width:0}
+.sidebar{display:grid;gap:28px}
+.sidebar .line-head h2{font-size:1.05rem}
+/* 画面が狭いときは1カラムに戻す(サイドパネルは下に回る) */
+@media (max-width:880px){
+  main{grid-template-columns:1fr}
+}
 section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .line-band{width:8px;height:34px;border-radius:3px;flex:none}
 .line-head h2{font-weight:900;font-size:1.25rem;letter-spacing:.08em}

@@ -2,7 +2,11 @@ import autoArticles from "../data/auto-articles.json";
 import manualArticles from "../data/manual-articles.json";
 import categories from "../data/categories.json";
 import officialLinks from "../data/official-links.json";
+import channels from "../data/channels.json";
 import yanaka from "../data/yanaka.json";
+
+// 各カテゴリに表示する記事の最大数(データ自体は data/ に最大200件保持)
+const MAX_PER_CATEGORY = 6;
 
 // 日付 "2026-06-13" → 駅サイン風表記 "2026.06.13"
 function formatDate(date) {
@@ -72,7 +76,8 @@ export default function Home() {
   // 速報: "breaking": true の記事を方面案内サインに表示(カード一覧には載せない)
   const breaking = articles.find((a) => a.breaking);
   const normal = articles.filter((a) => !a.breaking);
-  const byCategory = (id) => normal.filter((a) => a.category === id);
+  const byCategory = (id) =>
+    normal.filter((a) => a.category === id).slice(0, MAX_PER_CATEGORY);
   const cat = (id) => categories.find((c) => c.id === id);
 
   return (
@@ -107,61 +112,85 @@ export default function Home() {
       )}
 
       <main>
-        {/* プロトタイプと同じ並び: ニュース → 車両 → 運行・ダイヤ */}
-        {["news", "cars", "service"].map((id) => (
-          <CategorySection key={id} category={cat(id)} items={byCategory(id)} />
-        ))}
+        {/* 左カラム: ニュース各カテゴリと谷中鉄道 */}
+        <div className="primary">
+          {["news", "cars", "service"].map((id) => (
+            <CategorySection key={id} category={cat(id)} items={byCategory(id)} />
+          ))}
 
-        {/* 公式サイトへのりかえ */}
-        <section>
-          <div className="line-head">
-            <span className="line-band" style={{ background: "var(--sign-ink)" }}></span>
-            <h2>公式サイトへのりかえ</h2>
-            <span className="en-sub en">TRANSFER / OFFICIAL LINKS</span>
-          </div>
-          <div className="transfer">
-            {officialLinks.map((link) => (
-              <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.name}>
-                <span className="chip" style={{ background: link.color }}></span>
-                <span>
-                  {link.name}
-                  <small className="en">Official Site ↗</small>
-                </span>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        {/* 谷中鉄道(架空鉄道) */}
-        <section>
-          <div className="line-head">
-            <span className="line-band" style={{ background: yanaka.color }}></span>
-            <h2>{yanaka.headingJa}</h2>
-            <span className="en-sub en">{yanaka.headingEn}</span>
-          </div>
-          <a
-            className="yanaka"
-            href={yanaka.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="band"></div>
-            <div className="inner">
-              <Badge code={yanaka.code} num={yanaka.num} />
-              <div>
-                <span className="fiction-label">{yanaka.label}</span>
-                <h3>{yanaka.title}</h3>
-                <p>{yanaka.description}</p>
-              </div>
+          {/* 谷中鉄道(架空鉄道) */}
+          <section>
+            <div className="line-head">
+              <span className="line-band" style={{ background: yanaka.color }}></span>
+              <h2>{yanaka.headingJa}</h2>
+              <span className="en-sub en">{yanaka.headingEn}</span>
             </div>
-            <div className="band"></div>
-          </a>
-        </section>
+            <a
+              className="yanaka"
+              href={yanaka.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="band"></div>
+              <div className="inner">
+                <Badge code={yanaka.code} num={yanaka.num} />
+                <div>
+                  <span className="fiction-label">{yanaka.label}</span>
+                  <h3>{yanaka.title}</h3>
+                  <p>{yanaka.description}</p>
+                </div>
+              </div>
+              <div className="band"></div>
+            </a>
+          </section>
 
-        {/* 旅行・観光 → 技術・新線(記事があれば表示) */}
-        {["travel", "tech"].map((id) => (
-          <CategorySection key={id} category={cat(id)} items={byCategory(id)} />
-        ))}
+          {["travel", "tech"].map((id) => (
+            <CategorySection key={id} category={cat(id)} items={byCategory(id)} />
+          ))}
+        </div>
+
+        {/* 右カラム: サイドパネル */}
+        <aside className="sidebar">
+          {/* 動画チャンネル */}
+          <section>
+            <div className="line-head">
+              <span className="line-band" style={{ background: "#ff0033" }}></span>
+              <h2>動画チャンネル</h2>
+              <span className="en-sub en">VIDEO</span>
+            </div>
+            <div className="transfer">
+              {channels.map((ch) => (
+                <a href={ch.url} target="_blank" rel="noopener noreferrer" key={ch.name}>
+                  <span className="chip" style={{ background: ch.color }}></span>
+                  <span>
+                    {ch.name}
+                    <small className="en">{ch.sub}</small>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          {/* 公式サイトへのりかえ */}
+          <section>
+            <div className="line-head">
+              <span className="line-band" style={{ background: "var(--sign-ink)" }}></span>
+              <h2>公式サイトへのりかえ</h2>
+              <span className="en-sub en">TRANSFER</span>
+            </div>
+            <div className="transfer">
+              {officialLinks.map((link) => (
+                <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.name}>
+                  <span className="chip" style={{ background: link.color }}></span>
+                  <span>
+                    {link.name}
+                    <small className="en">Official Site ↗</small>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </section>
+        </aside>
       </main>
 
       <footer>

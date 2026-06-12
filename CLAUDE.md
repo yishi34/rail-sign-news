@@ -35,6 +35,7 @@ rail-sign-news/
 │   ├── keywords.json        … 鉄道キーワードフィルタとカテゴリ分類ルール
 │   ├── categories.json      … カテゴリ(路線)定義: news/cars/service/travel/tech
 │   ├── official-links.json  … 「公式サイトへのりかえ」リンク集(自動処理の対象外)
+│   ├── channels.json        … サイドパネルの動画チャンネルリンク(Raha鐵など)
 │   └── yanaka.json          … 谷中鉄道=架空鉄道セクション(自動処理の対象外)
 ├── scripts/
 │   └── collect-news.mjs     … ニュース収集スクリプト(依存パッケージなし)
@@ -43,6 +44,9 @@ rail-sign-news/
 └── next.config.mjs    … 静的書き出し(output: "export")設定
 ```
 
+- レイアウト: 2カラム(左=ニュース各カテゴリ+谷中鉄道、右=サイドパネルに
+  動画チャンネルと公式リンク集)。各カテゴリの表示は最新6件まで
+  (app/page.js の `MAX_PER_CATEGORY` で変更可)
 - 記事の必須項目: `title` / `category` / `date`(YYYY-MM-DD) / `source.name` / `source.url`
 - 手動記事に `"breaking": true` を付けると、ページ上部の黒い「速報」サインに表示される
 - サイト表示時は manual + auto を統合して日付の新しい順に表示(app/page.js)
