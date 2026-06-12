@@ -27,7 +27,7 @@ rail-sign-news/
 ├── app/
 │   ├── layout.js      … ページの枠組み(タイトル、Googleフォント読み込み)
 │   ├── page.js        … トップページ。data/ のJSONから一覧を生成
-│   ├── yanaka/page.js … 谷中鉄道(架空鉄道)のページ。内容は data/yanaka.json の page で管理
+│   ├── yanaka/page.js … 谷中日本鉄道(架空鉄道)のページ。内容は data/yanaka.json の page で管理
 │   └── globals.css    … デザイン(プロトタイプ index.html から移植。yk-〜 は谷中鉄道用)
 ├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, cocks.jpg=コッコーズ優勝エンブレム)
 ├── public/channels/   … 動画チャンネルのサムネ画像(raha.jpg=Raha鐵のチャンネルアイコン)
@@ -39,7 +39,7 @@ rail-sign-news/
 │   ├── categories.json      … カテゴリ(路線)定義: news/cars/service/travel/tech
 │   ├── official-links.json  … 「公式サイトへのりかえ」リンク集(自動処理の対象外)
 │   ├── channels.json        … サイドパネルの動画チャンネルリンク(Raha鐵など)
-│   └── yanaka.json          … 谷中鉄道=架空鉄道セクション(自動処理の対象外)
+│   └── yanaka.json          … 谷中日本鉄道=架空鉄道セクション(自動処理の対象外)
 ├── scripts/
 │   └── collect-news.mjs     … ニュース収集スクリプト(依存パッケージなし)
 ├── .github/workflows/
@@ -47,7 +47,9 @@ rail-sign-news/
 └── next.config.mjs    … 静的書き出し(output: "export")設定
 ```
 
-- レイアウト: 2カラム(左=ニュース各カテゴリ+谷中鉄道、右=サイドパネルに
+- 架空鉄道の正式名称は「谷中日本鉄道株式会社」(略称: YNR)。コーポレートカラーは
+  黄・白・緑で、帯は必ず「黄 → 白 → 緑」の順(白は混色防止の仕切り。CSS変数 --ynr-band)
+- レイアウト: 2カラム(左=ニュース各カテゴリ+谷中日本鉄道、右=サイドパネルに
   動画チャンネルと公式リンク集)。各カテゴリの表示は最新6件まで
   (app/page.js の `MAX_PER_CATEGORY` で変更可)
 - 記事の必須項目: `title` / `category` / `date`(YYYY-MM-DD) / `source.name` / `source.url`

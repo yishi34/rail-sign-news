@@ -2,9 +2,9 @@ import Link from "next/link";
 import yanaka from "../../data/yanaka.json";
 
 export const metadata = {
-  title: "谷中鉄道 | RAIL SIGN NEWS",
+  title: "谷中日本鉄道 | RAIL SIGN NEWS",
   description:
-    "架空鉄道「谷中鉄道(YNR)」の公式ページ。実在の鉄道会社とは関係ありません。",
+    "架空鉄道「谷中日本鉄道株式会社(YNR)」の公式ページ。実在の鉄道会社とは関係ありません。",
 };
 
 // 駅ナンバリング風バッジ(谷中鉄道カラー)
@@ -24,8 +24,8 @@ export default function YanakaPage() {
     <>
       <header className="yk-header">
         <div className="station-sign yk-sign">
-          <img src={page.logo} alt="谷中鉄道ロゴマーク" className="yk-logo" />
-          <h1>谷中鉄道</h1>
+          <img src={page.logo} alt="谷中日本鉄道ロゴマーク" className="yk-logo" />
+          <h1>谷中日本鉄道</h1>
           <div className="romaji en">{page.companyEn}</div>
           <span className="fiction-label">{yanaka.label}</span>
           <div className="next">
@@ -87,7 +87,7 @@ export default function YanakaPage() {
       </main>
 
       <footer>
-        谷中鉄道は架空の鉄道会社です。実在の鉄道会社・団体とは一切関係ありません。© YANAKA RAILWAY (RAIL SIGN NEWS)
+        谷中日本鉄道株式会社(YNR)は架空の鉄道会社です。実在の鉄道会社・団体とは一切関係ありません。© YANAKA NIPPON RAILWAY (RAIL SIGN NEWS)
       </footer>
     </>
   );

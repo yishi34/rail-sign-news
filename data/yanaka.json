@@ -1,20 +1,20 @@
 {
   "label": "架空鉄道 / FICTIONAL RAILWAY",
-  "title": "谷中鉄道 公式ページ",
-  "headingJa": "谷中鉄道",
-  "headingEn": "YN LINE / YANAKA RAILWAY",
+  "title": "谷中日本鉄道 公式ページ",
+  "headingJa": "谷中日本鉄道",
+  "headingEn": "YN LINE / YANAKA NIPPON RAILWAY",
   "code": "YN",
   "num": "01",
-  "color": "#7a5c3e",
+  "color": "#1b7a40",
   "url": "/yanaka",
-  "description": "このサイトの姉妹コンテンツとして、架空鉄道「谷中鉄道」を展示しています。路線図・車両・ダイヤなど、谷中鉄道の世界はこちらから。実在の鉄道会社とは関係ありません。",
+  "description": "このサイトの姉妹コンテンツとして、架空鉄道「谷中日本鉄道株式会社(略称: YNR)」を展示しています。路線図・車両・ダイヤなど、谷中日本鉄道の世界はこちらから。実在の鉄道会社とは関係ありません。",
   "page": {
     "logo": "/yanaka/logo.jpg",
-    "companyEn": "YANAKA RAILWAY — YNR",
+    "companyEn": "YANAKA NIPPON RAILWAY CO., LTD. — YNR",
     "topNews": {
       "label": "トップニュース",
       "title": "祝!谷中コッコーズ、リーグ優勝!!",
-      "body": "谷中鉄道が応援する地元野球チーム「谷中コッコーズ(YANAKA COCKS)」が、見事リーグ優勝を果たしました!沿線の商店街も優勝セールで大にぎわい。優勝記念のヘッドマーク列車も運行予定です。",
+      "body": "谷中日本鉄道が応援する地元野球チーム「谷中コッコーズ(YANAKA COCKS)」が、見事リーグ優勝を果たしました!沿線の商店街も優勝セールで大にぎわい。優勝記念のヘッドマーク列車も運行予定です。",
       "image": "/yanaka/cocks.jpg",
       "imageAlt": "谷中コッコーズ優勝記念エンブレム"
     },

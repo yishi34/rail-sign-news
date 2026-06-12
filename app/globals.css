@@ -4,6 +4,9 @@
   --line-news:#e60012; --line-cars:#0072bc; --line-service:#009944;
   --line-travel:#f39800; --line-tech:#8f76d6; --caption:#6e7479;
   --radius:6px;
+  /* 谷中日本鉄道(YNR)のコーポレートカラー: 黄・白・緑(白は混色防止の仕切り) */
+  --ynr-yellow:#f5a900; --ynr-green:#1b7a40;
+  --ynr-band:linear-gradient(180deg,var(--ynr-yellow) 0 38%,#fff 38% 62%,var(--ynr-green) 62% 100%);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:"Noto Sans JP",sans-serif;background:var(--platform-gray);color:var(--sign-ink);line-height:1.7}
@@ -74,10 +77,10 @@ section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 
 /* 谷中鉄道: 架空鉄道展示 */
 .yanaka{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08);display:block;text-decoration:none;color:inherit}
-.yanaka .band{height:8px;background:#7a5c3e}
+.yanaka .band{height:10px;background:var(--ynr-band)}
 .yanaka .inner{padding:20px;display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
-.yanaka .badge{border-color:#7a5c3e}
-.fiction-label{display:inline-block;background:#7a5c3e;color:#fff;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:.1em;margin-bottom:6px}
+.yanaka .badge{border-color:var(--ynr-green)}
+.fiction-label{display:inline-block;background:var(--ynr-green);color:#fff;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:.1em;margin-bottom:6px}
 .yanaka h3{font-weight:900;font-size:1.2rem}
 .yanaka p{font-size:.92rem;color:var(--caption);max-width:46em}
 
@@ -92,20 +95,20 @@ section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 @media (prefers-reduced-motion:reduce){.channel-card{transition:none}}
 
 /* 谷中鉄道ページ(/yanaka) */
-.yk-header{background:var(--sign-white);border-bottom:6px solid #7a5c3e}
-.yk-sign::before,.yk-sign::after{background:linear-gradient(90deg,#1b7a40 0 34%,#f5a900 34% 67%,#7a5c3e 67% 100%)}
+.yk-header{background:var(--sign-white);border-bottom:6px solid var(--ynr-green)}
+.yk-sign::before,.yk-sign::after{background:var(--ynr-band)}
 .yk-logo{width:92px;height:92px;object-fit:contain;display:block;margin:6px auto 0;border-radius:50%}
 .yk-sign .fiction-label{margin-top:8px}
 .yk-sign .next a{color:inherit;text-decoration:none}
 .yk-sign .next a:hover{text-decoration:underline}
 main.yk-main{grid-template-columns:1fr}
-.yk-badge{border-color:#7a5c3e}
+.yk-badge{border-color:var(--ynr-green)}
 .yk-news{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.yk-news-band{height:8px;background:linear-gradient(90deg,#1b7a40 0 34%,#f5a900 34% 67%,#7a5c3e 67% 100%)}
+.yk-news-band{height:10px;background:var(--ynr-band)}
 .yk-news-inner{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:center}
 .yk-news-inner img{width:100%;height:100%;max-height:340px;object-fit:cover;display:block}
 .yk-news-text{padding:20px 24px 20px 4px}
-.yk-flag{display:inline-block;background:#f5a900;color:var(--sign-ink);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:.1em;margin-bottom:8px}
+.yk-flag{display:inline-block;background:var(--ynr-yellow);color:var(--sign-ink);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:.1em;margin-bottom:8px}
 .yk-news-text h3{font-weight:900;font-size:1.3rem;line-height:1.5}
 .yk-news-text p{font-size:.92rem;color:var(--caption);margin-top:8px;max-width:46em}
 @media (max-width:720px){
@@ -113,7 +116,7 @@ main.yk-main{grid-template-columns:1fr}
   .yk-news-inner img{max-height:300px}
   .yk-news-text{padding:0 20px 20px}
 }
-.yk-panel .top-band,.yk-panel .bottom-band{background:#7a5c3e}
+.yk-panel .top-band,.yk-panel .bottom-band{height:10px;background:var(--ynr-band)}
 .yk-panel h3{font-weight:900}
 .yk-panel .en-sub{color:var(--caption);font-size:.78rem;font-weight:600}
 
