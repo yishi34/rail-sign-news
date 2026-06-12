@@ -6,6 +6,22 @@
   "code": "YN",
   "num": "01",
   "color": "#7a5c3e",
-  "url": "https://example.com/yanaka",
-  "description": "このサイトの姉妹コンテンツとして、架空鉄道「谷中鉄道」を展示しています。路線図・車両・ダイヤなど、谷中鉄道の世界はこちらから。実在の鉄道会社とは関係ありません。"
+  "url": "/yanaka",
+  "description": "このサイトの姉妹コンテンツとして、架空鉄道「谷中鉄道」を展示しています。路線図・車両・ダイヤなど、谷中鉄道の世界はこちらから。実在の鉄道会社とは関係ありません。",
+  "page": {
+    "logo": "/yanaka/logo.jpg",
+    "companyEn": "YANAKA RAILWAY — YNR",
+    "topNews": {
+      "label": "トップニュース",
+      "title": "祝!谷中コッコーズ、リーグ優勝!!",
+      "body": "谷中鉄道が応援する地元野球チーム「谷中コッコーズ(YANAKA COCKS)」が、見事リーグ優勝を果たしました!沿線の商店街も優勝セールで大にぎわい。優勝記念のヘッドマーク列車も運行予定です。",
+      "image": "/yanaka/cocks.jpg",
+      "imageAlt": "谷中コッコーズ優勝記念エンブレム"
+    },
+    "panels": [
+      { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "ただいま準備中" },
+      { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "03", "status": "ただいま準備中" },
+      { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "04", "status": "ただいま準備中" }
+    ]
+  }
 }

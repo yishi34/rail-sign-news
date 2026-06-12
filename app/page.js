@@ -125,12 +125,8 @@ export default function Home() {
               <h2>{yanaka.headingJa}</h2>
               <span className="en-sub en">{yanaka.headingEn}</span>
             </div>
-            <a
-              className="yanaka"
-              href={yanaka.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            {/* サイト内の谷中鉄道ページ(/yanaka)へ */}
+            <a className="yanaka" href={yanaka.url}>
               <div className="band"></div>
               <div className="inner">
                 <Badge code={yanaka.code} num={yanaka.num} />
