@@ -2,7 +2,7 @@
   "label": "架空鉄道 / FICTIONAL RAILWAY",
   "title": "谷中日本鉄道 公式ページ",
   "headingJa": "谷中日本鉄道",
-  "headingEn": "YN LINE / YANAKA NIPPON RAILWAY",
+  "headingEn": "YN LINE / YANAKA JAPAN RAILWAY",
   "code": "YN",
   "num": "01",
   "color": "#1b7a40",
@@ -10,7 +10,7 @@
   "description": "このサイトの姉妹コンテンツとして、架空鉄道「谷中日本鉄道株式会社(略称: YNR)」を展示しています。路線図・車両・ダイヤなど、谷中日本鉄道の世界はこちらから。実在の鉄道会社とは関係ありません。",
   "page": {
     "logo": "/yanaka/logo.jpg",
-    "companyEn": "YANAKA NIPPON RAILWAY CO., LTD. — YNR",
+    "companyEn": "YANAKA JAPAN RAILWAY CO., LTD. — YNR",
     "topNews": {
       "label": "トップニュース",
       "title": "祝!谷中コッコーズ、リーグ優勝!!",
@@ -20,17 +20,55 @@
     },
     "panels": [
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "ただいま準備中" },
+      { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "03", "status": "年表をみる", "href": "/yanaka/history" },
+      { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "04", "status": "ただいま準備中" }
+    ]
+  },
+  "history": {
+    "title": "谷中日本鉄道 社史",
+    "en": "COMPANY HISTORY",
+    "intro": "谷中日本鉄道株式会社(YNR)のあゆみを、日本のおもなできごととあわせて年表でご紹介します。時代はおよそ200〜300年ごとに区切っています。",
+    "columns": { "company": "谷中日本鉄道のあゆみ", "japan": "日本のおもなできごと" },
+    "bands": [
       {
-        "title": "社史",
-        "en": "COMPANY HISTORY",
-        "code": "YN",
-        "num": "03",
-        "status": "つづきはただいま準備中",
-        "items": [
-          { "year": "西暦950年", "text": "谷中林業として創立" }
+        "era": "平安〜鎌倉 (900〜1200年ごろ)",
+        "company": [
+          { "year": "950年", "text": "谷中林業として開業" }
+        ],
+        "japan": [
+          { "year": "1192年", "text": "源頼朝が鎌倉幕府を開く" }
         ]
       },
-      { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "04", "status": "ただいま準備中" }
+      {
+        "era": "室町〜戦国 (1200〜1500年ごろ)",
+        "company": [],
+        "japan": [
+          { "year": "1338年", "text": "足利尊氏が室町幕府を開く" },
+          { "year": "1467年", "text": "応仁の乱がはじまる" }
+        ]
+      },
+      {
+        "era": "戦国〜江戸 (1500〜1800年ごろ)",
+        "company": [],
+        "japan": [
+          { "year": "1603年", "text": "徳川家康が江戸幕府を開く" }
+        ]
+      },
+      {
+        "era": "幕末〜現在 (1800年ごろ〜)",
+        "company": [
+          { "year": "1890年", "text": "5月18日、鉄道事業に進出。「谷中軌道」として日暮里〜千駄木間が開業" },
+          { "year": "1914年", "text": "戦時買収で路線網が約100kmに拡大。社名を「谷中鉄道(YR)」に改称" },
+          { "year": "2024年", "text": "地元野球チーム「谷中コッコーズ」を設立" }
+        ],
+        "japan": [
+          { "year": "1853年", "text": "黒船来航(ペリーが浦賀に来航)" },
+          { "year": "1868年", "text": "明治維新" },
+          { "year": "1872年", "text": "新橋〜横浜で日本初の鉄道が開業" },
+          { "year": "1945年", "text": "第二次世界大戦が終わる" },
+          { "year": "1964年", "text": "東海道新幹線が開業" }
+        ]
+      }
     ]
   }
 }

@@ -65,39 +65,40 @@ export default function YanakaPage() {
             <span className="en-sub en">INFORMATION</span>
           </div>
           <div className="cards">
-            {page.panels.map((panel) => (
-              <div className="card yk-panel" key={panel.title}>
-                <div className="top-band"></div>
-                <div className="body">
-                  <Badge code={panel.code} num={panel.num} />
-                  <div>
-                    <h3>{panel.title}</h3>
-                    <span className="en-sub en">{panel.en}</span>
-                    {panel.items && (
-                      <dl className="yk-history">
-                        {panel.items.map((item) => (
-                          <div key={item.year}>
-                            <dt className="en">{item.year}</dt>
-                            <dd>{item.text}</dd>
-                          </div>
-                        ))}
-                      </dl>
-                    )}
+            {page.panels.map((panel) => {
+              const inner = (
+                <>
+                  <div className="top-band"></div>
+                  <div className="body">
+                    <Badge code={panel.code} num={panel.num} />
+                    <div>
+                      <h3>{panel.title}</h3>
+                      <span className="en-sub en">{panel.en}</span>
+                    </div>
                   </div>
+                  <div className="meta">
+                    <span className="src">{panel.status}</span>
+                    <span className="en">{panel.href ? "VIEW MORE" : "COMING SOON"}</span>
+                  </div>
+                  <div className="bottom-band"></div>
+                </>
+              );
+              return panel.href ? (
+                <Link className="card yk-panel yk-panel-link" href={panel.href} key={panel.title}>
+                  {inner}
+                </Link>
+              ) : (
+                <div className="card yk-panel" key={panel.title}>
+                  {inner}
                 </div>
-                <div className="meta">
-                  <span className="src">{panel.status}</span>
-                  <span className="en">COMING SOON</span>
-                </div>
-                <div className="bottom-band"></div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       </main>
 
       <footer>
-        谷中日本鉄道株式会社(YNR)は架空の鉄道会社です。実在の鉄道会社・団体とは一切関係ありません。© YANAKA NIPPON RAILWAY (RAIL SIGN NEWS)
+        谷中日本鉄道株式会社(YNR)は架空の鉄道会社です。実在の鉄道会社・団体とは一切関係ありません。© YANAKA JAPAN RAILWAY (RAIL SIGN NEWS)
       </footer>
     </>
   );

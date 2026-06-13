@@ -28,6 +28,7 @@ rail-sign-news/
 │   ├── layout.js      … ページの枠組み(タイトル、Googleフォント読み込み)
 │   ├── page.js        … トップページ。data/ のJSONから一覧を生成
 │   ├── yanaka/page.js … 谷中日本鉄道(架空鉄道)のページ。内容は data/yanaka.json の page で管理
+│   ├── yanaka/history/page.js … 谷中日本鉄道の社史ページ(独立ページ)。内容は data/yanaka.json の history で管理
 │   └── globals.css    … デザイン(プロトタイプ index.html から移植。yk-〜 は谷中鉄道用)
 ├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, cocks.jpg=コッコーズ優勝エンブレム)
 ├── public/channels/   … 動画チャンネルのサムネ画像(raha.jpg=Raha鐵のチャンネルアイコン)
@@ -47,8 +48,14 @@ rail-sign-news/
 └── next.config.mjs    … 静的書き出し(output: "export")設定
 ```
 
-- 架空鉄道の正式名称は「谷中日本鉄道株式会社」(略称: YNR)。コーポレートカラーは
+- 架空鉄道の正式名称は「谷中日本鉄道株式会社」(英語表記: YANAKA JAPAN RAILWAY、略称: YNR。
+  YJRだと実在のJRと略称が被るためYNRとしている)。コーポレートカラーは
   黄・白・緑で、帯は必ず「黄 → 白 → 緑」の順(白は混色防止の仕切り。CSS変数 --ynr-band)
+- 社史は /yanaka のパネルからリンクする独立ページ(/yanaka/history)。
+  「西暦 / 谷中日本鉄道のあゆみ / 日本のおもなできごと」の3列を1枚の年表で表示(枠で囲わない)。
+  データは data/yanaka.json の history.timeline 配列。1行 = `{year, company?, japan?}` で、
+  company は自社のできごと(うっすら緑で強調)、japan は同時代の有名な日本のできごと。
+  行を追記するだけで増やせる構成(西暦の小さい順に並べる)
 - レイアウト: 2カラム(左=ニュース各カテゴリ+谷中日本鉄道、右=サイドパネルに
   動画チャンネルと公式リンク集)。各カテゴリの表示は最新6件まで
   (app/page.js の `MAX_PER_CATEGORY` で変更可)

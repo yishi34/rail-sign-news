@@ -123,6 +123,31 @@ main.yk-main{grid-template-columns:1fr}
 .yk-history dd{margin:0;color:var(--sign-ink)}
 .yk-panel h3{font-weight:900}
 .yk-panel .en-sub{color:var(--caption);font-size:.78rem;font-weight:600}
+.yk-panel-link{transition:transform .15s,box-shadow .15s}
+.yk-panel-link:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+@media (prefers-reduced-motion:reduce){.yk-panel-link{transition:none}}
+
+/* 社史ページ(/yanaka/history): 黄(谷中)/薄緑(日本)の2列、時代の枠ごとに区切る年表 */
+.yk-history-intro{font-size:.92rem;color:var(--caption);max-width:60em;margin-bottom:24px}
+.yk-eras{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;column-gap:14px;row-gap:8px;align-items:stretch}
+.yk-eras .th{font-weight:900;font-size:.92rem;padding-bottom:4px}
+.yk-eras .th-co{color:#b07c00}
+.yk-eras .th-jp{color:var(--ynr-green)}
+/* 時代の見出し(枠の上に渡す) */
+.yk-eras .era-label{grid-column:1/-1;margin-top:12px;font-weight:700;font-size:.82rem;color:var(--caption);letter-spacing:.02em}
+/* 枠: 黄色=谷中 / 薄緑=日本。枠線は使わず背景色だけで区切る */
+.yk-eras .era{padding:14px 16px;border-radius:10px;display:grid;gap:10px;align-content:start}
+.yk-eras .era-co{background:var(--ynr-yellow)}
+.yk-eras .era-jp{background:#d7ecd9}
+/* 西暦(左)+ できごと(黒文字) */
+.yk-eras .ev{display:flex;gap:12px;align-items:baseline;color:#1a1a1a}
+.yk-eras .ev .yr{font-weight:700;flex:none;color:#1a1a1a}
+.yk-eras .ev .tx{font-weight:600;line-height:1.5}
+@media (max-width:720px){
+  .yk-eras{column-gap:8px}
+  .yk-eras .era{padding:11px 11px}
+  .yk-eras .ev{gap:8px;font-size:.84rem}
+}
 
 footer{background:var(--sign-ink);color:#cfd3d6;font-size:.8rem;text-align:center;padding:18px}
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
