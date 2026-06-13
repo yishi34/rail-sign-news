@@ -101,7 +101,7 @@ section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .yk-sign .fiction-label{margin-top:8px}
 .yk-sign .next a{color:inherit;text-decoration:none}
 .yk-sign .next a:hover{text-decoration:underline}
-main.yk-main{grid-template-columns:1fr}
+main.yk-main{grid-template-columns:minmax(0,1fr)}
 .yk-badge{border-color:var(--ynr-green)}
 .yk-news{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .yk-news-band{height:10px;background:var(--ynr-band)}
@@ -150,7 +150,7 @@ main.yk-main{grid-template-columns:1fr}
 }
 
 /* 路線図ページ(/yanaka/routemap): 白い枠の中に 路線名+凡例+路線図 をまとめて1枚に */
-.rm-card{background:var(--sign-white);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);padding:18px 16px 14px}
+.rm-card{background:var(--sign-white);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);padding:18px 16px 14px;min-width:0;max-width:100%}
 .rm-card-head{padding:0 2px}
 .rm-line{display:flex;align-items:baseline;gap:12px;border-bottom:3px solid var(--ynr-green);padding-bottom:10px;margin-bottom:12px}
 .rm-line-band{align-self:center;width:8px;height:26px;border-radius:3px;background:var(--ynr-band);flex:none}
@@ -170,6 +170,11 @@ main.yk-main{grid-template-columns:1fr}
 .rm-svg .rm-transfer{font-size:9.5px;font-weight:600;fill:#0072bc;font-family:"Noto Sans JP",sans-serif}
 .rm-hint{margin-top:8px;text-align:center;font-size:.76rem;color:var(--caption)}
 @media (min-width:900px){.rm-hint{display:none}}
+.rm-downloads{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.rm-dl-label{font-size:.82rem;font-weight:700;color:var(--caption)}
+.rm-dl-btn{font-family:inherit;font-weight:700;font-size:.85rem;color:var(--sign-ink);background:var(--sign-white);border:2px solid var(--ynr-green);border-radius:6px;padding:7px 16px;cursor:pointer;transition:background .15s,color .15s}
+.rm-dl-btn:hover{background:var(--ynr-green);color:#fff}
+.rm-dl-btn:focus-visible{outline:3px solid var(--ynr-yellow);outline-offset:2px}
 
 footer{background:var(--sign-ink);color:#cfd3d6;font-size:.8rem;text-align:center;padding:18px}
 @media (prefers-reduced-motion:reduce){.card{transition:none}}

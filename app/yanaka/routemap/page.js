@@ -1,5 +1,6 @@
 import Link from "next/link";
 import yanaka from "../../../data/yanaka.json";
+import Downloads from "./Downloads";
 
 export const metadata = {
   title: "路線図 | 谷中日本鉄道 | RAIL SIGN NEWS",
@@ -140,6 +141,7 @@ export default function YanakaRouteMapPage() {
             </div>
           ))}
           <p className="rm-hint">← 横にスクロールできます →</p>
+          <Downloads baseName="谷鉄_奥武蔵線_路線図" />
         </section>
       </main>
 

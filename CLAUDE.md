@@ -26,10 +26,13 @@ rail-sign-news/
 ├── CLAUDE.md          … この引き継ぎ書
 ├── app/
 │   ├── layout.js      … ページの枠組み(タイトル、Googleフォント読み込み)
+│   ├── icon.png / apple-icon.png … サイトのアイコン(115系)。タブ・ホーム画面用
+│   ├── yanaka/icon.png / yanaka/apple-icon.png … /yanaka配下のアイコン(社紋YNR)で上書き
 │   ├── page.js        … トップページ。data/ のJSONから一覧を生成
 │   ├── yanaka/page.js … 谷中日本鉄道(架空鉄道)のページ。内容は data/yanaka.json の page で管理
 │   ├── yanaka/history/page.js … 谷中日本鉄道の社史ページ(独立ページ)。内容は data/yanaka.json の history で管理
 │   ├── yanaka/routemap/page.js … 谷中日本鉄道の路線図ページ(SVGで生成)。内容は data/yanaka.json の routemap で管理
+│   ├── yanaka/routemap/Downloads.js … 路線図の PNG/PDF/SVG ダウンロードボタン(クライアント部品)
 │   └── globals.css    … デザイン(プロトタイプ index.html から移植。yk-〜 は谷中鉄道用)
 ├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, cocks.jpg=コッコーズ優勝エンブレム)
 ├── public/channels/   … 動画チャンネルのサムネ画像(raha.jpg=Raha鐵のチャンネルアイコン)
@@ -61,12 +64,18 @@ rail-sign-news/
   上段=急行(黄)/下段=普通(緑)の2段式をSVGで生成。データは data/yanaka.json の routemap。
   routemap.lines[].stations の各駅 `{name, express}` を並べるだけで描画され、
   express:true の駅が急行停車駅(○・上段にも停車)になる。駅を増減しても自動でレイアウトされる
+  各駅に `"transfer": ["路線名", ...]` を足すと駅名の下に乗換路線(青字)が出る。
+  路線図は PNG/PDF/SVG でダウンロード可(routemap/Downloads.js。追加パッケージ不使用、
+  ブラウザの canvas でSVGを画像化し、PDFはJPEGを埋め込んで自前生成)
 - レイアウト: 2カラム(左=ニュース各カテゴリ+谷中日本鉄道、右=サイドパネルに
   動画チャンネルと公式リンク集)。各カテゴリの表示は最新6件まで
   (app/page.js の `MAX_PER_CATEGORY` で変更可)
 - 記事の必須項目: `title` / `category` / `date`(YYYY-MM-DD) / `source.name` / `source.url`
 - 手動記事に `"breaking": true` を付けると、ページ上部の黒い「速報」サインに表示される
 - サイト表示時は manual + auto を統合して日付の新しい順に表示(app/page.js)
+- アイコン: Next.jsのファイル規約(app/icon.png, app/apple-icon.png)を使用。
+  /yanaka配下は app/yanaka/icon.png・apple-icon.png が親を上書き(社紋になる)。
+  元画像は親フォルダの 115系.jpg と 谷中鉄道ロゴマーク.jpg を正方形PNGに変換したもの
 
 ## 自動収集の仕組み
 
