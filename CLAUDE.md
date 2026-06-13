@@ -29,6 +29,7 @@ rail-sign-news/
 │   ├── page.js        … トップページ。data/ のJSONから一覧を生成
 │   ├── yanaka/page.js … 谷中日本鉄道(架空鉄道)のページ。内容は data/yanaka.json の page で管理
 │   ├── yanaka/history/page.js … 谷中日本鉄道の社史ページ(独立ページ)。内容は data/yanaka.json の history で管理
+│   ├── yanaka/routemap/page.js … 谷中日本鉄道の路線図ページ(SVGで生成)。内容は data/yanaka.json の routemap で管理
 │   └── globals.css    … デザイン(プロトタイプ index.html から移植。yk-〜 は谷中鉄道用)
 ├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, cocks.jpg=コッコーズ優勝エンブレム)
 ├── public/channels/   … 動画チャンネルのサムネ画像(raha.jpg=Raha鐵のチャンネルアイコン)
@@ -56,6 +57,10 @@ rail-sign-news/
   データは data/yanaka.json の history.timeline 配列。1行 = `{year, company?, japan?}` で、
   company は自社のできごと(うっすら緑で強調)、japan は同時代の有名な日本のできごと。
   行を追記するだけで増やせる構成(西暦の小さい順に並べる)
+- 路線図は /yanaka のパネルからリンクする独立ページ(/yanaka/routemap)。
+  上段=急行(黄)/下段=普通(緑)の2段式をSVGで生成。データは data/yanaka.json の routemap。
+  routemap.lines[].stations の各駅 `{name, express}` を並べるだけで描画され、
+  express:true の駅が急行停車駅(○・上段にも停車)になる。駅を増減しても自動でレイアウトされる
 - レイアウト: 2カラム(左=ニュース各カテゴリ+谷中日本鉄道、右=サイドパネルに
   動画チャンネルと公式リンク集)。各カテゴリの表示は最新6件まで
   (app/page.js の `MAX_PER_CATEGORY` で変更可)

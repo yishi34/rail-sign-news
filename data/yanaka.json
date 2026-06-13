@@ -19,7 +19,7 @@
       "imageAlt": "谷中コッコーズ優勝記念エンブレム"
     },
     "panels": [
-      { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "ただいま準備中" },
+      { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "路線図をみる", "href": "/yanaka/routemap" },
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "03", "status": "年表をみる", "href": "/yanaka/history" },
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "04", "status": "ただいま準備中" }
     ]
@@ -77,6 +77,41 @@
         "japan": [
           { "year": "1945年", "text": "第二次世界大戦が終わる" },
           { "year": "1964年", "text": "東海道新幹線が開業" }
+        ]
+      }
+    ]
+  },
+  "routemap": {
+    "title": "谷鉄 奥武蔵線",
+    "lineJa": "やてつ おくむさしせん",
+    "lineEn": "OKU-MUSASHI LINE",
+    "note": "これはイメージ路線図です。",
+    "lines": [
+      {
+        "id": "okumusashi",
+        "name": "奥武蔵線",
+        "stations": [
+          { "name": "谷鉄横浜", "express": true },
+          { "name": "新横浜", "express": true, "transfer": ["東海道新幹線", "JR横浜線", "市営ブルーライン", "相鉄線", "東急線"] },
+          { "name": "小田", "express": false },
+          { "name": "勝小田", "express": false },
+          { "name": "センター南", "express": false, "transfer": ["市営ブルーライン", "市営グリーンライン"] },
+          { "name": "新江田", "express": false },
+          { "name": "田園調布学園大前", "express": true },
+          { "name": "読売ランド前", "express": false, "transfer": ["小田急線"] },
+          { "name": "新矢野口", "express": false, "transfer": ["JR南武線"] },
+          { "name": "飛田給", "express": false, "transfer": ["京王線"] },
+          { "name": "国分寺", "express": true, "transfer": ["JR中央線", "西武国分寺線", "西武多摩湖線"] },
+          { "name": "新小平", "express": false, "transfer": ["JR武蔵野線"] },
+          { "name": "武蔵村山", "express": false },
+          { "name": "箱根ヶ崎", "express": false, "transfer": ["JR八高線"] },
+          { "name": "新飯能", "express": true },
+          { "name": "東松山", "express": false, "transfer": ["東武東上線"] },
+          { "name": "熊谷", "express": false, "transfer": ["上越・北陸新幹線", "JR高崎線", "秩父鉄道"] },
+          { "name": "新寄居", "express": false },
+          { "name": "御堂", "express": false },
+          { "name": "朝日根", "express": false },
+          { "name": "秩父", "express": true, "transfer": ["秩父鉄道", "西武秩父線"] }
         ]
       }
     ]
