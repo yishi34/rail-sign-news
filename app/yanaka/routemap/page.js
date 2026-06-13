@@ -14,7 +14,7 @@ const GAP = 60; // 駅の間隔
 const TIER_Y0 = 64; // 一番上の段(最優等種別)のy
 const TIER_STEP = 40; // 段と段の間隔
 const NAME_CH = 17; // 駅名1文字ぶんの高さ
-const TR_GAP = 10; // 駅名と乗換表記のあいだ
+const TR_GAP = 18; // 駅名の最後の文字と乗換表記のあいだ(約1文字ぶん)
 const TR_LH = 13; // 乗換表記の行の高さ
 
 const tierY = (i) => TIER_Y0 + i * TIER_STEP;
@@ -28,11 +28,12 @@ function RouteSvg({ line }) {
   const bottomY = tierY(bottomIndex);
   const nameTop = bottomY + 14;
   const maxRank = Math.max(...types.map((t) => t.rank));
-  const maxNameLen = Math.max(...stations.map((s) => s.name.length));
-  const maxTransfer = Math.max(0, ...stations.map((s) => (s.transfer ? s.transfer.length : 0)));
+  // 各駅の、駅名+乗換表記をふくめた下端までの深さ(駅名の長さに追従)
+  const stationDepth = (s) =>
+    s.name.length * NAME_CH + (s.transfer ? TR_GAP + s.transfer.length * TR_LH : 0);
   const CONT_W = line.continuesTo ? 210 : 0; // 「この先へ続く」表示ぶんの余白
   const width = X0 + (n - 1) * GAP + 48 + CONT_W;
-  const height = nameTop + maxNameLen * NAME_CH + (maxTransfer ? TR_GAP + maxTransfer * TR_LH : 0) + 16;
+  const height = nameTop + Math.max(...stations.map(stationDepth)) + 16;
   const firstX = xAt(0);
   const lastX = xAt(n - 1);
 
@@ -103,7 +104,7 @@ function RouteSvg({ line }) {
             >
               {s.name}
             </text>
-            {/* 乗換路線(駅名の下に小さく) */}
+            {/* 乗換路線(駅名の下に小さく)。開始位置は全駅そろえる(一番長い駅名の下) */}
             {s.transfer &&
               s.transfer.map((tr, j) => (
                 <text
