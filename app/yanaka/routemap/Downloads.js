@@ -10,6 +10,8 @@ const SVG_STYLE = `
 .rm-name{font-size:15px;font-weight:600;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 .rm-name-exp{font-weight:900;fill:#1a1a1a}
 .rm-transfer{font-size:9.5px;font-weight:600;fill:#0072bc;font-family:'Noto Sans JP',sans-serif}
+.rm-cont{font-size:13px;font-weight:900;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
+.rm-cont-sub{font-size:11px;font-weight:700;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 .ex-title{font-size:22px;font-weight:900;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
 .ex-title-en{font-size:12px;font-weight:600;fill:#6e7479;font-family:'Barlow Semi Condensed',sans-serif}
 .ex-leg{font-size:13px;font-weight:700;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
@@ -20,12 +22,12 @@ const NS = "http://www.w3.org/2000/svg";
 
 // 画面の路線図SVGの上に「路線名+凡例」のヘッダーを足して、
 // 1枚の完成した路線図SVG(白背景・スタイル埋め込み)を組み立てる
-function buildSvg() {
-  const svg = document.querySelector(".rm-svg");
+function buildSvg(line) {
+  const svg = document.getElementById(`rm-svg-${line.id}`);
   if (!svg) return null;
   const w = Number(svg.getAttribute("width"));
   const baseH = Number(svg.getAttribute("height"));
-  const HEADER = 92; // ヘッダー(路線名+凡例)の高さ
+  const HEADER = 104; // ヘッダー(路線名+凡例)の高さ
   const h = baseH + HEADER;
 
   const el = (name, attrs) => {
@@ -50,19 +52,20 @@ function buildSvg() {
   // 背景(白)
   out.appendChild(el("rect", { x: 0, y: 0, width: w, height: h, fill: "#ffffff" }));
 
-  // ヘッダー: 路線名(黄→白→緑の帯つき)
-  out.appendChild(el("rect", { x: 6, y: 12, width: 8, height: 10, fill: "#f5a900" }));
-  out.appendChild(el("rect", { x: 6, y: 30, width: 8, height: 10, fill: "#1b7a40" }));
-  out.appendChild(textEl(24, 34, "谷鉄 奥武蔵線", "ex-title"));
-  out.appendChild(textEl(190, 33, "OKU-MUSASHI LINE", "ex-title-en"));
-  out.appendChild(el("line", { x1: 16, y1: 50, x2: w - 16, y2: 50, stroke: "#1b7a40", "stroke-width": 2 }));
+  // ヘッダー: 路線名(黄→白→緑の帯つき)。英字は和名の下に置く(長い名前でも崩れない)
+  out.appendChild(el("rect", { x: 6, y: 10, width: 8, height: 10, fill: "#f5a900" }));
+  out.appendChild(el("rect", { x: 6, y: 28, width: 8, height: 10, fill: "#1b7a40" }));
+  out.appendChild(textEl(24, 30, line.name, "ex-title"));
+  out.appendChild(textEl(24, 48, line.nameEn, "ex-title-en"));
+  out.appendChild(el("line", { x1: 16, y1: 60, x2: w - 16, y2: 60, stroke: "#1b7a40", "stroke-width": 2 }));
 
-  // ヘッダー: 凡例
-  out.appendChild(ringEl(24, 71, 7, "#f5a900"));
-  out.appendChild(textEl(37, 75, "急行停車駅", "ex-leg"));
-  out.appendChild(ringEl(122, 71, 7, "#1b7a40"));
-  out.appendChild(textEl(135, 75, "普通停車駅", "ex-leg"));
-  out.appendChild(textEl(220, 75, "これはイメージ路線図です。", "ex-note"));
+  // ヘッダー: 凡例(種別ぶんを左から並べる)
+  line.types.forEach((t, k) => {
+    const cx = 24 + k * 108;
+    out.appendChild(ringEl(cx, 84, 7, t.color));
+    out.appendChild(textEl(cx + 13, 88, `${t.label}停車駅`, "ex-leg"));
+  });
+  out.appendChild(textEl(24 + line.types.length * 108, 88, line.note || "", "ex-note"));
 
   // 路線図本体(ヘッダーのぶん下にずらして配置)
   const g = el("g", { transform: `translate(0 ${HEADER})` });
@@ -73,8 +76,8 @@ function buildSvg() {
 }
 
 // SVG → canvas(scale倍の高解像度)
-async function toCanvas(scale = 2) {
-  const info = buildSvg();
+async function toCanvas(line, scale = 2) {
+  const info = buildSvg(line);
   if (!info) return null;
   const blob = new Blob([info.str], { type: "image/svg+xml;charset=utf-8" });
   const url = URL.createObjectURL(blob);
@@ -169,15 +172,17 @@ function buildPdf(jpeg, iw, ih) {
   return out;
 }
 
-export default function Downloads({ baseName = "谷鉄_奥武蔵線_路線図" }) {
+export default function Downloads({ line }) {
+  const baseName = `${line.name}_路線図`;
+
   async function onPng() {
-    const canvas = await toCanvas(2);
+    const canvas = await toCanvas(line, 2);
     if (!canvas) return;
     canvas.toBlob((blob) => blob && triggerDownload(blob, `${baseName}.png`), "image/png");
   }
 
   async function onPdf() {
-    const canvas = await toCanvas(2);
+    const canvas = await toCanvas(line, 2);
     if (!canvas) return;
     const jpeg = dataUrlToBytes(canvas.toDataURL("image/jpeg", 0.92));
     const pdf = buildPdf(jpeg, canvas.width, canvas.height);
@@ -185,7 +190,7 @@ export default function Downloads({ baseName = "谷鉄_奥武蔵線_路線図" }
   }
 
   function onSvg() {
-    const info = buildSvg();
+    const info = buildSvg(line);
     if (!info) return;
     const blob = new Blob([info.str], { type: "image/svg+xml;charset=utf-8" });
     triggerDownload(blob, `${baseName}.svg`);

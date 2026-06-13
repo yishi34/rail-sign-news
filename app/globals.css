@@ -152,15 +152,13 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 /* 路線図ページ(/yanaka/routemap): 白い枠の中に 路線名+凡例+路線図 をまとめて1枚に */
 .rm-card{background:var(--sign-white);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);padding:18px 16px 14px;min-width:0;max-width:100%}
 .rm-card-head{padding:0 2px}
-.rm-line{display:flex;align-items:baseline;gap:12px;border-bottom:3px solid var(--ynr-green);padding-bottom:10px;margin-bottom:12px}
+.rm-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:3px solid var(--ynr-green);padding-bottom:10px;margin-bottom:12px}
 .rm-line-band{align-self:center;width:8px;height:26px;border-radius:3px;background:var(--ynr-band);flex:none}
 .rm-line-title{font-weight:900;font-size:1.3rem;letter-spacing:.04em}
 .rm-line-en{color:var(--caption);font-size:.85rem;font-weight:600}
 .rm-legend{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-bottom:12px;font-size:.85rem;font-weight:700;color:var(--sign-ink)}
 .rm-legend-item{display:inline-flex;align-items:center;gap:7px}
-.rm-chip{width:14px;height:14px;border-radius:50%;background:#fff;flex:none}
-.rm-chip-exp{border:3px solid var(--ynr-yellow)}
-.rm-chip-loc{border:3px solid var(--ynr-green)}
+.rm-chip{width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid #ccc;flex:none}
 .rm-note{font-weight:600;color:var(--caption);font-size:.8rem}
 .rm-scroll{overflow-x:auto;padding:4px 0 2px}
 .rm-svg{display:block}
@@ -168,6 +166,8 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .rm-svg .rm-name{font-size:15px;font-weight:600;fill:var(--caption);font-family:"Noto Sans JP",sans-serif}
 .rm-svg .rm-name-exp{font-weight:900;fill:var(--sign-ink)}
 .rm-svg .rm-transfer{font-size:9.5px;font-weight:600;fill:#0072bc;font-family:"Noto Sans JP",sans-serif}
+.rm-svg .rm-cont{font-size:13px;font-weight:900;fill:var(--sign-ink);font-family:"Noto Sans JP",sans-serif}
+.rm-svg .rm-cont-sub{font-size:11px;font-weight:700;fill:var(--caption);font-family:"Noto Sans JP",sans-serif}
 .rm-hint{margin-top:8px;text-align:center;font-size:.76rem;color:var(--caption)}
 @media (min-width:900px){.rm-hint{display:none}}
 .rm-downloads{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}

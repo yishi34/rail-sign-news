@@ -5,74 +5,99 @@ import Downloads from "./Downloads";
 export const metadata = {
   title: "路線図 | 谷中日本鉄道 | RAIL SIGN NEWS",
   description:
-    "架空鉄道「谷中日本鉄道株式会社(YNR)」奥武蔵線のイメージ路線図。実在の鉄道会社とは関係ありません。",
+    "架空鉄道「谷中日本鉄道株式会社(YNR)」のイメージ路線図。実在の鉄道会社とは関係ありません。",
 };
 
 // レイアウト定数
-const X0 = 104; // 左の余白(急行/普通ラベル用)
+const X0 = 104; // 左の余白(種別ラベル用)
 const GAP = 60; // 駅の間隔
-const Y_EXP = 64; // 急行(上段)の線のy
-const Y_LOC = 104; // 普通(下段)の線のy(上下段の間隔は40)
-const NAME_TOP = Y_LOC + 14; // 駅名の開始y
+const TIER_Y0 = 64; // 一番上の段(最優等種別)のy
+const TIER_STEP = 40; // 段と段の間隔
 const NAME_CH = 17; // 駅名1文字ぶんの高さ
 const TR_GAP = 10; // 駅名と乗換表記のあいだ
 const TR_LH = 13; // 乗換表記の行の高さ
-const COLOR_EXP = "#f5a900"; // 黄(急行)
-const COLOR_LOC = "#1b7a40"; // 緑(普通)
 
-// 各駅の、駅名+乗換表記をふくめた下端y
-function stationBottom(s) {
-  const nameEnd = NAME_TOP + s.name.length * NAME_CH;
-  const tr = s.transfer ? TR_GAP + s.transfer.length * TR_LH : 0;
-  return nameEnd + tr;
-}
+const tierY = (i) => TIER_Y0 + i * TIER_STEP;
 
-function RouteSvg({ stations }) {
+// 種別(types)は rank の大きい順=上の段。stop条件: 駅の rank >= 種別の rank
+function RouteSvg({ line }) {
+  const { types, stations } = line;
   const n = stations.length;
   const xAt = (i) => X0 + i * GAP;
-  const width = X0 + (n - 1) * GAP + 48;
-  const height = Math.max(...stations.map(stationBottom)) + 16;
+  const bottomIndex = types.length - 1;
+  const bottomY = tierY(bottomIndex);
+  const nameTop = bottomY + 14;
+  const maxRank = Math.max(...types.map((t) => t.rank));
+  const maxNameLen = Math.max(...stations.map((s) => s.name.length));
+  const maxTransfer = Math.max(0, ...stations.map((s) => (s.transfer ? s.transfer.length : 0)));
+  const CONT_W = line.continuesTo ? 210 : 0; // 「この先へ続く」表示ぶんの余白
+  const width = X0 + (n - 1) * GAP + 48 + CONT_W;
+  const height = nameTop + maxNameLen * NAME_CH + (maxTransfer ? TR_GAP + maxTransfer * TR_LH : 0) + 16;
   const firstX = xAt(0);
   const lastX = xAt(n - 1);
+
+  // その駅が停まる一番上の段(=types で最初に rank が条件を満たすindex)
+  const topTierIndex = (s) => types.findIndex((t) => s.rank >= t.rank);
+
+  // 「この先へ続く」: 終点(普通=下段)の丸の外側から、灰色の細い水平線を伸ばし、つづく路線名を添える
+  const cont = line.continuesTo;
+  const BOTTOM_R = 6; // 下段(普通)の駅マークの半径(この外側から線を出す)
 
   return (
     <svg
       className="rm-svg"
+      id={`rm-svg-${line.id}`}
       viewBox={`0 0 ${width} ${height}`}
       width={width}
       height={height}
       xmlns="http://www.w3.org/2000/svg"
       role="img"
-      aria-label="奥武蔵線 路線図(上段=急行、下段=普通)"
+      aria-label={`${line.name} 路線図`}
     >
-      {/* 段のラベル */}
-      <text x="20" y={Y_EXP + 5} className="rm-tier" fill={COLOR_EXP}>急行</text>
-      <text x="20" y={Y_LOC + 5} className="rm-tier" fill={COLOR_LOC}>普通</text>
-
-      {/* 普通の線(全駅) */}
-      <line x1={firstX} y1={Y_LOC} x2={lastX} y2={Y_LOC} stroke={COLOR_LOC} strokeWidth="10" strokeLinecap="round" />
-      {/* 急行の線(急行停車駅を結ぶ。通過駅の上は素通り) */}
-      <line x1={firstX} y1={Y_EXP} x2={lastX} y2={Y_EXP} stroke={COLOR_EXP} strokeWidth="8" strokeLinecap="round" />
+      {/* 各段: ラベル + 横線(その種別が走る線) */}
+      {types.map((t, ti) => (
+        <g key={t.id}>
+          <text x="20" y={tierY(ti) + 5} className="rm-tier" fill={t.color}>{t.label}</text>
+          <line
+            x1={firstX}
+            y1={tierY(ti)}
+            x2={lastX}
+            y2={tierY(ti)}
+            stroke={t.color}
+            strokeWidth={ti === bottomIndex ? 10 : 8}
+            strokeLinecap="round"
+          />
+        </g>
+      ))}
 
       {stations.map((s, i) => {
         const x = xAt(i);
+        const topI = topTierIndex(s);
         return (
-          <g key={s.name}>
-            {/* 急行停車駅は上下をつなぐ */}
-            {s.express && (
-              <line x1={x} y1={Y_EXP} x2={x} y2={Y_LOC} stroke="#e0b441" strokeWidth="3" />
+          <g key={`${s.name}-${i}`}>
+            {/* 停車する段どうしを縦線でつなぐ(上端の段→一番下の段) */}
+            {topI < bottomIndex && (
+              <line x1={x} y1={tierY(topI)} x2={x} y2={bottomY} stroke="#c2c6c9" strokeWidth="3" />
             )}
-            {/* 普通の駅マーク(全駅) */}
-            <circle cx={x} cy={Y_LOC} r="6" fill="#fff" stroke={COLOR_LOC} strokeWidth="3" />
-            {/* 急行停車駅マーク(○) */}
-            {s.express && (
-              <circle cx={x} cy={Y_EXP} r="8" fill="#fff" stroke={COLOR_EXP} strokeWidth="3.5" />
+            {/* その駅に停まる種別の段すべてに駅マーク */}
+            {types.map((t, ti) =>
+              s.rank >= t.rank ? (
+                <circle
+                  key={t.id}
+                  cx={x}
+                  cy={tierY(ti)}
+                  r={ti === bottomIndex ? 6 : 8}
+                  fill="#fff"
+                  stroke={t.color}
+                  strokeWidth={ti === bottomIndex ? 3 : 3.5}
+                />
+              ) : null
             )}
-            {/* 駅名(縦書き) */}
+            {/* 駅名(縦書き)。最優等種別が停まる駅は太字 */}
             <text
               x={x}
-              y={NAME_TOP}
-              className={s.express ? "rm-name rm-name-exp" : "rm-name"}
+              y={nameTop}
+              className={s.rank === maxRank ? "rm-name rm-name-exp" : "rm-name"}
               writingMode="vertical-rl"
               textAnchor="start"
             >
@@ -80,20 +105,37 @@ function RouteSvg({ stations }) {
             </text>
             {/* 乗換路線(駅名の下に小さく) */}
             {s.transfer &&
-              s.transfer.map((t, j) => (
+              s.transfer.map((tr, j) => (
                 <text
                   key={j}
                   x={x}
-                  y={NAME_TOP + s.name.length * NAME_CH + TR_GAP + j * TR_LH}
+                  y={nameTop + s.name.length * NAME_CH + TR_GAP + j * TR_LH}
                   className="rm-transfer"
                   textAnchor="middle"
                 >
-                  {t}
+                  {tr}
                 </text>
               ))}
           </g>
         );
       })}
+
+      {/* この先へ続く(上段の丸の外側から、灰色の細い水平線を伸ばし、つづく路線名を添える) */}
+      {cont && (
+        <g>
+          <line
+            x1={lastX + BOTTOM_R + 3}
+            y1={bottomY}
+            x2={lastX + 84}
+            y2={bottomY}
+            stroke="#9aa0a4"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <text x={lastX + 92} y={bottomY - 3} className="rm-cont">{cont.name}</text>
+          <text x={lastX + 92} y={bottomY + 14} className="rm-cont-sub">（{cont.area}）へ続く</text>
+        </g>
+      )}
     </svg>
   );
 }
@@ -106,8 +148,8 @@ export default function YanakaRouteMapPage() {
       <header className="yk-header">
         <div className="station-sign yk-sign">
           <img src={yanaka.page.logo} alt="谷中日本鉄道ロゴマーク" className="yk-logo" />
-          <h1>{rm.title}</h1>
-          <div className="romaji en">{rm.lineEn}</div>
+          <h1>路線図</h1>
+          <div className="romaji en">ROUTE MAP</div>
           <span className="fiction-label">{yanaka.label}</span>
           <div className="next">
             <Link href="/yanaka">◀ 谷中日本鉄道トップへもどる</Link>
@@ -124,24 +166,28 @@ export default function YanakaRouteMapPage() {
                 {/* 路線名 */}
                 <div className="rm-line">
                   <span className="rm-line-band"></span>
-                  <h2 className="rm-line-title">谷鉄 {line.name}</h2>
-                  <span className="rm-line-en en">{rm.lineEn}</span>
+                  <h2 className="rm-line-title">{line.name}</h2>
+                  <span className="rm-line-en en">{line.nameEn}</span>
                 </div>
-                {/* 凡例 */}
+                {/* 凡例(種別ぶん) */}
                 <div className="rm-legend">
-                  <span className="rm-legend-item"><span className="rm-chip rm-chip-exp"></span>急行停車駅</span>
-                  <span className="rm-legend-item"><span className="rm-chip rm-chip-loc"></span>普通停車駅</span>
-                  <span className="rm-note">{rm.note}</span>
+                  {line.types.map((t) => (
+                    <span className="rm-legend-item" key={t.id}>
+                      <span className="rm-chip" style={{ borderColor: t.color }}></span>
+                      {t.label}停車駅
+                    </span>
+                  ))}
+                  <span className="rm-note">{line.note || rm.note}</span>
                 </div>
               </div>
               {/* 路線図(駅数が多いので横スクロール) */}
               <div className="rm-scroll">
-                <RouteSvg stations={line.stations} />
+                <RouteSvg line={line} />
               </div>
+              <p className="rm-hint">← 横にスクロールできます →</p>
+              <Downloads line={line} />
             </div>
           ))}
-          <p className="rm-hint">← 横にスクロールできます →</p>
-          <Downloads baseName="谷鉄_奥武蔵線_路線図" />
         </section>
       </main>
 
