@@ -133,7 +133,7 @@
         "stations": [
           { "code": "YH01", "name": "谷鉄東京", "rank": 3, "transfer": ["東海道新幹線", "JR各線", "メトロ丸ノ内線"] },
           { "code": "YH02", "name": "新新橋", "rank": 2, "transfer": ["JR各線", "メトロ銀座線", "都営浅草線", "ゆりかもめ"] },
-          { "code": "YH03", "name": "汐留", "rank": 1, "transfer": ["都営大江戸線", "ゆりかもめ"] },
+          { "code": "YH03", "name": "汐留", "rank": 1, "transfer": ["谷鉄臨海線", "都営大江戸線", "ゆりかもめ"] },
           { "code": "YH04", "name": "大門", "rank": 1, "transfer": ["都営浅草線", "都営大江戸線"] },
           { "code": "YH05", "name": "新浜松町", "rank": 3, "transfer": ["JR各線", "東京モノレール"] },
           { "code": "YH06", "name": "三田", "rank": 2, "transfer": ["都営三田線", "都営浅草線"] },
@@ -164,6 +164,23 @@
           { "code": "YH31", "name": "富士見ヶ丘", "rank": 1 },
           { "code": "YH32", "name": "新国府津", "rank": 3, "transfer": ["JR東海道線", "JR御殿場線"] },
           { "code": "YH33", "name": "小田原", "rank": 3, "transfer": ["東海道新幹線", "JR各線", "小田急線", "箱根登山鉄道", "伊豆箱根鉄道"] }
+        ]
+      },
+      {
+        "id": "rinkai",
+        "name": "谷鉄 臨海線",
+        "nameEn": "RINKAI LINE",
+        "note": "これはイメージ路線図です。",
+        "types": [
+          { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "汐留", "rank": 1, "transfer": ["谷鉄東海ライン", "都営大江戸線", "ゆりかもめ"] },
+          { "name": "青果門前", "rank": 1 },
+          { "name": "勝どき", "rank": 1 },
+          { "name": "新豊洲", "rank": 1, "transfer": ["ゆりかもめ"] },
+          { "name": "新有馬", "rank": 1 },
+          { "name": "谷中帝都国立臨海公園", "rank": 1 }
         ]
       }
     ]
