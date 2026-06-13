@@ -2,7 +2,7 @@ import Link from "next/link";
 import yanaka from "../../data/yanaka.json";
 
 export const metadata = {
-  title: "谷中日本鉄道 | RAIL SIGN NEWS",
+  title: "谷中日本鉄道公式サイト | RAIL SIGN NEWS",
   description:
     "架空鉄道「谷中日本鉄道株式会社(YNR)」の公式ページ。実在の鉄道会社とは関係ありません。",
 };
@@ -25,7 +25,7 @@ export default function YanakaPage() {
       <header className="yk-header">
         <div className="station-sign yk-sign">
           <img src={page.logo} alt="谷中日本鉄道ロゴマーク" className="yk-logo" />
-          <h1>谷中日本鉄道</h1>
+          <h1>谷中日本鉄道公式サイト</h1>
           <div className="romaji en">{page.companyEn}</div>
           <span className="fiction-label">{yanaka.label}</span>
           <div className="next">

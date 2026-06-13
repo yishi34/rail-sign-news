@@ -10,31 +10,66 @@ const SVG_STYLE = `
 .rm-name{font-size:15px;font-weight:600;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 .rm-name-exp{font-weight:900;fill:#1a1a1a}
 .rm-transfer{font-size:9.5px;font-weight:600;fill:#0072bc;font-family:'Noto Sans JP',sans-serif}
+.ex-title{font-size:22px;font-weight:900;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
+.ex-title-en{font-size:12px;font-weight:600;fill:#6e7479;font-family:'Barlow Semi Condensed',sans-serif}
+.ex-leg{font-size:13px;font-weight:700;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
+.ex-note{font-size:12px;font-weight:600;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 `;
 
 const NS = "http://www.w3.org/2000/svg";
 
-// 画面のSVGを複製し、白背景とスタイルを埋め込んだ文字列にする
+// 画面の路線図SVGの上に「路線名+凡例」のヘッダーを足して、
+// 1枚の完成した路線図SVG(白背景・スタイル埋め込み)を組み立てる
 function buildSvg() {
   const svg = document.querySelector(".rm-svg");
   if (!svg) return null;
   const w = Number(svg.getAttribute("width"));
-  const h = Number(svg.getAttribute("height"));
-  const clone = svg.cloneNode(true);
-  clone.setAttribute("xmlns", NS);
+  const baseH = Number(svg.getAttribute("height"));
+  const HEADER = 92; // ヘッダー(路線名+凡例)の高さ
+  const h = baseH + HEADER;
+
+  const el = (name, attrs) => {
+    const e = document.createElementNS(NS, name);
+    for (const k in attrs) e.setAttribute(k, String(attrs[k]));
+    return e;
+  };
+  const textEl = (x, y, str, cls) => {
+    const t = el("text", { x, y, class: cls });
+    t.textContent = str;
+    return t;
+  };
+  const ringEl = (cx, cy, r, stroke) =>
+    el("circle", { cx, cy, r, fill: "#fff", stroke, "stroke-width": 3 });
+
+  const out = el("svg", { xmlns: NS, viewBox: `0 0 ${w} ${h}`, width: w, height: h });
 
   const style = document.createElementNS(NS, "style");
   style.textContent = SVG_STYLE;
-  const bg = document.createElementNS(NS, "rect");
-  bg.setAttribute("x", "0");
-  bg.setAttribute("y", "0");
-  bg.setAttribute("width", String(w));
-  bg.setAttribute("height", String(h));
-  bg.setAttribute("fill", "#ffffff");
-  clone.insertBefore(bg, clone.firstChild);
-  clone.insertBefore(style, clone.firstChild);
+  out.appendChild(style);
 
-  return { str: new XMLSerializer().serializeToString(clone), w, h };
+  // 背景(白)
+  out.appendChild(el("rect", { x: 0, y: 0, width: w, height: h, fill: "#ffffff" }));
+
+  // ヘッダー: 路線名(黄→白→緑の帯つき)
+  out.appendChild(el("rect", { x: 6, y: 12, width: 8, height: 10, fill: "#f5a900" }));
+  out.appendChild(el("rect", { x: 6, y: 30, width: 8, height: 10, fill: "#1b7a40" }));
+  out.appendChild(textEl(24, 34, "谷鉄 奥武蔵線", "ex-title"));
+  out.appendChild(textEl(190, 33, "OKU-MUSASHI LINE", "ex-title-en"));
+  out.appendChild(el("line", { x1: 16, y1: 50, x2: w - 16, y2: 50, stroke: "#1b7a40", "stroke-width": 2 }));
+
+  // ヘッダー: 凡例
+  out.appendChild(ringEl(24, 71, 7, "#f5a900"));
+  out.appendChild(textEl(37, 75, "急行停車駅", "ex-leg"));
+  out.appendChild(ringEl(122, 71, 7, "#1b7a40"));
+  out.appendChild(textEl(135, 75, "普通停車駅", "ex-leg"));
+  out.appendChild(textEl(220, 75, "これはイメージ路線図です。", "ex-note"));
+
+  // 路線図本体(ヘッダーのぶん下にずらして配置)
+  const g = el("g", { transform: `translate(0 ${HEADER})` });
+  Array.from(svg.childNodes).forEach((n) => g.appendChild(n.cloneNode(true)));
+  out.appendChild(g);
+
+  return { str: new XMLSerializer().serializeToString(out), w, h };
 }
 
 // SVG → canvas(scale倍の高解像度)
