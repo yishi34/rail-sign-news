@@ -193,11 +193,11 @@
     "en": "ROLLING STOCK",
     "items": [
       {
-        "name": "303系",
-        "description": "303系は、谷中日本鉄道が初めて自社で作った車両です。1965年に作られたのが前期車、1966年に作られたのが後期車で、今も現役で活躍中です。",
+        "name": "303型",
+        "description": "303型は、谷中日本鉄道が初めて自社で作った車両です。1965年に作られたのが前期車、1966年に作られたのが後期車で、今も現役で活躍中です。",
         "photos": [
-          { "image": "/yanaka/trains/303-early.jpg", "imageAlt": "谷鉄303系 前期車", "caption": "前期車", "built": "1965年製造" },
-          { "image": "/yanaka/trains/303-late.jpg", "imageAlt": "谷鉄303系 後期車", "caption": "後期車", "built": "1966年製造" }
+          { "image": "/yanaka/trains/303-early.jpg", "imageAlt": "谷鉄303型 前期車", "caption": "前期車", "built": "1965年製造" },
+          { "image": "/yanaka/trains/303-late.jpg", "imageAlt": "谷鉄303型 後期車", "caption": "後期車", "built": "1966年製造" }
         ]
       },
       {
