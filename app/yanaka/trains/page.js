@@ -39,7 +39,15 @@ export default function YanakaTrainsPage() {
                   <div className={multi ? "tr-photos tr-photos-multi" : "tr-photos"}>
                     {car.photos.map((p, i) => (
                       <figure className="tr-figure" key={i}>
-                        <img className="tr-photo" src={p.image} alt={p.imageAlt} />
+                        <img
+                          className="tr-photo"
+                          src={p.image}
+                          alt={p.imageAlt}
+                          style={{
+                            ...(p.focus && { objectPosition: p.focus }),
+                            ...(p.ratio && { aspectRatio: p.ratio }),
+                          }}
+                        />
                         {(p.caption || p.built) && (
                           <figcaption className="tr-cap">
                             {p.caption && <span className="tr-cap-name">{p.caption}</span>}
