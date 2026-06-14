@@ -217,6 +217,13 @@
         "photos": [
           { "image": "/yanaka/trains/yt360-izumi.jpg", "imageAlt": "谷鉄YT360系 特急いずみ", "built": "2015年製造", "ratio": "512/279" }
         ]
+      },
+      {
+        "name": "YK8500系",
+        "description": "YK8500系は、2012年に登場したステンレス車両です。京王線への直通運転に対応するほか、本線では快速・急行などの優等運用にも幅広く活躍しています。4両・6両・8両編成があり、路線や時間帯に応じて柔軟に運用されています。",
+        "photos": [
+          { "image": "/yanaka/trains/yk8500.jpg", "imageAlt": "谷鉄YK8500系", "built": "2012年製造", "focus": "right" }
+        ]
       }
     ]
   }
