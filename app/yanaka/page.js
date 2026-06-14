@@ -51,6 +51,12 @@ export default function YanakaPage() {
                 <span className="yk-flag">優勝速報 / CHAMPIONS</span>
                 <h3>{page.topNews.title}</h3>
                 <p>{page.topNews.body}</p>
+                {page.topNews.subImage && (
+                  <div className="yk-news-sub">
+                    <img src={page.topNews.subImage} alt={page.topNews.subImageAlt} />
+                    <p className="yk-news-sub-text">{page.topNews.subCaption}</p>
+                  </div>
+                )}
               </div>
             </div>
             <div className="yk-news-band"></div>

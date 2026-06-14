@@ -16,7 +16,10 @@
       "title": "祝!谷中こっこーず、リーグ優勝!!",
       "body": "谷中日本鉄道が応援する地元野球チーム「谷中こっこーず(YANAKA KOKKOZ)」が、見事リーグ優勝を果たしました!沿線の商店街も優勝セールで大にぎわい。優勝記念のヘッドマーク列車も運行予定です。",
       "image": "/yanaka/kokkoz.jpg",
-      "imageAlt": "谷中こっこーず優勝記念エンブレム"
+      "imageAlt": "谷中こっこーず優勝記念エンブレム",
+      "subImage": "/yanaka/kokkoz-statue.jpg",
+      "subImageAlt": "谷中こっこーず優勝記念モニュメント(イメージ)",
+      "subCaption": "優勝記念モニュメント、駅前広場に建立予定(イメージ)"
     },
     "panels": [
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "路線図をみる", "href": "/yanaka/routemap" },

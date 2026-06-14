@@ -34,7 +34,8 @@ rail-sign-news/
 │   ├── yanaka/routemap/page.js … 谷中日本鉄道の路線図ページ(SVGで生成)。内容は data/yanaka.json の routemap で管理
 │   ├── yanaka/routemap/Downloads.js … 路線図の PNG/PDF/SVG ダウンロードボタン(クライアント部品)
 │   └── globals.css    … デザイン(プロトタイプ index.html から移植。yk-〜 は谷中鉄道用)
-├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, kokkoz.jpg=こっこーず優勝エンブレム)
+├── public/yanaka/     … 谷中鉄道の画像(logo.jpg=YNRロゴ, kokkoz.jpg=こっこーず優勝エンブレム,
+│                         kokkoz-statue.jpg=こっこーず優勝記念モニュメント イメージ)
 ├── public/channels/   … 動画チャンネルのサムネ画像(raha.jpg=Raha鐵のチャンネルアイコン)
 ├── data/
 │   ├── manual-articles.json … 手動掲載記事(人間が編集する唯一の記事ファイル)
