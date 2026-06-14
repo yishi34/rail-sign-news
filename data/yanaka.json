@@ -22,7 +22,7 @@
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "路線図をみる", "href": "/yanaka/routemap" },
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "03", "status": "ただいま準備中" },
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "04", "status": "年表をみる", "href": "/yanaka/history" },
-      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "ただいま準備中" }
+      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" }
     ]
   },
   "history": {
@@ -181,6 +181,41 @@
           { "name": "新豊洲", "rank": 1, "transfer": ["ゆりかもめ"] },
           { "name": "新有馬", "rank": 1 },
           { "name": "谷中帝都国立臨海公園", "rank": 1 }
+        ]
+      }
+    ]
+  },
+  "trains": {
+    "title": "車両紹介",
+    "en": "ROLLING STOCK",
+    "items": [
+      {
+        "name": "303系",
+        "description": "303系は、谷中日本鉄道が初めて自社で作った車両です。1965年に作られたのが前期車、1966年に作られたのが後期車で、今も現役で活躍中です。",
+        "photos": [
+          { "image": "/yanaka/trains/303-early.jpg", "imageAlt": "谷鉄303系 前期車", "caption": "前期車", "built": "1965年製造" },
+          { "image": "/yanaka/trains/303-late.jpg", "imageAlt": "谷鉄303系 後期車", "caption": "後期車", "built": "1966年製造" }
+        ]
+      },
+      {
+        "name": "YT5000系",
+        "description": "YT5000系は、谷中日本鉄道の特急用車両です。クリーム色の車体に緑と黄のラインをまとい、主要都市間を結ぶ特急列車として活躍しています。",
+        "photos": [
+          { "image": "/yanaka/trains/yt5000.jpg", "imageAlt": "谷鉄YT5000系 特急車両", "built": "1990年製造" }
+        ]
+      },
+      {
+        "name": "Y325系",
+        "description": "Y325系は、谷中日本鉄道の近郊型車両です。ステンレス車体に緑と黄のラインを配し、東海ラインなどで通勤・近郊輸送の主力をつとめています。",
+        "photos": [
+          { "image": "/yanaka/trains/y325.jpg", "imageAlt": "谷鉄Y325系 近郊型車両", "built": "2005年製造" }
+        ]
+      },
+      {
+        "name": "YT360系（特急いずみ）",
+        "description": "YT360系は、東京と大阪を結ぶ看板特急「いずみ」用の車両です。白い車体に青のラインをまとい、雪深い山あいから大都市まで、東阪を駆け抜けます。",
+        "photos": [
+          { "image": "/yanaka/trains/yt360-izumi.jpg", "imageAlt": "谷鉄YT360系 特急いずみ", "built": "2012年製造" }
         ]
       }
     ]

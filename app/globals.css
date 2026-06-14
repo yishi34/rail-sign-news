@@ -176,5 +176,27 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .rm-dl-btn:hover{background:var(--ynr-green);color:#fff}
 .rm-dl-btn:focus-visible{outline:3px solid var(--ynr-yellow);outline-offset:2px}
 
+/* 車両紹介ページ(/yanaka/trains): 横2列のカード */
+.tr-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.tr-card{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+/* 写真が複数(主力車など)のカードは横幅いっぱい使う */
+.tr-wide{grid-column:1/-1}
+.tr-band{height:10px;background:var(--ynr-band)}
+.tr-head{padding:14px 16px 10px}
+.tr-name{font-weight:900;font-size:1.2rem;letter-spacing:.04em}
+/* 写真エリア(1枚なら1列、複数なら横並び) */
+.tr-photos{display:grid;grid-template-columns:1fr;gap:0}
+.tr-photos-multi{grid-template-columns:1fr 1fr;gap:2px}
+.tr-figure{margin:0}
+.tr-photo{width:100%;display:block;aspect-ratio:3/2;object-fit:cover;background:var(--platform-gray)}
+.tr-cap{display:flex;align-items:baseline;gap:8px;padding:8px 16px;font-size:.85rem}
+.tr-cap-name{font-weight:900;color:var(--ynr-green)}
+.tr-cap-built{color:var(--caption);font-weight:700}
+.tr-desc{padding:12px 16px 16px;font-size:.92rem;color:var(--sign-ink);line-height:1.8}
+@media (max-width:720px){
+  .tr-grid{grid-template-columns:1fr;gap:18px}
+  .tr-photos-multi{grid-template-columns:1fr}
+}
+
 footer{background:var(--sign-ink);color:#cfd3d6;font-size:.8rem;text-align:center;padding:18px}
 @media (prefers-reduced-motion:reduce){.card{transition:none}}
