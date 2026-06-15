@@ -132,6 +132,18 @@
           { "name": "御堂", "rank": 1 },
           { "name": "朝日根", "rank": 1 },
           { "name": "秩父", "rank": 2, "transfer": ["秩父鉄道", "西武秩父線"] }
+        ],
+        "branches": [
+          {
+            "id": "musashimurayama-branch",
+            "name": "武蔵支線",
+            "nameEn": "MUSASHI BRANCH LINE",
+            "from": "武蔵村山",
+            "stations": [
+              { "name": "新北台" },
+              { "name": "奈良橋", "terminus": true }
+            ]
+          }
         ]
       },
       {

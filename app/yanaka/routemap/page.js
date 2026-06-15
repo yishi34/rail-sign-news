@@ -17,13 +17,16 @@ const NAME_CH = 17; // 駅名1文字ぶんの高さ
 const TR_GAP = 18; // 駅名の最後の文字と乗換表記のあいだ(約1文字ぶん)
 const TR_LH = 13; // 乗換表記の行の高さ
 
-const tierY = (i) => TIER_Y0 + i * TIER_STEP;
+const BRANCH_NAME_GAP = 20; // 本線の駅名の下端から支線の線までの余白
+const BRANCH_CORNER_R = 16; // 支線の曲がり角の丸み(カーブ)
 
 // 種別(types)は rank の大きい順=上の段。stop条件: 駅の rank >= 種別の rank
 function RouteSvg({ line }) {
-  const { types, stations } = line;
+  const { types, stations, branches } = line;
+  const hasBranch = branches && branches.length > 0;
   const n = stations.length;
   const xAt = (i) => X0 + i * GAP;
+  const tierY = (i) => TIER_Y0 + i * TIER_STEP;
   const bottomIndex = types.length - 1;
   const bottomY = tierY(bottomIndex);
   const nameTop = bottomY + 14;
@@ -31,11 +34,46 @@ function RouteSvg({ line }) {
   // 各駅の、駅名+乗換表記をふくめた下端までの深さ(駅名の長さに追従)
   const stationDepth = (s) =>
     s.name.length * NAME_CH + (s.transfer ? TR_GAP + s.transfer.length * TR_LH : 0);
+  const maxMainDepth = Math.max(...stations.map(stationDepth));
   const CONT_W = line.continuesTo ? 210 : 0; // 「この先へ続く」表示ぶんの余白
-  const width = X0 + (n - 1) * GAP + 48 + CONT_W;
-  const height = nameTop + Math.max(...stations.map(stationDepth)) + 16;
+  // 支線の配置情報(分岐駅の次駅との中間で下へ折れ、本線駅名の下を右へのびる)
+  const branchInfos = (branches || []).map((b) => {
+    const fromIndex = stations.findIndex((s) => s.name === b.from);
+    const fromX = xAt(fromIndex);
+    const midX = fromX + GAP / 2;
+    const bx = (j) => fromX + (j + 1) * GAP;
+    const lastBx = bx(b.stations.length - 1);
+    return { b, fromIndex, fromX, midX, bx, lastBx };
+  });
+  // 支線が右にのびる場合、本線より右に出る分の幅も確保する
+  const branchExtra = branchInfos.reduce(
+    (max, bi) => Math.max(max, bi.lastBx - (X0 + (n - 1) * GAP)),
+    0
+  );
+  const width = X0 + (n - 1) * GAP + 48 + CONT_W + branchExtra;
+  // 支線が走る区間にかかる本線駅の名前の深さだけで高さを決める(左の長い駅名に引っぱられて下がりすぎないように)
+  const branchSpanDepth = branchInfos.reduce((max, bi) => {
+    const d = stations.reduce((m, s, i) => {
+      const x = xAt(i);
+      return x >= bi.fromX - GAP / 2 && x <= bi.lastBx + GAP / 2
+        ? Math.max(m, stationDepth(s))
+        : m;
+    }, 0);
+    return Math.max(max, d);
+  }, 0);
+  // 支線の本線(普通)駅名の下を走らせる
+  const branchLineY = nameTop + branchSpanDepth + BRANCH_NAME_GAP;
+  const maxBranchNameLen = branchInfos.reduce(
+    (m, bi) => Math.max(m, ...bi.b.stations.map((s) => s.name.length)),
+    0
+  );
+  const branchBandDepth = hasBranch
+    ? branchLineY - nameTop + maxBranchNameLen * NAME_CH + 16
+    : 0;
+  const height = nameTop + Math.max(maxMainDepth, branchBandDepth) + 16;
   const firstX = xAt(0);
   const lastX = xAt(n - 1);
+  const branchColor = types[types.length - 1].color; // 各駅停車のみ=普通色
 
   // その駅が停まる一番上の段(=types で最初に rank が条件を満たすindex)
   const topTierIndex = (s) => types.findIndex((t) => s.rank >= t.rank);
@@ -55,6 +93,41 @@ function RouteSvg({ line }) {
       role="img"
       aria-label={`${line.name} 路線図`}
     >
+      {/* 支線: 分岐駅の少し先で本線の下にもぐり、カーブで下へ降りて右へのびる(各駅停車のみ)。
+          本線・駅名より先に描いて、分岐部を本線の帯の下に隠す */}
+      {branchInfos.map(({ b, fromX, midX, bx, lastBx }) => {
+        const R = BRANCH_CORNER_R;
+        const d =
+          `M ${fromX} ${bottomY}` +
+          ` L ${midX - R} ${bottomY}` +
+          ` Q ${midX} ${bottomY} ${midX} ${bottomY + R}` +
+          ` L ${midX} ${branchLineY - R}` +
+          ` Q ${midX} ${branchLineY} ${midX + R} ${branchLineY}` +
+          ` L ${lastBx} ${branchLineY}`;
+        return (
+          <g key={b.id}>
+            <path
+              d={d}
+              fill="none"
+              stroke={branchColor}
+              strokeWidth="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            {/* 支線名ラベル */}
+            <text x={fromX - 10} y={branchLineY + 5} className="rm-tier" fill={branchColor} textAnchor="end">{b.name}</text>
+            {b.stations.map((bs, j) => (
+              <g key={bs.name}>
+                <circle cx={bx(j)} cy={branchLineY} r="6" fill="#fff" stroke={branchColor} strokeWidth="3" />
+                <text x={bx(j)} y={branchLineY + 12} className="rm-name" writingMode="vertical-rl" textAnchor="start">
+                  {bs.name}
+                </text>
+              </g>
+            ))}
+          </g>
+        );
+      })}
+
       {/* 各段: ラベル + 横線(その種別が走る線) */}
       {types.map((t, ti) => (
         <g key={t.id}>
