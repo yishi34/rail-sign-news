@@ -1,3 +1,4 @@
+import Link from "next/link";
 import autoArticles from "../data/auto-articles.json";
 import manualArticles from "../data/manual-articles.json";
 import categories from "../data/categories.json";
@@ -29,14 +30,20 @@ function Badge({ code, num, small }) {
 }
 
 // カテゴリ1つぶんのセクション(路線帯+記事カード一覧)
-function CategorySection({ category, items }) {
+function CategorySection({ category, items, total }) {
   if (items.length === 0) return null;
+  const hasMore = total > items.length;
   return (
     <section className={category.id}>
       <div className="line-head">
         <span className="line-band"></span>
         <h2>{category.label}</h2>
         <span className="en-sub en">{category.en}</span>
+        {hasMore && (
+          <Link className="more-link" href={`/category/${category.id}`}>
+            過去のニュース({total}件)→
+          </Link>
+        )}
       </div>
       <div className="cards">
         {items.map((article, i) => (
@@ -76,8 +83,9 @@ export default function Home() {
   // 速報: "breaking": true の記事を方面案内サインに表示(カード一覧には載せない)
   const breaking = articles.find((a) => a.breaking);
   const normal = articles.filter((a) => !a.breaking);
-  const byCategory = (id) =>
-    normal.filter((a) => a.category === id).slice(0, MAX_PER_CATEGORY);
+  const inCategory = (id) => normal.filter((a) => a.category === id);
+  const byCategory = (id) => inCategory(id).slice(0, MAX_PER_CATEGORY);
+  const totalIn = (id) => inCategory(id).length;
   const cat = (id) => categories.find((c) => c.id === id);
 
   return (
@@ -115,7 +123,7 @@ export default function Home() {
         {/* 左カラム: ニュース各カテゴリと谷中鉄道 */}
         <div className="primary">
           {["news", "cars", "service"].map((id) => (
-            <CategorySection key={id} category={cat(id)} items={byCategory(id)} />
+            <CategorySection key={id} category={cat(id)} items={byCategory(id)} total={totalIn(id)} />
           ))}
 
           {/* 谷中鉄道(架空鉄道) */}
@@ -141,7 +149,7 @@ export default function Home() {
           </section>
 
           {["travel", "tech"].map((id) => (
-            <CategorySection key={id} category={cat(id)} items={byCategory(id)} />
+            <CategorySection key={id} category={cat(id)} items={byCategory(id)} total={totalIn(id)} />
           ))}
         </div>
 
