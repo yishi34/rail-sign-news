@@ -44,6 +44,12 @@ section .line-head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .line-head h2{font-weight:900;font-size:1.25rem;letter-spacing:.08em}
 .line-head .en-sub{color:var(--caption);font-size:.85rem;font-weight:600;margin-left:2px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+/* 見出し横「過去のニュース →」リンク */
+.line-head .more-link{margin-left:auto;font-size:.82rem;font-weight:700;color:var(--caption);text-decoration:none;white-space:nowrap}
+.line-head .more-link:hover{color:var(--sign-ink);text-decoration:underline}
+/* 過去ニュース一覧ページは1カラム */
+main.archive-main{grid-template-columns:1fr}
+.archive-empty{color:var(--caption);font-weight:600}
 
 /* 記事カード = 駅名標 */
 .card{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s}
@@ -105,9 +111,9 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .yk-badge{border-color:var(--ynr-green)}
 .yk-news{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .yk-news-band{height:10px;background:var(--ynr-band)}
-.yk-news-inner{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:center}
-.yk-news-inner img{width:100%;height:100%;max-height:340px;object-fit:cover;display:block}
-.yk-news-text{padding:20px 24px 20px 4px}
+.yk-news-inner{display:block}
+.yk-news-inner img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.yk-news-text{padding:20px 24px}
 .yk-flag{display:inline-block;background:var(--ynr-yellow);color:var(--sign-ink);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:4px;letter-spacing:.1em;margin-bottom:8px}
 .yk-news-text h3{font-weight:900;font-size:1.3rem;line-height:1.5}
 .yk-news-text p{font-size:.92rem;color:var(--caption);margin-top:8px;max-width:46em}
@@ -115,9 +121,36 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .yk-news-sub img{width:72px;height:72px;max-height:72px;object-fit:cover;border-radius:8px;flex-shrink:0}
 .yk-news-sub-text{font-size:.82rem;color:var(--caption);margin:0;max-width:none}
 @media (max-width:720px){
-  .yk-news-inner{grid-template-columns:1fr}
-  .yk-news-inner img{max-height:300px}
-  .yk-news-text{padding:0 20px 20px}
+  .yk-news-text{padding:16px 20px}
+}
+/* トップニュースの開催概要(日時・会場・入場) */
+.yk-info{margin-top:14px;display:grid;gap:6px}
+.yk-info-row{display:flex;gap:10px;align-items:baseline;font-size:.9rem}
+.yk-info-row dt{font-weight:700;color:var(--ynr-green);flex:none;min-width:3.2em}
+.yk-info-row dd{margin:0;color:var(--sign-ink)}
+/* トップニュースのおもな内容(見どころ) */
+.yk-highlights{margin-top:14px}
+.yk-highlights-label{display:inline-block;font-weight:700;font-size:.85rem;color:var(--sign-ink);border-left:4px solid var(--ynr-green);padding-left:8px;margin-bottom:8px}
+.yk-highlights ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px 16px}
+.yk-highlights li{position:relative;padding-left:18px;font-size:.9rem;color:var(--sign-ink)}
+.yk-highlights li::before{content:"●";position:absolute;left:0;color:var(--ynr-yellow);font-size:.7rem;top:.25em}
+.yk-note{margin-top:12px;font-size:.82rem;color:var(--caption);font-weight:600}
+/* お知らせ一覧 */
+.yk-notice-list{display:grid;gap:16px}
+.yk-notice{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08);border-left:8px solid var(--ynr-green);display:grid;grid-template-columns:160px 1fr;gap:18px;align-items:center}
+.yk-notice:only-child,.yk-notice:not(:has(.yk-notice-img)){grid-template-columns:1fr}
+.yk-notice-img{width:100%;height:100%;max-height:150px;object-fit:cover;display:block}
+.yk-notice-text{padding:16px 20px 16px 4px}
+.yk-notice:not(:has(.yk-notice-img)) .yk-notice-text{padding:16px 20px}
+.yk-notice-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.yk-notice-head .yk-flag{margin-bottom:0}
+.yk-notice-date{font-size:.82rem;color:var(--caption);font-weight:600}
+.yk-notice-text h3{font-weight:900;font-size:1.1rem;line-height:1.5;margin-top:8px}
+.yk-notice-text p{font-size:.9rem;color:var(--caption);margin-top:6px}
+@media (max-width:720px){
+  .yk-notice{grid-template-columns:1fr}
+  .yk-notice-img{max-height:200px}
+  .yk-notice-text{padding:0 20px 16px}
 }
 .yk-panel .top-band,.yk-panel .bottom-band{height:10px;background:var(--ynr-band)}
 .yk-history{margin-top:10px;display:grid;gap:6px;font-size:.88rem}
