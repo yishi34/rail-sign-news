@@ -25,9 +25,7 @@ function RouteSvg({ line }) {
   const { types, stations, branches } = line;
   const hasBranch = branches && branches.length > 0;
   const n = stations.length;
-  // 左から別の路線図が続く場合、その表示ぶんだけ左に余白を空けて駅を右へずらす
-  const CONT_LEFT_W = line.continuesFrom ? 210 : 0;
-  const xAt = (i) => X0 + CONT_LEFT_W + i * GAP;
+  const xAt = (i) => X0 + i * GAP;
   const tierY = (i) => TIER_Y0 + i * TIER_STEP;
   const bottomIndex = types.length - 1;
   const bottomY = tierY(bottomIndex);
@@ -49,10 +47,10 @@ function RouteSvg({ line }) {
   });
   // 支線が右にのびる場合、本線より右に出る分の幅も確保する
   const branchExtra = branchInfos.reduce(
-    (max, bi) => Math.max(max, bi.lastBx - (X0 + CONT_LEFT_W + (n - 1) * GAP)),
+    (max, bi) => Math.max(max, bi.lastBx - (X0 + (n - 1) * GAP)),
     0
   );
-  const width = X0 + CONT_LEFT_W + (n - 1) * GAP + 48 + CONT_W + branchExtra;
+  const width = X0 + (n - 1) * GAP + 48 + CONT_W + branchExtra;
   // 支線が走る区間にかかる本線駅の名前の深さだけで高さを決める(左の長い駅名に引っぱられて下がりすぎないように)
   const branchSpanDepth = branchInfos.reduce((max, bi) => {
     const d = stations.reduce((m, s, i) => {
@@ -72,7 +70,8 @@ function RouteSvg({ line }) {
   const branchBandDepth = hasBranch
     ? branchLineY - nameTop + maxBranchNameLen * NAME_CH + 16
     : 0;
-  const height = nameTop + Math.max(maxMainDepth, branchBandDepth) + 16;
+  const height =
+    nameTop + Math.max(maxMainDepth, branchBandDepth, line.continuesFrom ? 90 : 0) + 16;
   const firstX = xAt(0);
   const lastX = xAt(n - 1);
   const branchColor = types[types.length - 1].color; // 各駅停車のみ=普通色
@@ -85,13 +84,15 @@ function RouteSvg({ line }) {
   // 「ここまで続いてくる」: 始点(下段)の外側から左へ灰色の細線を伸ばし、続いてくる路線名を添える
   const contFrom = line.continuesFrom;
   const BOTTOM_R = 6; // 下段(普通)の駅マークの半径(この外側から線を出す)
+  // 斜め線の先端に置く水平テキストが左にはみ出すぶん、描画領域を左へ広げる(駅位置は動かさない)
+  const minX = contFrom ? -76 : 0;
 
   return (
     <svg
       className="rm-svg"
       id={`rm-svg-${line.id}`}
-      viewBox={`0 0 ${width} ${height}`}
-      width={width}
+      viewBox={`${minX} 0 ${width - minX} ${height}`}
+      width={width - minX}
       height={height}
       xmlns="http://www.w3.org/2000/svg"
       role="img"
@@ -215,20 +216,20 @@ function RouteSvg({ line }) {
         </g>
       )}
 
-      {/* ここまで続いてくる(始点の丸の外側から左へ灰色の細線を伸ばし、続いてくる路線名を添える) */}
+      {/* ここまで続いてくる(始点の丸から左下45度へ灰色の斜め線。その先端に路線名を水平で添える) */}
       {contFrom && (
         <g>
           <line
-            x1={firstX - BOTTOM_R - 3}
-            y1={bottomY}
-            x2={firstX - 84}
-            y2={bottomY}
+            x1={firstX - BOTTOM_R}
+            y1={bottomY + BOTTOM_R}
+            x2={firstX - 55}
+            y2={bottomY + 55}
             stroke="#9aa0a4"
             strokeWidth="3"
             strokeLinecap="round"
           />
-          <text x={firstX - 92} y={bottomY - 3} className="rm-cont" textAnchor="end">{contFrom.name}</text>
-          <text x={firstX - 92} y={bottomY + 14} className="rm-cont-sub" textAnchor="end">（{contFrom.area}）から続く</text>
+          <text x={firstX - 59} y={bottomY + 51} className="rm-cont" textAnchor="end">{contFrom.name}</text>
+          <text x={firstX - 59} y={bottomY + 66} className="rm-cont-sub" textAnchor="end">（{contFrom.area}）から続く</text>
         </g>
       )}
     </svg>
