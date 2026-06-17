@@ -25,7 +25,9 @@ function RouteSvg({ line }) {
   const { types, stations, branches } = line;
   const hasBranch = branches && branches.length > 0;
   const n = stations.length;
-  const xAt = (i) => X0 + i * GAP;
+  // 左から別の路線図が続く場合、その表示ぶんだけ左に余白を空けて駅を右へずらす
+  const CONT_LEFT_W = line.continuesFrom ? 210 : 0;
+  const xAt = (i) => X0 + CONT_LEFT_W + i * GAP;
   const tierY = (i) => TIER_Y0 + i * TIER_STEP;
   const bottomIndex = types.length - 1;
   const bottomY = tierY(bottomIndex);
@@ -47,10 +49,10 @@ function RouteSvg({ line }) {
   });
   // 支線が右にのびる場合、本線より右に出る分の幅も確保する
   const branchExtra = branchInfos.reduce(
-    (max, bi) => Math.max(max, bi.lastBx - (X0 + (n - 1) * GAP)),
+    (max, bi) => Math.max(max, bi.lastBx - (X0 + CONT_LEFT_W + (n - 1) * GAP)),
     0
   );
-  const width = X0 + (n - 1) * GAP + 48 + CONT_W + branchExtra;
+  const width = X0 + CONT_LEFT_W + (n - 1) * GAP + 48 + CONT_W + branchExtra;
   // 支線が走る区間にかかる本線駅の名前の深さだけで高さを決める(左の長い駅名に引っぱられて下がりすぎないように)
   const branchSpanDepth = branchInfos.reduce((max, bi) => {
     const d = stations.reduce((m, s, i) => {
@@ -80,6 +82,8 @@ function RouteSvg({ line }) {
 
   // 「この先へ続く」: 終点(普通=下段)の丸の外側から、灰色の細い水平線を伸ばし、つづく路線名を添える
   const cont = line.continuesTo;
+  // 「ここまで続いてくる」: 始点(下段)の外側から左へ灰色の細線を伸ばし、続いてくる路線名を添える
+  const contFrom = line.continuesFrom;
   const BOTTOM_R = 6; // 下段(普通)の駅マークの半径(この外側から線を出す)
 
   return (
@@ -210,6 +214,23 @@ function RouteSvg({ line }) {
           <text x={lastX + 92} y={bottomY + 14} className="rm-cont-sub">（{cont.area}）へ続く</text>
         </g>
       )}
+
+      {/* ここまで続いてくる(始点の丸の外側から左へ灰色の細線を伸ばし、続いてくる路線名を添える) */}
+      {contFrom && (
+        <g>
+          <line
+            x1={firstX - BOTTOM_R - 3}
+            y1={bottomY}
+            x2={firstX - 84}
+            y2={bottomY}
+            stroke="#9aa0a4"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <text x={firstX - 92} y={bottomY - 3} className="rm-cont" textAnchor="end">{contFrom.name}</text>
+          <text x={firstX - 92} y={bottomY + 14} className="rm-cont-sub" textAnchor="end">（{contFrom.area}）から続く</text>
+        </g>
+      )}
     </svg>
   );
 }
@@ -248,7 +269,7 @@ export default function YanakaRouteMapPage() {
                   {line.types.map((t) => (
                     <span className="rm-legend-item" key={t.id}>
                       <span className="rm-chip" style={{ borderColor: t.color }}></span>
-                      {t.label}停車駅
+                      {t.label.includes("停車") ? t.label : `${t.label}停車駅`}
                     </span>
                   ))}
                   <span className="rm-note">{line.note || rm.note}</span>
