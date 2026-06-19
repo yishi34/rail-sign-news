@@ -236,7 +236,7 @@
         "name": "谷鉄 東海ライン（駿豆・中部地区）",
         "nameEn": "TOKAI LINE (SUNZU-CHUBU AREA)",
         "note": "これはイメージ路線図です。関東地区(小田原)からの続きです。",
-        "continuesFrom": { "name": "谷鉄 東海ライン", "area": "関東地区" },
+        "continuesTo": { "name": "谷鉄 東海ライン", "area": "名古屋方面" },
         "types": [
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
@@ -272,6 +272,50 @@
           { "name": "前田", "rank": 1 },
           { "name": "新前田", "rank": 1 },
           { "name": "新富士", "rank": 2 }
+        ]
+      },
+      {
+        "id": "toyama",
+        "name": "谷鉄 富山線",
+        "nameEn": "TOYAMA LINE",
+        "note": "これはイメージ路線図です。",
+        "types": [
+          { "id": "exp", "label": "特急アルプス", "color": "#e60012", "rank": 2 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "新富士", "rank": 2 },
+          { "name": "谷鉄富士宮", "rank": 1 },
+          { "name": "芝川", "rank": 1 },
+          { "name": "谷鉄身延", "rank": 2 },
+          { "name": "下部温泉", "rank": 1 },
+          { "name": "鰍沢口", "rank": 1 },
+          { "name": "市川大門", "rank": 1 },
+          { "name": "谷鉄甲府", "rank": 2, "transfer": ["JR中央本線"] },
+          { "name": "韮崎", "rank": 1 },
+          { "name": "小淵沢", "rank": 1, "transfer": ["JR小海線"] },
+          { "name": "茅野", "rank": 1 },
+          { "name": "上諏訪", "rank": 2 },
+          { "name": "岡谷", "rank": 1 },
+          { "name": "塩尻", "rank": 1, "transfer": ["JR中央本線"] },
+          { "name": "谷鉄松本", "rank": 2, "transfer": ["JR篠ノ井線", "アルピコ交通"] },
+          { "name": "穂高", "rank": 1 },
+          { "name": "信濃大町", "rank": 1 },
+          { "name": "白馬", "rank": 1 },
+          { "name": "谷鉄南小谷", "rank": 2 },
+          { "name": "中土", "rank": 1 },
+          { "name": "北小谷", "rank": 1 },
+          { "name": "平岩", "rank": 1 },
+          { "name": "小滝", "rank": 1 },
+          { "name": "根知", "rank": 1 },
+          { "name": "谷鉄糸魚川", "rank": 2, "transfer": ["北陸新幹線", "えちごトキめき鉄道"] },
+          { "name": "親不知", "rank": 1 },
+          { "name": "泊", "rank": 1 },
+          { "name": "入善", "rank": 1 },
+          { "name": "谷鉄黒部", "rank": 2, "transfer": ["北陸新幹線", "富山地方鉄道"] },
+          { "name": "魚津", "rank": 1 },
+          { "name": "滑川", "rank": 1 },
+          { "name": "谷鉄富山", "rank": 2, "transfer": ["北陸新幹線", "あいの風とやま鉄道", "富山地方鉄道", "高山本線"] }
         ]
       },
       {

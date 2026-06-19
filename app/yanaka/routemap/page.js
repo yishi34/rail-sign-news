@@ -25,7 +25,10 @@ function RouteSvg({ line }) {
   const { types, stations, branches } = line;
   const hasBranch = branches && branches.length > 0;
   const n = stations.length;
-  const xAt = (i) => X0 + i * GAP;
+  // 種別ラベル(急行/特急アルプス等)が長い場合、線の開始位置を右へずらして駅と重ならないようにする
+  const labelMaxLen = Math.max(...types.map((t) => t.label.length));
+  const leftBase = Math.max(X0, labelMaxLen * 15 + 40);
+  const xAt = (i) => leftBase + i * GAP;
   const tierY = (i) => TIER_Y0 + i * TIER_STEP;
   const bottomIndex = types.length - 1;
   const bottomY = tierY(bottomIndex);
@@ -47,10 +50,10 @@ function RouteSvg({ line }) {
   });
   // 支線が右にのびる場合、本線より右に出る分の幅も確保する
   const branchExtra = branchInfos.reduce(
-    (max, bi) => Math.max(max, bi.lastBx - (X0 + (n - 1) * GAP)),
+    (max, bi) => Math.max(max, bi.lastBx - (leftBase + (n - 1) * GAP)),
     0
   );
-  const width = X0 + (n - 1) * GAP + 48 + CONT_W + branchExtra;
+  const width = leftBase + (n - 1) * GAP + 48 + CONT_W + branchExtra;
   // 支線が走る区間にかかる本線駅の名前の深さだけで高さを決める(左の長い駅名に引っぱられて下がりすぎないように)
   const branchSpanDepth = branchInfos.reduce((max, bi) => {
     const d = stations.reduce((m, s, i) => {
