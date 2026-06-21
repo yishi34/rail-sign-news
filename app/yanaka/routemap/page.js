@@ -239,6 +239,75 @@ function RouteSvg({ line }) {
   );
 }
 
+// 環状線(shape:"loop")用。駅を横楕円にぐるっと並べ、駅名を外側に水平で添える(山手線スタイル)
+function LoopSvg({ line }) {
+  const { types, stations } = line;
+  const color = types[types.length - 1].color; // 環状=各駅停車の色
+  const maxRank = Math.max(1, ...stations.map((s) => s.rank || 1));
+  const n = stations.length;
+  const rx = 360; // 横半径(横楕円なので rx > ry)
+  const ry = 232; // 縦半径
+  const MX = 132; // 左右の駅名ぶんの余白
+  const MY = 64; // 上下の駅名ぶんの余白
+  const cx = rx + MX;
+  const cy = ry + MY;
+  const width = 2 * cx;
+  const height = 2 * cy;
+  // 左(府中)から時計回り(上→右→下→左)に配置
+  const angleAt = (i) => Math.PI + (i * 2 * Math.PI) / n;
+
+  return (
+    <svg
+      className="rm-svg"
+      id={`rm-svg-${line.id}`}
+      viewBox={`0 0 ${width} ${height}`}
+      width={width}
+      height={height}
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label={`${line.name} 路線図`}
+    >
+      <ellipse cx={cx} cy={cy} rx={rx} ry={ry} fill="none" stroke={color} strokeWidth="10" />
+      {/* 中央に路線名 */}
+      <text x={cx} y={cy - 4} textAnchor="middle" className="rm-loop-title">{line.name}</text>
+      <text x={cx} y={cy + 18} textAnchor="middle" className="rm-loop-sub en">{line.nameEn}</text>
+
+      {stations.map((s, i) => {
+        const a = angleAt(i);
+        const x = cx + rx * Math.cos(a);
+        const y = cy + ry * Math.sin(a);
+        const ca = Math.cos(a);
+        const sa = Math.sin(a);
+        const major = (s.rank || 1) >= maxRank;
+        const lx = x + ca * 14;
+        const ly = y + sa * 14;
+        const anchor = ca > 0.25 ? "start" : ca < -0.25 ? "end" : "middle";
+        const dy = sa > 0.25 ? 12 : sa < -0.25 ? -3 : 4;
+        return (
+          <g key={`${s.name}-${i}`}>
+            <circle
+              cx={x}
+              cy={y}
+              r={major ? 7 : 5}
+              fill="#fff"
+              stroke={color}
+              strokeWidth={major ? 3.5 : 3}
+            />
+            <text
+              x={lx}
+              y={ly + dy}
+              textAnchor={anchor}
+              className={major ? "rm-loop-name major" : "rm-loop-name"}
+            >
+              {s.name}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 export default function YanakaRouteMapPage() {
   const rm = yanaka.routemap;
 
@@ -270,18 +339,19 @@ export default function YanakaRouteMapPage() {
                 </div>
                 {/* 凡例(種別ぶん) */}
                 <div className="rm-legend">
-                  {line.types.map((t) => (
-                    <span className="rm-legend-item" key={t.id}>
-                      <span className="rm-chip" style={{ borderColor: t.color }}></span>
-                      {t.label.includes("停車") ? t.label : `${t.label}停車駅`}
-                    </span>
-                  ))}
+                  {line.shape !== "loop" &&
+                    line.types.map((t) => (
+                      <span className="rm-legend-item" key={t.id}>
+                        <span className="rm-chip" style={{ borderColor: t.color }}></span>
+                        {t.label.includes("停車") ? t.label : `${t.label}停車駅`}
+                      </span>
+                    ))}
                   <span className="rm-note">{line.note || rm.note}</span>
                 </div>
               </div>
               {/* 路線図(駅数が多いので横スクロール) */}
               <div className="rm-scroll">
-                <RouteSvg line={line} />
+                {line.shape === "loop" ? <LoopSvg line={line} /> : <RouteSvg line={line} />}
               </div>
               <p className="rm-hint">← 横にスクロールできます →</p>
               <Downloads line={line} />

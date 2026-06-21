@@ -204,6 +204,11 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .rm-svg .rm-transfer{font-size:9.5px;font-weight:600;fill:#0072bc;font-family:"Noto Sans JP",sans-serif}
 .rm-svg .rm-cont{font-size:13px;font-weight:900;fill:var(--sign-ink);font-family:"Noto Sans JP",sans-serif}
 .rm-svg .rm-cont-sub{font-size:11px;font-weight:700;fill:var(--caption);font-family:"Noto Sans JP",sans-serif}
+/* 環状線(山手線スタイル) */
+.rm-svg .rm-loop-name{font-size:12px;font-weight:600;fill:var(--sign-ink);font-family:"Noto Sans JP",sans-serif}
+.rm-svg .rm-loop-name.major{font-weight:900;font-size:13px}
+.rm-svg .rm-loop-title{font-size:20px;font-weight:900;fill:var(--sign-ink);font-family:"Noto Sans JP",sans-serif}
+.rm-svg .rm-loop-sub{font-size:11px;font-weight:700;fill:var(--caption);font-family:"Noto Sans JP",sans-serif}
 .rm-hint{margin-top:8px;text-align:center;font-size:.76rem;color:var(--caption)}
 @media (min-width:900px){.rm-hint{display:none}}
 .rm-downloads{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
