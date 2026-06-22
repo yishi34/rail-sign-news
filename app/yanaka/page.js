@@ -1,5 +1,6 @@
 import Link from "next/link";
 import yanaka from "../../data/yanaka.json";
+import ImageZoom from "./ImageZoom";
 
 export const metadata = {
   title: "谷中日本鉄道公式サイト | RAIL SIGN NEWS",
@@ -103,7 +104,7 @@ export default function YanakaPage() {
               {page.news.items.map((item, i) => (
                 <article className="yk-notice" key={i}>
                   {item.image && (
-                    <img className="yk-notice-img" src={item.image} alt={item.imageAlt} />
+                    <ImageZoom className="yk-notice-img" src={item.image} alt={item.imageAlt} />
                   )}
                   <div className="yk-notice-text">
                     <div className="yk-notice-head">
@@ -112,6 +113,22 @@ export default function YanakaPage() {
                     </div>
                     <h3>{item.title}</h3>
                     <p>{item.body}</p>
+                    {item.price && (
+                      <div className="yk-price">
+                        <span className="yk-price-amount">{item.price}</span>
+                        {item.priceNote && <span className="yk-price-note">{item.priceNote}</span>}
+                      </div>
+                    )}
+                    {item.setItems && (
+                      <ul className="yk-set">
+                        {item.setItems.map((si, k) => (
+                          <li key={k}>
+                            <span className="yk-set-name">{si.name}</span>
+                            <span className="yk-set-desc">{si.desc}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                     {item.subImage && (
                       <div className="yk-news-sub">
                         <img src={item.subImage} alt={item.subImageAlt} />

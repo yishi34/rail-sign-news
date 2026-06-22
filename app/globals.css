@@ -135,6 +135,20 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .yk-highlights li{position:relative;padding-left:18px;font-size:.9rem;color:var(--sign-ink)}
 .yk-highlights li::before{content:"●";position:absolute;left:0;color:var(--ynr-yellow);font-size:.7rem;top:.25em}
 .yk-note{margin-top:12px;font-size:.82rem;color:var(--caption);font-weight:600}
+/* お知らせ: 価格バッジ */
+.yk-price{margin-top:12px}
+.yk-price-amount{display:inline-block;background:var(--ynr-green);color:#fff;font-weight:900;font-size:1.15rem;padding:5px 14px;border-radius:6px;letter-spacing:.02em}
+.yk-price-note{display:block;margin-top:6px;font-size:.78rem;font-weight:600;color:var(--caption)}
+/* お知らせ: セット内容の箇条書き */
+.yk-set{margin-top:14px;list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px 20px}
+.yk-set li{font-size:.86rem;line-height:1.5;border-left:3px solid var(--ynr-yellow);padding-left:10px}
+.yk-set-name{display:block;font-weight:700;color:var(--sign-ink)}
+.yk-set-desc{color:var(--caption)}
+/* 画像クリックで拡大(モーダル) */
+.yk-zoom-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;z-index:1000;padding:20px;cursor:zoom-out}
+.yk-zoom-img{max-width:95vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.yk-zoom-close{position:fixed;top:16px;right:20px;width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,.92);font-size:1.7rem;line-height:1;font-weight:700;color:#1a1a1a;cursor:pointer}
+.yk-zoom-close:hover{background:#fff}
 /* お知らせ一覧 */
 .yk-notice-list{display:grid;gap:16px}
 .yk-notice{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08);border-left:8px solid var(--ynr-green);display:grid;grid-template-columns:160px 1fr;gap:18px;align-items:center}
