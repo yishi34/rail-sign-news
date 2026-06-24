@@ -293,6 +293,25 @@
         ]
       },
       {
+        "id": "hamasaki",
+        "name": "谷鉄 濱崎線",
+        "nameEn": "HAMASAKI LINE",
+        "note": "これはイメージ路線図です。東海ラインと奥武蔵線をむすぶ連絡線です。",
+        "types": [
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄川崎", "rank": 2, "transfer": ["谷鉄 東海ライン", "JR各線", "京急線"] },
+          { "name": "八丁畷", "rank": 1 },
+          { "name": "谷鉄鶴見", "rank": 2, "transfer": ["JR鶴見線"] },
+          { "name": "生麦", "rank": 1 },
+          { "name": "新子安", "rank": 1, "transfer": ["JR京浜東北線"] },
+          { "name": "東神奈川", "rank": 1, "transfer": ["JR横浜線"] },
+          { "name": "谷鉄横浜", "rank": 2, "transfer": ["谷鉄 奥武蔵線", "JR各線", "京急線", "相鉄線"] }
+        ]
+      },
+      {
         "id": "toyama",
         "name": "谷鉄 富山線",
         "nameEn": "TOYAMA LINE",
