@@ -246,7 +246,18 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 }
 
 /* 路線図ページ(/yanaka/routemap): 白い枠の中に 路線名+凡例+路線図 をまとめて1枚に */
-.rm-card{background:var(--sign-white);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);padding:18px 16px 14px;min-width:0;max-width:100%}
+.rm-card{background:var(--sign-white);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);min-width:0;max-width:100%;overflow:hidden;border:1px solid #dfe4e8}
+.rm-card + .rm-card{margin-top:16px}
+.rm-card[open]{box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.rm-card-summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px;padding:16px;border-bottom:0 solid transparent}
+.rm-card-summary::-webkit-details-marker{display:none}
+.rm-card[open] .rm-card-summary{border-bottom:3px solid var(--ynr-green)}
+.rm-card-title{min-width:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.rm-toggle{font-size:.82rem;font-weight:900;color:var(--sign-ink);background:var(--sign-white);border:2px solid var(--ynr-green);border-radius:6px;padding:6px 14px;line-height:1;white-space:nowrap}
+.rm-toggle::before{content:"表示"}
+.rm-card[open] .rm-toggle{background:var(--ynr-green);color:#fff}
+.rm-card[open] .rm-toggle::before{content:"非表示"}
+.rm-card-body{padding:14px 16px}
 .rm-card-head{padding:0 2px}
 .rm-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:3px solid var(--ynr-green);padding-bottom:10px;margin-bottom:12px}
 .rm-line-band{align-self:center;width:8px;height:26px;border-radius:3px;background:var(--ynr-band);flex:none}

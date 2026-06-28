@@ -356,6 +356,26 @@
         ]
       },
       {
+        "id": "kitadake-climb",
+        "name": "谷鉄 北岳登山線",
+        "nameEn": "KITADAKE CLIMB LINE",
+        "note": "これはイメージ路線図です。北岳登山口方面への架空アクセス路線です。",
+        "types": [
+          { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "上諏訪", "rank": 1, "transfer": ["谷鉄 富山線", "JR中央本線"] },
+          { "name": "新相生", "rank": 1 },
+          { "name": "甲斐小笠原", "rank": 1 },
+          { "name": "白根桃源", "rank": 1 },
+          { "name": "芦安温泉", "rank": 1 },
+          { "name": "夜叉神峠", "rank": 1 },
+          { "name": "南アルプスゲート", "rank": 1 },
+          { "name": "広河原", "rank": 1 },
+          { "name": "北岳登山口", "rank": 1 }
+        ]
+      },
+      {
         "id": "musashi-loop",
         "name": "谷鉄 武蔵環状線",
         "nameEn": "MUSASHI LOOP LINE",

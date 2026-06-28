@@ -328,16 +328,17 @@ export default function YanakaRouteMapPage() {
 
       <main className="yk-main">
         <section>
-          {rm.lines.map((line) => (
-            <div className="rm-card" key={line.id}>
-              <div className="rm-card-head">
-                {/* 路線名 */}
-                <div className="rm-line">
-                  <span className="rm-line-band"></span>
-                  <h2 className="rm-line-title">{line.name}</h2>
+          {rm.lines.map((line, index) => (
+            <details className="rm-card" key={line.id} open={index === 0}>
+              <summary className="rm-card-summary">
+                <span className="rm-line-band"></span>
+                <span className="rm-card-title">
+                  <span className="rm-line-title">{line.name}</span>
                   <span className="rm-line-en en">{line.nameEn}</span>
-                </div>
-                {/* 凡例(種別ぶん) */}
+                </span>
+                <span className="rm-toggle" aria-hidden="true"></span>
+              </summary>
+              <div className="rm-card-body">
                 <div className="rm-legend">
                   {line.shape !== "loop" &&
                     line.types.map((t) => (
@@ -348,14 +349,14 @@ export default function YanakaRouteMapPage() {
                     ))}
                   <span className="rm-note">{line.note || rm.note}</span>
                 </div>
+                {/* 路線図(駅数が多いので横スクロール) */}
+                <div className="rm-scroll">
+                  {line.shape === "loop" ? <LoopSvg line={line} /> : <RouteSvg line={line} />}
+                </div>
+                <p className="rm-hint">← 横にスクロールできます →</p>
+                <Downloads line={line} />
               </div>
-              {/* 路線図(駅数が多いので横スクロール) */}
-              <div className="rm-scroll">
-                {line.shape === "loop" ? <LoopSvg line={line} /> : <RouteSvg line={line} />}
-              </div>
-              <p className="rm-hint">← 横にスクロールできます →</p>
-              <Downloads line={line} />
-            </div>
+            </details>
           ))}
         </section>
       </main>
