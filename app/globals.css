@@ -135,6 +135,26 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .yk-highlights li{position:relative;padding-left:18px;font-size:.9rem;color:var(--sign-ink)}
 .yk-highlights li::before{content:"●";position:absolute;left:0;color:var(--ynr-yellow);font-size:.7rem;top:.25em}
 .yk-note{margin-top:12px;font-size:.82rem;color:var(--caption);font-weight:600}
+/* 時刻表(運転時刻表ボード・王道スタイル) */
+.tt-banner{background:var(--ynr-green);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 20px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.tt-banner-title h2{font-weight:900;font-size:1.4rem;letter-spacing:.04em}
+.tt-banner-title .en{font-size:.78rem;font-weight:600;opacity:.92;margin-top:2px}
+.tt-banner-dir{font-weight:700;font-size:1.02rem;text-align:right;white-space:nowrap}
+.tt-banner-dir .en{display:block;font-size:.7rem;font-weight:600;opacity:.92}
+.tt-subhead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:9px 14px;background:#eef2f4;border-left:2px solid var(--sign-ink);border-right:2px solid var(--sign-ink)}
+.tt-subhead-station{font-weight:900;font-size:1.12rem}
+.tt-subhead-kind{font-weight:700;color:var(--ynr-green)}
+.tt-board{border:2px solid var(--sign-ink)}
+.tt-row{display:flex;align-items:stretch;min-height:34px}
+.tt-row:nth-child(even){background:#e9f3fb}
+.tt-hour{flex:none;width:46px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.15rem;color:var(--sign-ink);border-right:1px solid #cfd6db}
+.tt-mins{flex:1;display:flex;flex-wrap:wrap;align-items:center;gap:3px 12px;padding:6px 12px;min-width:0}
+.tt-min{font-weight:700;font-size:1.02rem;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.tt-mark{font-size:.7em;vertical-align:.15em;margin-right:1px}
+.tt-legendbox{display:flex;align-items:center;gap:12px;border:2px solid var(--sign-ink);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:10px 14px;background:#fafbfc;flex-wrap:wrap}
+.tt-legendbox-label{flex:none;background:var(--sign-ink);color:#fff;padding:3px 10px;border-radius:4px;font-size:.76rem;font-weight:700}
+.tt-legendbox-items{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.85rem;font-weight:700}
+.tt-imgnote{margin-top:8px;font-size:.78rem;color:var(--caption);font-weight:600}
 /* お知らせ: 価格バッジ */
 .yk-price{margin-top:12px}
 .yk-price-amount{display:inline-block;background:var(--ynr-green);color:#fff;font-weight:900;font-size:1.15rem;padding:5px 14px;border-radius:6px;letter-spacing:.02em}
