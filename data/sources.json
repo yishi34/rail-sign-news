@@ -25,6 +25,18 @@
       "name": "トラベル Watch",
       "feedUrl": "https://travel.watch.impress.co.jp/data/rss/1.0/trw/feed.rdf",
       "filterRequired": true
+    },
+    {
+      "id": "railf-jp",
+      "name": "railf.jp",
+      "feedUrl": "https://railf.jp/rss/rss.xml",
+      "filterRequired": true
+    },
+    {
+      "id": "trafficnews-railway",
+      "name": "乗りものニュース",
+      "feedUrl": "https://trafficnews.jp/category/railway/feed",
+      "filterRequired": true
     }
   ]
 }
