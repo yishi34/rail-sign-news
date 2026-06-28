@@ -37,6 +37,12 @@
       "name": "乗りものニュース",
       "feedUrl": "https://trafficnews.jp/category/railway/feed",
       "filterRequired": true
+    },
+    {
+      "id": "2nd-train",
+      "name": "2nd-train",
+      "feedUrl": "https://2nd-train.net/rss.xml",
+      "filterRequired": true
     }
   ]
 }
