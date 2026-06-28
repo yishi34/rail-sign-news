@@ -13,7 +13,7 @@ function TimetableCard({ timetable, index }) {
   const cardCode = timetable.code || `TT${String(index + 1).padStart(2, "0")}`;
 
   return (
-    <details className="tt-card" open={index === 0}>
+    <details className="tt-card">
       <summary className="tt-card-summary">
         <span className="tt-card-code en">{cardCode}</span>
         <span className="tt-card-main">
@@ -24,6 +24,7 @@ function TimetableCard({ timetable, index }) {
           <span>{timetable.station}駅 発</span>
           <span>{timetable.direction}</span>
         </span>
+        <span className="tt-toggle" aria-hidden="true"></span>
       </summary>
 
       <div className="tt-card-panel">

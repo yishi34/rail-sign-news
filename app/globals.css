@@ -142,8 +142,10 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .tt-card[open]{box-shadow:0 4px 12px rgba(0,0,0,.1)}
 .tt-card-summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(180px,auto) auto;align-items:center;gap:14px;padding:14px 16px;border-top:8px solid var(--ynr-band);background:#fff}
 .tt-card-summary::-webkit-details-marker{display:none}
-.tt-card-summary::after{content:"+";width:30px;height:30px;border-radius:50%;background:var(--sign-ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;line-height:1}
-.tt-card[open] .tt-card-summary::after{content:"-"}
+.tt-toggle{font-size:.82rem;font-weight:900;color:var(--sign-ink);background:var(--sign-white);border:2px solid var(--ynr-green);border-radius:6px;padding:6px 14px;line-height:1;white-space:nowrap}
+.tt-toggle::before{content:"表示"}
+.tt-card[open] .tt-toggle{background:var(--ynr-green);color:#fff}
+.tt-card[open] .tt-toggle::before{content:"非表示"}
 .tt-card-code{width:52px;height:52px;border:3px solid var(--ynr-green);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.1rem;color:var(--ynr-green);background:#fff}
 .tt-card-main{min-width:0;display:grid;gap:2px}
 .tt-card-line{font-weight:900;font-size:1.18rem;letter-spacing:.03em}
@@ -174,6 +176,7 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
   .tt-card-code{width:44px;height:44px;font-size:.95rem}
   .tt-card-line{font-size:1.02rem}
   .tt-card-meta{grid-column:1/-1;text-align:left;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.8rem}
+  .tt-toggle{grid-column:3;grid-row:1}
   .tt-card-panel{padding:0 10px 12px}
   .tt-banner{display:grid;grid-template-columns:1fr;padding:14px 16px;align-items:flex-start}
   .tt-banner-title h2{font-size:1.16rem}

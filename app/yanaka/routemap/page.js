@@ -328,8 +328,8 @@ export default function YanakaRouteMapPage() {
 
       <main className="yk-main">
         <section>
-          {rm.lines.map((line, index) => (
-            <details className="rm-card" key={line.id} open={index === 0}>
+          {rm.lines.map((line) => (
+            <details className="rm-card" key={line.id}>
               <summary className="rm-card-summary">
                 <span className="rm-line-band"></span>
                 <span className="rm-card-title">
