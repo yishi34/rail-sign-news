@@ -81,7 +81,8 @@
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "路線図をみる", "href": "/yanaka/routemap" },
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "03", "status": "時刻表をみる", "href": "/yanaka/timetable" },
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "04", "status": "年表をみる", "href": "/yanaka/history" },
-      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" }
+      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" },
+      { "title": "浅野線", "en": "ASANO TRAM LINE", "code": "AS", "num": "01", "status": "路線図をみる", "href": "/yanaka/asano/routemap" }
     ]
   },
   "history": {
