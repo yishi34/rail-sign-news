@@ -81,8 +81,7 @@
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "路線図をみる", "href": "/yanaka/routemap" },
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "03", "status": "時刻表をみる", "href": "/yanaka/timetable" },
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "04", "status": "年表をみる", "href": "/yanaka/history" },
-      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" },
-      { "title": "浅野線", "en": "ASANO TRAM LINE", "code": "AS", "num": "01", "status": "路線図をみる", "href": "/yanaka/asano/routemap" }
+      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" }
     ]
   },
   "history": {
@@ -443,6 +442,49 @@
           { "name": "新豊洲", "rank": 1, "transfer": ["ゆりかもめ"] },
           { "name": "新有馬", "rank": 1 },
           { "name": "谷中帝都国立臨海公園", "rank": 1 }
+        ]
+      },
+      {
+        "id": "asano",
+        "name": "谷鉄 浅野線",
+        "nameEn": "ASANO TRAM LINE",
+        "shape": "tram",
+        "note": "これはイメージ路線図です。谷中日本鉄道の都心路面電車として、三ノ輪橋から銀座一丁目までを結びます。",
+        "color": "#c83a2d",
+        "types": [
+          { "id": "loc", "label": "普通", "color": "#c83a2d", "rank": 1 }
+        ],
+        "stats": {
+          "stops": 25,
+          "dedicatedStops": 12,
+          "streetStops": 13
+        },
+        "stations": [
+          { "name": "三ノ輪橋", "rank": 1, "track": "dedicated", "transfer": ["都電荒川線"] },
+          { "name": "荒川一中前", "rank": 1, "track": "dedicated", "transfer": ["都電荒川線"] },
+          { "name": "南千住西", "rank": 1, "track": "dedicated", "transfer": ["JR常磐線", "東京メトロ日比谷線"] },
+          { "name": "日本堤", "rank": 1, "track": "dedicated" },
+          { "name": "吉原大門", "rank": 1, "track": "dedicated" },
+          { "name": "千束", "rank": 1, "track": "dedicated" },
+          { "name": "浅草寺北", "rank": 1, "track": "dedicated" },
+          { "name": "浅草", "rank": 1, "track": "dedicated", "transfer": ["東武スカイツリーライン", "東京メトロ銀座線", "都営浅草線"] },
+          { "name": "田原町", "rank": 1, "track": "dedicated", "transfer": ["東京メトロ銀座線"] },
+          { "name": "稲荷町", "rank": 1, "track": "dedicated", "transfer": ["東京メトロ銀座線"] },
+          { "name": "上野", "rank": 1, "track": "dedicated", "transfer": ["JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] },
+          { "name": "上野広小路", "rank": 1, "track": "dedicated", "transfer": ["東京メトロ銀座線", "都営大江戸線"] },
+          { "name": "御徒町", "rank": 1, "track": "street", "transfer": ["JR山手線", "JR京浜東北線"] },
+          { "name": "末広町", "rank": 1, "track": "street", "transfer": ["東京メトロ銀座線"] },
+          { "name": "秋葉原電気街", "rank": 1, "track": "street" },
+          { "name": "秋葉原", "rank": 1, "track": "street", "transfer": ["JR各線", "東京メトロ日比谷線", "つくばエクスプレス"] },
+          { "name": "岩本町", "rank": 1, "track": "street", "transfer": ["都営新宿線"] },
+          { "name": "神田須田町", "rank": 1, "track": "street" },
+          { "name": "新神田", "rank": 1, "track": "street", "transfer": ["谷鉄中央線", "JR各線", "東京メトロ銀座線"] },
+          { "name": "新日本橋", "rank": 1, "track": "street", "transfer": ["JR総武快速線"] },
+          { "name": "日本橋室町", "rank": 1, "track": "street" },
+          { "name": "三越前", "rank": 1, "track": "street", "transfer": ["東京メトロ銀座線", "東京メトロ半蔵門線"] },
+          { "name": "大手町東", "rank": 1, "track": "street", "transfer": ["東京メトロ各線", "都営三田線"] },
+          { "name": "東京駅北口", "rank": 1, "track": "street", "transfer": ["JR各線", "東海道新幹線", "東北・上越・北陸新幹線"] },
+          { "name": "銀座一丁目", "rank": 1, "track": "street", "transfer": ["東京メトロ有楽町線"] }
         ]
       }
     ]

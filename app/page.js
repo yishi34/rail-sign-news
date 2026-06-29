@@ -5,7 +5,6 @@ import categories from "../data/categories.json";
 import officialLinks from "../data/official-links.json";
 import channels from "../data/channels.json";
 import yanaka from "../data/yanaka.json";
-import asanoLine from "../data/yanaka-asano.json";
 
 // 各カテゴリに表示する記事の最大数(データ自体は data/ に最大200件保持)
 const MAX_PER_CATEGORY = 6;
@@ -143,27 +142,6 @@ export default function Home() {
                   <span className="fiction-label">{yanaka.label}</span>
                   <h3>{yanaka.title}</h3>
                   <p>{yanaka.description}</p>
-                </div>
-              </div>
-              <div className="band"></div>
-            </a>
-          </section>
-
-          {/* 谷中日本鉄道 浅野線(架空路面電車) */}
-          <section>
-            <div className="line-head">
-              <span className="line-band" style={{ background: asanoLine.color }}></span>
-              <h2>谷中日本鉄道の路面電車</h2>
-              <span className="en-sub en">YNR TRAMWAY</span>
-            </div>
-            <a className="fiction-rail asano-tram-card" href={asanoLine.url}>
-              <div className="band"></div>
-              <div className="inner">
-                <Badge code={asanoLine.code} num="01" />
-                <div>
-                  <span className="fiction-label tram-label">{asanoLine.label}</span>
-                  <h3>{asanoLine.title}</h3>
-                  <p>{asanoLine.description}</p>
                 </div>
               </div>
               <div className="band"></div>

@@ -20,6 +20,14 @@ const TR_LH = 13; // 乗換表記の行の高さ
 const BRANCH_NAME_GAP = 20; // 本線の駅名の下端から支線の線までの余白
 const BRANCH_CORNER_R = 16; // 支線の曲がり角の丸み(カーブ)
 
+const TRAM_LEFT = 72;
+const TRAM_GAP = 112;
+const TRAM_LINE_Y = 76;
+const TRAM_NAME_Y = 98;
+const TRAM_NAME_CH = 16;
+const TRAM_TR_GAP = 16;
+const TRAM_TR_LH = 12;
+
 // 種別(types)は rank の大きい順=上の段。stop条件: 駅の rank >= 種別の rank
 function RouteSvg({ line }) {
   const { types, stations, branches } = line;
@@ -308,6 +316,70 @@ function LoopSvg({ line }) {
   );
 }
 
+function TramSvg({ line }) {
+  const { stations } = line;
+  const color = line.color || line.types[line.types.length - 1].color;
+  const lastIndex = stations.length - 1;
+  const xAt = (index) => TRAM_LEFT + index * TRAM_GAP;
+  const width = xAt(lastIndex) + 80;
+  const maxDepth = Math.max(
+    ...stations.map((station) => {
+      const transferCount = station.transfer ? station.transfer.length : 0;
+      return station.name.length * TRAM_NAME_CH + (transferCount ? TRAM_TR_GAP + transferCount * TRAM_TR_LH : 0);
+    })
+  );
+  const height = TRAM_NAME_Y + maxDepth + 28;
+  const firstX = xAt(0);
+  const lastX = xAt(lastIndex);
+
+  return (
+    <svg
+      className="rm-svg"
+      id={`rm-svg-${line.id}`}
+      viewBox={`0 0 ${width} ${height}`}
+      width={width}
+      height={height}
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label={`${line.name} 路線図`}
+    >
+      <line
+        x1={firstX}
+        y1={TRAM_LINE_Y}
+        x2={lastX}
+        y2={TRAM_LINE_Y}
+        stroke={color}
+        strokeWidth="10"
+        strokeLinecap="round"
+      />
+
+      {stations.map((station, index) => {
+        const x = xAt(index);
+        return (
+          <g key={`${station.name}-${index}`}>
+            <circle cx={x} cy={TRAM_LINE_Y} r="6" fill="#fff" stroke={color} strokeWidth="3" />
+            <text x={x} y={TRAM_NAME_Y} className="rm-name" writingMode="vertical-rl" textAnchor="start">
+              {station.name}
+            </text>
+            {station.transfer &&
+              station.transfer.map((transfer, transferIndex) => (
+                <text
+                  key={transfer}
+                  x={x}
+                  y={TRAM_NAME_Y + station.name.length * TRAM_NAME_CH + TRAM_TR_GAP + transferIndex * TRAM_TR_LH}
+                  className="rm-transfer"
+                  textAnchor="middle"
+                >
+                  {transfer}
+                </text>
+              ))}
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 export default function YanakaRouteMapPage() {
   const rm = yanaka.routemap;
 
@@ -351,7 +423,13 @@ export default function YanakaRouteMapPage() {
                 </div>
                 {/* 路線図(駅数が多いので横スクロール) */}
                 <div className="rm-scroll">
-                  {line.shape === "loop" ? <LoopSvg line={line} /> : <RouteSvg line={line} />}
+                  {line.shape === "loop" ? (
+                    <LoopSvg line={line} />
+                  ) : line.shape === "tram" ? (
+                    <TramSvg line={line} />
+                  ) : (
+                    <RouteSvg line={line} />
+                  )}
                 </div>
                 <p className="rm-hint">← 横にスクロールできます →</p>
                 <Downloads line={line} />
