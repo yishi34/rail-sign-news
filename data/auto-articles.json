@@ -1,5 +1,68 @@
 [
   {
+    "title": "観光・体験チケットが最大6000円引き「EX旅先予約 夏の大セール」。東海道新幹線沿線の水族館や特別展ほか",
+    "category": "travel",
+    "date": "2026-07-02",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2121694.html"
+    }
+  },
+  {
+    "title": "「ひのとり」による団体臨時列車が賢島まで入線",
+    "category": "service",
+    "date": "2026-07-02",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/02/044500.html"
+    }
+  },
+  {
+    "title": "中央本線勝川駅改札口付近が「ぴよりん」イラストで装飾される",
+    "category": "news",
+    "date": "2026-07-02",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/02/043000.html"
+    }
+  },
+  {
+    "title": "水島臨海鉄道MRT304に「貨物・旅客4社連絡スタンプラリー」ヘッドマーク",
+    "category": "news",
+    "date": "2026-07-02",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/02/041500.html"
+    }
+  },
+  {
+    "title": "東急，日吉駅コンコース・自由通路の天井リニューアル工事が竣工",
+    "category": "news",
+    "date": "2026-07-02",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/02/040000.html"
+    }
+  },
+  {
+    "title": "新大阪「夜発」→博多「朝着」の新幹線が運行へ 所要時間は7時間50分！ 引退迫る500系が日付を跨いで走行",
+    "category": "cars",
+    "date": "2026-07-02",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/683864"
+    }
+  },
+  {
+    "title": "【名鉄】9100系9110F舞木検査場出場試運転",
+    "category": "cars",
+    "date": "2026-07-02",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74180/"
+    }
+  },
+  {
     "title": "宿なし・渋滞なしで長岡花火＆大曲の花火へ！ JR東日本が「夜行団体臨時列車」ツアーを発売、ムーンライトえちご彷彿のE257系新潟行きも",
     "category": "service",
     "date": "2026-07-01",
@@ -312,6 +375,69 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74152/"
+    }
+  },
+  {
+    "title": "【JR東】E6系Z1編成が新幹線総合車両ベース出場試運転",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74179/"
+    }
+  },
+  {
+    "title": "【JR西】321系D29編成が網干総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74176/"
+    }
+  },
+  {
+    "title": "【JR西】105系K02編成が復刻「トリコロール色」のまま下関総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74175/"
+    }
+  },
+  {
+    "title": "【名市交】2000形2132Hが機器更新を終え名港工場出場試運転",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74174/"
+    }
+  },
+  {
+    "title": "【ことでん】2000形2001編成がレトロ電車120号と連結し通電確認",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74173/"
+    }
+  },
+  {
+    "title": "【ことでん】2000形2001編成がレトロ電車120号と連結し通電確認",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74172/"
+    }
+  },
+  {
+    "title": "【メトロ】2000系2147F中野工場出場試運転",
+    "category": "cars",
+    "date": "2026-07-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74162/"
     }
   },
   {
@@ -1671,132 +1797,6 @@
     "source": {
       "name": "トラベル Watch",
       "url": "https://travel.watch.impress.co.jp/docs/news/2119325.html"
-    }
-  },
-  {
-    "title": "中央線の立役者だった「明治の鉄道王」 全国展開した「軽便王国」は建設費10分の1も…10年あまりで見えた限界",
-    "category": "news",
-    "date": "2026-06-23",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/679365"
-    }
-  },
-  {
-    "title": "JR新快速の「元ライバル」ついに最後の1本に！ 扉の数が運命を分けた？ 阪急京都線のかつての「顔」",
-    "category": "news",
-    "date": "2026-06-23",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/680328"
-    }
-  },
-  {
-    "title": "札幌⇔網走「7時間かけて走る豪華列車」が来年から運行開始！ 列車名や運行計画が明らかに",
-    "category": "news",
-    "date": "2026-06-23",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/681169"
-    }
-  },
-  {
-    "title": "運転士の「デカいカバン」その中身は？ “鉄道のプロ”が常に持ち歩く「相棒アイテム」、実は意外なものも",
-    "category": "news",
-    "date": "2026-06-23",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/678290"
-    }
-  },
-  {
-    "title": "朝の混雑率53％で「あり方検討」関東鉄道 竜ヶ崎線。今後は廃止か、救済か？",
-    "category": "news",
-    "date": "2026-06-22",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2118823.html"
-    }
-  },
-  {
-    "title": "Suicaのペンギン撮影会や新作グッズ販売も。東京駅で「Suicaの夏まつり」開催",
-    "category": "news",
-    "date": "2026-06-22",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2118794.html"
-    }
-  },
-  {
-    "title": "黒部宇奈月キャニオンルート、10月から一般公開。見学ツアーの造成開始、黒部峡谷トロッコ電車の復旧工事が本格スタート",
-    "category": "travel",
-    "date": "2026-06-22",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2118656.html"
-    }
-  },
-  {
-    "title": "日本最大級の駅弁店「駅弁屋 祭」が7月に臨時休業！【東京駅】休業･時短営業スケジュールと代替店舗まとめ、新幹線に乗る前にチェック",
-    "category": "travel",
-    "date": "2026-06-22",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13031183.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "ChatGPTなどのAIと連携、車両管理向け車載MCPコネクター発表…Geotab",
-    "category": "cars",
-    "date": "2026-06-22",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/06/22/412999.html"
-    }
-  },
-  {
-    "title": "500系新幹線＆ドクターイエローが2027年1月ついに引退へ。JR西日本がラストラン特別企画や記念グッズ発表",
-    "category": "cars",
-    "date": "2026-06-22",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2119028.html"
-    }
-  },
-  {
-    "title": "JR東海、東京→大阪の“車中泊”新幹線「東海道ルミエールエクスプレス」新登場。1日限定",
-    "category": "news",
-    "date": "2026-06-22",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2119009.html"
-    }
-  },
-  {
-    "title": "「ホームドア、なぜ一気に設置しない!?」安全性の前に立ちはだかるハードル、打ち破るための“最新技術”とは",
-    "category": "news",
-    "date": "2026-06-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/676264"
-    }
-  },
-  {
-    "title": "ついに“Xデー”が…！ 元「日本最速の新幹線」500系、引退までの全スケジュールが判明 戦闘機っぽいルックスが特徴",
-    "category": "cars",
-    "date": "2026-06-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/680471"
-    }
-  },
-  {
-    "title": "東海道新幹線で「当日出発・翌朝到着」の列車が8月運行！ 途中駅で夜間に長時間停車 東京－新大阪を約9時間",
-    "category": "news",
-    "date": "2026-06-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/680609"
     }
   }
 ]
