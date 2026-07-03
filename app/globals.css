@@ -306,7 +306,7 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .maker-field + .maker-field{margin-top:10px}
 .maker-field input,.maker-field select,.maker-type-name,.maker-stop-row input,.maker-branch-row input{width:100%;min-width:0;border:2px solid #d8dee3;border-radius:6px;background:#fff;color:var(--sign-ink);font:inherit;font-weight:700;padding:8px 10px}
 .maker-field input:focus,.maker-field select:focus,.maker-type-name:focus,.maker-stop-row input:focus,.maker-branch-row input:focus{outline:3px solid rgba(245,169,0,.35);border-color:var(--ynr-green)}
-.maker-stop-row input::placeholder,.maker-field input::placeholder,.maker-type-name::placeholder{color:#9aa1a6;font-weight:600}
+.maker-stop-row input::placeholder,.maker-field input::placeholder,.maker-type-name::placeholder,.maker-branch-row input::placeholder{color:#9aa1a6;font-weight:600}
 .maker-secondary,.maker-mini,.maker-generate,.maker-export button{font-family:inherit;font-weight:900;border-radius:6px;cursor:pointer;background:#fff;color:var(--sign-ink);border:2px solid var(--ynr-green);line-height:1}
 .maker-secondary{padding:7px 14px;font-size:.82rem;white-space:nowrap}
 .maker-mini{padding:7px 9px;font-size:.72rem;white-space:nowrap}
@@ -321,12 +321,13 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .maker-help,.maker-empty{font-size:.8rem;color:var(--caption);font-weight:700}
 .maker-empty{margin-top:8px}
 .maker-type-list{display:grid;gap:10px}
-.maker-type-row{display:grid;grid-template-columns:24px minmax(86px,1fr) 42px minmax(104px,auto) auto;align-items:center;gap:8px}
+.maker-type-row{display:grid;grid-template-columns:24px minmax(110px,1fr) 42px auto;align-items:center;gap:8px 10px}
 .maker-type-num{font-weight:900;text-align:center}
 .maker-color-input{width:42px;height:38px;border:2px solid #d8dee3;border-radius:6px;background:#fff;padding:3px;cursor:pointer}
-.maker-swatches{display:flex;flex-wrap:wrap;gap:5px}
+.maker-swatches{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:5px}
 .maker-swatch{width:22px;height:22px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #b9c1c8;cursor:pointer}
 .maker-swatch:focus-visible{outline:3px solid var(--ynr-yellow);outline-offset:2px}
+.maker-swatch:disabled{cursor:not-allowed;opacity:.28}
 .maker-stop-table{overflow-x:auto;display:grid;gap:8px}
 .maker-stop-row{display:grid;align-items:center;gap:8px;min-width:max-content}
 .maker-stop-head{font-size:.72rem;font-weight:900;color:var(--caption);padding:0 0 2px}
@@ -348,7 +349,7 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .maker-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:12px 18px 0;font-size:.84rem;font-weight:900}
 .maker-legend span{display:inline-flex;align-items:center;gap:7px}
 .maker-legend i{width:14px;height:14px;border-radius:50%;border:3px solid #ccc;background:#fff;display:inline-block}
-.maker-scroll{overflow:auto;max-height:72vh;padding:10px 18px 18px}
+.maker-scroll{overflow-x:auto;padding:10px 18px 18px}
 .maker-svg{display:block}
 .maker-svg .mk-tier{font-size:15px;font-weight:900;font-family:"Noto Sans JP",sans-serif}
 .maker-svg .mk-name{font-size:15px;font-weight:600;fill:var(--caption);font-family:"Noto Sans JP",sans-serif}
@@ -361,13 +362,10 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:640px){
   .maker-box{padding:14px}
-  .maker-type-row{grid-template-columns:20px minmax(110px,1fr) 42px auto}
-  .maker-swatches{grid-column:1/-1}
   .maker-mini{padding-left:8px;padding-right:8px}
   .maker-preview-head{display:grid;align-items:start}
   .maker-preview-actions{justify-content:start}
   .maker-export{justify-content:start}
-  .maker-scroll{max-height:none}
 }
 
 /* 車両紹介ページ(/yanaka/trains): 横2列のカード */
