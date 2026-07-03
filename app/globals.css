@@ -306,7 +306,7 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .maker-field + .maker-field{margin-top:10px}
 .maker-field input,.maker-field select,.maker-type-name,.maker-stop-row input,.maker-branch-row input{width:100%;min-width:0;border:2px solid #d8dee3;border-radius:6px;background:#fff;color:var(--sign-ink);font:inherit;font-weight:700;padding:8px 10px}
 .maker-field input:focus,.maker-field select:focus,.maker-type-name:focus,.maker-stop-row input:focus,.maker-branch-row input:focus{outline:3px solid rgba(245,169,0,.35);border-color:var(--ynr-green)}
-.maker-stop-row input::placeholder{color:#9aa1a6;font-weight:600}
+.maker-stop-row input::placeholder,.maker-field input::placeholder,.maker-type-name::placeholder{color:#9aa1a6;font-weight:600}
 .maker-secondary,.maker-mini,.maker-generate,.maker-export button{font-family:inherit;font-weight:900;border-radius:6px;cursor:pointer;background:#fff;color:var(--sign-ink);border:2px solid var(--ynr-green);line-height:1}
 .maker-secondary{padding:7px 14px;font-size:.82rem;white-space:nowrap}
 .maker-mini{padding:7px 9px;font-size:.72rem;white-space:nowrap}
