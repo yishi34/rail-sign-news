@@ -291,6 +291,79 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .rm-dl-btn:hover{background:var(--ynr-green);color:#fff}
 .rm-dl-btn:focus-visible{outline:3px solid var(--ynr-yellow);outline-offset:2px}
 
+/* 路線図メーカー(/yanaka/routemap-maker) */
+.maker-main{max-width:1220px}
+.maker-tool{min-width:0}
+.maker-layout{display:grid;grid-template-columns:minmax(320px,430px) minmax(0,1fr);gap:20px;align-items:start}
+.maker-controls{display:grid;gap:14px;min-width:0}
+.maker-box,.maker-preview{background:var(--sign-white);border:1px solid #dfe4e8;border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);overflow:hidden;min-width:0}
+.maker-box{padding:16px}
+.maker-box-head,.maker-preview-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.maker-box-head h3,.maker-preview-head h3{font-weight:900;font-size:1.08rem;letter-spacing:.04em;line-height:1.35}
+.maker-preview-head{padding:16px 18px 12px;margin-bottom:0;border-top:8px solid var(--ynr-green);border-bottom:1px solid #dfe4e8}
+.maker-preview-head .en{display:block;color:var(--caption);font-weight:700;font-size:.78rem;margin-top:2px}
+.maker-field{display:grid;gap:6px;font-size:.82rem;font-weight:900;color:var(--caption)}
+.maker-field + .maker-field{margin-top:10px}
+.maker-field input,.maker-field select,.maker-type-name,.maker-stop-row input,.maker-branch-row input{width:100%;min-width:0;border:2px solid #d8dee3;border-radius:6px;background:#fff;color:var(--sign-ink);font:inherit;font-weight:700;padding:8px 10px}
+.maker-field input:focus,.maker-field select:focus,.maker-type-name:focus,.maker-stop-row input:focus,.maker-branch-row input:focus{outline:3px solid rgba(245,169,0,.35);border-color:var(--ynr-green)}
+.maker-secondary,.maker-mini,.maker-export button{font-family:inherit;font-weight:900;border-radius:6px;cursor:pointer;background:#fff;color:var(--sign-ink);border:2px solid var(--ynr-green);line-height:1}
+.maker-secondary{padding:7px 14px;font-size:.82rem;white-space:nowrap}
+.maker-mini{padding:7px 9px;font-size:.72rem;white-space:nowrap}
+.maker-secondary:hover,.maker-mini:hover,.maker-export button:hover{background:var(--ynr-green);color:#fff}
+.maker-export button:disabled{cursor:not-allowed;border-color:#c8ced3;color:#8b9399;background:#eef1f3}
+.maker-export button:disabled:hover{color:#8b9399;background:#eef1f3}
+.maker-errors{border:2px solid #c83a2d;background:#fff4f2;color:#8b1e18;border-radius:var(--radius);padding:12px 14px;font-size:.84rem;font-weight:700}
+.maker-errors strong{display:block;font-weight:900;margin-bottom:4px}
+.maker-errors ul{margin-left:1.2em}
+.maker-preview-error{padding:10px 18px 0;color:#c83a2d;font-size:.82rem;font-weight:900}
+.maker-help,.maker-empty{font-size:.8rem;color:var(--caption);font-weight:700}
+.maker-empty{margin-top:8px}
+.maker-type-list{display:grid;gap:10px}
+.maker-type-row{display:grid;grid-template-columns:minmax(86px,1fr) 42px minmax(104px,auto) auto;align-items:center;gap:8px}
+.maker-color-input{width:42px;height:38px;border:2px solid #d8dee3;border-radius:6px;background:#fff;padding:3px;cursor:pointer}
+.maker-swatches{display:flex;flex-wrap:wrap;gap:5px}
+.maker-swatch{width:22px;height:22px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #b9c1c8;cursor:pointer}
+.maker-swatch:focus-visible{outline:3px solid var(--ynr-yellow);outline-offset:2px}
+.maker-stop-table{overflow-x:auto;display:grid;gap:8px}
+.maker-stop-row{display:grid;align-items:center;gap:8px;min-width:max-content}
+.maker-stop-head{font-size:.72rem;font-weight:900;color:var(--caption);padding:0 0 2px}
+.maker-check{display:flex;align-items:center;justify-content:center}
+.maker-check input{position:absolute;opacity:0;pointer-events:none}
+.maker-check span{width:30px;height:30px;border-radius:50%;border:3px solid #cfd6db;background:#fff;display:block}
+.maker-check input:checked + span{border-color:var(--check-color);box-shadow:inset 0 0 0 6px #fff;background:var(--check-color)}
+.maker-check input:focus-visible + span{outline:3px solid var(--ynr-yellow);outline-offset:2px}
+.maker-branch-list{display:grid;gap:12px;margin-top:10px}
+.maker-branch-card{border:1px solid #dfe4e8;border-radius:6px;background:#fafbfc;padding:12px;display:grid;gap:10px}
+.maker-branch-head,.maker-branch-subhead,.maker-branch-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px}
+.maker-branch-subhead{font-size:.78rem;font-weight:900;color:var(--caption)}
+.maker-branch-stations{display:grid;gap:8px}
+.maker-preview{position:sticky;top:14px}
+.maker-export{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.maker-export button{padding:8px 13px;font-size:.8rem}
+.maker-legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:12px 18px 0;font-size:.84rem;font-weight:900}
+.maker-legend span{display:inline-flex;align-items:center;gap:7px}
+.maker-legend i{width:14px;height:14px;border-radius:50%;border:3px solid #ccc;background:#fff;display:inline-block}
+.maker-scroll{overflow:auto;max-height:72vh;padding:10px 18px 18px}
+.maker-svg{display:block}
+.maker-svg .mk-tier{font-size:15px;font-weight:900;font-family:"Noto Sans JP",sans-serif}
+.maker-svg .mk-name{font-size:15px;font-weight:600;fill:var(--caption);font-family:"Noto Sans JP",sans-serif}
+.maker-svg .mk-name-major{font-weight:900;fill:var(--sign-ink)}
+.maker-svg .mk-pill-text{font-size:13px;font-weight:900;fill:#fff;font-family:"Noto Sans JP",sans-serif}
+.maker-svg .mk-branch-label{font-size:13px;font-weight:900;fill:var(--sign-ink);font-family:"Noto Sans JP",sans-serif}
+@media (max-width:960px){
+  .maker-layout{grid-template-columns:1fr}
+  .maker-preview{position:static}
+}
+@media (max-width:640px){
+  .maker-box{padding:14px}
+  .maker-type-row{grid-template-columns:minmax(110px,1fr) 42px auto}
+  .maker-swatches{grid-column:1/-1}
+  .maker-mini{padding-left:8px;padding-right:8px}
+  .maker-preview-head{display:grid;align-items:start}
+  .maker-export{justify-content:start}
+  .maker-scroll{max-height:none}
+}
+
 /* 車両紹介ページ(/yanaka/trains): 横2列のカード */
 .tr-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
 .tr-card{background:var(--sign-white);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}

@@ -13,28 +13,28 @@
     "companyEn": "YANAKA JAPAN RAILWAY CO., LTD. — YNR",
     "topNews": {
       "label": "トップニュース",
-      "flag": "開催速報 / TRAIN FESTA",
-      "title": "やなてつトレインフェスタ2026",
-      "body": "谷中日本鉄道の感謝祭「やなてつトレインフェスタ2026」を、新西大寺車両検修場にて開催します!ふだんは入れない車両のメンテナンス工場を特別公開。家族みんなで、谷鉄の「はたらく現場」を体験しよう。",
-      "image": "/yanaka/trainfes2026.jpg",
-      "imageAlt": "やなてつトレインフェスタ2026 新西大寺車両検修場の一般公開イメージ",
+      "flag": "新機能 / ROUTE MAP MAKER",
+      "title": "路線図メーカー登場！",
+      "body": "谷中日本鉄道の路線図をブラウザ上で自由に作れる「路線図メーカー」が登場しました。路線名、停車駅、種別色、停車パターンを入力すると、駅名標風の路線図がその場で更新されます。支線分岐やPDF・PNG・SVG出力にも対応しているので、架空鉄道のアイデアをそのまま形にして遊べます。",
+      "image": "/yanaka/routemap-maker-screen.png",
+      "imageAlt": "谷中日本鉄道 路線図メーカーの作成画面",
       "info": [
-        { "label": "日時", "value": "2026年8月23日(土) 10:00〜16:00(雨天決行)" },
-        { "label": "会場", "value": "谷中日本鉄道 新西大寺車両検修場" },
-        { "label": "入場", "value": "無料" }
+        { "label": "公開", "value": "谷中日本鉄道公式サイト ごあんない YN 06" },
+        { "label": "機能", "value": "路線名・停車駅・種別色・支線分岐を編集" },
+        { "label": "出力", "value": "PDF・PNG・SVGに対応" }
       ],
       "highlights": {
-        "label": "おもな内容",
+        "label": "ここが楽しい",
         "items": [
-          "車両工場見学(検修ピット・天井クレーンの実演)",
-          "台車・床下機器の間近展示",
-          "運転台撮影会／こども制服撮影",
-          "洗車機通過体験乗車",
-          "鉄道部品・グッズ販売",
-          "谷中こっこーずコラボブース"
+          "駅名を入れるだけで縦型の路線図が育つ",
+          "急行・特急・普通などの種別色を自由に選べる",
+          "停車駅をチェックするだけで停車パターンを作れる",
+          "各駅停車限定の支線分岐も追加できる",
+          "完成した路線図をPDF・PNG・SVGで残せる",
+          "架空鉄道の路線案を親子で試せる"
         ]
       },
-      "note": "※一部のイベントは有料です。"
+      "note": "※路線図メーカーは架空鉄道を楽しむための試作機能です。"
     },
     "news": {
       "label": "お知らせ",
@@ -81,7 +81,8 @@
       { "title": "路線図", "en": "ROUTE MAP", "code": "YN", "num": "02", "status": "路線図をみる", "href": "/yanaka/routemap" },
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "03", "status": "時刻表をみる", "href": "/yanaka/timetable" },
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "04", "status": "年表をみる", "href": "/yanaka/history" },
-      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" }
+      { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" },
+      { "title": "路線図メーカー", "en": "ROUTE MAP MAKER", "code": "YN", "num": "06", "status": "作成する", "href": "/yanaka/routemap-maker" }
     ]
   },
   "history": {
