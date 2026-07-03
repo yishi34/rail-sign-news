@@ -471,7 +471,7 @@ export default function RouteMapMaker() {
       const next = updater(current);
       const lastIndex = next.stations.length - 1;
       const stations = next.stations.map((station, index) =>
-        index === lastIndex
+        index === 0 || index === lastIndex
           ? { ...station, stops: Object.fromEntries(next.types.map((type) => [type.id, true])) }
           : station
       );
@@ -554,7 +554,7 @@ export default function RouteMapMaker() {
   const toggleStop = (stationIndex, typeId) => {
     updateLineImmediate((current) => {
       if (current.types[0]?.id === typeId) return current;
-      if (stationIndex === current.stations.length - 1) return current;
+      if (stationIndex === 0 || stationIndex === current.stations.length - 1) return current;
       return {
         ...current,
         stations: current.stations.map((station, index) =>
@@ -606,9 +606,9 @@ export default function RouteMapMaker() {
           ...(current.branches || []),
           {
             id,
-            name: `支線${(current.branches || []).length + 1}`,
+            name: "",
             fromIndex: defaultBranchIndex(current.stations, current.types),
-            stations: ["新支線駅1"],
+            stations: [""],
           },
         ],
       };
@@ -817,7 +817,7 @@ export default function RouteMapMaker() {
                 追加
               </button>
             </div>
-            <p className="maker-help">終点(一番下)の駅は全種別停車に固定され、変更はできません。</p>
+            <p className="maker-help">始点(一番上)・終点(一番下)の駅は全種別停車に固定され、変更はできません。</p>
             <div className="maker-stop-table">
               <div
                 className="maker-stop-row maker-stop-head"
@@ -844,8 +844,8 @@ export default function RouteMapMaker() {
                     aria-label={`${stationIndex + 1}番目の駅名`}
                   />
                   {line.types.map((type, typeIndex) => {
-                    const isLastStation = stationIndex === line.stations.length - 1;
-                    const isFixed = typeIndex === 0 || isLastStation;
+                    const isEndStation = stationIndex === 0 || stationIndex === line.stations.length - 1;
+                    const isFixed = typeIndex === 0 || isEndStation;
                     return (
                       <label className="maker-check" key={type.id} style={{ "--check-color": type.color }}>
                         <input
@@ -892,7 +892,7 @@ export default function RouteMapMaker() {
                         className="maker-type-name"
                         value={branch.name}
                         onChange={(e) => updateBranch(branch.id, "name", e.target.value)}
-                        placeholder={SAMPLE_LINE.branches[branchIndex]?.name || ""}
+                        placeholder={SAMPLE_LINE.branches[branchIndex]?.name || `支線${branchIndex + 1}`}
                         aria-label={`${branch.name || "支線"}の支線名`}
                       />
                       <button type="button" className="maker-mini" onClick={() => removeBranch(branch.id)}>
