@@ -53,7 +53,6 @@ const SVG_STYLE = `
 .mk-tier{font-weight:900;font-size:15px;font-family:'Noto Sans JP',sans-serif}
 .mk-name{font-size:15px;font-weight:600;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 .mk-name-major{font-weight:900;fill:#1a1a1a}
-.mk-pill-text{font-size:13px;font-weight:900;fill:#fff;font-family:'Noto Sans JP',sans-serif}
 .mk-branch-label{font-size:13px;font-weight:900;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
 .mk-title{font-size:22px;font-weight:900;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
 .mk-title-en{font-size:12px;font-weight:600;fill:#6e7479;font-family:'Barlow Semi Condensed',sans-serif}
@@ -269,7 +268,7 @@ function MakerSvg({ line }) {
     const branches = line.branches || [];
     const lineX0 = 86;
     const lineGap = 28;
-    const top = 66;
+    const top = 30;
     const stationStep = 68;
     const stopRadius = 7;
     const lineRight = lineX0 + (types.length - 1) * lineGap;
@@ -293,7 +292,6 @@ function MakerSvg({ line }) {
       })
     );
     const height = branchBottom + 52;
-    const pillWidth = Math.max(94, Math.min(width - 36, (line.name || "路線名").length * 15 + 34));
     return {
       types,
       stations,
@@ -310,7 +308,6 @@ function MakerSvg({ line }) {
       width,
       height,
       bottom,
-      pillWidth,
       localType: types[0],
       localTypeIndex: types.length - 1,
       majorType: types[1] || types[0],
@@ -332,10 +329,6 @@ function MakerSvg({ line }) {
       role="img"
       aria-label={`${line.name} 路線図`}
     >
-      <rect x="18" y="16" width={metrics.pillWidth} height="30" rx="15" fill="#b42a2a" />
-      <text x="34" y="36" className="mk-pill-text">
-        {line.name || "路線名"}
-      </text>
       {metrics.types.map((type, typeIndex) => (
         <g key={type.id}>
           <line
@@ -517,10 +510,11 @@ export default function RouteMapMaker() {
   const MAX_TYPES = 4;
 
   const addType = () => {
+    if (line.types.length >= MAX_TYPES) return;
+    const preset = TYPE_PRESETS[line.types.length % TYPE_PRESETS.length];
+    const id = makeId("type");
     updateLineImmediate((current) => {
       if (current.types.length >= MAX_TYPES) return current;
-      const preset = TYPE_PRESETS[current.types.length % TYPE_PRESETS.length];
-      const id = makeId("type");
       return {
         ...current,
         types: [...current.types, { id, ...preset }],
@@ -600,6 +594,8 @@ export default function RouteMapMaker() {
   };
 
   const addBranch = () => {
+    if ((line.branches || []).length >= 1) return;
+    const id = makeId("branch");
     updateLineImmediate((current) => {
       if ((current.branches || []).length >= 1) return current;
       return {
@@ -607,7 +603,7 @@ export default function RouteMapMaker() {
         branches: [
           ...(current.branches || []),
           {
-            id: makeId("branch"),
+            id,
             name: `支線${(current.branches || []).length + 1}`,
             fromIndex: defaultBranchIndex(current.stations, current.types),
             stations: ["新支線駅1"],
