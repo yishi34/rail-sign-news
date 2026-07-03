@@ -511,13 +511,15 @@ export default function RouteMapMaker() {
 
   const addType = () => {
     if (line.types.length >= MAX_TYPES) return;
-    const preset = TYPE_PRESETS[line.types.length % TYPE_PRESETS.length];
+    const usedColors = new Set(line.types.map((t) => t.color));
+    const color =
+      COLOR_SWATCHES.find((c) => !usedColors.has(c)) || TYPE_PRESETS[line.types.length % TYPE_PRESETS.length].color;
     const id = makeId("type");
     updateLineImmediate((current) => {
       if (current.types.length >= MAX_TYPES) return current;
       return {
         ...current,
-        types: [...current.types, { id, ...preset }],
+        types: [...current.types, { id, label: "", color }],
         stations: current.stations.map((station, index) => ({
           ...station,
           stops: { ...station.stops, [id]: index === 0 || index === current.stations.length - 1 },
@@ -570,7 +572,7 @@ export default function RouteMapMaker() {
       stations: [
         ...current.stations,
         {
-          name: `新駅${current.stations.length + 1}`,
+          name: "",
           stops: Object.fromEntries(current.types.map((type) => [type.id, true])),
         },
       ],
@@ -635,7 +637,7 @@ export default function RouteMapMaker() {
     updateLineImmediate((current) => ({
       ...current,
       branches: (current.branches || []).map((branch) =>
-        branch.id === branchId ? { ...branch, stations: [...branch.stations, `新支線駅${branch.stations.length + 1}`] } : branch
+        branch.id === branchId ? { ...branch, stations: [...branch.stations, ""] } : branch
       ),
     }));
   };
@@ -768,7 +770,7 @@ export default function RouteMapMaker() {
                     className="maker-type-name"
                     value={type.label}
                     onChange={(e) => updateType(type.id, "label", e.target.value)}
-                    placeholder={SAMPLE_LINE.types[typeIndex]?.label || ""}
+                    placeholder={SAMPLE_LINE.types[typeIndex]?.label || `種別${typeIndex + 1}`}
                     aria-label={`${type.label || "種別"}の種別名`}
                   />
                   <input
@@ -838,7 +840,7 @@ export default function RouteMapMaker() {
                   <input
                     value={station.name}
                     onChange={(e) => updateStationName(stationIndex, e.target.value)}
-                    placeholder={SAMPLE_LINE.stations[stationIndex]?.name || ""}
+                    placeholder={SAMPLE_LINE.stations[stationIndex]?.name || `新駅${stationIndex + 1}`}
                     aria-label={`${stationIndex + 1}番目の駅名`}
                   />
                   {line.types.map((type, typeIndex) => {
@@ -876,7 +878,9 @@ export default function RouteMapMaker() {
                 追加
               </button>
             </div>
-            <p className="maker-help">支線は①の種別（現在: {localType.label || "種別"}）だけで描画します。支線は1本まで追加できます。</p>
+            <p className="maker-help">
+              支線は①の種別（現在: {localType.label || SAMPLE_LINE.types[0].label}）だけで描画します。支線は1本まで追加できます。
+            </p>
             {(line.branches || []).length === 0 ? (
               <p className="maker-empty">支線なし</p>
             ) : (
@@ -922,7 +926,9 @@ export default function RouteMapMaker() {
                           <input
                             value={station}
                             onChange={(e) => updateBranchStation(branch.id, stationIndex, e.target.value)}
-                            placeholder={SAMPLE_LINE.branches[branchIndex]?.stations[stationIndex] || ""}
+                            placeholder={
+                              SAMPLE_LINE.branches[branchIndex]?.stations[stationIndex] || `新支線駅${stationIndex + 1}`
+                            }
                             aria-label={`${branch.name || "支線"} ${stationIndex + 1}番目の駅名`}
                           />
                           <button type="button" className="maker-mini" onClick={() => removeBranchStation(branch.id, stationIndex)}>
