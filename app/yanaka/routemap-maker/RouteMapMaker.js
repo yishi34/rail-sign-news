@@ -40,6 +40,11 @@ const TYPE_PRESETS = [
 
 const COLOR_SWATCHES = ["#1b7a40", "#f5a900", "#e60012", "#2ca9e1", "#8f76d6", "#c83a2d", "#9acd32", "#1a1a1a"];
 
+const CIRCLED_NUMBERS = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩"];
+function typeNumber(index) {
+  return CIRCLED_NUMBERS[index] || `(${index + 1})`;
+}
+
 const SVG_STYLE = `
 .mk-tier{font-weight:900;font-size:15px;font-family:'Noto Sans JP',sans-serif}
 .mk-name{font-size:15px;font-weight:600;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
@@ -433,23 +438,41 @@ function MakerSvg({ line }) {
   );
 }
 
-export default function RouteMapMaker() {
-  const [line, setLine] = useState(() => cloneLine(SAMPLE_LINE));
-  const validationErrors = useMemo(() => validateLine(line), [line]);
-  const localType = line.types[line.types.length - 1] || { label: "普通", color: "#1b7a40" };
-  const canExport = validationErrors.length === 0;
+function sampleLineForEditing() {
+  const sample = cloneLine(SAMPLE_LINE);
+  sample.stations = sample.stations.map((station) => ({ ...station, name: "" }));
+  return sample;
+}
 
-  const setBasic = (key, value) => setLine((current) => ({ ...current, [key]: value }));
+export default function RouteMapMaker() {
+  const [line, setLine] = useState(() => sampleLineForEditing());
+  const [previewLine, setPreviewLine] = useState(() => cloneLine(SAMPLE_LINE));
+  const [isPreviewDirty, setIsPreviewDirty] = useState(false);
+  const validationErrors = useMemo(() => validateLine(line), [line]);
+  const previewValidationErrors = useMemo(() => validateLine(previewLine), [previewLine]);
+  const localType = line.types[line.types.length - 1] || { label: "普通", color: "#1b7a40" };
+  const canGenerate = validationErrors.length === 0;
+  const canExport = previewValidationErrors.length === 0 && !isPreviewDirty;
+
+  const updateLine = (updater) => {
+    setLine(updater);
+    setIsPreviewDirty(true);
+  };
+
+  const setBasic = (key, value) => updateLine((current) => ({ ...current, [key]: value }));
 
   const updateType = (typeId, key, value) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       types: current.types.map((type) => (type.id === typeId ? { ...type, [key]: value } : type)),
     }));
   };
 
+  const MAX_TYPES = 4;
+
   const addType = () => {
-    setLine((current) => {
+    updateLine((current) => {
+      if (current.types.length >= MAX_TYPES) return current;
       const preset = TYPE_PRESETS[current.types.length % TYPE_PRESETS.length];
       const id = makeId("type");
       return {
@@ -464,7 +487,7 @@ export default function RouteMapMaker() {
   };
 
   const removeType = (typeId) => {
-    setLine((current) => {
+    updateLine((current) => {
       if (current.types.length <= 1) return current;
       return {
         ...current,
@@ -479,14 +502,14 @@ export default function RouteMapMaker() {
   };
 
   const updateStationName = (index, name) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       stations: current.stations.map((station, i) => (i === index ? { ...station, name } : station)),
     }));
   };
 
   const toggleStop = (stationIndex, typeId) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       stations: current.stations.map((station, index) =>
         index === stationIndex
@@ -497,7 +520,7 @@ export default function RouteMapMaker() {
   };
 
   const addStation = () => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       stations: [
         ...current.stations,
@@ -510,7 +533,7 @@ export default function RouteMapMaker() {
   };
 
   const removeStation = (index) => {
-    setLine((current) => {
+    updateLine((current) => {
       if (current.stations.length <= 2) return current;
       const nextLength = current.stations.length - 1;
       return {
@@ -526,36 +549,38 @@ export default function RouteMapMaker() {
   };
 
   const addBranch = () => {
-    setLine((current) => ({
-      ...current,
-      branches: [
-        ...(current.branches || []),
-        {
-          id: makeId("branch"),
-          name: `支線${(current.branches || []).length + 1}`,
-          fromIndex: defaultBranchIndex(current.stations, current.types),
-          stations: ["新支線駅1"],
-        },
-      ],
-    }));
+    updateLine((current) => {
+      if ((current.branches || []).length >= 1) return current;
+      return {
+        ...current,
+        branches: [
+          ...(current.branches || []),
+          {
+            id: makeId("branch"),
+            name: `支線${(current.branches || []).length + 1}`,
+            fromIndex: defaultBranchIndex(current.stations, current.types),
+            stations: ["新支線駅1"],
+          },
+        ],
+      };
+    });
   };
-
   const removeBranch = (branchId) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       branches: (current.branches || []).filter((branch) => branch.id !== branchId),
     }));
   };
 
   const updateBranch = (branchId, key, value) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       branches: (current.branches || []).map((branch) => (branch.id === branchId ? { ...branch, [key]: value } : branch)),
     }));
   };
 
   const addBranchStation = (branchId) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       branches: (current.branches || []).map((branch) =>
         branch.id === branchId ? { ...branch, stations: [...branch.stations, `新支線駅${branch.stations.length + 1}`] } : branch
@@ -564,7 +589,7 @@ export default function RouteMapMaker() {
   };
 
   const updateBranchStation = (branchId, stationIndex, name) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       branches: (current.branches || []).map((branch) =>
         branch.id === branchId
@@ -575,7 +600,7 @@ export default function RouteMapMaker() {
   };
 
   const removeBranchStation = (branchId, stationIndex) => {
-    setLine((current) => ({
+    updateLine((current) => ({
       ...current,
       branches: (current.branches || []).map((branch) =>
         branch.id === branchId && branch.stations.length > 1
@@ -585,29 +610,39 @@ export default function RouteMapMaker() {
     }));
   };
 
-  const resetSample = () => setLine(cloneLine(SAMPLE_LINE));
+  const resetSample = () => {
+    setLine(sampleLineForEditing());
+    setPreviewLine(cloneLine(SAMPLE_LINE));
+    setIsPreviewDirty(false);
+  };
+
+  const generatePreview = () => {
+    if (!canGenerate) return;
+    setPreviewLine(cloneLine(line));
+    setIsPreviewDirty(false);
+  };
 
   const exportSvgFile = () => {
     if (!canExport) return;
-    const info = buildExportSvg(line);
+    const info = buildExportSvg(previewLine);
     if (!info) return;
-    triggerDownload(new Blob([info.str], { type: "image/svg+xml;charset=utf-8" }), `${filenameSafe(line.name)}_路線図.svg`);
+    triggerDownload(new Blob([info.str], { type: "image/svg+xml;charset=utf-8" }), `${filenameSafe(previewLine.name)}_路線図.svg`);
   };
 
   const exportPng = async () => {
     if (!canExport) return;
-    const canvas = await exportCanvas(line, 2);
+    const canvas = await exportCanvas(previewLine, 2);
     if (!canvas) return;
-    canvas.toBlob((blob) => blob && triggerDownload(blob, `${filenameSafe(line.name)}_路線図.png`), "image/png");
+    canvas.toBlob((blob) => blob && triggerDownload(blob, `${filenameSafe(previewLine.name)}_路線図.png`), "image/png");
   };
 
   const exportPdf = async () => {
     if (!canExport) return;
-    const canvas = await exportCanvas(line, 2);
+    const canvas = await exportCanvas(previewLine, 2);
     if (!canvas) return;
     const jpeg = dataUrlToBytes(canvas.toDataURL("image/jpeg", 0.92));
     const pdf = buildPdf(jpeg, canvas.width, canvas.height);
-    triggerDownload(new Blob([pdf], { type: "application/pdf" }), `${filenameSafe(line.name)}_路線図.pdf`);
+    triggerDownload(new Blob([pdf], { type: "application/pdf" }), `${filenameSafe(previewLine.name)}_路線図.pdf`);
   };
 
   return (
@@ -651,13 +686,22 @@ export default function RouteMapMaker() {
           <div className="maker-box">
             <div className="maker-box-head">
               <h3>種別</h3>
-              <button type="button" className="maker-secondary" onClick={addType}>
+              <button
+                type="button"
+                className="maker-secondary"
+                onClick={addType}
+                disabled={line.types.length >= MAX_TYPES}
+              >
                 追加
               </button>
             </div>
+            <p className="maker-help">種別は最大{MAX_TYPES}つまでです。</p>
             <div className="maker-type-list">
-              {line.types.map((type) => (
+              {line.types.map((type, typeIndex) => (
                 <div className="maker-type-row" key={type.id}>
+                  <span className="maker-type-num" style={{ color: type.color }}>
+                    {typeNumber(typeIndex)}
+                  </span>
                   <input
                     className="maker-type-name"
                     value={type.label}
@@ -701,12 +745,12 @@ export default function RouteMapMaker() {
             <div className="maker-stop-table">
               <div
                 className="maker-stop-row maker-stop-head"
-                style={{ gridTemplateColumns: `minmax(132px,1fr) repeat(${line.types.length},64px) 52px` }}
+                style={{ gridTemplateColumns: `122px repeat(${line.types.length},36px) 44px` }}
               >
                 <span>駅名</span>
-                {line.types.map((type) => (
-                  <span key={type.id} style={{ color: type.color }}>
-                    {type.label}
+                {line.types.map((type, typeIndex) => (
+                  <span className="maker-stop-num" key={type.id} style={{ color: type.color }} title={type.label}>
+                    {typeNumber(typeIndex)}
                   </span>
                 ))}
                 <span></span>
@@ -714,12 +758,13 @@ export default function RouteMapMaker() {
               {line.stations.map((station, stationIndex) => (
                 <div
                   className="maker-stop-row"
-                  style={{ gridTemplateColumns: `minmax(132px,1fr) repeat(${line.types.length},64px) 52px` }}
-                  key={`${station.name}-${stationIndex}`}
+                  style={{ gridTemplateColumns: `122px repeat(${line.types.length},36px) 44px` }}
+                  key={stationIndex}
                 >
                   <input
                     value={station.name}
                     onChange={(e) => updateStationName(stationIndex, e.target.value)}
+                    placeholder={SAMPLE_LINE.stations[stationIndex]?.name || ""}
                     aria-label={`${stationIndex + 1}番目の駅名`}
                   />
                   {line.types.map((type) => (
@@ -743,11 +788,16 @@ export default function RouteMapMaker() {
           <div className="maker-box">
             <div className="maker-box-head">
               <h3>支線</h3>
-              <button type="button" className="maker-secondary" onClick={addBranch}>
+              <button
+                type="button"
+                className="maker-secondary"
+                onClick={addBranch}
+                disabled={(line.branches || []).length >= 1}
+              >
                 追加
               </button>
             </div>
-            <p className="maker-help">支線は末尾の種別（現在: {localType.label}）だけで描画します。</p>
+            <p className="maker-help">支線は末尾の種別（現在: {localType.label}）だけで描画します。支線は1本まで追加できます。</p>
             {(line.branches || []).length === 0 ? (
               <p className="maker-empty">支線なし</p>
             ) : (
@@ -808,18 +858,24 @@ export default function RouteMapMaker() {
         <div className="maker-preview">
           <div className="maker-preview-head">
             <div>
-              <h3>{line.name || "路線名"}</h3>
-              <span className="en">{line.nameEn || "ROUTE MAP"}</span>
+              <h3>{previewLine.name || "路線名"}</h3>
+              <span className="en">{previewLine.nameEn || "ROUTE MAP"}</span>
             </div>
-            <div className="maker-export">
-              <button type="button" onClick={exportPng} disabled={!canExport}>PNG</button>
-              <button type="button" onClick={exportPdf} disabled={!canExport}>PDF</button>
-              <button type="button" onClick={exportSvgFile} disabled={!canExport}>SVG</button>
+            <div className="maker-preview-actions">
+              <button type="button" className="maker-generate" onClick={generatePreview} disabled={!canGenerate || !isPreviewDirty}>
+                {isPreviewDirty ? "路線図を生成" : "生成済み"}
+              </button>
+              <div className="maker-export">
+                <button type="button" onClick={exportPng} disabled={!canExport}>PNG</button>
+                <button type="button" onClick={exportPdf} disabled={!canExport}>PDF</button>
+                <button type="button" onClick={exportSvgFile} disabled={!canExport}>SVG</button>
+              </div>
             </div>
           </div>
-          {validationErrors.length > 0 && <p className="maker-preview-error">入力エラーがあるため出力できません。</p>}
+          {isPreviewDirty && <p className="maker-preview-error">未反映の編集があります。「路線図を生成」を押すと右側に反映されます。</p>}
+          {validationErrors.length > 0 && <p className="maker-preview-error">入力エラーがあるため生成・出力できません。</p>}
           <div className="maker-legend">
-            {line.types.map((type) => (
+            {previewLine.types.map((type) => (
               <span key={type.id}>
                 <i style={{ borderColor: type.color }}></i>
                 {type.label}停車駅
@@ -827,7 +883,7 @@ export default function RouteMapMaker() {
             ))}
           </div>
           <div className="maker-scroll">
-            <MakerSvg line={line} />
+            <MakerSvg line={previewLine} />
           </div>
         </div>
       </div>
