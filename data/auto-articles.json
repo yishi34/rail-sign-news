@@ -1,5 +1,32 @@
 [
   {
+    "title": "鉄道博物館で「400系新幹線電車 解説実演」開催",
+    "category": "news",
+    "date": "2026-07-05",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/05/001500.html"
+    }
+  },
+  {
+    "title": "鉄道博物館で「車両ステーション月替わり運転室公開」開催",
+    "category": "cars",
+    "date": "2026-07-05",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/05/000000.html"
+    }
+  },
+  {
+    "title": "「平塚まで禁煙」ってどういうこと？ 男性喫煙率83％で駅も車内も「モクモク」 別世界だった昭和の鉄道",
+    "category": "news",
+    "date": "2026-07-05",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/684002"
+    }
+  },
+  {
     "title": "乗ってみたい海外列車ランキング発表！北欧の寝台特急やスイス絶景路線の魅力",
     "category": "news",
     "date": "2026-07-04",
@@ -96,6 +123,60 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74216/"
+    }
+  },
+  {
+    "title": "黒部峡谷鉄道，10月1日に全線運行再開へ〜復旧工事の進ちょくと9月以降の運行計画を発表〜",
+    "category": "news",
+    "date": "2026-07-04",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/04/233000.html"
+    }
+  },
+  {
+    "title": "【JR西】観光列車「はなあかり」大阪～おごと温泉・大津間運行",
+    "category": "travel",
+    "date": "2026-07-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74226/"
+    }
+  },
+  {
+    "title": "【JR西】225系K2編成網干総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-07-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74225/"
+    }
+  },
+  {
+    "title": "【JR東】「信州プレDCオープニングセレモニー」開催・団体専用臨時列車「知ってほ信州号」運行",
+    "category": "service",
+    "date": "2026-07-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74223/"
+    }
+  },
+  {
+    "title": "【JR東】秋田市の「ふるさと納税返礼品」として「EF64形電気機関車“山男”見学会」開催",
+    "category": "cars",
+    "date": "2026-07-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74222/"
+    }
+  },
+  {
+    "title": "【JR西】221系NC605編成が網干総合車両所宮原支所へ回送",
+    "category": "cars",
+    "date": "2026-07-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74221/"
     }
   },
   {
@@ -1716,87 +1797,6 @@
     "source": {
       "name": "乗りものニュース",
       "url": "https://trafficnews.jp/post/681678"
-    }
-  },
-  {
-    "title": "近鉄「さくらライナー」が変身！ 展望デッキは「石室」!? 4両4色の「四神ライナー」8月登場",
-    "category": "news",
-    "date": "2026-06-29",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/682621"
-    }
-  },
-  {
-    "title": "【JR東】E131系N7編成+N8編成 配給輸送",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74124/"
-    }
-  },
-  {
-    "title": "【JR東】鎌倉車両センター中原支所正門付近の名称看板が変更",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74123/"
-    }
-  },
-  {
-    "title": "【南海】2000系 2024F+2037F千代田工場出場試運転",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74121/"
-    }
-  },
-  {
-    "title": "【西鉄】6050形6157F筑紫車両基地出場試運転",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74120/"
-    }
-  },
-  {
-    "title": "【東武】20400型21412Fが「Berry² Happy Train」デザインのまま南栗橋工場出場試運転",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74119/"
-    }
-  },
-  {
-    "title": "【JR東】E235系B31編成(元トウ31編成) 東京総合車両センター出場",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74118/"
-    }
-  },
-  {
-    "title": "【メトロ】10000系10129F 地上設備機能確認試運転",
-    "category": "cars",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74117/"
-    }
-  },
-  {
-    "title": "【阪神】8000系8231Fが赤胴車塗装となり尼崎工場を出場",
-    "category": "news",
-    "date": "2026-06-29",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74116/"
     }
   }
 ]
