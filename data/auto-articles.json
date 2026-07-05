@@ -1,5 +1,41 @@
 [
   {
+    "title": "京急電鉄「東京湾フェリー往復きっぷ」が特典追加でさらにお得。南房総エリア20か所の観光・飲食で割引サービスなど",
+    "category": "travel",
+    "date": "2026-07-06",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2122341.html"
+    }
+  },
+  {
+    "title": "東横INN呉駅、駅徒歩3分に開業。大和ミュージアム・呉湾艦船めぐりが徒歩圏内",
+    "category": "news",
+    "date": "2026-07-06",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2122199.html"
+    }
+  },
+  {
+    "title": "【流鉄】5000形5005編成「なの花」号に鉄道むすめ「幸谷なのは」ヘッドマーク",
+    "category": "cars",
+    "date": "2026-07-06",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74241/"
+    }
+  },
+  {
+    "title": "【JR海】315系3000番台U1編成が名古屋工場へ入場回送",
+    "category": "cars",
+    "date": "2026-07-06",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74240/"
+    }
+  },
+  {
     "title": "鉄道博物館で「400系新幹線電車 解説実演」開催",
     "category": "news",
     "date": "2026-07-05",
@@ -186,6 +222,24 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74227/"
+    }
+  },
+  {
+    "title": "【JR東】臨時快速「DLばんえつ物語」を運行",
+    "category": "news",
+    "date": "2026-07-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74239/"
+    }
+  },
+  {
+    "title": "【東武】SL大樹「ホタルSL」ヘッドマークを掲出",
+    "category": "news",
+    "date": "2026-07-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74237/"
     }
   },
   {
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74132/"
-    }
-  },
-  {
-    "title": "【JR東】E231系コツK-28編成東京総合車両センター出場回送(202606)",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74131/"
-    }
-  },
-  {
-    "title": "【JR東】DE10-1704が海外譲渡に伴い長野総合車両センターから甲種輸送",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74130/"
-    }
-  },
-  {
-    "title": "【ことでん】新型2000形2編成4両が香西港へ海上輸送",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74129/"
-    }
-  },
-  {
-    "title": "【JR東】583系風塗装へ変更中のE653系U101編成の中間車が構内入換",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74151/"
-    }
-  },
-  {
-    "title": "【JR東】209系3500番台ハエ51編成が大宮総合車両センターへ入場",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74150/"
-    }
-  },
-  {
-    "title": "【JR東】EF65-1103が長野総合車両センターの解体線へ移動",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74149/"
     }
   }
 ]
