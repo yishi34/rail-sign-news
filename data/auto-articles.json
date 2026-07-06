@@ -1,5 +1,41 @@
 [
   {
+    "title": "京都丹後鉄道，“丹後くろまつ号”の2026年秋・冬商品を販売開始",
+    "category": "news",
+    "date": "2026-07-07",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/07/010000.html"
+    }
+  },
+  {
+    "title": "JR九州，「ななつ星in九州」の夏季制服をリニューアル〜伝統工芸「久留米絣」などを採用〜",
+    "category": "news",
+    "date": "2026-07-07",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/07/000000.html"
+    }
+  },
+  {
+    "title": "260kmを走破する「急行」が9月に運転！ “日本一の秘境駅”にも停車 所要時間は6時間超え",
+    "category": "news",
+    "date": "2026-07-07",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/685017"
+    }
+  },
+  {
+    "title": "【JR東】GV-E400系T221編成が秋田総合車両ベースを出場し本線試運転",
+    "category": "cars",
+    "date": "2026-07-07",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74262/"
+    }
+  },
+  {
     "title": "京急電鉄「東京湾フェリー往復きっぷ」が特典追加でさらにお得。南房総エリア20か所の観光・飲食で割引サービスなど",
     "category": "travel",
     "date": "2026-07-06",
@@ -330,6 +366,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74242/"
+    }
+  },
+  {
+    "title": "【広電】七夕電車「おりひめ号」・「ひこぼし号」運行",
+    "category": "news",
+    "date": "2026-07-06",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74261/"
     }
   },
   {
@@ -1752,51 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74173/"
-    }
-  },
-  {
-    "title": "【ことでん】2000形2001編成がレトロ電車120号と連結し通電確認",
-    "category": "cars",
-    "date": "2026-07-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74172/"
-    }
-  },
-  {
-    "title": "【メトロ】2000系2147F中野工場出場試運転",
-    "category": "cars",
-    "date": "2026-07-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74162/"
-    }
-  },
-  {
-    "title": "伊豆箱根鉄道5000系5505編成が大場工場へ",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/06/30/012000.html"
-    }
-  },
-  {
-    "title": "阪急1000系1001編成が神戸線で運用開始",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/06/30/011000.html"
-    }
-  },
-  {
-    "title": "京阪大津線で「OCEAN CUP」ラッピング電車運転",
-    "category": "cars",
-    "date": "2026-06-30",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/06/30/010000.html"
     }
   }
 ]
