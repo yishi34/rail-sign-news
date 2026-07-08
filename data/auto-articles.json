@@ -1,5 +1,86 @@
 [
   {
+    "title": "「第78回鎌倉花火大会」交通規制は18時30分から。若宮大路や長谷エリアで車両通行止め",
+    "category": "cars",
+    "date": "2026-07-09",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2123630.html"
+    }
+  },
+  {
+    "title": "西武鉄道，池袋駅や中村橋駅など4駅でホームドア整備へ〜7月から順次設置開始〜",
+    "category": "news",
+    "date": "2026-07-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/09/003000.html"
+    }
+  },
+  {
+    "title": "中野駅西側南北通路・橋上駅舎の供用を12月6日から開始〜「アトレ中野」は12月9日開業〜",
+    "category": "news",
+    "date": "2026-07-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/09/002000.html"
+    }
+  },
+  {
+    "title": "くま川鉄道，8月1日にダイヤ改正を実施",
+    "category": "service",
+    "date": "2026-07-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/09/001000.html"
+    }
+  },
+  {
+    "title": "【JR西】221系NC626編成吹田総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-07-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74312/"
+    }
+  },
+  {
+    "title": "【JR西】521系E03編成が吹田総合車両所から金沢車両区敦賀支所へ回送",
+    "category": "cars",
+    "date": "2026-07-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74311/"
+    }
+  },
+  {
+    "title": "【JR東】E233系サイ129編成東京総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-07-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74310/"
+    }
+  },
+  {
+    "title": "【南海】9000系9503F千代田工場出場試運転",
+    "category": "cars",
+    "date": "2026-07-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74309/"
+    }
+  },
+  {
+    "title": "【JR東】E723系5000番台カタB-2編成が試運転",
+    "category": "cars",
+    "date": "2026-07-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74308/"
+    }
+  },
+  {
     "title": "新幹線0系の超薄型長財布＆スクイーズキーホルダーが付録。MonoMaster 9月号、予約注文スタート",
     "category": "news",
     "date": "2026-07-08",
@@ -276,6 +357,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74295/"
+    }
+  },
+  {
+    "title": "「そこ通っていいの!?」 世界遺産のど真ん中を線路が貫通！ 古都の記憶と電車のコントラストを空から撮った",
+    "category": "news",
+    "date": "2026-07-08",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/682672"
     }
   },
   {
@@ -1707,96 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74208/"
-    }
-  },
-  {
-    "title": "【東武】90000系91003F TASC性能確認試運転",
-    "category": "cars",
-    "date": "2026-07-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74207/"
-    }
-  },
-  {
-    "title": "観光・体験チケットが最大6000円引き「EX旅先予約 夏の大セール」。東海道新幹線沿線の水族館や特別展ほか",
-    "category": "travel",
-    "date": "2026-07-02",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2121694.html"
-    }
-  },
-  {
-    "title": "「ひのとり」による団体臨時列車が賢島まで入線",
-    "category": "service",
-    "date": "2026-07-02",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/02/044500.html"
-    }
-  },
-  {
-    "title": "中央本線勝川駅改札口付近が「ぴよりん」イラストで装飾される",
-    "category": "news",
-    "date": "2026-07-02",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/02/043000.html"
-    }
-  },
-  {
-    "title": "水島臨海鉄道MRT304に「貨物・旅客4社連絡スタンプラリー」ヘッドマーク",
-    "category": "news",
-    "date": "2026-07-02",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/02/041500.html"
-    }
-  },
-  {
-    "title": "東急，日吉駅コンコース・自由通路の天井リニューアル工事が竣工",
-    "category": "news",
-    "date": "2026-07-02",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/02/040000.html"
-    }
-  },
-  {
-    "title": "新大阪「夜発」→博多「朝着」の新幹線が運行へ 所要時間は7時間50分！ 引退迫る500系が日付を跨いで走行",
-    "category": "cars",
-    "date": "2026-07-02",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/683864"
-    }
-  },
-  {
-    "title": "【名鉄】9100系9110F舞木検査場出場試運転",
-    "category": "cars",
-    "date": "2026-07-02",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74180/"
-    }
-  },
-  {
-    "title": "ロマンスカーEXEα貸切で「謎の線路」を走る！鉄道BIG4南田裕介氏と巡るディープな西部の旅",
-    "category": "news",
-    "date": "2026-07-02",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13031363.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "夜行列車「ムーンライトながら」が復活！373系で行く「おおがき市場夏まつり」ツアー　7/5まで抽選受付",
-    "category": "travel",
-    "date": "2026-07-02",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13031701.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
     }
   }
 ]
