@@ -1,5 +1,41 @@
 [
   {
+    "title": "土佐くろしお鉄道で貸切列車「よい酔い列車でいこう！」運転",
+    "category": "news",
+    "date": "2026-07-12",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/12/010000.html"
+    }
+  },
+  {
+    "title": "臨時特急“ごてんば”運転",
+    "category": "news",
+    "date": "2026-07-12",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/12/003000.html"
+    }
+  },
+  {
+    "title": "E657系K16編成が秋田へ",
+    "category": "cars",
+    "date": "2026-07-12",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/12/000000.html"
+    }
+  },
+  {
+    "title": "「これはいい車両だ」登場41年の“料金不要”電車も残りわずか 夜行まで想定した乗り得車両の今",
+    "category": "cars",
+    "date": "2026-07-12",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/686034"
+    }
+  },
+  {
     "title": "【奈良県】全国から鉄道会社が参加！駅弁も大集合！「大和鉄道まつり2026」が8月8日・9日に開催決定",
     "category": "travel",
     "date": "2026-07-11",
@@ -78,6 +114,105 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74356/"
+    }
+  },
+  {
+    "title": "日立製作所など，国内主要3社の既存改札機に対応した顔認証システムを構築〜7月15日から東武東上線池袋駅などで運用開始〜",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/11/234000.html"
+    }
+  },
+  {
+    "title": "東京メトロ，線路設備モニタリング装置搭載車両「ぱとれーる」のシンボルキャラクターは「もぐぱくん」に",
+    "category": "cars",
+    "date": "2026-07-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/11/232000.html"
+    }
+  },
+  {
+    "title": "JR九州，久大本線由布院—庄内間の運行を7月12日に再開へ",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/11/230000.html"
+    }
+  },
+  {
+    "title": "【ついに誕生】新幹線の最高峰「ファーストクラス」に潜入！博多まで◯◯万円の超豪華な完全個室が凄すぎた",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/687085"
+    }
+  },
+  {
+    "title": "【JR九】DD200-701牽引のロンチキ10両編成による竹下工臨の実施",
+    "category": "cars",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74367/"
+    }
+  },
+  {
+    "title": "【JR東】臨時快速「リゾート庄内」を運行",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74366/"
+    }
+  },
+  {
+    "title": "【JR東】HB-E300系4両「海里」編成 酒田駅「入換乗車体験イベント」開催",
+    "category": "cars",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74365/"
+    }
+  },
+  {
+    "title": "【JR海】臨時特急「ごてんば号」を運行",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74364/"
+    }
+  },
+  {
+    "title": "【箱根】1000形 B2編成 貸切列車",
+    "category": "cars",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74363/"
+    }
+  },
+  {
+    "title": "【JR東】快速SLばんえつ物語号をDE10-1759が代走牽引",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74362/"
+    }
+  },
+  {
+    "title": "【JR東】臨時特急「Mt.Fuji御殿場」を運行(2026年)",
+    "category": "news",
+    "date": "2026-07-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74361/"
     }
   },
   {
@@ -1662,141 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74241/"
-    }
-  },
-  {
-    "title": "【JR海】315系3000番台U1編成が名古屋工場へ入場回送",
-    "category": "cars",
-    "date": "2026-07-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74240/"
-    }
-  },
-  {
-    "title": "気になる第1位の弁当は？ グランスタ東京「東京駅限定弁当2026 売上ランキング」",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13031836.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "【2026秋デビュー】東武東上線の新型車両「90000系」にいち早く乗れる！ 8/11開催の小学生向け先行試乗会でキッズアンバサダーになろう",
-    "category": "cars",
-    "date": "2026-07-06",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13031875.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "「カープレミア故障保証」がリニューアル、輸入EVプラン新設と対象車両を大幅拡大",
-    "category": "cars",
-    "date": "2026-07-06",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/07/06/413666.html"
-    }
-  },
-  {
-    "title": "「ヤマハ発動機前」駅が誕生、JR東海道線「御厨駅」の副駅名標に…設楽社長「共創の玄関口に」",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/07/06/413648.html"
-    }
-  },
-  {
-    "title": "富山「黒部宇奈月キャニオンルート」10月2日一般公開。欅平駅にはJTBツアー参加者向けのラウンジ開業",
-    "category": "travel",
-    "date": "2026-07-06",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2122714.html"
-    }
-  },
-  {
-    "title": "黒部峡谷鉄道のトロッコ電車、10月1日から全線運行再開。猫又駅での乗降は9月末まで",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2122701.html"
-    }
-  },
-  {
-    "title": "滋賀県、宿泊と新幹線を含む旅行代金が1人最大1万円引き「ここ滋賀旅行割」",
-    "category": "travel",
-    "date": "2026-07-06",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2122611.html"
-    }
-  },
-  {
-    "title": "「福井鉄道・えちぜん鉄道相互乗り入れ10周年記念 共通1日フリーきっぷ」発売",
-    "category": "travel",
-    "date": "2026-07-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/06/132000.html"
-    }
-  },
-  {
-    "title": "7月8日〜東武鉄道，「スペーシア Ｘ運行開始3周年記念企画」を実施",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/06/131500.html"
-    }
-  },
-  {
-    "title": "プラレール「多摩都市モノレール1000系セット」発売",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/06/131000.html"
-    }
-  },
-  {
-    "title": "8月2日・3日JR東日本浦和事業本部，「夏休み特別企画 みらいの運転士・車掌・駅員体験！」開催",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/06/113500.html"
-    }
-  },
-  {
-    "title": "8月8日開催京都市右京区，「右京区学藝衆講座　嵐電で知る鉄道の仕組みと街のヒミツ」の参加者募集",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/06/093000.html"
-    }
-  },
-  {
-    "title": "「装甲列車みたい！」SNSで話題の凸凹車両「マヤ50形」とは？ レーザーで安全を守る“光オイラン”の秘密",
-    "category": "cars",
-    "date": "2026-07-06",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/684284"
-    }
-  },
-  {
-    "title": "上野東京ライン「川口停車」へ本格始動！ JR東日本が新たなホームの基本設計に着手 “駅全体”を大改良",
-    "category": "news",
-    "date": "2026-07-06",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/684524"
     }
   }
 ]
