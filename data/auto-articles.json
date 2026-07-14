@@ -1,5 +1,59 @@
 [
   {
+    "title": "隅田川花火大会、車両通行止めは25日18時から。浅草・両国周辺、首都高6号線も規制対象",
+    "category": "cars",
+    "date": "2026-07-15",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2125144.html"
+    }
+  },
+  {
+    "title": "【井上孝司の「鉄道旅行のヒント」】夏の18きっぷシーズン間近。鉄道のきっぷで船に乗る、鉄道と船を組み合わせる",
+    "category": "travel",
+    "date": "2026-07-15",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2124774.html"
+    }
+  },
+  {
+    "title": "筑豊電鉄，新形車両「7000形」を2027年3月に導入へ",
+    "category": "cars",
+    "date": "2026-07-15",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/15/010000.html"
+    }
+  },
+  {
+    "title": "JR東日本，FV-E991系「HYBARI」の営業運転を2027年度末に開始へ〜次世代水素ハイブリッド電車の開発にも着手〜",
+    "category": "news",
+    "date": "2026-07-15",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/15/003000.html"
+    }
+  },
+  {
+    "title": "JR東日本，次世代の新幹線専用検測車「E927形」のデザインと愛称を決定〜愛称は「SOAR」に〜",
+    "category": "news",
+    "date": "2026-07-15",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/15/000000.html"
+    }
+  },
+  {
+    "title": "【東急】9000系9014Fが八王子まで甲種輸送される",
+    "category": "cars",
+    "date": "2026-07-15",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74436/"
+    }
+  },
+  {
     "title": "2026年夏も必須！「青春18きっぷ 北海道新幹線オプション券」自動改札対応ルールと途中下車の罠",
     "category": "travel",
     "date": "2026-07-14",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/07/09/003000.html"
-    }
-  },
-  {
-    "title": "中野駅西側南北通路・橋上駅舎の供用を12月6日から開始〜「アトレ中野」は12月9日開業〜",
-    "category": "news",
-    "date": "2026-07-09",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/09/002000.html"
-    }
-  },
-  {
-    "title": "くま川鉄道，8月1日にダイヤ改正を実施",
-    "category": "service",
-    "date": "2026-07-09",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/09/001000.html"
-    }
-  },
-  {
-    "title": "【JR西】221系NC626編成吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-07-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74312/"
-    }
-  },
-  {
-    "title": "【JR西】521系E03編成が吹田総合車両所から金沢車両区敦賀支所へ回送",
-    "category": "cars",
-    "date": "2026-07-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74311/"
-    }
-  },
-  {
-    "title": "【JR東】E233系サイ129編成東京総合車両ベース出場回送",
-    "category": "cars",
-    "date": "2026-07-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74310/"
-    }
-  },
-  {
-    "title": "【南海】9000系9503F千代田工場出場試運転",
-    "category": "cars",
-    "date": "2026-07-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74309/"
     }
   }
 ]
