@@ -1,5 +1,104 @@
 [
   {
+    "title": "千葉県内の鉄道・バス・フェリーが2日間乗り放題「サンキューちばフリーパス」8月1日発売。今年度は対象エリア拡大",
+    "category": "travel",
+    "date": "2026-07-24",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2127466.html"
+    }
+  },
+  {
+    "title": "新幹線0系の超薄型長財布＆スクイーズキーホルダー付録、MonoMaster 9月号は本日発売",
+    "category": "news",
+    "date": "2026-07-24",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2127455.html"
+    }
+  },
+  {
+    "title": "阪急電鉄、反転フラップ式案内表示機をプラモデル化。手のひらで行き先が“パタパタ”回る",
+    "category": "news",
+    "date": "2026-07-24",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2127441.html"
+    }
+  },
+  {
+    "title": "隅田川花火大会、25日18時から車両通行止め。浅草・両国周辺、首都高6号線も規制対象",
+    "category": "cars",
+    "date": "2026-07-24",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2127418.html"
+    }
+  },
+  {
+    "title": "【JALふるさとアンバサダー/応援隊に聞く地域愛】北海道をめぐる贅沢な列車旅「HOKKAIDO LOVE！ひとめぐり号」、おかげさまでひとめぐり号は6年目を迎えます",
+    "category": "news",
+    "date": "2026-07-24",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/jal_furusato/2126698.html"
+    }
+  },
+  {
+    "title": "JR東日本「TRAIN SUITE 四季島」，2026年12月〜2027年3月期のツアー参加者募集を開始〜「3泊4日コース」・「1泊2日コース」の旅をリニューアル〜",
+    "category": "travel",
+    "date": "2026-07-24",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/24/063000.html"
+    }
+  },
+  {
+    "title": "富士急行線下吉田駅に，サウナ電車「サ電（SADEN）」が12月に開業へ",
+    "category": "news",
+    "date": "2026-07-24",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/24/060000.html"
+    }
+  },
+  {
+    "title": "【JR東】E8系G8編成が台車検査を終え出場試運転",
+    "category": "cars",
+    "date": "2026-07-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74648/"
+    }
+  },
+  {
+    "title": "【JR西】EF65-1135が吹田総合車両所から向日町(操)へ単機回送",
+    "category": "cars",
+    "date": "2026-07-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74647/"
+    }
+  },
+  {
+    "title": "【京阪】13000系13017Fが竣工試運転",
+    "category": "cars",
+    "date": "2026-07-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74641/"
+    }
+  },
+  {
+    "title": "【阪神】3000系3201Fのうち3201・3051が尼崎車庫へ陸送",
+    "category": "news",
+    "date": "2026-07-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74598/"
+    }
+  },
+  {
     "title": "東急「GREEN×EXPO 2027」ラッピング特別列車が7/14～東横・田園都市・目黒線でデビュー！ 注目の編成やデザインまとめ",
     "category": "cars",
     "date": "2026-07-23",
@@ -402,6 +501,69 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74624/"
+    }
+  },
+  {
+    "title": "まだ現役！ 「驚異の長寿」を誇る南海“古豪”電車は不死身なのか？ 日本初「20m級ステンレス車」の現在地",
+    "category": "news",
+    "date": "2026-07-23",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/690427"
+    }
+  },
+  {
+    "title": "【京王】デヤ902+サヤ912+クヤ911+デヤ901 高幡不動へ回送",
+    "category": "news",
+    "date": "2026-07-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74646/"
+    }
+  },
+  {
+    "title": "【近鉄】15200系PN08 五位堂検修車庫から回送",
+    "category": "news",
+    "date": "2026-07-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74645/"
+    }
+  },
+  {
+    "title": "【近鉄】8A系8A22が奈良線・京都線で試運転",
+    "category": "cars",
+    "date": "2026-07-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74644/"
+    }
+  },
+  {
+    "title": "【JR東】E233系T25編成が長野総合車両ベースへ入場回送",
+    "category": "cars",
+    "date": "2026-07-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74643/"
+    }
+  },
+  {
+    "title": "【都営】10-300形10-450F・10-550Fが京王車運用を代走",
+    "category": "news",
+    "date": "2026-07-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74642/"
+    }
+  },
+  {
+    "title": "【近鉄】2610系X25 五位堂検修車庫出場回送",
+    "category": "news",
+    "date": "2026-07-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74638/"
     }
   },
   {
@@ -1635,168 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74559/"
-    }
-  },
-  {
-    "title": "【JR九】小倉総合車両センターで最後の「415系鋼製車」見学会開催",
-    "category": "cars",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74558/"
-    }
-  },
-  {
-    "title": "【JR西】115系A-17編成が227系運用を代走し姫路まで運転",
-    "category": "cars",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74557/"
-    }
-  },
-  {
-    "title": "【近鉄】16200系「青の交響曲」に吉野町町制70周年記念ヘッドマーク",
-    "category": "news",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74555/"
-    }
-  },
-  {
-    "title": "【JR東】GV-E197系TS06編成・TS08編成に挟まれた12系客車で快速「GVぐんま横川」を運転",
-    "category": "cars",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74553/"
-    }
-  },
-  {
-    "title": "【能勢電】「のせでん 風鈴電車 2026」運行開始",
-    "category": "news",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74552/"
-    }
-  },
-  {
-    "title": "【地鉄】「貸切列車20020形(旧西武鉄道10000系)で行く特別区間乗車ツアー」を催行",
-    "category": "travel",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74551/"
-    }
-  },
-  {
-    "title": "【メトロ】地下鉄博物館開館40周年を記念し、「ちかはく•メモリアル40号」が運転",
-    "category": "news",
-    "date": "2026-07-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74550/"
-    }
-  },
-  {
-    "title": "近江鉄道で「夏到来♪冷え冷え！かき氷トレイン」運転",
-    "category": "news",
-    "date": "2026-07-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/18/043000.html"
-    }
-  },
-  {
-    "title": "阪神電鉄，3000系に導入する座席指定サービスの名称は「らくやんシート」に〜大阪梅田—山陽姫路間でサービスを提供〜",
-    "category": "news",
-    "date": "2026-07-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/18/042000.html"
-    }
-  },
-  {
-    "title": "JR東日本，山田線 上米内—宮古間の運転を7月24日に再開へ",
-    "category": "news",
-    "date": "2026-07-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/18/041000.html"
-    }
-  },
-  {
-    "title": "日立レール，トロント地下鉄2号線の信号システムのデジタル化を受注",
-    "category": "news",
-    "date": "2026-07-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/18/040000.html"
-    }
-  },
-  {
-    "title": "全席指定・平日昼の「総武特急」どのくらい乗ってる？ 使って分かった車両の強みと座り心地",
-    "category": "cars",
-    "date": "2026-07-18",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/689080"
-    }
-  },
-  {
-    "title": "【JR九】501系HM-1編成が817系VG1602編成を牽引して構内入換",
-    "category": "cars",
-    "date": "2026-07-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74519/"
-    }
-  },
-  {
-    "title": "【JR九】817系VN531が小倉総合車両センターを出場",
-    "category": "cars",
-    "date": "2026-07-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74518/"
-    }
-  },
-  {
-    "title": "【JR北】「あつまれ どうぶつの森ラッピング車両」運行",
-    "category": "cars",
-    "date": "2026-07-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74517/"
-    }
-  },
-  {
-    "title": "【阪急】9000系「神戸線デビュー20周年記念列車」運行開始",
-    "category": "cars",
-    "date": "2026-07-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74516/"
-    }
-  },
-  {
-    "title": "【JR海】313系2500番台T16編成が名古屋工場へ入場回送",
-    "category": "cars",
-    "date": "2026-07-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74515/"
-    }
-  },
-  {
-    "title": "【名鉄】6500系6517Fが舞木検査場を出場し回送",
-    "category": "news",
-    "date": "2026-07-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74514/"
     }
   }
 ]
