@@ -1,5 +1,41 @@
 [
   {
+    "title": "快速“GVぐんま水上”運転",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/26/000000.html"
+    }
+  },
+  {
+    "title": "わずか14席の争奪戦！ ローカル線を走る「快適」指定席は特急並み!? 異彩を放つ快速列車に乗ってみた",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/691296"
+    }
+  },
+  {
+    "title": "【大鐵】「納涼ビール列車」を催行(2026年)",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74698/"
+    }
+  },
+  {
+    "title": "【京阪】天神祭開催に伴う臨時列車運転",
+    "category": "service",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74697/"
+    }
+  },
+  {
     "title": "千葉‐茨城を結ぶJR線「絶景」のワケは構造にあり！ “トロッコ列車を走らせたくなる”納得の車窓",
     "category": "news",
     "date": "2026-07-25",
@@ -159,6 +195,150 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74675/"
+    }
+  },
+  {
+    "title": "駅前広場の利用が「超お手軽」に！？新プラットフォーム「HirakeBA」8月3日始動、スマホで簡単申請 物販や演奏会などに【JR東日本】",
+    "category": "news",
+    "date": "2026-07-25",
+    "source": {
+      "name": "鉄道チャンネル",
+      "url": "https://tetsudo-ch.com/13032621.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
+    }
+  },
+  {
+    "title": "近鉄「つどい」による「クラフトビール列車」運転",
+    "category": "news",
+    "date": "2026-07-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/25/234500.html"
+    }
+  },
+  {
+    "title": "キハ185系が特急“ゆふいんの森”を代走",
+    "category": "news",
+    "date": "2026-07-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/25/233000.html"
+    }
+  },
+  {
+    "title": "ニューシャトル2000系02編成にラッピング",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/25/231500.html"
+    }
+  },
+  {
+    "title": "【JR九】783系CM12編成とCM2編成が「リレーかもめ」などを代走",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74696/"
+    }
+  },
+  {
+    "title": "【JR海】N700A G33編成浜松工場出場試運転",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74695/"
+    }
+  },
+  {
+    "title": "【JR東】国営昭和記念公園花火大会開催に伴う臨時列車",
+    "category": "service",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74693/"
+    }
+  },
+  {
+    "title": "【近鉄】鳥羽みなとまつり開催に伴う臨時列車が運転",
+    "category": "service",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74692/"
+    }
+  },
+  {
+    "title": "【東武】隅田川花火大会開催に伴う臨時列車に11267F(近鉄風ラッピング)が充当",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74691/"
+    }
+  },
+  {
+    "title": "【東急】5000系5102Fが終電後に試運転",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74690/"
+    }
+  },
+  {
+    "title": "【JR西】223系3000番台W20編成がフルカラーLED化され網干総合車両所本所を出場試運転",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74689/"
+    }
+  },
+  {
+    "title": "【近鉄】2013系XT07を使用した「クラフトビール列車」が運転",
+    "category": "news",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74687/"
+    }
+  },
+  {
+    "title": "【JR東】特急「ナイトエクスプレス信州」が臨時運行(2026年)",
+    "category": "news",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74685/"
+    }
+  },
+  {
+    "title": "【JR東】GV-E197系TS-08編成が「GVぐんま水上」を牽引",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74684/"
+    }
+  },
+  {
+    "title": "【JR東】E657系K7編成が新潟地区へ送り込み回送",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74683/"
+    }
+  },
+  {
+    "title": "【JR東】HB-E300系「リゾートしらかみ青池編成」を使用した快速「リゾートあいづ号」が運転",
+    "category": "cars",
+    "date": "2026-07-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74681/"
     }
   },
   {
@@ -1617,186 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/07/21/113000.html"
-    }
-  },
-  {
-    "title": "東武，100系「スペーシア」による臨時特急“けごん262号・263号”を運行",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/21/111000.html"
-    }
-  },
-  {
-    "title": "11月1日JR東海，「リニアクラシックコンサート後夜祭列車」を運転",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/21/110500.html"
-    }
-  },
-  {
-    "title": "8月22日・23日開催JR東日本浦和事業本部，「電車のお医者さんってどんな仕事？～ご家族で一緒に車両メンテナンスを体験してみよう～」の参加者募集",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/21/110000.html"
-    }
-  },
-  {
-    "title": "全長わずか2.7km「日本一短いローカル私鉄」存続なるか？ ついに必要性や将来的なあり方を調査へ",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/689645"
-    }
-  },
-  {
-    "title": "【近江】200形203Fオレンジ色(元2417F) 彦根工場出場試運転",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74589/"
-    }
-  },
-  {
-    "title": "【名市交】6050形6153H日進工場出場試運転",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74588/"
-    }
-  },
-  {
-    "title": "【JR貨】EH500-72 大宮車両所へ入場",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74587/"
-    }
-  },
-  {
-    "title": "【JR西】271系HA656編成 吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74586/"
-    }
-  },
-  {
-    "title": "【西武】7000系7110F(元東急9011F)が武蔵丘車両検修場を出場し試運転",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74585/"
-    }
-  },
-  {
-    "title": "【メトロ】05系05-135Fが深川工場を出場し試運転",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74584/"
-    }
-  },
-  {
-    "title": "乃木坂46〝駅と新幹線に降臨〟音声ARで響くメンバーの声「真夏の全国ツアー2026」",
-    "category": "travel",
-    "date": "2026-07-21",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13032717.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "よくある駅の跨線橋…じゃない!? 足元に鎮座する「ナゾ台座」は山の向こうを目指した線路の痕跡だった",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/688213"
-    }
-  },
-  {
-    "title": "【JR西】271系HA656編成 吹田総合車両所本所出場回送",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74597/"
-    }
-  },
-  {
-    "title": "【JR東】E131系200番台N11編成・N12編成がJ-TREC新津事業所を出場",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74596/"
-    }
-  },
-  {
-    "title": "【近江】200形201F(ドクターガチャコン)に「西武グループ 昭和100年」ヘッドマーク掲出して運行",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74595/"
-    }
-  },
-  {
-    "title": "【三岐】801系805F(西武イエローカラー)クモハ805号車(1両)のみ検査終えて留置",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74594/"
-    }
-  },
-  {
-    "title": "【京阪】京阪電車2200系・2400系・2600系各車両周年記念ヘッドマーク掲出",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74593/"
-    }
-  },
-  {
-    "title": "【近鉄】6020系C25が廃車回送",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74592/"
-    }
-  },
-  {
-    "title": "【名鉄】5000系5003Fが舞木検査場出場試運転",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74591/"
-    }
-  },
-  {
-    "title": "【JR東】臨時快速「五葉」・臨時快速「五葉2号」を運行",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74590/"
     }
   }
 ]
