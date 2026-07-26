@@ -1,5 +1,14 @@
 [
   {
+    "title": "【JR西】227系L02編成が下関総合車両所本所を出場",
+    "category": "cars",
+    "date": "2026-07-27",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74711/"
+    }
+  },
+  {
     "title": "快速“GVぐんま水上”運転",
     "category": "news",
     "date": "2026-07-26",
@@ -87,6 +96,60 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74699/"
+    }
+  },
+  {
+    "title": "私鉄ターミナル駅にて「聴いたことがない発車メロディーだな…」 作曲者の名前を見て「えっ！」まさかの有力者だった件",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/691471"
+    }
+  },
+  {
+    "title": "【西武】中村橋駅1番ホームにて ホームドア設置整備予定",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74708/"
+    }
+  },
+  {
+    "title": "【広電】広島みなと夢花火大会に伴う臨時電車が運転",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74707/"
+    }
+  },
+  {
+    "title": "【近鉄】15200系PN07が名古屋～天理間の「天理臨」に充当",
+    "category": "news",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74705/"
+    }
+  },
+  {
+    "title": "【西武】新101系251F(近江鉄道100形「湖風号」カラー) 武蔵丘車両検修場出場試運転",
+    "category": "cars",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74704/"
+    }
+  },
+  {
+    "title": "【JR海】315系C109編成がおいでんまつりに伴い愛知環状鉄道線で運転",
+    "category": "cars",
+    "date": "2026-07-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74703/"
     }
   },
   {
@@ -1734,69 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/07/21/001000.html"
-    }
-  },
-  {
-    "title": "京阪2200系・2400系・2600系にヘッドマーク",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/21/000500.html"
-    }
-  },
-  {
-    "title": "東急5050系4103編成が「GREEN LIFESTYLETRAIN」に",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/21/000000.html"
-    }
-  },
-  {
-    "title": "【京阪】8009Fに「京阪HD・台北メトロ友好連携協定1周年」記念ヘッドマーク",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74582/"
-    }
-  },
-  {
-    "title": "【名鉄】2200系2213F「ポケモンラッピングトレイン」運行",
-    "category": "cars",
-    "date": "2026-07-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74581/"
-    }
-  },
-  {
-    "title": "隅田川花火大会7/25（土）開催！銀座線96本増発と 激混みの「浅草駅」を回避する最寄り駅･アクセス攻略法、2万発の花火が都心の夜に！",
-    "category": "service",
-    "date": "2026-07-21",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13031926.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "東急不動産・T2・鳥栖市、自動運転トラック実装へ…全国初の官民協定を締結",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/07/21/414280.html"
-    }
-  },
-  {
-    "title": "阪神電車、新型急行3000系に導入する座席指定サービスの名称を「らくやんシート」に決定",
-    "category": "news",
-    "date": "2026-07-21",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2126571.html"
     }
   }
 ]
