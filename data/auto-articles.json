@@ -1,5 +1,104 @@
 [
   {
+    "title": "いすゞ『ギガ トラクタ』、車両運搬用ショートキャブ追加…大型EV・SUV輸送に対応",
+    "category": "cars",
+    "date": "2026-07-30",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/07/30/414656.html"
+    }
+  },
+  {
+    "title": "DD200-501が甲種輸送される",
+    "category": "cars",
+    "date": "2026-07-30",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/30/020000.html"
+    }
+  },
+  {
+    "title": "京阪大津線「響け！ユーフォニアム」ラッピング電車2編成のヘッドマークが変更される",
+    "category": "cars",
+    "date": "2026-07-30",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/30/013000.html"
+    }
+  },
+  {
+    "title": "京阪大津線の京都橘大学PRラッピング電車が新デザインに",
+    "category": "cars",
+    "date": "2026-07-30",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/30/010000.html"
+    }
+  },
+  {
+    "title": "四日市あすなろう鉄道で車両検査にともなう2両編成運転を実施",
+    "category": "cars",
+    "date": "2026-07-30",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/30/004000.html"
+    }
+  },
+  {
+    "title": "近鉄，新形レール削正車「きずな」を導入",
+    "category": "news",
+    "date": "2026-07-30",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/30/002000.html"
+    }
+  },
+  {
+    "title": "JR四国，「予讃線8000系アンパンマン列車」をリニューアルへ〜12月中旬ごろから運行開始〜",
+    "category": "news",
+    "date": "2026-07-30",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/07/30/000000.html"
+    }
+  },
+  {
+    "title": "【小田急】更新工事を終えた3000形3277F(3277×6)が運用復帰",
+    "category": "news",
+    "date": "2026-07-30",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74787/"
+    }
+  },
+  {
+    "title": "【近鉄】アーバンライナーPlus UB03 五位堂検修車庫出場回送",
+    "category": "news",
+    "date": "2026-07-30",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74786/"
+    }
+  },
+  {
+    "title": "【あい鉄】オールスターゲーム2026開催に伴う臨時列車が運行",
+    "category": "service",
+    "date": "2026-07-30",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74785/"
+    }
+  },
+  {
+    "title": "【相鉄】13000系13100号車 GREEN×EXPO 2027での実車展示に向けて陸送",
+    "category": "news",
+    "date": "2026-07-30",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74783/"
+    }
+  },
+  {
     "title": "2026年「仙台七夕花火祭」を攻略！ 混雑回避の地下鉄アクセスからまだ買える有料席情報、花火前に楽しむ仙台観光ルートまで解説！",
     "category": "travel",
     "date": "2026-07-29",
@@ -321,6 +420,33 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74757/"
+    }
+  },
+  {
+    "title": "【東武】10030型11260Fが車輪交換後の試運転",
+    "category": "cars",
+    "date": "2026-07-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74782/"
+    }
+  },
+  {
+    "title": "【京成】80000形80026編成に「京成電鉄×佐々木朗希」ラッピングを取り付け運行開始",
+    "category": "cars",
+    "date": "2026-07-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74781/"
+    }
+  },
+  {
+    "title": "【近鉄】21000系 UB03 五位堂検修車庫出場試運転",
+    "category": "cars",
+    "date": "2026-07-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74768/"
     }
   },
   {
@@ -1671,132 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74641/"
-    }
-  },
-  {
-    "title": "【阪神】3000系3201Fのうち3201・3051が尼崎車庫へ陸送",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74598/"
-    }
-  },
-  {
-    "title": "希少なナローゲージにねじり橋！ジェラートがミルキー米！？「新・鉄道ひとり旅」278回目の舞台は「三岐鉄道北勢線」",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13032021.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "大阪・関西万博公式キャラクター「ミャクミャク」ピンバッジ新登場！関西の駅構内などで7月中旬発売",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13032876.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "球場のビール販売員が車内に登場！夏の移動を盛り上げるJR九州「ビール新幹線」7月31日・8月7日限定　ソフトバンクホークスとコラボ",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13033286.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "西武鉄道が「昭和から令和を走り鉄分補給」をテーマに博覧会を実施！くすのきホールで8月14日から 新車両「トキイロ」体験ブースも アクセスや申込方法を解説",
-    "category": "cars",
-    "date": "2026-07-24",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13033235.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "eMotion Fleet、三井化学のマレーシア子会社と契約…車両フリート管理のDX化とCO2可視化を推進",
-    "category": "cars",
-    "date": "2026-07-24",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/07/24/414432.html"
-    }
-  },
-  {
-    "title": "BMWグループの車両で衛星音声通話デモ、世界で初めて成功…Viasat",
-    "category": "cars",
-    "date": "2026-07-24",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/07/24/414403.html"
-    }
-  },
-  {
-    "title": "Nintendo Switch&trade;用ソフト「鉄道にっぽん！ RealPro 立体都市交通！XROSS OVER（クロスオーバー）名古屋 編」を発売",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/24/145000.html"
-    }
-  },
-  {
-    "title": "JR東海リテイリング・プラス，「座席モケットひじ置きクッション」「もちもちモケットキーホルダー」を発売",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/24/143500.html"
-    }
-  },
-  {
-    "title": "阪急電車グッズ「Hankyu PicTrain」の新商品4アイテムを発売",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/24/143000.html"
-    }
-  },
-  {
-    "title": "7月25日〜9月27日JR東日本浜通り事業本部，「ふくしま浜通り常磐線エキタグラリー」を開催",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/24/125000.html"
-    }
-  },
-  {
-    "title": "7月25日〜9月6日「京成線で行く！魅力いっぱいちばなつスタンプラリー」開催",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/24/124500.html"
-    }
-  },
-  {
-    "title": "7月25日〜8月30日福井鉄道，「福鉄スタンプラリー2026 いぶし銀の夏」開催",
-    "category": "news",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/24/124000.html"
-    }
-  },
-  {
-    "title": "7月25日〜8月2日京王聖蹟桜ヶ丘ショッピングセンターで「2026夏休みイベント せいせきのりもの展」開催",
-    "category": "travel",
-    "date": "2026-07-24",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/24/123500.html"
     }
   }
 ]
