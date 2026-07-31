@@ -1,5 +1,32 @@
 [
   {
+    "title": "京成3200形8両が甲種輸送される",
+    "category": "cars",
+    "date": "2026-08-01",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/01/042000.html"
+    }
+  },
+  {
+    "title": "水島臨海鉄道で「納涼列車」運転",
+    "category": "news",
+    "date": "2026-08-01",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/01/041000.html"
+    }
+  },
+  {
+    "title": "京都鉄道博物館「SLスチーム号」に「おっぱっぴー的！京都鉄道博物館の楽しみ方」ヘッドマーク",
+    "category": "news",
+    "date": "2026-08-01",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/01/040000.html"
+    }
+  },
+  {
     "title": "秋の夜長に大迫力！第6回川口花火大会チケット情報＆川口駅からのアクセスガイド",
     "category": "news",
     "date": "2026-07-31",
@@ -348,6 +375,42 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74804/"
+    }
+  },
+  {
+    "title": "九州新幹線の熊本県内「8月の運行再開は困難」 在来線は2日に一部再開 地震被害からの「今後の見通し」出る",
+    "category": "news",
+    "date": "2026-07-31",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/694373"
+    }
+  },
+  {
+    "title": "【JR東】E233系ヤマU632編成 東京総合車両ベース入場",
+    "category": "cars",
+    "date": "2026-07-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74829/"
+    }
+  },
+  {
+    "title": "【JR東】臨時快速「ひなび 八戸(三社大祭前夜祭号)」を運行",
+    "category": "news",
+    "date": "2026-07-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74828/"
+    }
+  },
+  {
+    "title": "【近鉄】1810系H27 五位堂検修車庫出場試運転",
+    "category": "cars",
+    "date": "2026-07-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74823/"
     }
   },
   {
@@ -1734,69 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/07/27/084500.html"
-    }
-  },
-  {
-    "title": "7月29日〜8月31日伊賀鉄道で「伊賀焼風鈴列車」を運転",
-    "category": "news",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/27/084000.html"
-    }
-  },
-  {
-    "title": "8月8日・9日京王れーるランドで「NIGHTれーるランド」開催",
-    "category": "news",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/27/083000.html"
-    }
-  },
-  {
-    "title": "8月1日〜広島電鉄，駅前大橋ルート開業1周年企画「Fresh！My Routeキャンペーン」を実施",
-    "category": "news",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/27/082000.html"
-    }
-  },
-  {
-    "title": "7月28日〜11月23日旧新橋停車場鉄道歴史展示室で第69回企画展「昭和100年記念 昭和の駅風景」開催",
-    "category": "news",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/27/081500.html"
-    }
-  },
-  {
-    "title": "「北総鉄道 8・8・8記念硬券セット」発売",
-    "category": "news",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/27/071500.html"
-    }
-  },
-  {
-    "title": "湘南モノレール，記念乗車券セット「湘南八福神きっぷ」を発売",
-    "category": "travel",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/27/071000.html"
-    }
-  },
-  {
-    "title": "JR東日本「サンキューちばフリーパス（Chiba 2-Day Pass）」発売",
-    "category": "travel",
-    "date": "2026-07-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/27/070000.html"
     }
   }
 ]
