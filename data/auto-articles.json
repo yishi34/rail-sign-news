@@ -1,5 +1,23 @@
 [
   {
+    "title": "明日から新幹線「のぞみ」自由席なし。お盆は指定席の予約必須につき要注意",
+    "category": "news",
+    "date": "2026-08-06",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2130937.html"
+    }
+  },
+  {
+    "title": "新幹線ホームに「カップ氷」自販機が登場。JR新大阪駅27番ホーム6号車付近",
+    "category": "news",
+    "date": "2026-08-06",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2130913.html"
+    }
+  },
+  {
     "title": "9月10日オープンの直結ビル「ekubo京成」誕生で、スカイライナーも停まる巨大ハブ駅・新鎌ヶ谷はどう変わる？ 全テナント情報も公開！",
     "category": "news",
     "date": "2026-08-05",
@@ -420,6 +438,42 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74930/"
+    }
+  },
+  {
+    "title": "【松浦】MR-501「レトロン号」で「ビール列車昼の旅2026」運転",
+    "category": "news",
+    "date": "2026-08-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74955/"
+    }
+  },
+  {
+    "title": "【JR東】E2系J72編成が交番検査を終え新潟を出場",
+    "category": "cars",
+    "date": "2026-08-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74954/"
+    }
+  },
+  {
+    "title": "【JR東】E233系青661編成＋P524編成が秋田総合車両センターを出場",
+    "category": "cars",
+    "date": "2026-08-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74953/"
+    }
+  },
+  {
+    "title": "【伊豆箱】5000系5503編成に「天狗コラボスタンプラリー」PRヘッドマーク掲出",
+    "category": "cars",
+    "date": "2026-08-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74952/"
     }
   },
   {
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "トラベル Watch",
       "url": "https://travel.watch.impress.co.jp/docs/news/2129569.html"
-    }
-  },
-  {
-    "title": "【週末駅弁】軽井沢駅「浅間山麓弁当」",
-    "category": "travel",
-    "date": "2026-07-31",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/series/ekiben/2129369.html"
-    }
-  },
-  {
-    "title": "「幕コレ JR西日本編 ～大阪環状線・大和路線～」の専用追加コンテンツ第2弾・第3弾，「阪和線103系セット」「加古川線103系セット」を発売",
-    "category": "news",
-    "date": "2026-07-31",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/31/151500.html"
-    }
-  },
-  {
-    "title": "名鉄「『8・8・8』記念乗車券」を発売",
-    "category": "news",
-    "date": "2026-07-31",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/31/151000.html"
-    }
-  },
-  {
-    "title": "「JR四国8000系 キッズキャップ」を発売",
-    "category": "news",
-    "date": "2026-07-31",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/07/31/150000.html"
-    }
-  },
-  {
-    "title": "11月1日・8日・23日JR東海，「豊川稲荷御開帳記念列車」を運転",
-    "category": "news",
-    "date": "2026-07-31",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/31/144000.html"
-    }
-  },
-  {
-    "title": "8月15日・16日福井鉄道，ドイツ製イベント用車両「レトラム」を運転",
-    "category": "cars",
-    "date": "2026-07-31",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/07/31/143500.html"
     }
   }
 ]
