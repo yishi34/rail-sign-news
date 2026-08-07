@@ -9,6 +9,15 @@
     }
   },
   {
+    "title": "実は「新幹線発祥の地」だった！ 0系が初めて走った「京浜東北線の街」でミニ新幹線が伝えることとは",
+    "category": "news",
+    "date": "2026-08-08",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/695107"
+    }
+  },
+  {
     "title": "【ひなたフェス2026】宮崎の宿難民へ！特急787系で一晩過ごせる夜間滞在型イベント「スワローおひさま」が救世主に？",
     "category": "travel",
     "date": "2026-08-07",
@@ -249,6 +258,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74986/"
+    }
+  },
+  {
+    "title": "【東急】2020系2125F 長津田車両工場出場試運転",
+    "category": "cars",
+    "date": "2026-08-07",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/74990/"
     }
   },
   {
@@ -1779,24 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/08/03/065000.html"
-    }
-  },
-  {
-    "title": "阪急で「おさるのジョージ号」運転",
-    "category": "news",
-    "date": "2026-08-03",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/03/064500.html"
-    }
-  },
-  {
-    "title": "臨時特急“なぎ”運転",
-    "category": "news",
-    "date": "2026-08-03",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/03/064000.html"
     }
   }
 ]
