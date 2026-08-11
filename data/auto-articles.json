@@ -18,6 +18,24 @@
     }
   },
   {
+    "title": "【井上孝司の「鉄道旅行のヒント」】わざと途中で乗り換えていろんな列車・車両を楽しむ",
+    "category": "cars",
+    "date": "2026-08-12",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2132032.html"
+    }
+  },
+  {
+    "title": "水島臨海鉄道で「お盆期間の旧国鉄車両『キハ37』特別運行」",
+    "category": "cars",
+    "date": "2026-08-12",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/12/000000.html"
+    }
+  },
+  {
     "title": "【JR新橋駅徒歩1分】かに地獄の人気プラン「カニ食べ放題」がヤバい！期間限定でサイド全12品も追加した新プランにリニューアル！飲み放題は30分350円から",
     "category": "news",
     "date": "2026-08-11",
@@ -222,6 +240,105 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75050/"
+    }
+  },
+  {
+    "title": "京成AE5編成に「ピカチュウジェット CI2」ラッピング",
+    "category": "cars",
+    "date": "2026-08-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/11/235500.html"
+    }
+  },
+  {
+    "title": "とさでん交通で「よさこい花電車」運転",
+    "category": "news",
+    "date": "2026-08-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/11/234000.html"
+    }
+  },
+  {
+    "title": "近江鉄道，200形203編成の運行を8月12日から開始へ〜かつての500形の塗装を復刻〜",
+    "category": "cars",
+    "date": "2026-08-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/11/233000.html"
+    }
+  },
+  {
+    "title": "【西武】4000系4023F 先頭車のみ留置",
+    "category": "news",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75072/"
+    }
+  },
+  {
+    "title": "【南海】7100系8両による「赤準急」尾崎行きが運転",
+    "category": "news",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75071/"
+    }
+  },
+  {
+    "title": "【東急】5050系4113F車輪転削回送",
+    "category": "news",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75070/"
+    }
+  },
+  {
+    "title": "【東急】輸送障害の影響で田園都市線で渋谷行が運転",
+    "category": "news",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75069/"
+    }
+  },
+  {
+    "title": "【東武】半蔵門線運転見合わせに伴い急行・準急「九段下」行きが運転",
+    "category": "service",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75068/"
+    }
+  },
+  {
+    "title": "【東武】50070型51075Fが重検明けのATO確認試運転",
+    "category": "cars",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75067/"
+    }
+  },
+  {
+    "title": "【名鉄】1200系1114F舞木検査場出場試運転",
+    "category": "cars",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75066/"
+    }
+  },
+  {
+    "title": "【台鉄】国家鉄道博物館でDR2203+DR2303撮影会",
+    "category": "news",
+    "date": "2026-08-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75065/"
     }
   },
   {
@@ -1680,123 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/74968/"
-    }
-  },
-  {
-    "title": "【東武】8000型8183F 南栗橋工場出場試運転",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74967/"
-    }
-  },
-  {
-    "title": "【京成】AE形AE4編成が宗吾車両基地出場試運転を実施",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74966/"
-    }
-  },
-  {
-    "title": "【千葉モノ】0形第32編成が本線試運転",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74965/"
-    }
-  },
-  {
-    "title": "【JR東】E3系L65編成「銀つば」の解体が進み残り2両に",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74964/"
-    }
-  },
-  {
-    "title": "【JR海】313系R114編成が名古屋工場出場試運転",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74963/"
-    }
-  },
-  {
-    "title": "【西武】20000系20103Fが新宿線系統で運用開始",
-    "category": "news",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74962/"
-    }
-  },
-  {
-    "title": "【JR西】225系HF404編成吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74961/"
-    }
-  },
-  {
-    "title": "【京阪】石山坂本線607Fで「フィレール」ラッピング運転開始",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74960/"
-    }
-  },
-  {
-    "title": "【JR西】221系K17編成を使用した乗務員訓練がJR京都線内で実施",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74959/"
-    }
-  },
-  {
-    "title": "【JR九】車外カメラを設置した811系PM2101編成が小倉総合車両センター出場",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74958/"
-    }
-  },
-  {
-    "title": "【東武】柏始発の団体臨時列車に634型「スカイツリートレイン」が充当",
-    "category": "service",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74957/"
-    }
-  },
-  {
-    "title": "【名市交】N1000形N1113H藤が丘工場出場試運転(202608)",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/74956/"
-    }
-  },
-  {
-    "title": "【明日から】お盆の新幹線「のぞみ」は自由席なし！8月8日午前はほぼ満席…でも数時間ズラせば空きが見つかることも　混雑避ける「空席」探しのコツ",
-    "category": "news",
-    "date": "2026-08-06",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13034427.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
     }
   }
 ]
