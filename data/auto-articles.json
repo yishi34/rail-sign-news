@@ -18,6 +18,24 @@
     }
   },
   {
+    "title": "近江200形203編成が営業運転を開始",
+    "category": "cars",
+    "date": "2026-08-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/13/001500.html"
+    }
+  },
+  {
+    "title": "2600系「高徳線 うずしおアンパンマン列車」が4両編成で運転",
+    "category": "cars",
+    "date": "2026-08-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/13/000000.html"
+    }
+  },
+  {
     "title": "【井上孝司の「鉄道旅行のヒント」】わざと途中で乗り換えていろんな列車・車両を楽しむ",
     "category": "cars",
     "date": "2026-08-12",
@@ -204,6 +222,42 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75074/"
+    }
+  },
+  {
+    "title": "【KORAIL】351000系351F27編成が精密診断を終え出場試運転",
+    "category": "cars",
+    "date": "2026-08-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75086/"
+    }
+  },
+  {
+    "title": "【JR北】DE10-1691牽引で721系F-4103+F-4203編成を救援回送",
+    "category": "cars",
+    "date": "2026-08-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75085/"
+    }
+  },
+  {
+    "title": "【JR海】313系J1編成が名古屋工場出場試運転",
+    "category": "cars",
+    "date": "2026-08-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75084/"
+    }
+  },
+  {
+    "title": "【水島】水島臨海鉄道×井原鉄道コラボ第2弾「車両撮影会」開催",
+    "category": "cars",
+    "date": "2026-08-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75083/"
     }
   },
   {
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/08/06/111500.html"
-    }
-  },
-  {
-    "title": "9月5日・6日JR九州『宮崎駅 特急型車両夜間滞在イベント～787系で過ごす 夜のシェアスペース』の参加者募集",
-    "category": "cars",
-    "date": "2026-08-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/06/111000.html"
-    }
-  },
-  {
-    "title": "9月21日JR東日本新潟事業本部「現役乗務員が教える 運転士・車掌 E129系シミュレータ体験」開催",
-    "category": "news",
-    "date": "2026-08-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/06/110500.html"
-    }
-  },
-  {
-    "title": "9月6日・13日JR東日本新潟事業本部「レールの裏側へ、厳選鉄しごと探訪」開催",
-    "category": "news",
-    "date": "2026-08-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/06/110000.html"
-    }
-  },
-  {
-    "title": "三陸鉄道「三鉄ワンコインフリーパス（盛～久慈間）」発売",
-    "category": "travel",
-    "date": "2026-08-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/06/103500.html"
-    }
-  },
-  {
-    "title": "関東鉄道「常総線 888 記念券」発売",
-    "category": "news",
-    "date": "2026-08-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/06/103000.html"
-    }
-  },
-  {
-    "title": "いすみ鉄道，「令和8年8月8日記念硬券セット」を発売",
-    "category": "news",
-    "date": "2026-08-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/06/102500.html"
     }
   }
 ]
