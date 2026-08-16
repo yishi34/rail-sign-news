@@ -14,6 +14,8 @@ const GAP = 60; // 駅の間隔
 const TIER_Y0 = 64; // 一番上の段(最優等種別)のy
 const TIER_STEP = 40; // 段と段の間隔
 const NAME_CH = 17; // 駅名1文字ぶんの高さ
+const SUB_GAP = 10; // 駅名と副駅名のあいだ
+const SUB_LH = 13; // 副駅名1行ぶんの高さ
 const TR_GAP = 18; // 駅名の最後の文字と乗換表記のあいだ(約1文字ぶん)
 const TR_LH = 13; // 乗換表記の行の高さ
 
@@ -33,40 +35,45 @@ function RouteSvg({ line }) {
   const { types, stations, branches } = line;
   const hasBranch = branches && branches.length > 0;
   const n = stations.length;
+  const gap = line.stationGap || GAP;
   // 種別ラベル(急行/特急アルプス等)が長い場合、線の開始位置を右へずらして駅と重ならないようにする
   const labelMaxLen = Math.max(...types.map((t) => t.label.length));
   const leftBase = Math.max(X0, labelMaxLen * 15 + 40);
-  const xAt = (i) => leftBase + i * GAP;
+  const xAt = (i) => leftBase + i * gap;
   const tierY = (i) => TIER_Y0 + i * TIER_STEP;
   const bottomIndex = types.length - 1;
   const bottomY = tierY(bottomIndex);
   const nameTop = bottomY + 14;
   const maxRank = Math.max(...types.map((t) => t.rank));
   // 各駅の、駅名+乗換表記をふくめた下端までの深さ(駅名の長さに追従)
-  const stationDepth = (s) =>
-    s.name.length * NAME_CH + (s.transfer ? TR_GAP + s.transfer.length * TR_LH : 0);
+  const stationDepth = (s) => {
+    const nameDepth = s.name.length * NAME_CH;
+    const subDepth = s.subName ? SUB_GAP + SUB_LH : 0;
+    const transferDepth = s.transfer ? TR_GAP + s.transfer.length * TR_LH : 0;
+    return nameDepth + subDepth + transferDepth;
+  };
   const maxMainDepth = Math.max(...stations.map(stationDepth));
   const CONT_W = line.continuesTo ? 210 : 0; // 「この先へ続く」表示ぶんの余白
   // 支線の配置情報(分岐駅の次駅との中間で下へ折れ、本線駅名の下を右へのびる)
   const branchInfos = (branches || []).map((b) => {
     const fromIndex = stations.findIndex((s) => s.name === b.from);
     const fromX = xAt(fromIndex);
-    const midX = fromX + GAP / 2;
-    const bx = (j) => fromX + (j + 1) * GAP;
+    const midX = fromX + gap / 2;
+    const bx = (j) => fromX + (j + 1) * gap;
     const lastBx = bx(b.stations.length - 1);
     return { b, fromIndex, fromX, midX, bx, lastBx };
   });
   // 支線が右にのびる場合、本線より右に出る分の幅も確保する
   const branchExtra = branchInfos.reduce(
-    (max, bi) => Math.max(max, bi.lastBx - (leftBase + (n - 1) * GAP)),
+    (max, bi) => Math.max(max, bi.lastBx - (leftBase + (n - 1) * gap)),
     0
   );
-  const width = leftBase + (n - 1) * GAP + 48 + CONT_W + branchExtra;
+  const width = leftBase + (n - 1) * gap + 48 + CONT_W + branchExtra;
   // 支線が走る区間にかかる本線駅の名前の深さだけで高さを決める(左の長い駅名に引っぱられて下がりすぎないように)
   const branchSpanDepth = branchInfos.reduce((max, bi) => {
     const d = stations.reduce((m, s, i) => {
       const x = xAt(i);
-      return x >= bi.fromX - GAP / 2 && x <= bi.lastBx + GAP / 2
+      return x >= bi.fromX - gap / 2 && x <= bi.lastBx + gap / 2
         ? Math.max(m, stationDepth(s))
         : m;
     }, 0);
@@ -163,6 +170,8 @@ function RouteSvg({ line }) {
       {stations.map((s, i) => {
         const x = xAt(i);
         const topI = topTierIndex(s);
+        const nameDepth = s.name.length * NAME_CH;
+        const transferTop = nameTop + nameDepth + (s.subName ? SUB_GAP + SUB_LH : 0) + TR_GAP;
         return (
           <g key={`${s.name}-${i}`}>
             {/* 停車する段どうしを縦線でつなぐ(上端の段→一番下の段) */}
@@ -193,13 +202,23 @@ function RouteSvg({ line }) {
             >
               {s.name}
             </text>
+            {s.subName && (
+              <text
+                x={x}
+                y={nameTop + nameDepth + SUB_GAP}
+                className="rm-subname"
+                textAnchor="middle"
+              >
+                （{s.subName}）
+              </text>
+            )}
             {/* 乗換路線(駅名の下に小さく)。開始位置は全駅そろえる(一番長い駅名の下) */}
             {s.transfer &&
               s.transfer.map((tr, j) => (
                 <text
                   key={j}
                   x={x}
-                  y={nameTop + s.name.length * NAME_CH + TR_GAP + j * TR_LH}
+                  y={transferTop + j * TR_LH}
                   className="rm-transfer"
                   textAnchor="middle"
                 >

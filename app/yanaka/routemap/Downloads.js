@@ -9,6 +9,7 @@ const SVG_STYLE = `
 .rm-tier{font-weight:900;font-size:15px;font-family:'Noto Sans JP',sans-serif}
 .rm-name{font-size:15px;font-weight:600;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 .rm-name-exp{font-weight:900;fill:#1a1a1a}
+.rm-subname{font-size:10.5px;font-weight:700;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
 .rm-transfer{font-size:9.5px;font-weight:600;fill:#0072bc;font-family:'Noto Sans JP',sans-serif}
 .rm-cont{font-size:13px;font-weight:900;fill:#1a1a1a;font-family:'Noto Sans JP',sans-serif}
 .rm-cont-sub{font-size:11px;font-weight:700;fill:#6e7479;font-family:'Noto Sans JP',sans-serif}
