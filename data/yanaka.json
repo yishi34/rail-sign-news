@@ -357,6 +357,37 @@
         ]
       },
       {
+        "id": "gatama",
+        "name": "谷鉄 潟馬線",
+        "nameEn": "GATAMA LINE",
+        "note": "これはイメージ路線図です。新潟県の直江津から、長野県北部を経て群馬県の草津温泉方面へ向かう山岳ローカル線です。",
+        "types": [
+          { "id": "loc", "label": "各駅停車", "color": "#0f8f8a", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "直江津", "rank": 1, "transfer": ["えちごトキめき鉄道", "JR信越本線"] },
+          { "name": "春日山", "rank": 1 },
+          { "name": "高田", "rank": 1 },
+          { "name": "新井", "rank": 1 },
+          { "name": "妙高高原", "rank": 1, "transfer": ["えちごトキめき鉄道", "しなの鉄道"] },
+          { "name": "黒姫", "rank": 1 },
+          { "name": "信濃町", "rank": 1 },
+          { "name": "飯綱高原", "rank": 1 },
+          { "name": "豊野", "rank": 1, "transfer": ["JR飯山線", "しなの鉄道"] },
+          { "name": "谷鉄長野", "rank": 1, "transfer": ["北陸新幹線", "JR信越本線", "しなの鉄道", "谷鉄長野線"] },
+          { "name": "須坂", "rank": 1, "transfer": ["長野電鉄"] },
+          { "name": "菅平口", "rank": 1 },
+          { "name": "真田", "rank": 1 },
+          { "name": "上田", "rank": 1, "transfer": ["北陸新幹線", "しなの鉄道", "上田電鉄"] },
+          { "name": "東御", "rank": 1 },
+          { "name": "小諸", "rank": 1, "transfer": ["しなの鉄道", "JR小海線"] },
+          { "name": "新軽井沢", "rank": 1, "transfer": ["北陸新幹線", "しなの鉄道"] },
+          { "name": "北軽井沢", "rank": 1 },
+          { "name": "長野原草津口", "rank": 1, "transfer": ["JR吾妻線"] },
+          { "name": "草津温泉", "rank": 1 }
+        ]
+      },
+      {
         "id": "kitadake-climb",
         "name": "谷鉄 北岳登山線",
         "nameEn": "KITADAKE CLIMB LINE",
