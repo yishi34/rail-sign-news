@@ -333,7 +333,7 @@
           { "name": "韮崎", "rank": 1 },
           { "name": "小淵沢", "rank": 1, "transfer": ["JR小海線"] },
           { "name": "茅野", "rank": 1 },
-          { "name": "上諏訪", "rank": 2 },
+          { "name": "上諏訪", "rank": 2, "transfer": ["谷鉄 長野線", "谷鉄 北岳登山線", "JR中央本線"] },
           { "name": "岡谷", "rank": 1 },
           { "name": "塩尻", "rank": 1, "transfer": ["JR中央本線"] },
           { "name": "谷鉄松本", "rank": 2, "transfer": ["JR篠ノ井線", "アルピコ交通"] },
@@ -357,6 +357,34 @@
         ]
       },
       {
+        "id": "nagano",
+        "name": "谷鉄 長野線",
+        "nameEn": "NAGANO LINE",
+        "note": "これはイメージ路線図です。上諏訪から霧ヶ峰・白樺湖・温泉地を経て、谷鉄長野へ向かう信州山岳ローカル線です。",
+        "types": [
+          { "id": "loc", "label": "各駅停車", "color": "#2563eb", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "上諏訪", "rank": 1, "transfer": ["谷鉄 富山線", "谷鉄 北岳登山線", "JR中央本線"] },
+          { "name": "霧ヶ峰高原", "rank": 1 },
+          { "name": "車山高原", "rank": 1 },
+          { "name": "白樺湖", "rank": 1 },
+          { "name": "女神湖", "rank": 1 },
+          { "name": "蓼科牧場", "rank": 1 },
+          { "name": "立科", "rank": 1 },
+          { "name": "望月", "rank": 1 },
+          { "name": "丸子温泉", "rank": 1 },
+          { "name": "鹿教湯温泉", "rank": 1 },
+          { "name": "青木", "rank": 1 },
+          { "name": "修那羅峠", "rank": 1 },
+          { "name": "信州新町", "rank": 1 },
+          { "name": "七二会", "rank": 1 },
+          { "name": "松代", "rank": 1 },
+          { "name": "川中島古戦場", "rank": 1 },
+          { "name": "谷鉄長野", "rank": 1, "transfer": ["谷鉄 潟馬線", "北陸新幹線", "JR信越本線", "しなの鉄道"] }
+        ]
+      },
+      {
         "id": "gatama",
         "name": "谷鉄 潟馬線",
         "nameEn": "GATAMA LINE",
@@ -374,7 +402,7 @@
           { "name": "信濃町", "rank": 1 },
           { "name": "飯綱高原", "rank": 1 },
           { "name": "豊野", "rank": 1, "transfer": ["JR飯山線", "しなの鉄道"] },
-          { "name": "谷鉄長野", "rank": 1, "transfer": ["北陸新幹線", "JR信越本線", "しなの鉄道", "谷鉄長野線"] },
+          { "name": "谷鉄長野", "rank": 1, "transfer": ["谷鉄 長野線", "北陸新幹線", "JR信越本線", "しなの鉄道"] },
           { "name": "須坂", "rank": 1, "transfer": ["長野電鉄"] },
           { "name": "菅平口", "rank": 1 },
           { "name": "真田", "rank": 1 },
@@ -396,7 +424,7 @@
           { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "上諏訪", "rank": 1, "transfer": ["谷鉄 富山線", "JR中央本線"] },
+          { "name": "上諏訪", "rank": 1, "transfer": ["谷鉄 富山線", "谷鉄 長野線", "JR中央本線"] },
           { "name": "新相生", "rank": 1 },
           { "name": "甲斐小笠原", "rank": 1 },
           { "name": "白根桃源", "rank": 1 },
