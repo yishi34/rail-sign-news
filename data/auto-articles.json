@@ -18,6 +18,15 @@
     }
   },
   {
+    "title": "待たずに先頭タクシーへ即乗車。新大阪駅に「newmo」スマホ予約専用乗り場、新たな配車マッチングを検証",
+    "category": "news",
+    "date": "2026-08-19",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2133668.html"
+    }
+  },
+  {
     "title": "千葉豪雨の災害復興支援チーム設置、浸水・水没車両の引取りを支援…ソコカラ",
     "category": "cars",
     "date": "2026-08-18",
@@ -339,6 +348,60 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75183/"
+    }
+  },
+  {
+    "title": "ANAとJAL、羽田～岡山線で全国初の共同ダイヤ調整。2026年冬期から出発時刻を分散、国交省の提言を踏まえて",
+    "category": "service",
+    "date": "2026-08-18",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2133620.html"
+    }
+  },
+  {
+    "title": "【JR九】813系RM2301編成が小倉総合車両センターへ入場",
+    "category": "cars",
+    "date": "2026-08-18",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75205/"
+    }
+  },
+  {
+    "title": "【広電】800形806号千田車庫出場試運転",
+    "category": "cars",
+    "date": "2026-08-18",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75204/"
+    }
+  },
+  {
+    "title": "【京成】3000形3009編成が宗吾車両基地出場試運転",
+    "category": "cars",
+    "date": "2026-08-18",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75201/"
+    }
+  },
+  {
+    "title": "【南海】8300系8723F+8327F近畿車輛出場甲種輸送",
+    "category": "cars",
+    "date": "2026-08-18",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75198/"
+    }
+  },
+  {
+    "title": "【京阪】13000系13019Fが試運転",
+    "category": "cars",
+    "date": "2026-08-18",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75197/"
     }
   },
   {
@@ -1734,69 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75095/"
-    }
-  },
-  {
-    "title": "【JR海】313系V8編成が名古屋工場出場試運転",
-    "category": "cars",
-    "date": "2026-08-13",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75094/"
-    }
-  },
-  {
-    "title": "【西鉄】6050形6054F筑紫車両基地検査出場試運転",
-    "category": "cars",
-    "date": "2026-08-13",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75092/"
-    }
-  },
-  {
-    "title": "【井上孝司の「鉄道旅行のヒント」】わざと途中で乗り換えていろんな列車・車両を楽しむ",
-    "category": "cars",
-    "date": "2026-08-12",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2132032.html"
-    }
-  },
-  {
-    "title": "水島臨海鉄道で「お盆期間の旧国鉄車両『キハ37』特別運行」",
-    "category": "cars",
-    "date": "2026-08-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/12/000000.html"
-    }
-  },
-  {
-    "title": "岐阜県・長良川鉄道沿線の暮らしに密着、六角精児がナビゲーター『わが家の最寄りは秘境駅』8/12放送　BS日テレ",
-    "category": "news",
-    "date": "2026-08-12",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13034909.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "【長野・蓼科】愛犬と泊まれる避暑地リゾート！蓼科 東急ホテルに「ペットウェルカムコテージ」が8月20日オープン",
-    "category": "news",
-    "date": "2026-08-12",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13034728.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "長袖Tシャツ「近鉄 あをによし・OJICO」を発売",
-    "category": "news",
-    "date": "2026-08-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/12/141000.html"
     }
   }
 ]
