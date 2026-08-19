@@ -27,6 +27,69 @@
     }
   },
   {
+    "title": "千葉豪雨の浸水・水没車両、最大1100台無償で一時的に受け入れへ…ソコカラ",
+    "category": "cars",
+    "date": "2026-08-20",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/08/20/415478.html"
+    }
+  },
+  {
+    "title": "淡路屋のコラボ駅弁「海技教育機構ひっぱりだこ飯」発売。陶器の器に練習船の日本丸・海王丸を描く",
+    "category": "travel",
+    "date": "2026-08-20",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2134001.html"
+    }
+  },
+  {
+    "title": "307系T-1編成が試運転を実施",
+    "category": "cars",
+    "date": "2026-08-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/20/030000.html"
+    }
+  },
+  {
+    "title": "墨田区・東武鉄道・千葉大学墨田区ラッピングトレイン「五彩」を東武亀戸線などで9月4日から運行",
+    "category": "cars",
+    "date": "2026-08-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/20/010000.html"
+    }
+  },
+  {
+    "title": "大阪モノレール，ラッピング列車「モノぞう号」の運行を9月1日から開始",
+    "category": "cars",
+    "date": "2026-08-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/20/004500.html"
+    }
+  },
+  {
+    "title": "「東急線アプリ」で，みなとみらい線のリアルタイム列車走行位置の表示を開始",
+    "category": "news",
+    "date": "2026-08-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/20/001500.html"
+    }
+  },
+  {
+    "title": "北海道新幹線 羊蹄トンネル（比羅夫）他工区の掘削を完了",
+    "category": "news",
+    "date": "2026-08-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/20/000000.html"
+    }
+  },
+  {
     "title": "待たずに先頭タクシーへ即乗車。新大阪駅に「newmo」スマホ予約専用乗り場、新たな配車マッチングを検証",
     "category": "news",
     "date": "2026-08-19",
@@ -339,6 +402,96 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75206/"
+    }
+  },
+  {
+    "title": "猛烈に懐かしくなる「新宮行きの夜行列車」に乗った！ 28年前は「地獄の6時間20分」 令和は「12時間22分」",
+    "category": "news",
+    "date": "2026-08-19",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/699454"
+    }
+  },
+  {
+    "title": "【JR東】E653系K71編成が東大宮へ常駐交換のため回送",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75236/"
+    }
+  },
+  {
+    "title": "【小田急】1000形1093編成 大野総合車両所出場試運転",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75235/"
+    }
+  },
+  {
+    "title": "【南海】白鷺駅に折り返し用の出発信号機が設置",
+    "category": "news",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75234/"
+    }
+  },
+  {
+    "title": "【JR東】E721系による快速列車が「猪苗代」行きで運転",
+    "category": "news",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75233/"
+    }
+  },
+  {
+    "title": "【JR海】313系J151編成・J152編成が名古屋工場へ入場回送",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75231/"
+    }
+  },
+  {
+    "title": "【台鉄】R200型R233がE1000型PP客車を牽引し性能確認試運転",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75230/"
+    }
+  },
+  {
+    "title": "【東急】5080系5184Fが長津田車両工場へ入場回送",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75229/"
+    }
+  },
+  {
+    "title": "【名市交】6050形6154Hが日進工場出場試運転",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75228/"
+    }
+  },
+  {
+    "title": "【JR東】E233系ケヨ518編成が東京総合車両ベースへ入場回送",
+    "category": "cars",
+    "date": "2026-08-19",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75227/"
     }
   },
   {
@@ -1644,159 +1797,6 @@
     "source": {
       "name": "乗りものニュース",
       "url": "https://trafficnews.jp/post/698248"
-    }
-  },
-  {
-    "title": "【空から撮った鉄道】令和に出土した「錦絵の風景」その後どうなった？ 山手線新駅の“天空都市”が本格始動",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/689289"
-    }
-  },
-  {
-    "title": "東海道新幹線 各列車の「車両タイプ」「号車ごとの設備」が確認可能に 運行状況ページを拡充",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/698553"
-    }
-  },
-  {
-    "title": "「笑いとまんねえ」 シーパラに“狂気の顔面列車”出現にSNS騒然 ヤバさは前回よりエスカレート！ 「悪夢みてぇだ」",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/698233"
-    }
-  },
-  {
-    "title": "同じ経路なのに「行きと帰りで運賃が違う!?」東京メトロの謎 JRと異なる”落とし穴”とは？",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/697675"
-    }
-  },
-  {
-    "title": "「あの頃の信越本線」を追体験！ 2社の国鉄型電車で“昼行＆夜行急行”の団体列車運行へ",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/698280"
-    }
-  },
-  {
-    "title": "【JR九】103系E12編成(国鉄復刻色)  南福岡車両区竹下車両派出 車輪削正返却回送",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75115/"
-    }
-  },
-  {
-    "title": "【JR九】「783系専用列車で行く!第39回関門海峡花火大会観賞ツアー」が催行",
-    "category": "travel",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75114/"
-    }
-  },
-  {
-    "title": "【JR東】E235系クラJ-14編成 東京総合車両ベース出場回送",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75113/"
-    }
-  },
-  {
-    "title": "【JR東】大雨による蘇我駅構内線路冠水と信号設備故障による千葉みなと駅止まりが運行",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75112/"
-    }
-  },
-  {
-    "title": "【近鉄】19400系「Les Saveurs 志摩」が姿を見せる",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75111/"
-    }
-  },
-  {
-    "title": "【JR西】115系D-08編成+D-06編成が幡生へ回送",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75110/"
-    }
-  },
-  {
-    "title": "【京急】1000形1105編成 久里浜工場出場前試運転",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75108/"
-    }
-  },
-  {
-    "title": "【JR東】E231系ケヨMU7編成 東京総合車両センター入場(202608)",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75107/"
-    }
-  },
-  {
-    "title": "【小田急】8000形8260F(8260×6)喜多見電車基地まで臨時回送",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75106/"
-    }
-  },
-  {
-    "title": "【JR東】キハ110系による臨時快速「はやちね」が運転",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75105/"
-    }
-  },
-  {
-    "title": "【JR貨】八代駅で横転した貨車が復線、EF510-308も復旧作業進む",
-    "category": "news",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75104/"
-    }
-  },
-  {
-    "title": "【JR九】813系RG2228編成+817系VG1603・VG1604編成が鹿児島本線で運用",
-    "category": "cars",
-    "date": "2026-08-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75103/"
     }
   }
 ]
