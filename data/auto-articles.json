@@ -27,6 +27,24 @@
     }
   },
   {
+    "title": "「第25回 国際鉄道模型コンベンション」開催",
+    "category": "news",
+    "date": "2026-08-22",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/22/000000.html"
+    }
+  },
+  {
+    "title": "90年前の「皇室用車両」内部がスゴかった！ 一・二・三等車を乗り比べ 世界的にも希少な“ロイヤル・トレイン”150年の進化",
+    "category": "cars",
+    "date": "2026-08-22",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/699162"
+    }
+  },
+  {
     "title": "“京王ライナー”，10月1日から立席サービスを導入",
     "category": "news",
     "date": "2026-08-21",
@@ -339,6 +357,150 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75261/"
+    }
+  },
+  {
+    "title": "【激レア】一般人が乗れないJRの気動車 噂の体験会に密着！",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/700853"
+    }
+  },
+  {
+    "title": "【JR西】221系NA434編成が下関総合車両所本所で要検明け構内試運転",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75288/"
+    }
+  },
+  {
+    "title": "【阪急】8300系8315F行先幕が撤去",
+    "category": "news",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75287/"
+    }
+  },
+  {
+    "title": "【相鉄】原型最後の10000系10708号車が編成から分割",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75286/"
+    }
+  },
+  {
+    "title": "【地鉄】16010形16011Fの急行灯が埋められているのを確認",
+    "category": "news",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75285/"
+    }
+  },
+  {
+    "title": "【JR西】207系S15編成が網干総合車両所本所へ入場回送",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75284/"
+    }
+  },
+  {
+    "title": "【近鉄】6413系Mi13が高安検修場へ入場",
+    "category": "news",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75283/"
+    }
+  },
+  {
+    "title": "【JR西】227系500番台R25+R26+L36編成が西出雲から岡山へ回送",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75282/"
+    }
+  },
+  {
+    "title": "【JR海】N700系X64編成が浜松工場第7全検出場試運転",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75281/"
+    }
+  },
+  {
+    "title": "【東武】20400型21423F 南栗橋工場出場試運転(202608)",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75279/"
+    }
+  },
+  {
+    "title": "【京阪】13000系13005F寝屋川車庫出場試運転",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75278/"
+    }
+  },
+  {
+    "title": "【京阪】2600系2631Fに「ありがとう2600系」ヘッドマーク",
+    "category": "news",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75277/"
+    }
+  },
+  {
+    "title": "【近鉄】2800系AX17が高安検修場へ入場回送",
+    "category": "news",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75276/"
+    }
+  },
+  {
+    "title": "【京阪】2400系2451Fに「ありがとう2400系」ヘッドマーク",
+    "category": "news",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75275/"
+    }
+  },
+  {
+    "title": "【近鉄】2013系XT07「つどい」で集う異経路ツアー",
+    "category": "travel",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75274/"
+    }
+  },
+  {
+    "title": "【メトロ】10000系10102F 車両性能確認試運転",
+    "category": "cars",
+    "date": "2026-08-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75273/"
     }
   },
   {
@@ -1635,168 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/08/17/123500.html"
-    }
-  },
-  {
-    "title": "京都鉄道博物館で489系クハ489-1の車内公開",
-    "category": "news",
-    "date": "2026-08-17",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/17/123000.html"
-    }
-  },
-  {
-    "title": "9月5日・26日京都鉄道博物館で，開館10周年記念「プチ解説 まめちしき10！」開催",
-    "category": "news",
-    "date": "2026-08-17",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/17/122500.html"
-    }
-  },
-  {
-    "title": "9月5日トレインパーク白山で「新幹線整備おしごと体験会」を開催",
-    "category": "news",
-    "date": "2026-08-17",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/17/122000.html"
-    }
-  },
-  {
-    "title": "10月24日〜2027年1月24日京王れーるランドで特別企画展「京王帝都電鉄5000系―人々の期待をのせ、時代をつなぎ、世代を超えて走り続ける名車―」開催",
-    "category": "news",
-    "date": "2026-08-17",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/17/121500.html"
-    }
-  },
-  {
-    "title": "JR東日本、記録的豪雨で“線路が宙に浮いた”外房線の現状を公開 復旧はいつに？ 「代行バスも走行NG」の区間も",
-    "category": "news",
-    "date": "2026-08-17",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/699051"
-    }
-  },
-  {
-    "title": "新宿駅から長野駅まで直通する「夜行列車」が9月に運転へ レアなハイグレード車両が約3年ぶりに夜通し走行",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/698910"
-    }
-  },
-  {
-    "title": "【JR東】E231系ヤマU63編成 東京総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75177/"
-    }
-  },
-  {
-    "title": "【JR東】E233系マリC3編成 鹿島線試運転",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75176/"
-    }
-  },
-  {
-    "title": "【JR東】211系A60編成が延命工事を終え大宮総合車両ベースを出場",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75175/"
-    }
-  },
-  {
-    "title": "【東急】Y000系Y002Fが長津田車両工場から長津田検車区へ回送",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75174/"
-    }
-  },
-  {
-    "title": "【JR西】チキ6162+チキ6175が吹田総合車両所本所を出場",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75173/"
-    }
-  },
-  {
-    "title": "【東急】信号設備故障の影響で日中に上町行が多数運転",
-    "category": "news",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75172/"
-    }
-  },
-  {
-    "title": "【JR海】熊野大花火大会開催に伴い臨時列車を運転",
-    "category": "service",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75171/"
-    }
-  },
-  {
-    "title": "【東急】6020系6122F長津田車両工場出場試運転(202608)",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75170/"
-    }
-  },
-  {
-    "title": "【JR東】EF65-1105が長野総合車両ベースの解体線へ移動",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75168/"
-    }
-  },
-  {
-    "title": "【山陽】3050系3078Fが東二見工場出場試運転、行先表示器をフルカラーLED化",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75167/"
-    }
-  },
-  {
-    "title": "【阪神】1000系1205F(HS55)が「Re Vermilion」塗装で尼崎工場出場試運転",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75166/"
-    }
-  },
-  {
-    "title": "【JR西】 227系SS05編成吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-08-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75165/"
     }
   }
 ]
