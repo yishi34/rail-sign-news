@@ -10,7 +10,7 @@ export const metadata = {
 
 // レイアウト定数
 const X0 = 104; // 左の余白(種別ラベル用)
-const GAP = 60; // 駅の間隔
+const GAP = 96; // 駅の間隔
 const TIER_Y0 = 64; // 一番上の段(最優等種別)のy
 const TIER_STEP = 40; // 段と段の間隔
 const NAME_CH = 17; // 駅名1文字ぶんの高さ
@@ -23,7 +23,7 @@ const BRANCH_NAME_GAP = 20; // 本線の駅名の下端から支線の線まで�
 const BRANCH_CORNER_R = 16; // 支線の曲がり角の丸み(カーブ)
 
 const TRAM_LEFT = 72;
-const TRAM_GAP = 112;
+const TRAM_GAP = 124;
 const TRAM_LINE_Y = 76;
 const TRAM_NAME_Y = 98;
 const TRAM_NAME_CH = 16;
@@ -80,13 +80,21 @@ function RouteSvg({ line }) {
     return Math.max(max, d);
   }, 0);
   // 支線の本線(普通)駅名の下を走らせる
-  const branchLineY = nameTop + branchSpanDepth + BRANCH_NAME_GAP;
   const maxBranchNameLen = branchInfos.reduce(
     (m, bi) => Math.max(m, ...bi.b.stations.map((s) => s.name.length)),
     0
   );
+  const branchBaseLineY = nameTop + branchSpanDepth + BRANCH_NAME_GAP;
+  const branchRowGap = Math.max(56, maxBranchNameLen * NAME_CH + 36);
+  const branchRows = branchInfos.map((bi, index) => ({
+    ...bi,
+    lineY: branchBaseLineY + index * branchRowGap,
+  }));
+  const lastBranchLineY = hasBranch
+    ? branchBaseLineY + (branchRows.length - 1) * branchRowGap
+    : branchBaseLineY;
   const branchBandDepth = hasBranch
-    ? branchLineY - nameTop + maxBranchNameLen * NAME_CH + 16
+    ? lastBranchLineY - nameTop + maxBranchNameLen * NAME_CH + 28
     : 0;
   const height =
     nameTop + Math.max(maxMainDepth, branchBandDepth, line.continuesFrom ? 90 : 0) + 16;
@@ -118,15 +126,15 @@ function RouteSvg({ line }) {
     >
       {/* 支線: 分岐駅の少し先で本線の下にもぐり、カーブで下へ降りて右へのびる(各駅停車のみ)。
           本線・駅名より先に描いて、分岐部を本線の帯の下に隠す */}
-      {branchInfos.map(({ b, fromX, midX, bx, lastBx }) => {
+      {branchRows.map(({ b, fromX, midX, bx, lastBx, lineY }) => {
         const R = BRANCH_CORNER_R;
         const d =
           `M ${fromX} ${bottomY}` +
           ` L ${midX - R} ${bottomY}` +
           ` Q ${midX} ${bottomY} ${midX} ${bottomY + R}` +
-          ` L ${midX} ${branchLineY - R}` +
-          ` Q ${midX} ${branchLineY} ${midX + R} ${branchLineY}` +
-          ` L ${lastBx} ${branchLineY}`;
+          ` L ${midX} ${lineY - R}` +
+          ` Q ${midX} ${lineY} ${midX + R} ${lineY}` +
+          ` L ${lastBx} ${lineY}`;
         return (
           <g key={b.id}>
             <path
@@ -138,11 +146,11 @@ function RouteSvg({ line }) {
               strokeLinejoin="round"
             />
             {/* 支線名ラベル */}
-            <text x={fromX - 10} y={branchLineY + 5} className="rm-tier" fill={branchColor} textAnchor="end">{b.name}</text>
+            <text x={fromX - 10} y={lineY + 5} className="rm-tier" fill={branchColor} textAnchor="end">{b.name}</text>
             {b.stations.map((bs, j) => (
               <g key={bs.name}>
-                <circle cx={bx(j)} cy={branchLineY} r="6" fill="#fff" stroke={branchColor} strokeWidth="3" />
-                <text x={bx(j)} y={branchLineY + 12} className="rm-name" writingMode="vertical-rl" textAnchor="start">
+                <circle cx={bx(j)} cy={lineY} r="6" fill="#fff" stroke={branchColor} strokeWidth="3" />
+                <text x={bx(j)} y={lineY + 12} className="rm-name" writingMode="vertical-rl" textAnchor="start">
                   {bs.name}
                 </text>
               </g>
@@ -212,7 +220,7 @@ function RouteSvg({ line }) {
                 （{s.subName}）
               </text>
             )}
-            {/* 乗換路線(駅名の下に小さく)。開始位置は全駅そろえる(一番長い駅名の下) */}
+            {/* 乗換路線(駅名の下に小さく)。駅間を広くして文字どうしの重なりを避ける */}
             {s.transfer &&
               s.transfer.map((tr, j) => (
                 <text
