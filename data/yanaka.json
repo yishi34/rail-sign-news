@@ -151,6 +151,7 @@
         "name": "谷鉄 奥武蔵線",
         "nameEn": "OKU-MUSASHI LINE",
         "note": "これはイメージ路線図です。",
+        "distanceKm": 153.6,
         "types": [
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
           { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
@@ -166,7 +167,7 @@
           { "name": "読売ランド前", "rank": 1, "transfer": ["小田急線"] },
           { "name": "新矢野口", "rank": 1, "transfer": ["JR南武線"] },
           { "name": "飛田給", "rank": 2, "transfer": ["京王線"] },
-          { "name": "国分寺", "rank": 2, "transfer": ["JR中央線", "西武国分寺線", "西武多摩湖線"] },
+          { "name": "国分寺", "rank": 2, "transfer": ["谷鉄 多摩線", "JR中央線", "西武国分寺線", "西武多摩湖線"] },
           { "name": "新小平", "rank": 1, "transfer": ["JR武蔵野線"] },
           { "name": "谷鉄小平", "rank": 1 },
           { "name": "東大和", "rank": 1 },
@@ -195,6 +196,7 @@
             "id": "musashimurayama-branch",
             "name": "武蔵支線",
             "nameEn": "MUSASHI BRANCH LINE",
+            "distanceKm": 4.8,
             "from": "武蔵村山",
             "stations": [
               { "name": "新北台" },
@@ -204,10 +206,37 @@
         ]
       },
       {
+        "id": "tama",
+        "name": "谷鉄 多摩線",
+        "nameEn": "TAMA LINE",
+        "note": "これはイメージ路線図です。新百合ヶ丘からよみうりランド・稲城長沼・府中方面を経て、奥武蔵線の国分寺へ向かう多摩南北連絡路線です。",
+        "distanceKm": 21.8,
+        "stationGap": 112,
+        "types": [
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "新百合ヶ丘", "rank": 2, "transfer": ["小田急小田原線", "小田急多摩線"] },
+          { "name": "千代ヶ丘", "rank": 1 },
+          { "name": "よみうりランド", "rank": 2, "transfer": ["小田急線"] },
+          { "name": "南山東", "rank": 1 },
+          { "name": "稲城中央", "rank": 2, "transfer": ["京王相模原線"] },
+          { "name": "稲城長沼", "rank": 2, "transfer": ["JR南武線"] },
+          { "name": "府中本町", "rank": 2, "transfer": ["JR南武線", "JR武蔵野線"] },
+          { "name": "府中競馬正門前", "rank": 1, "transfer": ["京王競馬場線"] },
+          { "name": "谷鉄府中", "rank": 2, "transfer": ["京王線"] },
+          { "name": "北府中", "rank": 1, "transfer": ["JR武蔵野線"] },
+          { "name": "国分寺", "rank": 2, "transfer": ["谷鉄 奥武蔵線", "JR中央線", "西武国分寺線", "西武多摩湖線"] }
+        ]
+      },
+      {
         "id": "tokai",
         "name": "谷鉄 東海ライン（関東地区）",
         "nameEn": "TOKAI LINE (KANTO AREA)",
         "note": "これはイメージ路線図です。",
+        "distanceLabel": "東海ライン全線",
+        "distanceKm": 585.0,
         "continuesTo": { "name": "谷鉄 東海ライン", "area": "駿豆・東海地区" },
         "types": [
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
@@ -255,6 +284,7 @@
         "name": "谷鉄 谷中線",
         "nameEn": "YANAKA LINE",
         "note": "これはイメージ路線図です。谷鉄品川から新宿を経由し、谷中へ向かう都心縦断路線です。",
+        "distanceKm": 25.4,
         "stationGap": 132,
         "types": [
           { "id": "rap", "label": "快速", "color": "#e11d48", "rank": 2 },
@@ -282,6 +312,7 @@
         "name": "谷鉄 相模丹沢線",
         "nameEn": "SAGAMI TANZAWA LINE",
         "note": "これはイメージ路線図です。橋本では京王相模原線と同一駅で接続し、京王の種別体系に合わせた列車が津久井・宮ヶ瀬・丹沢方面を経て小田原へ向かう谷鉄標準軌間1372mmの連絡路線です。",
+        "distanceKm": 74.8,
         "stationGap": 98,
         "types": [
           { "id": "sp-exp", "label": "特急", "color": "#e60012", "rank": 5 },
@@ -311,6 +342,8 @@
         "name": "谷鉄 東海ライン（駿豆・東海地区）",
         "nameEn": "TOKAI LINE (SUNZU-TOKAI AREA)",
         "note": "これはイメージ路線図です。関東地区(小田原)からの続きです。",
+        "distanceLabel": "東海ライン全線",
+        "distanceKm": 585.0,
         "continuesTo": { "name": "谷鉄 東海ライン", "area": "東海地区" },
         "types": [
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
@@ -354,6 +387,8 @@
         "name": "谷鉄 東海ライン（東海地区）",
         "nameEn": "TOKAI LINE (TOKAI AREA)",
         "note": "これはイメージ路線図です。駿豆・東海地区(新富士)からの続きとして、静岡・浜松・三河を経て名古屋へ向かいます。",
+        "distanceLabel": "東海ライン全線",
+        "distanceKm": 585.0,
         "continuesFrom": { "name": "谷鉄 東海ライン", "area": "駿豆・東海地区" },
         "continuesTo": { "name": "谷鉄 東海ライン", "area": "関西地区" },
         "types": [
@@ -393,6 +428,8 @@
         "name": "谷鉄 東海ライン（関西地区）",
         "nameEn": "TOKAI LINE (KANSAI AREA)",
         "note": "これはイメージ路線図です。東海地区(谷鉄名古屋)から奈良県の西大寺付近を通り、新布施を経て谷鉄大阪梅田へ向かいます。",
+        "distanceLabel": "東海ライン全線",
+        "distanceKm": 585.0,
         "continuesFrom": { "name": "谷鉄 東海ライン", "area": "東海地区" },
         "types": [
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
@@ -427,6 +464,7 @@
         "name": "谷鉄 大良線",
         "nameEn": "OORA LINE",
         "note": "これはイメージ路線図です。大良線(おおらせん)は、谷鉄西大寺から学研都市・北摂方面を経て江坂へ向かう奈良大阪連絡路線です。大阪梅田方面へは直通運転として乗り入れます。",
+        "distanceKm": 63.2,
         "types": [
           { "id": "rap", "label": "快速", "color": "#2ca9e1", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
@@ -454,6 +492,7 @@
         "name": "谷鉄 山陽ライン",
         "nameEn": "SANYO LINE",
         "note": "これはイメージ路線図です。谷鉄大阪梅田から神戸・姫路・岡山・広島・山口方面を経て、谷鉄幡生へ向かう山陽方面の幹線です。",
+        "distanceKm": 561.5,
         "types": [
           { "id": "sp-rap", "label": "新快速", "color": "#0072bc", "rank": 3 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
@@ -464,6 +503,7 @@
             "id": "kure-branch",
             "name": "呉支線",
             "nameEn": "KURE BRANCH LINE",
+            "distanceKm": 31.0,
             "from": "海田市",
             "stations": [
               { "name": "矢野" },
@@ -476,6 +516,7 @@
             "id": "fuchucho-branch",
             "name": "府中町支線",
             "nameEn": "FUCHUCHO BRANCH LINE",
+            "distanceKm": 4.2,
             "from": "海田市",
             "stations": [
               { "name": "府中町", "terminus": true }
@@ -497,7 +538,7 @@
           { "name": "上郡", "rank": 2, "transfer": ["JR山陽本線", "智頭急行"] },
           { "name": "和気", "rank": 1, "transfer": ["JR山陽本線"] },
           { "name": "瀬戸", "rank": 1, "transfer": ["JR山陽本線"] },
-          { "name": "谷鉄岡山", "rank": 3, "transfer": ["山陽新幹線", "JR山陽本線", "JR伯備線", "JR宇野みなと線", "岡山電気軌道"] },
+          { "name": "谷鉄岡山", "rank": 3, "transfer": ["谷鉄 瀬戸内ライン", "山陽新幹線", "JR山陽本線", "JR伯備線", "JR宇野みなと線", "岡山電気軌道"] },
           { "name": "倉敷", "rank": 3, "transfer": ["JR山陽本線", "JR伯備線"] },
           { "name": "新倉敷", "rank": 2, "transfer": ["山陽新幹線", "JR山陽本線"] },
           { "name": "笠岡", "rank": 1, "transfer": ["JR山陽本線"] },
@@ -522,10 +563,47 @@
         ]
       },
       {
+        "id": "setouchi",
+        "name": "谷鉄 瀬戸内ライン",
+        "nameEn": "SETOUCHI LINE",
+        "note": "これはイメージ路線図です。谷鉄岡山から瀬戸大橋を渡り、谷鉄高松を経由して谷鉄松山へ向かう瀬戸内・四国方面の幹線です。",
+        "distanceKm": 266.2,
+        "types": [
+          { "id": "limited", "label": "特急", "color": "#e60012", "rank": 4 },
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄岡山", "rank": 4, "transfer": ["谷鉄 山陽ライン", "山陽新幹線", "JR山陽本線", "JR伯備線", "JR宇野みなと線", "岡山電気軌道"] },
+          { "name": "大元", "rank": 1, "transfer": ["JR宇野みなと線"] },
+          { "name": "妹尾", "rank": 1, "transfer": ["JR宇野みなと線"] },
+          { "name": "茶屋町", "rank": 3, "transfer": ["JR瀬戸大橋線", "JR宇野みなと線"] },
+          { "name": "児島", "rank": 4, "transfer": ["JR瀬戸大橋線"] },
+          { "name": "宇多津", "rank": 3, "transfer": ["JR予讃線", "JR瀬戸大橋線"] },
+          { "name": "坂出", "rank": 3, "transfer": ["JR予讃線"] },
+          { "name": "谷鉄高松", "rank": 4, "transfer": ["JR予讃線", "JR高徳線", "高松琴平電鉄", "高松港"] },
+          { "name": "丸亀", "rank": 3, "transfer": ["JR予讃線"] },
+          { "name": "多度津", "rank": 3, "transfer": ["JR予讃線", "JR土讃線"] },
+          { "name": "詫間", "rank": 1, "transfer": ["JR予讃線"] },
+          { "name": "観音寺", "rank": 4, "transfer": ["JR予讃線"] },
+          { "name": "川之江", "rank": 3, "transfer": ["JR予讃線"] },
+          { "name": "伊予三島", "rank": 3, "transfer": ["JR予讃線"] },
+          { "name": "新居浜", "rank": 4, "transfer": ["JR予讃線"] },
+          { "name": "伊予西条", "rank": 4, "transfer": ["JR予讃線"] },
+          { "name": "壬生川", "rank": 1, "transfer": ["JR予讃線"] },
+          { "name": "今治", "rank": 4, "transfer": ["JR予讃線"] },
+          { "name": "菊間", "rank": 1, "transfer": ["JR予讃線"] },
+          { "name": "伊予北条", "rank": 3, "transfer": ["JR予讃線"] },
+          { "name": "三津浜", "rank": 1, "transfer": ["JR予讃線"] },
+          { "name": "谷鉄松山", "rank": 4, "transfer": ["JR予讃線", "伊予鉄道"] }
+        ]
+      },
+      {
         "id": "hamasaki",
         "name": "谷鉄 濱崎線",
         "nameEn": "HAMASAKI LINE",
         "note": "これはイメージ路線図です。東海ラインと奥武蔵線をむすぶ連絡線です。",
+        "distanceKm": 15.6,
         "types": [
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
@@ -545,6 +623,7 @@
         "name": "谷鉄 富山線",
         "nameEn": "TOYAMA LINE",
         "note": "これはイメージ路線図です。",
+        "distanceKm": 389.4,
         "types": [
           { "id": "exp", "label": "特急アルプス", "color": "#e60012", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
@@ -589,6 +668,7 @@
         "name": "谷鉄 長野線",
         "nameEn": "NAGANO LINE",
         "note": "これはイメージ路線図です。上諏訪から霧ヶ峰・白樺湖・温泉地を経て、谷鉄長野へ向かう信州山岳ローカル線です。",
+        "distanceKm": 128.6,
         "types": [
           { "id": "loc", "label": "各駅停車", "color": "#2563eb", "rank": 1 }
         ],
@@ -617,6 +697,7 @@
         "name": "谷鉄 潟馬線",
         "nameEn": "GATAMA LINE",
         "note": "これはイメージ路線図です。新潟県の直江津から、長野県北部を経て群馬県の草津温泉方面へ向かう山岳ローカル線です。",
+        "distanceKm": 214.7,
         "types": [
           { "id": "loc", "label": "各駅停車", "color": "#0f8f8a", "rank": 1 }
         ],
@@ -648,6 +729,7 @@
         "name": "谷鉄 北岳登山線",
         "nameEn": "KITADAKE CLIMB LINE",
         "note": "これはイメージ路線図です。北岳登山口方面への架空アクセス路線です。",
+        "distanceKm": 92.5,
         "types": [
           { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
         ],
@@ -669,6 +751,7 @@
         "nameEn": "MUSASHI LOOP LINE",
         "shape": "loop",
         "note": "これはイメージ路線図です。",
+        "distanceKm": 142.8,
         "types": [
           { "id": "loc", "label": "各駅停車", "color": "#9acd32", "rank": 1 }
         ],
@@ -720,6 +803,7 @@
         "name": "谷鉄 臨海線",
         "nameEn": "RINKAI LINE",
         "note": "これはイメージ路線図です。",
+        "distanceKm": 8.6,
         "types": [
           { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
         ],
@@ -738,6 +822,7 @@
         "nameEn": "ASANO TRAM LINE",
         "shape": "tram",
         "note": "これはイメージ路線図です。谷中日本鉄道の都心路面電車として、三ノ輪橋から銀座一丁目までを結びます。",
+        "distanceKm": 10.9,
         "color": "#c83a2d",
         "types": [
           { "id": "loc", "label": "普通", "color": "#c83a2d", "rank": 1 }

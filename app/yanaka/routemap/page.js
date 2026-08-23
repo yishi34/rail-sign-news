@@ -407,6 +407,18 @@ function TramSvg({ line }) {
   );
 }
 
+function DistanceNote({ line }) {
+  const branchDistances = (line.branches || []).filter((branch) => branch.distanceKm);
+  if (!line.distanceKm && branchDistances.length === 0) return null;
+
+  const formatKm = (value) => Number(value).toFixed(1);
+  const parts = [];
+  if (line.distanceKm) parts.push(`${line.distanceLabel || "本線"} 約${formatKm(line.distanceKm)}km`);
+  branchDistances.forEach((branch) => parts.push(`${branch.name} 約${formatKm(branch.distanceKm)}km`));
+
+  return <span className="rm-note">営業距離: {parts.join(" / ")}</span>;
+}
+
 export default function YanakaRouteMapPage() {
   const rm = yanaka.routemap;
 
@@ -446,6 +458,7 @@ export default function YanakaRouteMapPage() {
                         {t.label.includes("停車") ? t.label : `${t.label}停車駅`}
                       </span>
                     ))}
+                  <DistanceNote line={line} />
                   <span className="rm-note">{line.note || rm.note}</span>
                 </div>
                 {/* 路線図(駅数が多いので横スクロール) */}

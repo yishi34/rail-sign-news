@@ -21,6 +21,16 @@ const SVG_STYLE = `
 
 const NS = "http://www.w3.org/2000/svg";
 
+function distanceNote(line) {
+  const formatKm = (value) => Number(value).toFixed(1);
+  const parts = [];
+  if (line.distanceKm) parts.push(`${line.distanceLabel || "本線"} 約${formatKm(line.distanceKm)}km`);
+  (line.branches || [])
+    .filter((branch) => branch.distanceKm)
+    .forEach((branch) => parts.push(`${branch.name} 約${formatKm(branch.distanceKm)}km`));
+  return parts.length ? `営業距離: ${parts.join(" / ")}` : "";
+}
+
 // 画面の路線図SVGの上に「路線名+凡例」のヘッダーを足して、
 // 1枚の完成した路線図SVG(白背景・スタイル埋め込み)を組み立てる
 function buildSvg(line) {
@@ -66,7 +76,8 @@ function buildSvg(line) {
     out.appendChild(ringEl(cx, 84, 7, t.color));
     out.appendChild(textEl(cx + 13, 88, `${t.label}停車駅`, "ex-leg"));
   });
-  out.appendChild(textEl(24 + line.types.length * 108, 88, line.note || "", "ex-note"));
+  const metaText = [distanceNote(line), line.note].filter(Boolean).join("　");
+  out.appendChild(textEl(24 + line.types.length * 108, 88, metaText, "ex-note"));
 
   // 路線図本体(ヘッダーのぶん下にずらして配置)
   const g = el("g", { transform: `translate(0 ${HEADER})` });
