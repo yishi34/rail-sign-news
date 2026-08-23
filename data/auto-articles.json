@@ -27,6 +27,33 @@
     }
   },
   {
+    "title": "11月7日催行新潟交通×しなの鉄道，募集形企画旅行「くれよん鉄道探訪 しなの鉄道115系」の参加者募集",
+    "category": "travel",
+    "date": "2026-08-24",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/08/24/003000.html"
+    }
+  },
+  {
+    "title": "西武40000系「トキイロエクスプレス」用編成が登場",
+    "category": "cars",
+    "date": "2026-08-24",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/24/003000.html"
+    }
+  },
+  {
+    "title": "小田急で「もころん」3周年記念撮影イベント開催",
+    "category": "travel",
+    "date": "2026-08-24",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/24/001000.html"
+    }
+  },
+  {
     "title": "空から見た「引退目前」の古豪たち 1世紀走り続けた箱根登山電車の“生き字引”最後の雄姿",
     "category": "cars",
     "date": "2026-08-23",
@@ -123,6 +150,114 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75314/"
+    }
+  },
+  {
+    "title": "JR九州唐津車両センターで「103系・307系車両見学会」開催",
+    "category": "cars",
+    "date": "2026-08-23",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/23/223000.html"
+    }
+  },
+  {
+    "title": "鉄道博物館で「C57形蒸気機関車 煙室扉開放実演」開催",
+    "category": "cars",
+    "date": "2026-08-23",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/23/220000.html"
+    }
+  },
+  {
+    "title": "9月26日開催JR東日本，「新旧長野色共演！！ E131系×211系撮影会」の参加者募集",
+    "category": "news",
+    "date": "2026-08-23",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/08/23/200000.html"
+    }
+  },
+  {
+    "title": "【阪急】大阪梅田駅8号線旧停止位置付近の封鎖が解除",
+    "category": "news",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75335/"
+    }
+  },
+  {
+    "title": "【JR西】吹田駅2番のりばに可動式ホーム柵が設置",
+    "category": "news",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75331/"
+    }
+  },
+  {
+    "title": "【JR海】「JR東海×岳南電車 鉄道大満喫ツアー」の団体臨時列車が313系8000番台S6編成で運転",
+    "category": "cars",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75330/"
+    }
+  },
+  {
+    "title": "【JR西】キハ120-354が後藤総合車両所を出場し回送",
+    "category": "cars",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75329/"
+    }
+  },
+  {
+    "title": "【北越】HK100形H-9が新津まで入線「HK100で行く新津鉄道資料館見学」ツアー",
+    "category": "travel",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75328/"
+    }
+  },
+  {
+    "title": "【JR九】DE10-1209牽引の黒チキ8両編成による遠賀川・竹下工臨の実施",
+    "category": "cars",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75327/"
+    }
+  },
+  {
+    "title": "【近鉄】1252系 VE62編成 高安入場回送",
+    "category": "cars",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75326/"
+    }
+  },
+  {
+    "title": "【東武】8000系8111Fが南栗橋工場へ入場回送",
+    "category": "news",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75325/"
+    }
+  },
+  {
+    "title": "【阿武急】8100形使用の夜行列車「かくだ」号と深夜撮影会が催行",
+    "category": "news",
+    "date": "2026-08-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75324/"
     }
   },
   {
@@ -1662,141 +1797,6 @@
     "source": {
       "name": "鉄道チャンネル",
       "url": "https://tetsudo-ch.com/13034984.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "つけめん『六厘舎』がJR名古屋駅1番線に期間限定オープン！名店の極太麺と超濃厚スープを名駅スタイルで味わって",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13035158.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "【福駅】ミャクミャクモニュメントが9月4日より阪神なんば線沿線へ！車窓から見える新スポット",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13034256.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "【2026秋冬】大阪駅直結「LUCUA SOUTH」に国内最大級のキャラ特区誕生！ちいかわ・サンリオなど注目店舗まとめ",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13034387.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "クボタ旧本社跡地が南海難波や恵美須町から徒歩圏の1.25万人級アリーナ「Kubota field」に！ なんば・新今宮エリアはどう変わる？",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "鉄道チャンネル",
-      "url": "https://tetsudo-ch.com/13035371.html?utm_source=Rss&utm_medium=https&utm_campaign=link_back"
-    }
-  },
-  {
-    "title": "名鉄バス運転士の職場見学イベント、FM AICHIリスナー20名を招待…9月12日開催",
-    "category": "travel",
-    "date": "2026-08-18",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/18/415386.html"
-    }
-  },
-  {
-    "title": "千葉豪雨の被災車両に関する無料相談窓口設置、水没・廃車手続きに対応…カーネクスト",
-    "category": "cars",
-    "date": "2026-08-18",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/18/415384.html"
-    }
-  },
-  {
-    "title": "お盆期間の鉄道・航空利用状況、九州新幹線除きJR各社は微増、全日空・日航は低調［新聞ウォッチ］",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/18/415370.html"
-    }
-  },
-  {
-    "title": "東海道新幹線の個室・半個室「スプリームクラス」無料体験イベント。先着予約スタート、全国5都市で開催",
-    "category": "travel",
-    "date": "2026-08-18",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2133564.html"
-    }
-  },
-  {
-    "title": "povo×JR東日本、新幹線eチケット乗車で3時間データ使い放題。9月18日から期間限定",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2133496.html"
-    }
-  },
-  {
-    "title": "9月4日〜6日叡山電鉄「八瀬えいでん《駅》地ビール祭り」開催",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/18/140000.html"
-    }
-  },
-  {
-    "title": "8月23日〜10月31日小田急「みんなでポーズ！もころんスタンプラリー」開催",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/18/135500.html"
-    }
-  },
-  {
-    "title": "8月22日〜10月14日九州鉄道記念館で企画展「松本昌太朗 鉄道の記憶」開催",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/18/135000.html"
-    }
-  },
-  {
-    "title": "10月10日鉄道総合技術研究所で鉄道総研設備見学会「鉄道総研の研究を学ぼう！」を開催",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/18/134000.html"
-    }
-  },
-  {
-    "title": "JR北海道，特急“ニセコ”号をキハ261系5000番代で運転",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/18/133500.html"
-    }
-  },
-  {
-    "title": "9月16日・17日能勢電鉄，「のせでんビール電車」を運転",
-    "category": "news",
-    "date": "2026-08-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/18/133000.html"
     }
   }
 ]
