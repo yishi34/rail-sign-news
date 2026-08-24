@@ -82,7 +82,8 @@
       { "title": "時刻表", "en": "TIMETABLE", "code": "YN", "num": "03", "status": "時刻表をみる", "href": "/yanaka/timetable" },
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "04", "status": "年表をみる", "href": "/yanaka/history" },
       { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" },
-      { "title": "路線図メーカー", "en": "ROUTE MAP MAKER", "code": "YN", "num": "06", "status": "作成する", "href": "/yanaka/routemap-maker" }
+      { "title": "路線図メーカー", "en": "ROUTE MAP MAKER", "code": "YN", "num": "06", "status": "作成する", "href": "/yanaka/routemap-maker" },
+      { "title": "特急ネットワーク図", "en": "LIMITED EXPRESS", "code": "YN", "num": "07", "status": "特急図をみる", "href": "/yanaka/limited-express" }
     ]
   },
   "history": {
@@ -225,9 +226,104 @@
           { "name": "稲城長沼", "rank": 2, "transfer": ["JR南武線"] },
           { "name": "府中本町", "rank": 2, "transfer": ["JR南武線", "JR武蔵野線"] },
           { "name": "府中競馬正門前", "rank": 1, "transfer": ["京王競馬場線"] },
-          { "name": "谷鉄府中", "rank": 2, "transfer": ["京王線"] },
+          { "name": "谷鉄府中", "rank": 2, "transfer": ["谷鉄 武蔵環状線", "谷鉄 山手西部線", "京王線"] },
           { "name": "北府中", "rank": 1, "transfer": ["JR武蔵野線"] },
           { "name": "国分寺", "rank": 2, "transfer": ["谷鉄 奥武蔵線", "JR中央線", "西武国分寺線", "西武多摩湖線"] }
+        ]
+      },
+      {
+        "id": "zushi-hayama",
+        "name": "谷鉄 逗子・葉山線",
+        "nameEn": "ZUSHI-HAYAMA LINE",
+        "note": "これはイメージ路線図です。東海ラインの新大船から鎌倉・逗子方面へ向かい、逗子・葉山から京急逗子線へ直通運転する湘南連絡路線です。",
+        "distanceKm": 13.6,
+        "continuesTo": { "name": "京急逗子線", "area": "金沢八景・品川方面" },
+        "stationGap": 120,
+        "types": [
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "新大船", "rank": 2, "transfer": ["谷鉄 東海ライン", "JR各線", "湘南モノレール"] },
+          { "name": "北鎌倉", "rank": 1, "transfer": ["JR横須賀線"] },
+          { "name": "谷鉄鎌倉", "rank": 2, "transfer": ["JR横須賀線", "江ノ島電鉄"] },
+          { "name": "由比ヶ浜", "rank": 1, "transfer": ["江ノ島電鉄"] },
+          { "name": "材木座", "rank": 1 },
+          { "name": "逗子", "rank": 2, "transfer": ["JR横須賀線", "JR湘南新宿ライン"] },
+          { "name": "逗子・葉山", "rank": 2, "transfer": ["京急逗子線（直通運転）"] }
+        ]
+      },
+      {
+        "id": "tono",
+        "name": "谷鉄 東野線",
+        "nameEn": "TONO LINE",
+        "note": "これはイメージ路線図です。谷鉄東京から神田・秋葉原を経て谷鉄上野へ向かい、東北ラインへつなぐ都心短絡路線です。",
+        "distanceKm": 4.2,
+        "stationGap": 132,
+        "types": [
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄東京", "rank": 1, "transfer": ["谷鉄 武蔵環状線", "谷鉄 東海ライン", "JR各線", "東京メトロ丸ノ内線"] },
+          { "name": "神田", "rank": 1, "transfer": ["JR山手線", "JR京浜東北線", "JR中央線", "東京メトロ銀座線"] },
+          { "name": "秋葉原", "rank": 1, "transfer": ["JR各線", "東京メトロ日比谷線", "つくばエクスプレス"] },
+          { "name": "谷鉄上野", "rank": 1, "transfer": ["谷鉄 東北ライン", "JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] }
+        ]
+      },
+      {
+        "id": "tohoku",
+        "name": "谷鉄 東北ライン",
+        "nameEn": "TOHOKU LINE",
+        "note": "これはイメージ路線図です。谷鉄東京から谷鉄上野・大宮・宇都宮・郡山・福島・谷鉄仙台を経て谷鉄盛岡へ向かう東北方面の幹線です。谷鉄仙台からは山形線が分岐します。",
+        "distanceKm": 535.8,
+        "stationGap": 104,
+        "types": [
+          { "id": "limited", "label": "特急", "color": "#e60012", "rank": 4 },
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄東京", "rank": 4, "transfer": ["谷鉄 東海ライン", "谷鉄 東野線", "谷鉄 武蔵環状線", "東海道新幹線", "JR各線", "東京メトロ丸ノ内線"] },
+          { "name": "谷鉄上野", "rank": 4, "transfer": ["谷鉄 東野線", "JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] },
+          { "name": "赤羽", "rank": 3, "transfer": ["JR各線"] },
+          { "name": "浦和", "rank": 3, "transfer": ["JR宇都宮線", "JR高崎線", "JR京浜東北線"] },
+          { "name": "大宮", "rank": 4, "transfer": ["東北・上越・北陸新幹線", "JR各線", "東武野田線", "ニューシャトル"] },
+          { "name": "小山", "rank": 3, "transfer": ["東北新幹線", "JR宇都宮線", "JR水戸線", "JR両毛線"] },
+          { "name": "谷鉄宇都宮", "rank": 4, "transfer": ["東北新幹線", "JR宇都宮線", "宇都宮ライトレール"] },
+          { "name": "那須塩原", "rank": 3, "transfer": ["東北新幹線", "JR宇都宮線"] },
+          { "name": "新白河", "rank": 3, "transfer": ["東北新幹線", "JR東北本線"] },
+          { "name": "郡山", "rank": 4, "transfer": ["東北新幹線", "JR東北本線", "JR磐越西線", "JR磐越東線", "JR水郡線"] },
+          { "name": "福島", "rank": 4, "transfer": ["東北・山形新幹線", "JR東北本線", "阿武隈急行", "福島交通"] },
+          { "name": "白石蔵王", "rank": 3, "transfer": ["東北新幹線"] },
+          { "name": "谷鉄仙台", "rank": 4, "transfer": ["谷鉄 山形線", "東北新幹線", "JR各線", "仙台市地下鉄"] },
+          { "name": "古川", "rank": 3, "transfer": ["東北新幹線", "JR陸羽東線"] },
+          { "name": "一ノ関", "rank": 3, "transfer": ["東北新幹線", "JR東北本線", "JR大船渡線"] },
+          { "name": "北上", "rank": 3, "transfer": ["東北新幹線", "JR東北本線", "JR北上線"] },
+          { "name": "谷鉄盛岡", "rank": 4, "transfer": ["東北・秋田新幹線", "JR東北本線", "JR田沢湖線", "IGRいわて銀河鉄道"] }
+        ]
+      },
+      {
+        "id": "tohoku-yamagata",
+        "name": "谷鉄 山形線",
+        "nameEn": "YAMAGATA LINE",
+        "note": "これはイメージ路線図です。谷鉄仙台から長町南・秋保・川崎・笹谷峠・蔵王温泉口・上山温泉を経て谷鉄山形へ向かう、仙山線と重なりにくい南回りの山越え路線です。",
+        "distanceKm": 94.8,
+        "stationGap": 124,
+        "continuesFrom": { "name": "谷鉄 東北ライン", "area": "谷鉄仙台" },
+        "types": [
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄仙台", "rank": 2, "transfer": ["谷鉄 東北ライン", "東北新幹線", "JR各線", "仙台市地下鉄"] },
+          { "name": "長町南", "rank": 1, "transfer": ["仙台市地下鉄南北線"] },
+          { "name": "秋保温泉口", "rank": 1 },
+          { "name": "釜房湖", "rank": 1 },
+          { "name": "谷鉄川崎", "rank": 1 },
+          { "name": "笹谷峠", "rank": 1 },
+          { "name": "蔵王温泉口", "rank": 1 },
+          { "name": "上山温泉", "rank": 2, "transfer": ["山形新幹線", "JR奥羽本線"] },
+          { "name": "谷鉄山形", "rank": 2, "transfer": ["山形新幹線", "JR奥羽本線", "JR左沢線"] }
         ]
       },
       {
@@ -239,19 +335,20 @@
         "distanceKm": 585.0,
         "continuesTo": { "name": "谷鉄 東海ライン", "area": "駿豆・東海地区" },
         "types": [
+          { "id": "sp-rap", "label": "新快速", "color": "#0072bc", "rank": 4 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
           { "id": "rap", "label": "快速", "color": "#2ca9e1", "rank": 2 },
           { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "code": "YH01", "name": "谷鉄東京", "rank": 3, "transfer": ["東海道新幹線", "JR各線", "メトロ丸ノ内線"] },
+          { "code": "YH01", "name": "谷鉄東京", "rank": 4, "transfer": ["谷鉄 東野線", "谷鉄 武蔵環状線", "東海道新幹線", "JR各線", "メトロ丸ノ内線"] },
           { "code": "YH02", "name": "新新橋", "rank": 2, "transfer": ["JR各線", "メトロ銀座線", "都営浅草線", "ゆりかもめ"] },
           { "code": "YH03", "name": "汐留", "rank": 1, "transfer": ["谷鉄臨海線", "都営大江戸線", "ゆりかもめ"] },
           { "code": "YH04", "name": "大門", "rank": 1, "transfer": ["都営浅草線", "都営大江戸線"] },
-          { "code": "YH05", "name": "新浜松町", "rank": 3, "transfer": ["JR各線", "東京モノレール"] },
+          { "code": "YH05", "name": "新浜松町", "rank": 3, "transfer": ["谷鉄 湾岸モノレール", "JR各線", "東京モノレール"] },
           { "code": "YH06", "name": "三田", "rank": 2, "transfer": ["都営三田線", "都営浅草線"] },
           { "code": "YH07", "name": "新泉岳寺", "rank": 2, "transfer": ["都営浅草線", "京急線"] },
-          { "code": "YH08", "name": "谷鉄品川", "rank": 3, "transfer": ["谷鉄 谷中線", "東海道新幹線", "JR各線", "京急線"] },
+          { "code": "YH08", "name": "谷鉄品川", "rank": 4, "transfer": ["谷鉄 谷中線", "谷鉄 湾岸モノレール", "東海道新幹線", "JR各線", "京急線"] },
           { "code": "YH09", "name": "南品川", "rank": 1 },
           { "code": "YH10", "name": "大井町", "rank": 1, "transfer": ["JR京浜東北線", "東急大井町線", "りんかい線"] },
           { "code": "YH11", "name": "南大井", "rank": 1 },
@@ -259,7 +356,7 @@
           { "code": "YH13", "name": "新蒲田", "rank": 2, "transfer": ["JR京浜東北線", "東急池上線", "東急多摩川線", "京急線"] },
           { "code": "YH14", "name": "長生", "rank": 1 },
           { "code": "YH15", "name": "新六郷", "rank": 1, "transfer": ["京急線"] },
-          { "code": "YH16", "name": "谷鉄川崎", "rank": 3, "transfer": ["JR各線", "京急線"] },
+          { "code": "YH16", "name": "谷鉄川崎", "rank": 4, "transfer": ["JR各線", "京急線"] },
           { "code": "YH17", "name": "大口", "rank": 1, "transfer": ["JR横浜線"] },
           { "code": "YH18", "name": "新高島", "rank": 1, "transfer": ["みなとみらい線"] },
           { "code": "YH19", "name": "西横浜", "rank": 3, "transfer": ["相鉄線"] },
@@ -267,16 +364,16 @@
           { "code": "YH21", "name": "大久保", "rank": 2 },
           { "code": "YH22", "name": "上永谷", "rank": 1, "transfer": ["市営ブルーライン"] },
           { "code": "YH23", "name": "野庭", "rank": 1 },
-          { "code": "YH24", "name": "新大船", "rank": 3, "transfer": ["JR各線", "湘南モノレール"] },
-          { "code": "YH25", "name": "藤沢", "rank": 3, "transfer": ["JR各線", "小田急江ノ島線", "江ノ電"] },
+          { "code": "YH24", "name": "新大船", "rank": 3, "transfer": ["谷鉄 逗子・葉山線", "JR各線", "湘南モノレール"] },
+          { "code": "YH25", "name": "藤沢", "rank": 4, "transfer": ["JR各線", "小田急江ノ島線", "江ノ電"] },
           { "code": "YH26", "name": "新茅ヶ崎", "rank": 2, "transfer": ["JR各線", "JR相模線"] },
           { "code": "YH27", "name": "南湖", "rank": 1 },
           { "code": "YH28", "name": "新平塚", "rank": 1, "transfer": ["JR東海道線"] },
           { "code": "YH29", "name": "高根", "rank": 1 },
           { "code": "YH30", "name": "新大磯", "rank": 2 },
           { "code": "YH31", "name": "富士見ヶ丘", "rank": 1 },
-          { "code": "YH32", "name": "新国府津", "rank": 3, "transfer": ["JR東海道線", "JR御殿場線"] },
-          { "code": "YH33", "name": "小田原", "rank": 3, "transfer": ["谷鉄 相模丹沢線", "東海道新幹線", "JR各線", "小田急線", "箱根登山鉄道", "伊豆箱根鉄道"] }
+          { "code": "YH32", "name": "新国府津", "rank": 4, "transfer": ["JR東海道線", "JR御殿場線"] },
+          { "code": "YH33", "name": "小田原", "rank": 4, "transfer": ["谷鉄 相模丹沢線", "東海道新幹線", "JR各線", "小田急線", "箱根登山鉄道", "伊豆箱根鉄道"] }
         ]
       },
       {
@@ -291,12 +388,12 @@
           { "id": "loc", "label": "各駅停車", "color": "#0f766e", "rank": 1 }
         ],
         "stations": [
-          { "name": "谷鉄品川", "rank": 2, "transfer": ["谷鉄 東海ライン", "東海道新幹線", "JR各線", "京急線"] },
+          { "name": "谷鉄品川", "rank": 2, "transfer": ["谷鉄 東海ライン", "谷鉄 湾岸モノレール", "東海道新幹線", "JR各線", "京急線"] },
           { "name": "高輪台", "rank": 1, "transfer": ["都営浅草線"] },
           { "name": "白金高輪", "rank": 1, "transfer": ["東京メトロ南北線", "都営三田線"] },
           { "name": "広尾", "rank": 1, "transfer": ["東京メトロ日比谷線"] },
           { "name": "恵比寿", "rank": 1, "transfer": ["JR山手線", "東京メトロ日比谷線"] },
-          { "name": "谷鉄渋谷", "rank": 2, "transfer": ["谷鉄 武蔵環状線", "JR各線", "東急線", "東京メトロ", "京王井の頭線"] },
+          { "name": "谷鉄渋谷", "rank": 2, "transfer": ["谷鉄 武蔵環状線", "谷鉄 山手西部線", "JR各線", "東急線", "東京メトロ", "京王井の頭線"] },
           { "name": "代々木公園", "rank": 1, "transfer": ["東京メトロ千代田線"] },
           { "name": "谷鉄新宿", "rank": 2, "transfer": ["JR各線", "京王線", "小田急線", "東京メトロ丸ノ内線", "都営新宿線", "都営大江戸線"] },
           { "name": "新大久保", "rank": 1, "transfer": ["JR山手線"] },
@@ -346,11 +443,12 @@
         "distanceKm": 585.0,
         "continuesTo": { "name": "谷鉄 東海ライン", "area": "東海地区" },
         "types": [
+          { "id": "sp-rap", "label": "新快速", "color": "#0072bc", "rank": 3 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "小田原", "rank": 2, "transfer": ["谷鉄 相模丹沢線", "東海道新幹線", "JR各線", "小田急線", "箱根登山鉄道", "伊豆箱根鉄道"] },
+          { "name": "小田原", "rank": 3, "transfer": ["谷鉄 相模丹沢線", "東海道新幹線", "JR各線", "小田急線", "箱根登山鉄道", "伊豆箱根鉄道"] },
           { "name": "新箱根板橋", "rank": 2 },
           { "name": "新早川", "rank": 1 },
           { "name": "片浦", "rank": 1 },
@@ -360,7 +458,7 @@
           { "name": "吉浜", "rank": 1 },
           { "name": "新湯河原", "rank": 2 },
           { "name": "土肥", "rank": 1 },
-          { "name": "谷鉄熱海", "rank": 2 },
+          { "name": "谷鉄熱海", "rank": 3 },
           { "name": "函南町", "rank": 1 },
           { "name": "平井", "rank": 1 },
           { "name": "桑原", "rank": 1 },
@@ -370,16 +468,16 @@
           { "name": "若葉", "rank": 1 },
           { "name": "新三島", "rank": 2 },
           { "name": "清水町", "rank": 1 },
-          { "name": "新沼津", "rank": 2 },
+          { "name": "新沼津", "rank": 3 },
           { "name": "大塚", "rank": 1 },
           { "name": "原町", "rank": 1 },
           { "name": "西添", "rank": 1 },
-          { "name": "谷鉄富士", "rank": 2 },
+          { "name": "谷鉄富士", "rank": 3 },
           { "name": "富士岡", "rank": 1 },
           { "name": "新吉原", "rank": 2 },
           { "name": "前田", "rank": 1 },
           { "name": "新前田", "rank": 1 },
-          { "name": "新富士", "rank": 2 }
+          { "name": "新富士", "rank": 3 }
         ]
       },
       {
@@ -392,35 +490,36 @@
         "continuesFrom": { "name": "谷鉄 東海ライン", "area": "駿豆・東海地区" },
         "continuesTo": { "name": "谷鉄 東海ライン", "area": "関西地区" },
         "types": [
+          { "id": "sp-rap", "label": "新快速", "color": "#0072bc", "rank": 4 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
           { "id": "rap", "label": "快速", "color": "#2ca9e1", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "新富士", "rank": 3, "transfer": ["谷鉄 東海ライン", "谷鉄 富山線", "東海道新幹線", "JR東海道本線"] },
+          { "name": "新富士", "rank": 4, "transfer": ["谷鉄 東海ライン", "谷鉄 富山線", "東海道新幹線", "JR東海道本線"] },
           { "name": "富士川", "rank": 1 },
           { "name": "蒲原", "rank": 1 },
           { "name": "由比", "rank": 1 },
           { "name": "谷鉄清水", "rank": 2, "transfer": ["JR東海道本線", "静岡鉄道"] },
           { "name": "草薙", "rank": 1, "transfer": ["JR東海道本線", "静岡鉄道"] },
-          { "name": "谷鉄静岡", "rank": 3, "transfer": ["東海道新幹線", "JR東海道本線", "静岡鉄道"] },
+          { "name": "谷鉄静岡", "rank": 4, "transfer": ["東海道新幹線", "JR東海道本線", "静岡鉄道"] },
           { "name": "安倍川", "rank": 1 },
           { "name": "焼津", "rank": 2, "transfer": ["JR東海道本線"] },
           { "name": "藤枝", "rank": 2, "transfer": ["JR東海道本線"] },
           { "name": "島田", "rank": 1, "transfer": ["JR東海道本線"] },
-          { "name": "掛川", "rank": 3, "transfer": ["東海道新幹線", "JR東海道本線", "天竜浜名湖鉄道"] },
+          { "name": "掛川", "rank": 4, "transfer": ["東海道新幹線", "JR東海道本線", "天竜浜名湖鉄道"] },
           { "name": "袋井", "rank": 1 },
           { "name": "磐田", "rank": 2, "transfer": ["JR東海道本線"] },
-          { "name": "谷鉄浜松", "rank": 3, "transfer": ["東海道新幹線", "JR東海道本線", "遠州鉄道"] },
+          { "name": "谷鉄浜松", "rank": 4, "transfer": ["東海道新幹線", "JR東海道本線", "遠州鉄道"] },
           { "name": "新浜名湖", "rank": 2, "transfer": ["天竜浜名湖鉄道"] },
-          { "name": "豊橋", "rank": 3, "transfer": ["東海道新幹線", "JR東海道本線", "飯田線", "名鉄名古屋本線", "豊橋鉄道"] },
+          { "name": "豊橋", "rank": 4, "transfer": ["東海道新幹線", "JR東海道本線", "飯田線", "名鉄名古屋本線", "豊橋鉄道"] },
           { "name": "蒲郡", "rank": 2, "transfer": ["JR東海道本線", "名鉄蒲郡線"] },
           { "name": "谷鉄岡崎", "rank": 3, "transfer": ["JR東海道本線", "愛知環状鉄道", "名鉄名古屋本線"] },
           { "name": "安城", "rank": 1, "transfer": ["JR東海道本線"] },
           { "name": "刈谷", "rank": 2, "transfer": ["JR東海道本線", "名鉄三河線"] },
           { "name": "大府", "rank": 1, "transfer": ["JR東海道本線", "JR武豊線"] },
           { "name": "金山", "rank": 2, "transfer": ["JR東海道本線", "JR中央本線", "名鉄線", "名古屋市営地下鉄"] },
-          { "name": "谷鉄名古屋", "rank": 3, "transfer": ["谷鉄 東海ライン", "東海道新幹線", "JR各線", "名鉄線", "近鉄線", "名古屋市営地下鉄"] }
+          { "name": "谷鉄名古屋", "rank": 4, "transfer": ["谷鉄 東海ライン", "東海道新幹線", "JR各線", "名鉄線", "近鉄線", "名古屋市営地下鉄"] }
         ]
       },
       {
@@ -432,31 +531,32 @@
         "distanceKm": 585.0,
         "continuesFrom": { "name": "谷鉄 東海ライン", "area": "東海地区" },
         "types": [
+          { "id": "sp-rap", "label": "新快速", "color": "#0072bc", "rank": 4 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
           { "id": "rap", "label": "快速", "color": "#2ca9e1", "rank": 2 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "谷鉄名古屋", "rank": 3, "transfer": ["谷鉄 東海ライン", "東海道新幹線", "JR各線", "名鉄線", "近鉄線", "名古屋市営地下鉄"] },
+          { "name": "谷鉄名古屋", "rank": 4, "transfer": ["谷鉄 東海ライン", "東海道新幹線", "JR各線", "名鉄線", "近鉄線", "名古屋市営地下鉄"] },
           { "name": "蟹江", "rank": 1 },
           { "name": "弥富", "rank": 2, "transfer": ["JR関西本線", "近鉄名古屋線", "名鉄尾西線"] },
-          { "name": "桑名", "rank": 3, "transfer": ["JR関西本線", "近鉄名古屋線", "養老鉄道", "三岐鉄道北勢線"] },
-          { "name": "谷鉄四日市", "rank": 3, "transfer": ["近鉄名古屋線", "四日市あすなろう鉄道"] },
+          { "name": "桑名", "rank": 4, "transfer": ["JR関西本線", "近鉄名古屋線", "養老鉄道", "三岐鉄道北勢線"] },
+          { "name": "谷鉄四日市", "rank": 4, "transfer": ["近鉄名古屋線", "四日市あすなろう鉄道"] },
           { "name": "鈴鹿中央", "rank": 2 },
           { "name": "谷鉄亀山", "rank": 2, "transfer": ["JR関西本線", "JR紀勢本線"] },
           { "name": "関宿", "rank": 1 },
           { "name": "伊賀上野", "rank": 2, "transfer": ["JR関西本線", "伊賀鉄道"] },
           { "name": "笠置", "rank": 1 },
           { "name": "木津川", "rank": 2, "transfer": ["JR奈良線", "JR学研都市線", "JR大和路線"] },
-          { "name": "谷鉄奈良", "rank": 3, "transfer": ["JR奈良線", "JR大和路線", "近鉄奈良線"] },
-          { "name": "谷鉄西大寺", "rank": 3, "transfer": ["谷鉄 大良線", "近鉄奈良線", "近鉄京都線", "近鉄橿原線"] },
+          { "name": "谷鉄奈良", "rank": 4, "transfer": ["JR奈良線", "JR大和路線", "近鉄奈良線"] },
+          { "name": "谷鉄西大寺", "rank": 4, "transfer": ["谷鉄 大良線", "谷鉄 和歌山線", "近鉄奈良線", "近鉄京都線", "近鉄橿原線"] },
           { "name": "学園前", "rank": 2, "transfer": ["近鉄奈良線"] },
           { "name": "生駒", "rank": 3, "transfer": ["近鉄奈良線", "近鉄けいはんな線", "近鉄生駒線"] },
           { "name": "新石切", "rank": 2, "transfer": ["近鉄けいはんな線"] },
           { "name": "東大阪中央", "rank": 1 },
-          { "name": "新布施", "rank": 3, "transfer": ["近鉄奈良線", "近鉄大阪線"] },
+          { "name": "新布施", "rank": 4, "transfer": ["近鉄奈良線", "近鉄大阪線"] },
           { "name": "谷鉄森ノ宮", "rank": 2, "transfer": ["JR大阪環状線", "Osaka Metro中央線", "Osaka Metro長堀鶴見緑地線"] },
-          { "name": "谷鉄大阪梅田", "rank": 3, "transfer": ["谷鉄 山陽ライン", "JR各線", "阪急線", "阪神線", "Osaka Metro御堂筋線"] }
+          { "name": "谷鉄大阪梅田", "rank": 4, "transfer": ["谷鉄 山陽ライン", "JR各線", "阪急線", "阪神線", "Osaka Metro御堂筋線"] }
         ]
       },
       {
@@ -470,7 +570,7 @@
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "谷鉄西大寺", "rank": 2, "transfer": ["谷鉄 東海ライン", "近鉄奈良線", "近鉄京都線", "近鉄橿原線"] },
+          { "name": "谷鉄西大寺", "rank": 2, "transfer": ["谷鉄 東海ライン", "谷鉄 和歌山線", "近鉄奈良線", "近鉄京都線", "近鉄橿原線"] },
           { "name": "平城ニュータウン", "rank": 1 },
           { "name": "高の原", "rank": 2, "transfer": ["近鉄京都線"] },
           { "name": "祝園学研都市", "rank": 2, "transfer": ["JR学研都市線", "近鉄京都線"] },
@@ -488,11 +588,60 @@
         ]
       },
       {
+        "id": "wakayama",
+        "name": "谷鉄 和歌山線",
+        "nameEn": "WAKAYAMA LINE",
+        "note": "これはイメージ路線図です。JR和歌山線との並走を避け、谷鉄西大寺から葛城・金剛山地の山麓、紀美野・海南東を経て和歌山港へ向かう港アクセス支線です。",
+        "distanceKm": 134.2,
+        "types": [
+          { "id": "rap", "label": "快速", "color": "#2ca9e1", "rank": 2 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄西大寺", "rank": 2, "transfer": ["谷鉄 東海ライン", "谷鉄 大良線", "近鉄奈良線", "近鉄京都線", "近鉄橿原線"] },
+          { "name": "菅原東", "rank": 1 },
+          { "name": "西ノ京", "rank": 1, "transfer": ["近鉄橿原線"] },
+          { "name": "矢田寺", "rank": 1 },
+          { "name": "大和民俗公園", "rank": 1 },
+          { "name": "法隆寺丘陵", "rank": 1 },
+          { "name": "竜田川", "rank": 2, "transfer": ["近鉄生駒線"] },
+          { "name": "平群中央", "rank": 1 },
+          { "name": "信貴山口", "rank": 2, "transfer": ["近鉄信貴線"] },
+          { "name": "二上山麓", "rank": 1 },
+          { "name": "當麻寺", "rank": 2, "transfer": ["近鉄南大阪線"] },
+          { "name": "葛城山口", "rank": 1 },
+          { "name": "忍海", "rank": 1, "transfer": ["近鉄御所線"] },
+          { "name": "御所南", "rank": 1 },
+          { "name": "金剛山口", "rank": 2 },
+          { "name": "ちはや赤阪", "rank": 1 },
+          { "name": "金剛高原", "rank": 1 },
+          { "name": "紀見高原", "rank": 1 },
+          { "name": "高野山麓", "rank": 2, "transfer": ["南海高野線"] },
+          { "name": "九度山口", "rank": 1 },
+          { "name": "紀伊丹生川", "rank": 1 },
+          { "name": "かつらぎ高原", "rank": 1 },
+          { "name": "高野西麓", "rank": 1 },
+          { "name": "紀美野", "rank": 2 },
+          { "name": "野上谷", "rank": 1 },
+          { "name": "貴志川丘陵", "rank": 1 },
+          { "name": "海南東", "rank": 2 },
+          { "name": "黒江南", "rank": 1 },
+          { "name": "和歌浦", "rank": 2 },
+          { "name": "雑賀崎", "rank": 1 },
+          { "name": "西浜", "rank": 1 },
+          { "name": "水軒", "rank": 1 },
+          { "name": "和歌山築港", "rank": 1 },
+          { "name": "港公園", "rank": 1 },
+          { "name": "和歌山港", "rank": 2, "transfer": ["南海和歌山港線", "南海フェリー"] }
+        ]
+      },
+      {
         "id": "sanyo",
         "name": "谷鉄 山陽ライン",
         "nameEn": "SANYO LINE",
-        "note": "これはイメージ路線図です。谷鉄大阪梅田から神戸・姫路・岡山・広島・山口方面を経て、谷鉄幡生へ向かう山陽方面の幹線です。",
+        "note": "これはイメージ路線図です。谷鉄大阪梅田から神戸・姫路・岡山・広島・山口方面を経て、谷鉄幡生へ向かう山陽方面の幹線です。谷鉄幡生からは九州ラインへ接続します。",
         "distanceKm": 561.5,
+        "continuesTo": { "name": "谷鉄 九州ライン", "area": "小倉・博多・熊本方面" },
         "types": [
           { "id": "sp-rap", "label": "新快速", "color": "#0072bc", "rank": 3 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
@@ -559,15 +708,83 @@
           { "name": "厚狭", "rank": 3, "transfer": ["山陽新幹線", "JR山陽本線", "JR美祢線"] },
           { "name": "小月", "rank": 1, "transfer": ["JR山陽本線"] },
           { "name": "長府", "rank": 2, "transfer": ["JR山陽本線"] },
-          { "name": "谷鉄幡生", "rank": 3, "transfer": ["JR山陽本線", "JR山陰本線"] }
+          { "name": "谷鉄幡生", "rank": 3, "transfer": ["谷鉄 九州ライン", "JR山陽本線", "JR山陰本線"] }
+        ]
+      },
+      {
+        "id": "kyushu",
+        "name": "谷鉄 九州ライン",
+        "nameEn": "KYUSHU LINE",
+        "note": "これはイメージ路線図です。山陽ラインの谷鉄幡生から関門橋梁を渡り、小倉・博多・熊本方面を経て谷鉄鹿児島中央へ向かう九州縦貫幹線です。",
+        "distanceKm": 448.0,
+        "stationGap": 106,
+        "continuesFrom": { "name": "谷鉄 山陽ライン", "area": "谷鉄幡生" },
+        "types": [
+          { "id": "limited", "label": "特急", "color": "#e60012", "rank": 4 },
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
+          { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄幡生", "rank": 4, "transfer": ["谷鉄 山陽ライン", "JR山陽本線", "JR山陰本線"] },
+          { "name": "下関", "rank": 4, "transfer": ["JR山陽本線", "JR山陰本線"] },
+          { "name": "門司港", "rank": 3, "transfer": ["JR鹿児島本線"] },
+          { "name": "門司", "rank": 3, "transfer": ["JR鹿児島本線", "JR山陽本線"] },
+          { "name": "谷鉄小倉", "rank": 4, "transfer": ["山陽新幹線", "JR鹿児島本線", "JR日豊本線", "北九州モノレール"] },
+          { "name": "黒崎", "rank": 3, "transfer": ["JR鹿児島本線", "筑豊電気鉄道"] },
+          { "name": "折尾", "rank": 3, "transfer": ["JR鹿児島本線", "JR筑豊本線"] },
+          { "name": "赤間", "rank": 1, "transfer": ["JR鹿児島本線"] },
+          { "name": "香椎", "rank": 3, "transfer": ["JR鹿児島本線", "JR香椎線", "西鉄貝塚線"] },
+          { "name": "谷鉄博多", "rank": 4, "transfer": ["山陽・九州新幹線", "JR各線", "福岡市地下鉄"] },
+          { "name": "二日市", "rank": 1, "transfer": ["JR鹿児島本線", "西鉄天神大牟田線"] },
+          { "name": "鳥栖", "rank": 4, "transfer": ["JR鹿児島本線", "JR長崎本線"] },
+          { "name": "久留米", "rank": 4, "transfer": ["九州新幹線", "JR鹿児島本線", "JR久大本線"] },
+          { "name": "大牟田", "rank": 3, "transfer": ["JR鹿児島本線", "西鉄天神大牟田線"] },
+          { "name": "荒尾", "rank": 1, "transfer": ["JR鹿児島本線"] },
+          { "name": "玉名", "rank": 3, "transfer": ["JR鹿児島本線"] },
+          { "name": "谷鉄熊本", "rank": 4, "transfer": ["九州新幹線", "JR鹿児島本線", "JR豊肥本線", "熊本市電"] },
+          { "name": "八代", "rank": 3, "transfer": ["JR鹿児島本線", "肥薩おれんじ鉄道", "JR肥薩線"] },
+          { "name": "水俣", "rank": 1, "transfer": ["肥薩おれんじ鉄道"] },
+          { "name": "出水", "rank": 4, "transfer": ["九州新幹線", "肥薩おれんじ鉄道"] },
+          { "name": "川内", "rank": 4, "transfer": ["九州新幹線", "JR鹿児島本線", "肥薩おれんじ鉄道"] },
+          { "name": "谷鉄鹿児島中央", "rank": 4, "transfer": ["九州新幹線", "JR鹿児島本線", "JR指宿枕崎線", "鹿児島市電"] }
+        ]
+      },
+      {
+        "id": "takachiho-aso-trolley",
+        "name": "谷鉄 阿蘇トロリーバス",
+        "nameEn": "ASO TROLLEYBUS",
+        "shape": "tram",
+        "note": "これはイメージ路線図です。高千穂から高森・南阿蘇を経て阿蘇へ向かう山越えのトロリーバスです。",
+        "distanceKm": 62.4,
+        "stationGap": 128,
+        "color": "#0ea5a4",
+        "types": [
+          { "id": "loc", "label": "各駅停車", "color": "#0ea5a4", "rank": 1 }
+        ],
+        "stats": {
+          "stops": 10,
+          "mountainStops": 6,
+          "trolleybus": true
+        },
+        "stations": [
+          { "name": "高千穂", "rank": 1 },
+          { "name": "高千穂峡", "rank": 1 },
+          { "name": "天岩戸", "rank": 1 },
+          { "name": "五ヶ瀬口", "rank": 1 },
+          { "name": "蘇陽峡", "rank": 1 },
+          { "name": "谷鉄高森", "rank": 1, "transfer": ["南阿蘇鉄道"] },
+          { "name": "白川水源", "rank": 1 },
+          { "name": "南阿蘇", "rank": 1, "transfer": ["南阿蘇鉄道"] },
+          { "name": "阿蘇山口", "rank": 1 },
+          { "name": "阿蘇", "rank": 1, "transfer": ["JR豊肥本線"] }
         ]
       },
       {
         "id": "setouchi",
         "name": "谷鉄 瀬戸内ライン",
         "nameEn": "SETOUCHI LINE",
-        "note": "これはイメージ路線図です。谷鉄岡山から瀬戸大橋を渡り、谷鉄高松を経由して谷鉄松山へ向かう瀬戸内・四国方面の幹線です。",
-        "distanceKm": 266.2,
+        "note": "これはイメージ路線図です。谷鉄岡山から瀬戸大橋を渡り、谷鉄高松を経由したあと、予讃線の海沿いを避けて塩江・脇町・祖谷・久万高原方面へ進み、谷鉄松山へ向かう四国山側ルートです。",
+        "distanceKm": 333.4,
         "types": [
           { "id": "limited", "label": "特急", "color": "#e60012", "rank": 4 },
           { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 3 },
@@ -579,22 +796,20 @@
           { "name": "妹尾", "rank": 1, "transfer": ["JR宇野みなと線"] },
           { "name": "茶屋町", "rank": 3, "transfer": ["JR瀬戸大橋線", "JR宇野みなと線"] },
           { "name": "児島", "rank": 4, "transfer": ["JR瀬戸大橋線"] },
-          { "name": "宇多津", "rank": 3, "transfer": ["JR予讃線", "JR瀬戸大橋線"] },
-          { "name": "坂出", "rank": 3, "transfer": ["JR予讃線"] },
+          { "name": "谷鉄坂出", "rank": 4, "transfer": ["JR予讃線"] },
+          { "name": "綾川", "rank": 4, "transfer": ["高松琴平電鉄"] },
+          { "name": "高松空港口", "rank": 4 },
+          { "name": "仏生山", "rank": 2, "transfer": ["高松琴平電鉄"] },
           { "name": "谷鉄高松", "rank": 4, "transfer": ["JR予讃線", "JR高徳線", "高松琴平電鉄", "高松港"] },
-          { "name": "丸亀", "rank": 3, "transfer": ["JR予讃線"] },
-          { "name": "多度津", "rank": 3, "transfer": ["JR予讃線", "JR土讃線"] },
-          { "name": "詫間", "rank": 1, "transfer": ["JR予讃線"] },
-          { "name": "観音寺", "rank": 4, "transfer": ["JR予讃線"] },
-          { "name": "川之江", "rank": 3, "transfer": ["JR予讃線"] },
-          { "name": "伊予三島", "rank": 3, "transfer": ["JR予讃線"] },
-          { "name": "新居浜", "rank": 4, "transfer": ["JR予讃線"] },
-          { "name": "伊予西条", "rank": 4, "transfer": ["JR予讃線"] },
-          { "name": "壬生川", "rank": 1, "transfer": ["JR予讃線"] },
-          { "name": "今治", "rank": 4, "transfer": ["JR予讃線"] },
-          { "name": "菊間", "rank": 1, "transfer": ["JR予讃線"] },
-          { "name": "伊予北条", "rank": 3, "transfer": ["JR予讃線"] },
-          { "name": "三津浜", "rank": 1, "transfer": ["JR予讃線"] },
+          { "name": "塩江温泉", "rank": 3 },
+          { "name": "脇町", "rank": 3 },
+          { "name": "美馬", "rank": 2 },
+          { "name": "祖谷温泉口", "rank": 3 },
+          { "name": "大歩危峡", "rank": 4 },
+          { "name": "早明浦湖", "rank": 2 },
+          { "name": "土佐町", "rank": 2 },
+          { "name": "久万高原", "rank": 4 },
+          { "name": "砥部", "rank": 3 },
           { "name": "谷鉄松山", "rank": 4, "transfer": ["JR予讃線", "伊予鉄道"] }
         ]
       },
@@ -756,7 +971,7 @@
           { "id": "loc", "label": "各駅停車", "color": "#9acd32", "rank": 1 }
         ],
         "stations": [
-          { "name": "谷鉄府中", "rank": 2 },
+          { "name": "谷鉄府中", "rank": 2, "transfer": ["谷鉄 多摩線", "谷鉄 山手西部線", "京王線"] },
           { "name": "幸", "rank": 1 },
           { "name": "新国分寺", "rank": 1 },
           { "name": "本多", "rank": 1 },
@@ -787,7 +1002,7 @@
           { "name": "門前仲町", "rank": 1 },
           { "name": "谷鉄東京", "rank": 2 },
           { "name": "六本木", "rank": 1 },
-          { "name": "谷鉄渋谷", "rank": 2, "transfer": ["谷鉄 谷中線", "JR各線", "東急線", "東京メトロ", "京王井の頭線"] },
+          { "name": "谷鉄渋谷", "rank": 2, "transfer": ["谷鉄 谷中線", "谷鉄 山手西部線", "JR各線", "東急線", "東京メトロ", "京王井の頭線"] },
           { "name": "谷鉄三軒茶屋", "rank": 2 },
           { "name": "上馬", "rank": 1 },
           { "name": "新千歳台", "rank": 1 },
@@ -796,6 +1011,59 @@
           { "name": "押立", "rank": 1 },
           { "name": "小柳", "rank": 1 },
           { "name": "清水ヶ丘", "rank": 1 }
+        ]
+      },
+      {
+        "id": "bay-monorail",
+        "name": "谷鉄 湾岸モノレール",
+        "nameEn": "BAY MONORAIL",
+        "note": "これはイメージ路線図です。跨座式モノレールで、谷鉄品川から台場・有明・豊洲を経て新浜松町へ向かう湾岸高速アクセス路線です。最高速度は95km/hです。",
+        "distanceKm": 18.4,
+        "stationGap": 116,
+        "types": [
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
+          { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄品川", "rank": 2, "transfer": ["谷鉄 東海ライン", "谷鉄 谷中線", "東海道新幹線", "JR各線", "京急線"] },
+          { "name": "天王洲アイル", "rank": 1, "transfer": ["東京モノレール", "りんかい線"] },
+          { "name": "台場", "rank": 2, "transfer": ["ゆりかもめ"] },
+          { "name": "有明", "rank": 2, "transfer": ["ゆりかもめ", "りんかい線"] },
+          { "name": "豊洲", "rank": 2, "transfer": ["東京メトロ有楽町線", "ゆりかもめ"] },
+          { "name": "晴海", "rank": 1 },
+          { "name": "竹芝", "rank": 1, "transfer": ["ゆりかもめ"] },
+          { "name": "新浜松町", "rank": 2, "transfer": ["谷鉄 東海ライン", "JR各線", "東京モノレール", "都営浅草線", "都営大江戸線"] }
+        ]
+      },
+      {
+        "id": "yamanote-west",
+        "name": "谷鉄 山手西部線",
+        "nameEn": "YAMANOTE WEST LINE",
+        "note": "これはイメージ路線図です。懸垂式モノレールで、谷鉄渋谷から新宿北西・杉並北部・武蔵境・調布を経て府中市方面へ向かう西部連絡路線です。最高速度は75km/hです。",
+        "distanceKm": 34.8,
+        "stationGap": 108,
+        "types": [
+          { "id": "exp", "label": "急行", "color": "#f5a900", "rank": 2 },
+          { "id": "loc", "label": "普通", "color": "#1b7a40", "rank": 1 }
+        ],
+        "stations": [
+          { "name": "谷鉄渋谷", "rank": 2, "transfer": ["谷鉄 谷中線", "谷鉄 武蔵環状線", "JR各線", "東急線", "東京メトロ", "京王井の頭線"] },
+          { "name": "神宮前北", "rank": 1 },
+          { "name": "代々木公園北", "rank": 1, "transfer": ["東京メトロ千代田線"] },
+          { "name": "西新宿五丁目", "rank": 2, "transfer": ["都営大江戸線"] },
+          { "name": "中野坂上", "rank": 2, "transfer": ["東京メトロ丸ノ内線", "都営大江戸線"] },
+          { "name": "哲学堂公園", "rank": 1 },
+          { "name": "野方中央", "rank": 1, "transfer": ["西武新宿線"] },
+          { "name": "井草森公園", "rank": 1 },
+          { "name": "善福寺", "rank": 1 },
+          { "name": "吉祥寺北", "rank": 2 },
+          { "name": "武蔵境", "rank": 2, "transfer": ["JR中央線", "西武多摩川線"] },
+          { "name": "野崎", "rank": 1 },
+          { "name": "神代植物公園", "rank": 1 },
+          { "name": "谷鉄調布", "rank": 2, "transfer": ["谷鉄 武蔵環状線", "京王線", "京王相模原線"] },
+          { "name": "多磨", "rank": 1, "transfer": ["西武多摩川線"] },
+          { "name": "府中の森", "rank": 1 },
+          { "name": "谷鉄府中", "rank": 2, "transfer": ["谷鉄 多摩線", "谷鉄 武蔵環状線", "京王線"] }
         ]
       },
       {
@@ -843,7 +1111,7 @@
           { "name": "浅草", "rank": 1, "track": "dedicated", "transfer": ["東武スカイツリーライン", "東京メトロ銀座線", "都営浅草線"] },
           { "name": "田原町", "rank": 1, "track": "dedicated", "transfer": ["東京メトロ銀座線"] },
           { "name": "稲荷町", "rank": 1, "track": "dedicated", "transfer": ["東京メトロ銀座線"] },
-          { "name": "上野", "rank": 1, "track": "dedicated", "transfer": ["JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] },
+          { "name": "上野", "rank": 1, "track": "dedicated", "transfer": ["谷鉄 東野線", "谷鉄 東北ライン", "JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] },
           { "name": "上野広小路", "rank": 1, "track": "dedicated", "transfer": ["東京メトロ銀座線", "都営大江戸線"] },
           { "name": "御徒町", "rank": 1, "track": "street", "transfer": ["JR山手線", "JR京浜東北線"] },
           { "name": "末広町", "rank": 1, "track": "street", "transfer": ["東京メトロ銀座線"] },
@@ -856,7 +1124,7 @@
           { "name": "日本橋室町", "rank": 1, "track": "street" },
           { "name": "三越前", "rank": 1, "track": "street", "transfer": ["東京メトロ銀座線", "東京メトロ半蔵門線"] },
           { "name": "大手町東", "rank": 1, "track": "street", "transfer": ["東京メトロ各線", "都営三田線"] },
-          { "name": "東京駅北口", "rank": 1, "track": "street", "transfer": ["JR各線", "東海道新幹線", "東北・上越・北陸新幹線"] },
+          { "name": "東京駅北口", "rank": 1, "track": "street", "transfer": ["谷鉄 東野線", "JR各線", "東海道新幹線", "東北・上越・北陸新幹線"] },
           { "name": "銀座一丁目", "rank": 1, "track": "street", "transfer": ["東京メトロ有楽町線"] }
         ]
       }

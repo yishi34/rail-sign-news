@@ -1,0 +1,170 @@
+{
+  "title": "特急ネットワーク図",
+  "en": "LIMITED EXPRESS NETWORK",
+  "lead": "特急いずみの甲・乙・α・βと、特急アルプス・特急讃岐・特急薩摩・特急みちのくをまとめた谷中日本鉄道の特急専用イメージ路線図です。",
+  "note": "甲・乙・α・βの種類があるのは特急いずみだけです。ほかの特急は列車名として表示しています。",
+  "baseRoutes": [
+    {
+      "id": "tokai-axis",
+      "route": ["tokyo", "shinagawa", "kawasaki", "odawara", "atami", "fuji", "shin-fuji", "shizuoka", "hamamatsu", "toyohashi", "nagoya", "kuwana", "yokkaichi", "nara", "saidaiji", "fuse", "umeda"]
+    },
+    {
+      "id": "toyama-axis",
+      "route": ["shin-fuji", "minobu", "kofu", "kamisuwa", "matsumoto", "minami-otari", "itoigawa", "kurobe", "toyama"]
+    },
+    {
+      "id": "sanyo-kyushu-axis",
+      "route": ["umeda", "kobe", "himeji", "okayama", "hiroshima", "hatabu", "kokura", "hakata", "kumamoto", "kagoshima"]
+    },
+    {
+      "id": "tohoku-axis",
+      "route": ["tokyo", "ueno", "omiya", "utsunomiya", "koriyama", "fukushima", "sendai", "morioka"]
+    },
+    {
+      "id": "yamagata-axis",
+      "route": ["sendai", "akiu", "sasaki", "zao", "kaminoyama", "yamagata"]
+    }
+  ],
+  "services": [
+    {
+      "id": "izumi-ko",
+      "symbol": "甲",
+      "label": "特急いずみ",
+      "name": "いずみ",
+      "variant": "甲",
+      "color": "#e60012",
+      "subtitle": "東海ライン最速系統",
+      "route": ["tokyo", "nagoya", "yokkaichi", "saidaiji", "umeda"],
+      "summary": "谷鉄東京から谷鉄大阪梅田までを結ぶ、いずみ最速タイプです。"
+    },
+    {
+      "id": "izumi-otsu",
+      "symbol": "乙",
+      "label": "特急いずみ",
+      "name": "いずみ",
+      "variant": "乙",
+      "color": "#0072bc",
+      "subtitle": "東海ライン主要駅停車系統",
+      "route": ["tokyo", "shizuoka", "nagoya", "yokkaichi", "saidaiji", "umeda"],
+      "summary": "谷鉄静岡・名古屋・四日市・谷鉄西大寺に停車し、豊橋・新布施を通過する、いずみの速達タイプです。"
+    },
+    {
+      "id": "izumi-alpha",
+      "symbol": "α",
+      "label": "特急いずみ",
+      "name": "いずみ",
+      "variant": "α",
+      "color": "#0f766e",
+      "subtitle": "湘南・駿豆方面停車タイプ",
+      "route": ["tokyo", "shinagawa", "odawara", "atami", "shizuoka", "toyohashi", "nagoya", "yokkaichi", "saidaiji", "umeda"],
+      "summary": "谷鉄品川・小田原・谷鉄熱海・豊橋にも停車しつつ、大阪梅田まで速達するタイプです。"
+    },
+    {
+      "id": "izumi-beta",
+      "symbol": "β",
+      "label": "特急いずみ",
+      "name": "いずみ",
+      "variant": "β",
+      "color": "#f5a900",
+      "subtitle": "東海・奈良連絡タイプ",
+      "route": ["tokyo", "kawasaki", "odawara", "atami", "fuji", "shin-fuji", "shizuoka", "toyohashi", "nagoya", "kuwana", "yokkaichi", "nara", "saidaiji", "fuse", "umeda"],
+      "summary": "谷鉄川崎・小田原・熱海・富士方面から名古屋・奈良方面までこまめに拾う、いずみの広域停車タイプです。"
+    },
+    {
+      "id": "alps",
+      "symbol": "ア",
+      "label": "特急アルプス",
+      "name": "アルプス",
+      "color": "#e60012",
+      "subtitle": "富山線山岳特急",
+      "baseRoute": "toyama-axis",
+      "route": ["shin-fuji", "minobu", "kofu", "kamisuwa", "matsumoto", "minami-otari", "itoigawa", "kurobe", "toyama"],
+      "summary": "新富士から身延・甲府・上諏訪・松本を経て、谷鉄糸魚川・谷鉄富山へ向かう富山線の山岳特急です。"
+    },
+    {
+      "id": "sanuki",
+      "symbol": "讃",
+      "label": "特急讃岐",
+      "name": "讃岐",
+      "color": "#8b5cf6",
+      "subtitle": "瀬戸内ライン高松方面",
+      "route": ["okayama", "kojima", "sakaide", "ayagawa", "takamatsu-airport", "takamatsu"],
+      "summary": "谷鉄岡山から児島・谷鉄坂出を経て、綾川・高松空港口まわりで谷鉄高松へ向かう、予讃線と重なりにくい瀬戸内ラインの特急です。"
+    },
+    {
+      "id": "satsuma",
+      "symbol": "薩",
+      "label": "特急薩摩",
+      "name": "薩摩",
+      "color": "#c2410c",
+      "subtitle": "山陽・九州ライン鹿児島方面",
+      "baseRoute": "sanyo-kyushu-axis",
+      "route": ["umeda", "kobe", "himeji", "okayama", "hiroshima", "hatabu", "kokura", "hakata", "kumamoto", "kagoshima"],
+      "summary": "谷鉄大阪梅田から山陽ライン・九州ラインを直通し、谷鉄鹿児島中央へ向かう西日本縦断の特急です。"
+    },
+    {
+      "id": "michinoku",
+      "symbol": "み",
+      "label": "特急みちのく",
+      "name": "みちのく",
+      "color": "#2563eb",
+      "subtitle": "東北ライン盛岡方面",
+      "baseRoute": "tohoku-axis",
+      "route": ["tokyo", "ueno", "omiya", "utsunomiya", "koriyama", "fukushima", "sendai", "morioka"],
+      "summary": "谷鉄東京から東北ラインを北上し、谷鉄仙台を経て谷鉄盛岡まで向かう東北幹線の特急です。"
+    }
+  ],
+  "nodes": [
+    { "id": "tokyo", "name": "谷鉄東京", "x": 132, "y": 264, "anchor": "end", "dx": -12, "dy": 4, "major": true },
+    { "id": "shinagawa", "name": "谷鉄品川", "x": 218, "y": 306, "anchor": "end", "dx": -10, "dy": 22 },
+    { "id": "kawasaki", "name": "谷鉄川崎", "x": 260, "y": 326, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "odawara", "name": "小田原", "x": 330, "y": 344, "anchor": "middle", "dx": 0, "dy": 27 },
+    { "id": "atami", "name": "谷鉄熱海", "x": 432, "y": 354, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "fuji", "name": "谷鉄富士", "x": 492, "y": 356, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "shin-fuji", "name": "新富士", "x": 520, "y": 356, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "minobu", "name": "谷鉄身延", "x": 542, "y": 304, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "kofu", "name": "谷鉄甲府", "x": 564, "y": 250, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "kamisuwa", "name": "上諏訪", "x": 590, "y": 202, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "matsumoto", "name": "谷鉄松本", "x": 624, "y": 158, "anchor": "middle", "dx": 0, "dy": -18, "major": true },
+    { "id": "minami-otari", "name": "谷鉄南小谷", "x": 668, "y": 118, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "itoigawa", "name": "谷鉄糸魚川", "x": 718, "y": 92, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "kurobe", "name": "谷鉄黒部", "x": 774, "y": 80, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "toyama", "name": "谷鉄富山", "x": 834, "y": 74, "anchor": "middle", "dx": 0, "dy": -18, "major": true },
+    { "id": "shizuoka", "name": "谷鉄静岡", "x": 548, "y": 356, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "hamamatsu", "name": "谷鉄浜松", "x": 662, "y": 356, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "toyohashi", "name": "豊橋", "x": 772, "y": 350, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "nagoya", "name": "谷鉄名古屋", "x": 872, "y": 336, "anchor": "start", "dx": 10, "dy": -10, "major": true },
+    { "id": "kuwana", "name": "桑名", "x": 916, "y": 354, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "yokkaichi", "name": "谷鉄四日市", "x": 950, "y": 372, "anchor": "start", "dx": 10, "dy": 4 },
+    { "id": "nara", "name": "谷鉄奈良", "x": 1018, "y": 418, "anchor": "start", "dx": 10, "dy": 2 },
+    { "id": "saidaiji", "name": "谷鉄西大寺", "x": 1070, "y": 460, "anchor": "start", "dx": 10, "dy": 3 },
+    { "id": "fuse", "name": "新布施", "x": 1120, "y": 500, "anchor": "start", "dx": 10, "dy": 4 },
+    { "id": "umeda", "name": "谷鉄大阪梅田", "x": 1168, "y": 548, "anchor": "start", "dx": 12, "dy": 4, "major": true },
+    { "id": "kobe", "name": "谷鉄神戸三宮", "x": 1038, "y": 584, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "himeji", "name": "谷鉄姫路", "x": 908, "y": 602, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "okayama", "name": "谷鉄岡山", "x": 770, "y": 604, "anchor": "middle", "dx": 0, "dy": 28, "major": true },
+    { "id": "kojima", "name": "児島", "x": 808, "y": 650, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "sakaide", "name": "谷鉄坂出", "x": 846, "y": 674, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "ayagawa", "name": "綾川", "x": 858, "y": 690, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "takamatsu-airport", "name": "高松空港口", "x": 870, "y": 694, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "takamatsu", "name": "谷鉄高松", "x": 882, "y": 698, "anchor": "middle", "dx": 0, "dy": 28, "major": true },
+    { "id": "hiroshima", "name": "谷鉄広島", "x": 620, "y": 594, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "hatabu", "name": "谷鉄幡生", "x": 480, "y": 584, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "kokura", "name": "谷鉄小倉", "x": 390, "y": 606, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "hakata", "name": "谷鉄博多", "x": 300, "y": 628, "anchor": "middle", "dx": 0, "dy": 28, "major": true },
+    { "id": "kumamoto", "name": "谷鉄熊本", "x": 198, "y": 628, "anchor": "middle", "dx": 0, "dy": 28 },
+    { "id": "kagoshima", "name": "谷鉄鹿児島中央", "x": 84, "y": 606, "anchor": "end", "dx": -12, "dy": 5, "major": true },
+    { "id": "ueno", "name": "谷鉄上野", "x": 146, "y": 180, "anchor": "end", "dx": -10, "dy": 4 },
+    { "id": "omiya", "name": "大宮", "x": 232, "y": 120, "anchor": "middle", "dx": 0, "dy": -18, "major": true },
+    { "id": "utsunomiya", "name": "谷鉄宇都宮", "x": 360, "y": 100, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "koriyama", "name": "郡山", "x": 500, "y": 98, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "fukushima", "name": "福島", "x": 620, "y": 116, "anchor": "middle", "dx": 0, "dy": -18 },
+    { "id": "sendai", "name": "谷鉄仙台", "x": 742, "y": 150, "anchor": "start", "dx": 12, "dy": -4, "major": true },
+    { "id": "morioka", "name": "谷鉄盛岡", "x": 908, "y": 92, "anchor": "middle", "dx": 0, "dy": -18, "major": true },
+    { "id": "akiu", "name": "秋保温泉口", "x": 710, "y": 226, "anchor": "start", "dx": 12, "dy": 2 },
+    { "id": "sasaki", "name": "笹谷峠", "x": 640, "y": 286, "anchor": "middle", "dx": 0, "dy": 26 },
+    { "id": "zao", "name": "蔵王温泉口", "x": 570, "y": 336, "anchor": "end", "dx": -12, "dy": 4 },
+    { "id": "kaminoyama", "name": "上山温泉", "x": 510, "y": 386, "anchor": "end", "dx": -12, "dy": 4 },
+    { "id": "yamagata", "name": "谷鉄山形", "x": 454, "y": 438, "anchor": "end", "dx": -12, "dy": 4, "major": true }
+  ]
+}

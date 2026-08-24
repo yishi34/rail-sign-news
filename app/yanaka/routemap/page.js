@@ -30,6 +30,53 @@ const TRAM_NAME_CH = 16;
 const TRAM_TR_GAP = 16;
 const TRAM_TR_LH = 12;
 
+const LINE_GROUPS = [
+  {
+    title: "幹線ライン",
+    en: "MAIN LINES",
+    ids: ["tokai", "tokai-sunzu", "tokai-tokai", "tokai-kansai", "sanyo", "kyushu", "setouchi", "tohoku"],
+  },
+  {
+    title: "支線・直通連絡",
+    en: "BRANCH & THROUGH SERVICES",
+    ids: ["tohoku-yamagata", "tono", "zushi-hayama", "oora", "wakayama"],
+  },
+  {
+    title: "首都圏エリア",
+    en: "METRO AREA",
+    ids: ["yanaka-line", "rinkai", "asano", "sagami-tanzawa", "okumusashi", "tama", "musashi-loop"],
+  },
+  {
+    title: "モノレール",
+    en: "MONORAIL",
+    ids: ["bay-monorail", "yamanote-west"],
+  },
+  {
+    title: "広域・観光路線",
+    en: "REGIONAL & SCENIC LINES",
+    ids: ["toyama", "nagano", "gatama", "hamasaki", "kitadake-climb", "takachiho-aso-trolley"],
+  },
+];
+
+function groupLines(lines) {
+  const byId = new Map(lines.map((line) => [line.id, line]));
+  const used = new Set();
+  const groups = LINE_GROUPS.map((group) => {
+    const groupedLines = group.ids
+      .map((id) => {
+        const line = byId.get(id);
+        if (line) used.add(id);
+        return line;
+      })
+      .filter(Boolean);
+    return { ...group, lines: groupedLines };
+  }).filter((group) => group.lines.length > 0);
+  const others = lines.filter((line) => !used.has(line.id));
+  return others.length
+    ? [...groups, { title: "その他", en: "OTHER LINES", lines: others }]
+    : groups;
+}
+
 // 種別(types)は rank の大きい順=上の段。stop条件: 駅の rank >= 種別の rank
 function RouteSvg({ line }) {
   const { types, stations, branches } = line;
@@ -421,6 +468,7 @@ function DistanceNote({ line }) {
 
 export default function YanakaRouteMapPage() {
   const rm = yanaka.routemap;
+  const lineGroups = groupLines(rm.lines);
 
   return (
     <>
@@ -439,42 +487,80 @@ export default function YanakaRouteMapPage() {
 
       <main className="yk-main">
         <section>
-          {rm.lines.map((line) => (
-            <details className="rm-card" key={line.id}>
+          <div className="rm-group">
+            <div className="rm-group-head">
+              <h2>特急・優等列車</h2>
+              <span className="en">LIMITED EXPRESS</span>
+            </div>
+            <details className="rm-card rm-network-card">
               <summary className="rm-card-summary">
-                <span className="rm-line-band"></span>
+                <span className="rm-line-band rm-network-band"></span>
                 <span className="rm-card-title">
-                  <span className="rm-line-title">{line.name}</span>
-                  <span className="rm-line-en en">{line.nameEn}</span>
+                  <span className="rm-line-title">谷鉄 特急ネットワーク</span>
+                  <span className="rm-line-en en">LIMITED EXPRESS NETWORK</span>
                 </span>
                 <span className="rm-toggle" aria-hidden="true"></span>
               </summary>
               <div className="rm-card-body">
                 <div className="rm-legend">
-                  {line.shape !== "loop" &&
-                    line.types.map((t) => (
-                      <span className="rm-legend-item" key={t.id}>
-                        <span className="rm-chip" style={{ borderColor: t.color }}></span>
-                        {t.label.includes("停車") ? t.label : `${t.label}停車駅`}
-                      </span>
-                    ))}
-                  <DistanceNote line={line} />
-                  <span className="rm-note">{line.note || rm.note}</span>
+                  <span className="rm-legend-item">
+                    <span className="rm-chip" style={{ borderColor: "#e60012" }}></span>
+                    特急ネットワーク
+                  </span>
+                  <span className="rm-note">
+                    特急いずみ・特急讃岐など、特急列車だけをまとめた路線図です。
+                  </span>
                 </div>
-                {/* 路線図(駅数が多いので横スクロール) */}
-                <div className="rm-scroll">
-                  {line.shape === "loop" ? (
-                    <LoopSvg line={line} />
-                  ) : line.shape === "tram" ? (
-                    <TramSvg line={line} />
-                  ) : (
-                    <RouteSvg line={line} />
-                  )}
-                </div>
-                <p className="rm-hint">← 横にスクロールできます →</p>
-                <Downloads line={line} />
+                <Link className="rm-network-link" href="/yanaka/limited-express">
+                  特急ネットワーク図を開く
+                </Link>
               </div>
             </details>
+          </div>
+          {lineGroups.map((group) => (
+            <div className="rm-group" key={group.title}>
+              <div className="rm-group-head">
+                <h2>{group.title}</h2>
+                <span className="en">{group.en}</span>
+              </div>
+              {group.lines.map((line) => (
+                <details className="rm-card" key={line.id}>
+                  <summary className="rm-card-summary">
+                    <span className="rm-line-band"></span>
+                    <span className="rm-card-title">
+                      <span className="rm-line-title">{line.name}</span>
+                      <span className="rm-line-en en">{line.nameEn}</span>
+                    </span>
+                    <span className="rm-toggle" aria-hidden="true"></span>
+                  </summary>
+                  <div className="rm-card-body">
+                    <div className="rm-legend">
+                      {line.shape !== "loop" &&
+                        line.types.map((t) => (
+                          <span className="rm-legend-item" key={t.id}>
+                            <span className="rm-chip" style={{ borderColor: t.color }}></span>
+                            {t.label.includes("停車") ? t.label : `${t.label}停車駅`}
+                          </span>
+                        ))}
+                      <DistanceNote line={line} />
+                      <span className="rm-note">{line.note || rm.note}</span>
+                    </div>
+                    {/* 路線図(駅数が多いので横スクロール) */}
+                    <div className="rm-scroll">
+                      {line.shape === "loop" ? (
+                        <LoopSvg line={line} />
+                      ) : line.shape === "tram" ? (
+                        <TramSvg line={line} />
+                      ) : (
+                        <RouteSvg line={line} />
+                      )}
+                    </div>
+                    <p className="rm-hint">← 横にスクロールできます →</p>
+                    <Downloads line={line} />
+                  </div>
+                </details>
+              ))}
+            </div>
           ))}
         </section>
       </main>
