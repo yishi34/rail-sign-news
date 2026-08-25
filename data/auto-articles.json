@@ -27,6 +27,33 @@
     }
   },
   {
+    "title": "【井上孝司の「鉄道旅行のヒント」】普通乗車券で特急に乗れる特例区間がある",
+    "category": "travel",
+    "date": "2026-08-26",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2134572.html"
+    }
+  },
+  {
+    "title": "京阪宇治線で「宇治川の鵜飼再興100年周年」ヘッドマーク",
+    "category": "news",
+    "date": "2026-08-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/26/010000.html"
+    }
+  },
+  {
+    "title": "JR西日本，「うれしート」を10月3日から平日・土休日の全時間帯に設定へ",
+    "category": "news",
+    "date": "2026-08-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/26/000000.html"
+    }
+  },
+  {
     "title": "京王バス、AI搭載「車内事故防止システム」導入…東京・調布の一部路線で",
     "category": "news",
     "date": "2026-08-25",
@@ -150,6 +177,141 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75356/"
+    }
+  },
+  {
+    "title": "阪急線の一部が「不発弾処理」で運休へ 一部駅は警戒区域のため駅前も閉鎖",
+    "category": "service",
+    "date": "2026-08-25",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/701685"
+    }
+  },
+  {
+    "title": "【JR東】総武快速線内人身事故発生に伴う総武本線の快速千葉行き運転",
+    "category": "news",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75371/"
+    }
+  },
+  {
+    "title": "【智頭】HOT7000系HOT7023・HOT7052後藤総合車両所本所出場",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75370/"
+    }
+  },
+  {
+    "title": "【東急】5000系5118Fがみなとみらい線内で8両の特急として運転",
+    "category": "news",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75369/"
+    }
+  },
+  {
+    "title": "【JR東】209系「Mue-train」大宮総合車両ベース東大宮センターへ現車訓練",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75368/"
+    }
+  },
+  {
+    "title": "【西武】人身事故の影響で平日に定期運用に無い急行 田無行が運転",
+    "category": "news",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75367/"
+    }
+  },
+  {
+    "title": "【阪神】阪神なんば線淀川橋梁改築事業 伝法方の架設工事が再開",
+    "category": "news",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75366/"
+    }
+  },
+  {
+    "title": "【芝山】3600形3668編成が転属後初の金町線運用に充当",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75365/"
+    }
+  },
+  {
+    "title": "【福市交】4000系4135Fが川崎車両を出場し甲種輸送を実施",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75364/"
+    }
+  },
+  {
+    "title": "【SR】2000系2108編成綾瀬工場入場回送",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75363/"
+    }
+  },
+  {
+    "title": "【都営】12-600形12-621F 馬込車両検修場出場試運転",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75362/"
+    }
+  },
+  {
+    "title": "【JR東】E233系マト15編成東京総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75361/"
+    }
+  },
+  {
+    "title": "【JR東】E231系ミツA522編成東京総合車両ベース入場回送",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75360/"
+    }
+  },
+  {
+    "title": "【JR東】209系マリC414編成大宮総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75359/"
+    }
+  },
+  {
+    "title": "【メトロ】東京メトロ05系05-101F 綾瀬工場出場試運転を実施",
+    "category": "cars",
+    "date": "2026-08-25",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75358/"
     }
   },
   {
@@ -1635,168 +1797,6 @@
     "source": {
       "name": "レスポンス",
       "url": "https://response.jp/article/2026/08/20/415527.html"
-    }
-  },
-  {
-    "title": "【南海】2000系2041F 故障明け試運転",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75260/"
-    }
-  },
-  {
-    "title": "【京成】3100形3153編成が京成本線運用を代走し快速京成佐倉行に充当",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75258/"
-    }
-  },
-  {
-    "title": "【JR東】E233系ケヨ503編成 秋田総合車両ベース構内試運転",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75257/"
-    }
-  },
-  {
-    "title": "【JR東】キハ111-113+キハ112-113が郡山総合車両ベースへ入場回送",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75255/"
-    }
-  },
-  {
-    "title": "【JR東】E721系1000番台P4-1編成 郡山総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75254/"
-    }
-  },
-  {
-    "title": "【JR東】E235系トウ50編成が東京総合車両ベース西エリアへ入場",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75253/"
-    }
-  },
-  {
-    "title": "【西武】30000系32101F 武蔵丘車両検修場出場試運転",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75252/"
-    }
-  },
-  {
-    "title": "【京王】2000系2703Fの2753号車・2253号車が構内入換",
-    "category": "news",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75251/"
-    }
-  },
-  {
-    "title": "【京王】8000系8702F若葉台工場出場試運転",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75250/"
-    }
-  },
-  {
-    "title": "【京王】7000系7801F「キッズパークたまどうトレイン」が4両単独で試運転",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75249/"
-    }
-  },
-  {
-    "title": "【名鉄】4000系4006F尾張旭検車支区出場試運転",
-    "category": "cars",
-    "date": "2026-08-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75248/"
-    }
-  },
-  {
-    "title": "待たずに先頭タクシーへ即乗車。新大阪駅に「newmo」スマホ予約専用乗り場、新たな配車マッチングを検証",
-    "category": "news",
-    "date": "2026-08-19",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2133668.html"
-    }
-  },
-  {
-    "title": "東海道新幹線「マッハ便」活用、再生医療の細胞輸送を名古屋・大阪に拡大…JR東海とGaudi Clinical",
-    "category": "news",
-    "date": "2026-08-19",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/19/415466.html"
-    }
-  },
-  {
-    "title": "テレマティクスデータ活用、事故前後の車両・ドライバーの行動を時系列で再構築…Geotabがフリート事故調査を一元化",
-    "category": "cars",
-    "date": "2026-08-19",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/19/415460.html"
-    }
-  },
-  {
-    "title": "アクティオ、建設車両の無人レンタル「アクスポ」を鹿児島に開設…全国展開へ",
-    "category": "cars",
-    "date": "2026-08-19",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/19/415450.html"
-    }
-  },
-  {
-    "title": "千葉豪雨で水没車両多発、水深60センチで車外“脱出困難”の危険［新聞ウォッチ］",
-    "category": "cars",
-    "date": "2026-08-19",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/19/415422.html"
-    }
-  },
-  {
-    "title": "茨城県に大規模自然災害対応の専用拠点、車両の雹害修理を迅速に…DRS Automotive Solutions Japan",
-    "category": "cars",
-    "date": "2026-08-19",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/19/415420.html"
-    }
-  },
-  {
-    "title": "9月19日JR東日本「いいやま駅まつり」開催",
-    "category": "news",
-    "date": "2026-08-19",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/19/163500.html"
     }
   }
 ]
