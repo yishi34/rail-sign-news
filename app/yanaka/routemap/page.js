@@ -44,12 +44,12 @@ const LINE_GROUPS = [
   {
     title: "首都圏エリア",
     en: "METRO AREA",
-    ids: ["yanaka-line", "rinkai", "asano", "sagami-tanzawa", "okumusashi", "tama", "musashi-loop"],
+    ids: ["yanaka-line", "rinkai", "asano", "sagami-tanzawa", "okumusashi", "tama", "musashi-loop", "yamanote-west"],
   },
   {
     title: "モノレール",
     en: "MONORAIL",
-    ids: ["bay-monorail", "yamanote-west"],
+    ids: ["bay-monorail"],
   },
   {
     title: "広域・観光路線",
