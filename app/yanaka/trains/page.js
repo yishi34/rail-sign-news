@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 // 車種カテゴリの表示順。これ以外(未設定)の車両は最後に「その他」でまとめる
-const CATEGORY_ORDER = ["特急車", "気動車特急車", "気動車", "近郊車", "通勤車"];
+const CATEGORY_ORDER = ["特急車", "気動車特急車", "気動車", "無軌条電車", "近郊車", "通勤車"];
 
 function TrainCard({ car }) {
   const multi = car.photos.length > 1;
