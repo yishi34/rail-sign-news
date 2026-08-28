@@ -36,6 +36,15 @@
     }
   },
   {
+    "title": "日野市・京王電鉄，ふるさと納税返礼品に「親子で電車運転・車内放送体験＆ピット（電車の検査場）内見学ツアー」を設定",
+    "category": "travel",
+    "date": "2026-08-29",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/29/010000.html"
+    }
+  },
+  {
     "title": "JR九州，九州新幹線・鹿児島本線の運行再開見通しなどを発表",
     "category": "news",
     "date": "2026-08-28",
@@ -132,6 +141,96 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75420/"
+    }
+  },
+  {
+    "title": "自動運転EVバス、甲子園エリアで実証実験…西宮市と阪神電鉄が2ルートで運行",
+    "category": "news",
+    "date": "2026-08-28",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/08/28/415854.html"
+    }
+  },
+  {
+    "title": "京都でこの秋「JRの電車が長くなる？」 屈指の混雑路線で「怒涛の増発＆車両増」 嵯峨野線は増結列車51本！",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/702146"
+    }
+  },
+  {
+    "title": "【JR西】N700系P1編成が8両編成化改造を終え本線試運転",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75430/"
+    }
+  },
+  {
+    "title": "【東武】10030型11252F 墨田区ラッピングトレイン「五彩」運行開始",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75429/"
+    }
+  },
+  {
+    "title": "【JR貨】DE10-1120が仙台港駅で解体",
+    "category": "news",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75428/"
+    }
+  },
+  {
+    "title": "【JR東】E233系マリC9編成の組成が東京総合車両ベースで確認",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75427/"
+    }
+  },
+  {
+    "title": "【近鉄】5211系VX11 五位堂検修車庫出場試運転(202608)",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75426/"
+    }
+  },
+  {
+    "title": "【東武】10030型11252F「五彩」亀戸線へ送り込み回送",
+    "category": "news",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75424/"
+    }
+  },
+  {
+    "title": "【JR東】E233系T25編成 長野総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75423/"
+    }
+  },
+  {
+    "title": "【近鉄】19400系「Les Saveurs 志摩」五位堂検修車庫出場試運転",
+    "category": "cars",
+    "date": "2026-08-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75422/"
     }
   },
   {
@@ -1698,105 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75312/"
-    }
-  },
-  {
-    "title": "【JR海】315系C20編成が名古屋工場出場試運転",
-    "category": "cars",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75310/"
-    }
-  },
-  {
-    "title": "【京阪】ダイヤ改正に伴い13000系4両編成が樟葉以北の本線運用に充当",
-    "category": "cars",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75309/"
-    }
-  },
-  {
-    "title": "【JR東】千葉駅にてホームドア設置整備予定",
-    "category": "news",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75307/"
-    }
-  },
-  {
-    "title": "【秩鉄】5000系5002Fが臨時列車「長瀞特急」に充当",
-    "category": "service",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75305/"
-    }
-  },
-  {
-    "title": "【京阪】13000系13019Fが営業運転開始",
-    "category": "news",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75304/"
-    }
-  },
-  {
-    "title": "【JR九】唐津車両センターで103系・307系車両見学会開催",
-    "category": "cars",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75303/"
-    }
-  },
-  {
-    "title": "【JR西】223系W17編成 網干総合車両所本所更新工事出場試運転",
-    "category": "cars",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75302/"
-    }
-  },
-  {
-    "title": "“京王ライナー”，10月1日から立席サービスを導入",
-    "category": "news",
-    "date": "2026-08-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/21/061500.html"
-    }
-  },
-  {
-    "title": "9月22日〜23日JR東海，東海道新幹線の特別列車「東海道ルミエールエクスプレス」を上りで運行",
-    "category": "news",
-    "date": "2026-08-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/21/060000.html"
-    }
-  },
-  {
-    "title": "落とし物横断検索サービス、京王電鉄など多摩地域4事業者が新たに参画…全国39事業者に拡大",
-    "category": "news",
-    "date": "2026-08-21",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/21/415560.html"
-    }
-  },
-  {
-    "title": "オートバックス「VEEMO」、NEXCO東日本の日比谷駐車場で実証実験へ…アプリで事前予約・車両ナンバー認識",
-    "category": "cars",
-    "date": "2026-08-21",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/21/415552.html"
     }
   }
 ]
