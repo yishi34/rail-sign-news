@@ -144,6 +144,78 @@
     }
   },
   {
+    "title": "10月4日松本駅で「Matsumoto Station Festival 2026」を開催",
+    "category": "news",
+    "date": "2026-08-29",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/08/29/143500.html"
+    }
+  },
+  {
+    "title": "11月3日開催近鉄，「昭和・平成・令和 3世代車両撮影会in宮津車庫」の参加者募集",
+    "category": "cars",
+    "date": "2026-08-29",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/08/29/143000.html"
+    }
+  },
+  {
+    "title": "【JR西】207系S10編成 網干総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-08-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75445/"
+    }
+  },
+  {
+    "title": "【JR東】快速「GVぐんまちゃん横川」がGV-E197系プッシュプル編成で運転",
+    "category": "cars",
+    "date": "2026-08-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75444/"
+    }
+  },
+  {
+    "title": "【阪急】5100系C#5106 陸送準備",
+    "category": "news",
+    "date": "2026-08-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75443/"
+    }
+  },
+  {
+    "title": "【東武】N100系N101F「スペーシア X」を使用した団体臨時列車が運転",
+    "category": "service",
+    "date": "2026-08-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75441/"
+    }
+  },
+  {
+    "title": "【千葉モノ】「Urban Flyer 0-type 第32編成 デビュー記念 試乗・撮影会」開催",
+    "category": "cars",
+    "date": "2026-08-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75440/"
+    }
+  },
+  {
+    "title": "【JR東】E131系N9編成が松本駅での展示会に伴い送り込み回送",
+    "category": "cars",
+    "date": "2026-08-29",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75439/"
+    }
+  },
+  {
     "title": "JR九州，九州新幹線・鹿児島本線の運行再開見通しなどを発表",
     "category": "news",
     "date": "2026-08-28",
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75325/"
-    }
-  },
-  {
-    "title": "【阿武急】8100形使用の夜行列車「かくだ」号と深夜撮影会が催行",
-    "category": "news",
-    "date": "2026-08-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75324/"
-    }
-  },
-  {
-    "title": "「第25回 国際鉄道模型コンベンション」開催",
-    "category": "news",
-    "date": "2026-08-22",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/22/000000.html"
-    }
-  },
-  {
-    "title": "90年前の「皇室用車両」内部がスゴかった！ 一・二・三等車を乗り比べ 世界的にも希少な“ロイヤル・トレイン”150年の進化",
-    "category": "cars",
-    "date": "2026-08-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/699162"
-    }
-  },
-  {
-    "title": "真夏でも寒い！「日本一高い国道」の先にある“鉄道”に乗ってきた！ 標高2000m“エモいゴンドラ”3種乗り継ぎルートとは",
-    "category": "news",
-    "date": "2026-08-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/699992"
-    }
-  },
-  {
-    "title": "北海道新幹線で「難航していたトンネル」掘削が完了！ 工事中断を経て10年越し 5569mを克服！",
-    "category": "news",
-    "date": "2026-08-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/700241"
-    }
-  },
-  {
-    "title": "「仙台始発のはやぶさ」大幅増発！ 「デビュー前のアイドルグループ」コンサートに合わせ夜にも設定 JR東日本",
-    "category": "cars",
-    "date": "2026-08-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/700962"
-    }
-  },
-  {
-    "title": "終電後の小田急線で珍事！ 多摩線にロマンスカーが乗り入れ 「向ヶ丘遊園駅に停車する特急」が1日限定で復活",
-    "category": "service",
-    "date": "2026-08-22",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/701245"
-    }
-  },
-  {
-    "title": "【JR西】和歌山駅で智辯和歌山高校の甲子園優勝祝いメッセージ表示",
-    "category": "news",
-    "date": "2026-08-22",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75300/"
     }
   }
 ]
