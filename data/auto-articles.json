@@ -27,6 +27,42 @@
     }
   },
   {
+    "title": "相鉄11000系11003編成に「ほほえみ号」ラッピング",
+    "category": "cars",
+    "date": "2026-08-31",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/31/010000.html"
+    }
+  },
+  {
+    "title": "箱根登山電車100形による団臨運転",
+    "category": "news",
+    "date": "2026-08-31",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/31/003000.html"
+    }
+  },
+  {
+    "title": "500系V4編成による団体臨時列車運転",
+    "category": "cars",
+    "date": "2026-08-31",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/08/31/000000.html"
+    }
+  },
+  {
+    "title": "埼玉県内を13時間かけて走る「夜行急行」が10月運転へ 3年ぶりに「機関車重連」！ 車内販売も",
+    "category": "cars",
+    "date": "2026-08-31",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/703525"
+    }
+  },
+  {
     "title": "9月1日〜JR北海道，豊富温泉開湯100周年・豊富駅開駅100周年を記念した各種企画を実施",
     "category": "news",
     "date": "2026-08-30",
@@ -1761,42 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75345/"
-    }
-  },
-  {
-    "title": "【JR東】E235系ミツB31編成が津田沼統括センター習志野構内へ一時入庫",
-    "category": "cars",
-    "date": "2026-08-24",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75344/"
-    }
-  },
-  {
-    "title": "【横市交】4000形4631編成上永谷出場試運転",
-    "category": "cars",
-    "date": "2026-08-24",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75343/"
-    }
-  },
-  {
-    "title": "【遠鉄】2000形2009F「マジカルミライ」HM取り付け編成が車輪交換を終え西鹿島出場試運転",
-    "category": "cars",
-    "date": "2026-08-24",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75342/"
-    }
-  },
-  {
-    "title": "【JR東】E233系ケヨ503編成秋田総合車両ベース出場配給輸送",
-    "category": "cars",
-    "date": "2026-08-24",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75341/"
     }
   }
 ]
