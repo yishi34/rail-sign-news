@@ -1252,6 +1252,17 @@
   "timetable": {
     "title": "時刻表",
     "en": "TIMETABLE",
+    "pdfs": [
+      {
+        "id": "musashi-loop",
+        "code": "ML",
+        "title": "谷鉄 武蔵環状線",
+        "en": "MUSASHI LOOP LINE",
+        "summary": "全40駅、外回り・内回り、平日・土休日の駅別時刻表PDFです。",
+        "href": "/yanaka/timetables/musashi-loop-timetable.pdf",
+        "meta": "PDF / 83ページ / 仮ダイヤ"
+      }
+    ],
     "items": [
       {
         "id": "okumusashi-yokohama-weekday",

@@ -138,6 +138,16 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 /* 時刻表(運転時刻表ボード・王道スタイル) */
 .tt-list-section{display:grid;gap:14px}
 .tt-list{display:grid;gap:18px}
+.tt-pdf-list{display:grid;gap:12px;margin-bottom:4px}
+.tt-pdf-card{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:14px;background:#fff;color:inherit;text-decoration:none;border:1px solid #dfe4e8;border-left:8px solid var(--ynr-green);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);padding:14px 16px;min-width:0;transition:transform .15s,box-shadow .15s}
+.tt-pdf-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.tt-pdf-card:focus-visible{outline:3px solid var(--ynr-yellow);outline-offset:2px}
+.tt-pdf-code{width:52px;height:52px;border:3px solid var(--ynr-green);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.1rem;color:var(--ynr-green);background:#fff}
+.tt-pdf-main{display:grid;gap:2px;min-width:0}
+.tt-pdf-title{font-weight:900;font-size:1.12rem;letter-spacing:.03em}
+.tt-pdf-en{font-size:.75rem;font-weight:700;color:var(--caption)}
+.tt-pdf-summary{font-size:.86rem;font-weight:700;color:var(--caption);line-height:1.55}
+.tt-pdf-meta{justify-self:end;font-size:.82rem;font-weight:900;color:var(--ynr-green);white-space:nowrap;border:2px solid var(--ynr-green);border-radius:6px;padding:6px 12px}
 .tt-card{background:var(--sign-white);border-radius:var(--radius);box-shadow:0 1px 3px rgba(0,0,0,.08);overflow:hidden;border:1px solid #dfe4e8;min-width:0}
 .tt-card[open]{box-shadow:0 4px 12px rgba(0,0,0,.1)}
 .tt-card-summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(180px,auto) auto;align-items:center;gap:14px;padding:14px 16px;border-top:8px solid var(--ynr-band);background:#fff}
@@ -172,6 +182,9 @@ main.yk-main{grid-template-columns:minmax(0,1fr)}
 .tt-legendbox-items{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.85rem;font-weight:700}
 .tt-imgnote{margin-top:8px;font-size:.78rem;color:var(--caption);font-weight:600}
 @media (max-width:720px){
+  .tt-pdf-card{grid-template-columns:auto minmax(0,1fr);gap:10px;padding:12px}
+  .tt-pdf-code{width:44px;height:44px;font-size:.95rem}
+  .tt-pdf-meta{grid-column:1/-1;justify-self:start}
   .tt-card-summary{grid-template-columns:auto minmax(0,1fr) auto;gap:10px;padding:12px}
   .tt-card-code{width:44px;height:44px;font-size:.95rem}
   .tt-card-line{font-size:1.02rem}

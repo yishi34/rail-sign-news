@@ -96,9 +96,24 @@ function TimetableCard({ timetable, index }) {
   );
 }
 
+function PdfTimetableCard({ item }) {
+  return (
+    <a className="tt-pdf-card" href={item.href} target="_blank" rel="noreferrer">
+      <span className="tt-pdf-code en">{item.code}</span>
+      <span className="tt-pdf-main">
+        <span className="tt-pdf-title">{item.title}</span>
+        <span className="tt-pdf-en en">{item.en}</span>
+        <span className="tt-pdf-summary">{item.summary}</span>
+      </span>
+      <span className="tt-pdf-meta">{item.meta}</span>
+    </a>
+  );
+}
+
 export default function YanakaTimetablePage() {
   const timetableGroup = yanaka.timetable;
   const timetables = timetableGroup.items || [timetableGroup];
+  const pdfs = timetableGroup.pdfs || [];
 
   return (
     <>
@@ -122,6 +137,13 @@ export default function YanakaTimetablePage() {
             <h2>路線別時刻表</h2>
             <span className="en-sub en">LINE TIMETABLES</span>
           </div>
+          {pdfs.length > 0 && (
+            <div className="tt-pdf-list">
+              {pdfs.map((item) => (
+                <PdfTimetableCard item={item} key={item.id} />
+              ))}
+            </div>
+          )}
           <div className="tt-list">
             {timetables.map((timetable, index) => (
               <TimetableCard timetable={timetable} index={index} key={timetable.id || timetable.lineName} />
