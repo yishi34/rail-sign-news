@@ -45,6 +45,33 @@
     }
   },
   {
+    "title": "箱根登山電車・箱根登山ケーブルカー・箱根ロープウェイ、シルバーウィークに座席予約・優先改札を実施",
+    "category": "news",
+    "date": "2026-09-01",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2137003.html"
+    }
+  },
+  {
+    "title": "唯一の「ブツ切れ新幹線」解消なるか？ “宙に浮いた”未着工区間の整備へ一歩前進！ 国と県の合意を受けて本格始動",
+    "category": "news",
+    "date": "2026-09-01",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/704384"
+    }
+  },
+  {
+    "title": "【阪急】9300系9309Fが桂から正雀へ回送・アルナ車両入場",
+    "category": "cars",
+    "date": "2026-09-01",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75483/"
+    }
+  },
+  {
     "title": "相鉄11000系11003編成に「ほほえみ号」ラッピング",
     "category": "cars",
     "date": "2026-08-31",
@@ -402,6 +429,24 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75462/"
+    }
+  },
+  {
+    "title": "【西鉄】3000形3120F筑紫車両基地検査出場試運転",
+    "category": "cars",
+    "date": "2026-08-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75482/"
+    }
+  },
+  {
+    "title": "【JR西】223系RS55編成吹田総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-08-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75481/"
     }
   },
   {
@@ -1752,51 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75356/"
-    }
-  },
-  {
-    "title": "阪急線の一部が「不発弾処理」で運休へ 一部駅は警戒区域のため駅前も閉鎖",
-    "category": "service",
-    "date": "2026-08-25",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/701685"
-    }
-  },
-  {
-    "title": "【JR東】総武快速線内人身事故発生に伴う総武本線の快速千葉行き運転",
-    "category": "news",
-    "date": "2026-08-25",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75371/"
-    }
-  },
-  {
-    "title": "【智頭】HOT7000系HOT7023・HOT7052後藤総合車両所本所出場",
-    "category": "cars",
-    "date": "2026-08-25",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75370/"
-    }
-  },
-  {
-    "title": "【東急】5000系5118Fがみなとみらい線内で8両の特急として運転",
-    "category": "news",
-    "date": "2026-08-25",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75369/"
-    }
-  },
-  {
-    "title": "【JR東】209系「Mue-train」大宮総合車両ベース東大宮センターへ現車訓練",
-    "category": "cars",
-    "date": "2026-08-25",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75368/"
     }
   }
 ]
