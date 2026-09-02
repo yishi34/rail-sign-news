@@ -27,6 +27,51 @@
     }
   },
   {
+    "title": "NVIDIAとMediaTek、AI・自動車分野で協業拡大…AIデファインド車両向けアーキテクチャ構築へ",
+    "category": "cars",
+    "date": "2026-09-03",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/09/03/416056.html"
+    }
+  },
+  {
+    "title": "西武20000系をリニューアルへ〜2028年から順次運行開始へ〜",
+    "category": "news",
+    "date": "2026-09-03",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/03/053000.html"
+    }
+  },
+  {
+    "title": "京阪大津線で「京阪電車×響け！ユーフォニアム 2026秋」ラッピング電車",
+    "category": "cars",
+    "date": "2026-09-03",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/03/051500.html"
+    }
+  },
+  {
+    "title": "富良野線でキハ54形500番代による臨時快速列車運転",
+    "category": "news",
+    "date": "2026-09-03",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/03/050000.html"
+    }
+  },
+  {
+    "title": "「グ、グランクラスより広い…!?」新幹線の新たな豪華シートが初公開！ バックシェル付きで“ほぼ個室 ”",
+    "category": "news",
+    "date": "2026-09-03",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/705200"
+    }
+  },
+  {
     "title": "JR東日本が「新駅」設置に向け調査着手へ “新幹線と線路を共用する区間”で検討 山形市の交通結節点に",
     "category": "news",
     "date": "2026-09-02",
@@ -303,6 +348,24 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75510/"
+    }
+  },
+  {
+    "title": "【JR海】313系K11編成が名古屋工場出場試運転",
+    "category": "cars",
+    "date": "2026-09-02",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75529/"
+    }
+  },
+  {
+    "title": "【JR東】E231系コツK-29編成 東京総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-09-02",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75528/"
     }
   },
   {
@@ -1734,69 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/08/27/160000.html"
-    }
-  },
-  {
-    "title": "9月1日〜JR東日本，「Suica」25周年記念で各種キャンペーンを実施",
-    "category": "news",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/27/153500.html"
-    }
-  },
-  {
-    "title": "9月2日〜30日鉄道博物館でEF58 89号機の運転室を公開",
-    "category": "news",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/27/153000.html"
-    }
-  },
-  {
-    "title": "新陽社，JR東海「駅名標ミニチュア品」第2弾（四日市・岐阜・豊橋・浜松）を発売",
-    "category": "news",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/27/113000.html"
-    }
-  },
-  {
-    "title": "9月21日／11月3日開催秋田内陸縦貫鉄道，「米内沢駅 ほじくり隊」の参加者募集",
-    "category": "news",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/27/105000.html"
-    }
-  },
-  {
-    "title": "10月10日〜12日開催阪急京都線「名車6300系本線復活！！〜懐かしの特急 往年の道を行く〜」の参加者募集",
-    "category": "news",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/27/104000.html"
-    }
-  },
-  {
-    "title": "JR北海道，富良野線で臨時快速列車を運転",
-    "category": "news",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/27/103500.html"
-    }
-  },
-  {
-    "title": "10月24日催行JR東日本，『～秋麗の金山隧道へ行く～「常磐線旧線隧道探検ツアー」』の参加者を募集",
-    "category": "travel",
-    "date": "2026-08-27",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/27/103000.html"
     }
   }
 ]
