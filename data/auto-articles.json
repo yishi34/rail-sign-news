@@ -27,6 +27,42 @@
     }
   },
   {
+    "title": "「東京シティパス」がリニューアル。地下鉄乗り放題＋6つの観光体験＋グルメ、総額5550円相当を1日1900円で利用できる",
+    "category": "travel",
+    "date": "2026-09-04",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2138126.html"
+    }
+  },
+  {
+    "title": "【JALふるさとアンバサダー/応援隊に聞く地域愛】山形県産メロンクラフトラガー誕生！　JAL×JR東日本のアップサイクル共創第2弾。山形県産メロンに新たな価値を",
+    "category": "news",
+    "date": "2026-09-04",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/jal_furusato/2137530.html"
+    }
+  },
+  {
+    "title": "DEC743形と35系4000番代による試運転",
+    "category": "cars",
+    "date": "2026-09-04",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/04/053000.html"
+    }
+  },
+  {
+    "title": "京都と下関を結ぶ「夜行特急」10月から運転へ 山陽本線を全線走破！ 604kmを13時間半以上かけて走行",
+    "category": "news",
+    "date": "2026-09-04",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/705632"
+    }
+  },
+  {
     "title": "NVIDIAとMediaTek、AI・自動車分野で協業拡大…AIデファインド車両向けアーキテクチャ構築へ",
     "category": "cars",
     "date": "2026-09-03",
@@ -1761,42 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75446/"
-    }
-  },
-  {
-    "title": "JR九州，九州新幹線・鹿児島本線の運行再開見通しなどを発表",
-    "category": "news",
-    "date": "2026-08-28",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/28/000000.html"
-    }
-  },
-  {
-    "title": "【週末駅弁】仙台駅「牛たん重」",
-    "category": "travel",
-    "date": "2026-08-28",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/series/ekiben/2136317.html"
-    }
-  },
-  {
-    "title": "9月12日「小田急鉄道イベント」をODAKYU湘南GATEで開催",
-    "category": "travel",
-    "date": "2026-08-28",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/28/114500.html"
-    }
-  },
-  {
-    "title": "9月1日〜11月30日「第6回長浜鉄道スクエア・鉄道写真コンテスト」作品募集",
-    "category": "news",
-    "date": "2026-08-28",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/08/28/113000.html"
     }
   }
 ]
