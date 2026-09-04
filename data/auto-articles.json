@@ -27,6 +27,42 @@
     }
   },
   {
+    "title": "水島臨海鉄道で「マンホール列車」を運転",
+    "category": "news",
+    "date": "2026-09-05",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/05/004500.html"
+    }
+  },
+  {
+    "title": "阪堺電軌，10月10日にダイヤ変更を実施",
+    "category": "service",
+    "date": "2026-09-05",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/05/003000.html"
+    }
+  },
+  {
+    "title": "JR北海道，千歳線の新駅は「Fビレッジ駅」に",
+    "category": "news",
+    "date": "2026-09-05",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/05/001500.html"
+    }
+  },
+  {
+    "title": "「お座敷・トロッコ・展望」全部乗せ！ 90分があっという間の観光列車、実は“生活の足”の側面も？",
+    "category": "travel",
+    "date": "2026-09-05",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/703258"
+    }
+  },
+  {
     "title": "「東京シティパス」がリニューアル。地下鉄乗り放題＋6つの観光体験＋グルメ、総額5550円相当を1日1900円で利用できる",
     "category": "travel",
     "date": "2026-09-04",
@@ -384,6 +420,33 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75550/"
+    }
+  },
+  {
+    "title": "【上信】700形702F出場試運転(202609)",
+    "category": "cars",
+    "date": "2026-09-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75569/"
+    }
+  },
+  {
+    "title": "【JR西】225系U1編成 網干総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-09-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75567/"
+    }
+  },
+  {
+    "title": "【名市交】5050形5157H 藤が丘工場出場試運転",
+    "category": "cars",
+    "date": "2026-09-04",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75566/"
     }
   },
   {
@@ -1734,69 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/08/30/113500.html"
-    }
-  },
-  {
-    "title": "Gemini搭載ヒューマノイドが梅田駅・谷町九丁目駅の接客案内に、Osaka Metroで実証実験",
-    "category": "news",
-    "date": "2026-08-30",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/08/30/415892.html"
-    }
-  },
-  {
-    "title": "近江鉄道で「近江ビア電2026」の運転開始",
-    "category": "news",
-    "date": "2026-08-30",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/30/010000.html"
-    }
-  },
-  {
-    "title": "快速“GVぐんまちゃん横川”，GV-E197系けん引で運転",
-    "category": "news",
-    "date": "2026-08-30",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/08/30/003000.html"
-    }
-  },
-  {
-    "title": "これが消滅間近の国鉄形車両「最果て仕様」だ！ スマホ圏外 うろつく野生動物…「壮大すぎる列車名」に偽りナシ",
-    "category": "cars",
-    "date": "2026-08-30",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/702826"
-    }
-  },
-  {
-    "title": "昭和の乗り鉄を襲った「食料難」のリアル 駅そばが主食、駅弁は贅沢品？ コンビニがなかった時代の飢餓旅",
-    "category": "travel",
-    "date": "2026-08-30",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/700394"
-    }
-  },
-  {
-    "title": "「国鉄時代の貴重な生き残り」115系をバスツアーで堪能！ “115系温泉”にも行きます!? 新潟交通＆しなの鉄道がコラボ",
-    "category": "travel",
-    "date": "2026-08-30",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/702952"
-    }
-  },
-  {
-    "title": "【JR西】キハ120-202が後藤総合車両所を出場し回送",
-    "category": "cars",
-    "date": "2026-08-30",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75460/"
     }
   }
 ]
