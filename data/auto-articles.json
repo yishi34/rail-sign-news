@@ -27,6 +27,42 @@
     }
   },
   {
+    "title": "小田急「現役4種類のロマンスカー撮影会」開催",
+    "category": "news",
+    "date": "2026-09-07",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/07/002000.html"
+    }
+  },
+  {
+    "title": "大阪モノレール3000系第54編成が「モノぞう号」に",
+    "category": "cars",
+    "date": "2026-09-07",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/07/001500.html"
+    }
+  },
+  {
+    "title": "「1160kmを5日かけて走破する特急」が進化を遂げて再始動！ 鉄道車両とは思えない「超豪華個室」がスゴい",
+    "category": "cars",
+    "date": "2026-09-07",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/706269"
+    }
+  },
+  {
+    "title": "群馬県と栃木県を結ぶ「異色の東武特急」11月に運行へ 途中停車駅は1駅だけ 館林から東武日光まで直通",
+    "category": "news",
+    "date": "2026-09-07",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/705987"
+    }
+  },
+  {
     "title": "名古屋から富山まで約3時間半！『鉄道にっぽん！RealPro』第6弾はシリーズ最長の「特急ひだ」　12月17日発売予定",
     "category": "news",
     "date": "2026-09-06",
@@ -186,6 +222,42 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75599/"
+    }
+  },
+  {
+    "title": "下関総合車両所で115系の展示会",
+    "category": "cars",
+    "date": "2026-09-06",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/06/232000.html"
+    }
+  },
+  {
+    "title": "鉄道博物館で「車両ステーション月替わり運転室公開」開催",
+    "category": "cars",
+    "date": "2026-09-06",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/06/231000.html"
+    }
+  },
+  {
+    "title": "キハ100形2両が秋田総合車両ベースへ",
+    "category": "cars",
+    "date": "2026-09-06",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/06/230000.html"
+    }
+  },
+  {
+    "title": "【近鉄】19400系「Les Saveurs 志摩」が乗務員訓練のため塩浜へ回送",
+    "category": "news",
+    "date": "2026-09-06",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75607/"
     }
   },
   {
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75497/"
-    }
-  },
-  {
-    "title": "【東急】5050系4101Fが人身事故の影響で準急上福岡行きに",
-    "category": "news",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75496/"
-    }
-  },
-  {
-    "title": "【JR貨】EF210-378が川崎車両を出場し甲種輸送・試運転",
-    "category": "cars",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75495/"
-    }
-  },
-  {
-    "title": "【東葉】2101F「地下鉄博物館40周年×東葉高速30周年」HM運行終了",
-    "category": "news",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75494/"
-    }
-  },
-  {
-    "title": "【京急】新1000形1441編成 久里浜工場出場前試運転",
-    "category": "cars",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75492/"
-    }
-  },
-  {
-    "title": "【JR東】E235系クラJ-17編成 東京総合車両ベース出場",
-    "category": "cars",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75491/"
-    }
-  },
-  {
-    "title": "【東急】6020系6050番台6162F J-TREC新津出場甲種輸送",
-    "category": "cars",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75490/"
-    }
-  },
-  {
-    "title": "【東急】2020系2135Fデハ2235・デハ2335が長津田車両工場から陸送",
-    "category": "cars",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75489/"
-    }
-  },
-  {
-    "title": "【富士山麓】6000系6702Fが「フジサン特急」を代走",
-    "category": "news",
-    "date": "2026-09-01",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75488/"
     }
   }
 ]
