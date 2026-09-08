@@ -36,6 +36,69 @@
     }
   },
   {
+    "title": "「東横INNつくば駅」開業。駅徒歩4分に217室、国際会議場やJAXAへも好アクセス",
+    "category": "news",
+    "date": "2026-09-09",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2139131.html"
+    }
+  },
+  {
+    "title": "【井上孝司の「鉄道旅行のヒント」】鉄道の歴史を探してみよう",
+    "category": "travel",
+    "date": "2026-09-09",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2138905.html"
+    }
+  },
+  {
+    "title": "臨時特急“ニセコ”の追加運転に「ラベンダー」編成が使用される",
+    "category": "cars",
+    "date": "2026-09-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/09/010000.html"
+    }
+  },
+  {
+    "title": "3600系が深夜の土讃線で試運転を実施",
+    "category": "cars",
+    "date": "2026-09-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/09/003000.html"
+    }
+  },
+  {
+    "title": "東京メトロ北千住駅で，混雑状況に応じた案内を床面投影する実証を開始",
+    "category": "news",
+    "date": "2026-09-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/09/000000.html"
+    }
+  },
+  {
+    "title": "「日本の万能機関車」がアフリカで驚きの再デビュー！雄大な世界遺産をバックに走る「夢のような光景」が実現",
+    "category": "cars",
+    "date": "2026-09-09",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/707040"
+    }
+  },
+  {
+    "title": "JR九州が「クレカ乗車」対象エリアを大幅拡大！ 福岡県内の一挙92駅が対応に",
+    "category": "news",
+    "date": "2026-09-09",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/706940"
+    }
+  },
+  {
     "title": "東京駅直結「トフロム・ヤエス・タワー」に行ってみた！　八重洲ならではの粋とグルメが息づく場所でした",
     "category": "news",
     "date": "2026-09-08",
@@ -348,6 +411,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75626/"
+    }
+  },
+  {
+    "title": "【伊豆箱】3506編成に「桜内梨子」バースデーヘッドマークを掲出",
+    "category": "cars",
+    "date": "2026-09-08",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75644/"
     }
   },
   {
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75543/"
-    }
-  },
-  {
-    "title": "【阪急】8200系8201Fで陸送に向けた準備が開始",
-    "category": "news",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75542/"
-    }
-  },
-  {
-    "title": "【JR西】221系NA421編成吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75540/"
-    }
-  },
-  {
-    "title": "【富士山麓】6000系6501F「銀電」が富士山駅へ回送",
-    "category": "news",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75539/"
-    }
-  },
-  {
-    "title": "【メトロ】13000系13132F鷺沼工場出場試運転(202609)",
-    "category": "cars",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75538/"
-    }
-  },
-  {
-    "title": "【JR東】209系「Mue-train」青梅線試運転",
-    "category": "cars",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75537/"
-    }
-  },
-  {
-    "title": "【JR東】E531系K407編成郡山総合車両ベース出場",
-    "category": "cars",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75536/"
-    }
-  },
-  {
-    "title": "【JR東】キハE130-108 郡山総合車両ベース入場配給",
-    "category": "cars",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75535/"
-    }
-  },
-  {
-    "title": "【JR東】E231系ケヨMU6編成が東京総合車両ベースへ入場",
-    "category": "cars",
-    "date": "2026-09-03",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75534/"
     }
   }
 ]
