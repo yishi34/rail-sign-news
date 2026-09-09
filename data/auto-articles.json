@@ -36,6 +36,15 @@
     }
   },
   {
+    "title": "在来線で上野⇔仙台「直通」！ 東北本線を350km走破する「ロングラン列車」が今秋運行へ ハイグレード車両を使用",
+    "category": "cars",
+    "date": "2026-09-10",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/707501"
+    }
+  },
+  {
     "title": "「東横INNつくば駅」開業。駅徒歩4分に217室、国際会議場やJAXAへも好アクセス",
     "category": "news",
     "date": "2026-09-09",
@@ -411,6 +420,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75645/"
+    }
+  },
+  {
+    "title": "【JR西】105系F-03編成が下関総合車両所本所を出場し回送",
+    "category": "cars",
+    "date": "2026-09-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75669/"
     }
   },
   {
@@ -1779,24 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75563/"
-    }
-  },
-  {
-    "title": "【JR東】キハ100-204・キハ100-205が秋田総合車両ベースへ廃車配給",
-    "category": "cars",
-    "date": "2026-09-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75562/"
-    }
-  },
-  {
-    "title": "【阪神】1000系1609F+3000系3201Fが8両でなんば線夜間試運転",
-    "category": "cars",
-    "date": "2026-09-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75561/"
     }
   }
 ]
