@@ -36,6 +36,87 @@
     }
   },
   {
+    "title": "シルバーウィークは新幹線「のぞみ」自由席なし。指定席の予約必須につき要注意、18日始発から",
+    "category": "service",
+    "date": "2026-09-11",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2139256.html"
+    }
+  },
+  {
+    "title": "10月24日JR東日本・弥彦村，「弥彦駅開業110周年イベント」を開催",
+    "category": "travel",
+    "date": "2026-09-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/09/11/044500.html"
+    }
+  },
+  {
+    "title": "11月1日JR東日本，「真夜中の車両撮影会 in 秋田」を開催",
+    "category": "cars",
+    "date": "2026-09-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/09/11/043000.html"
+    }
+  },
+  {
+    "title": "JR東日本，千葉エリアの209系をE233系・E131系で置換えへ〜E131系は3両編成・6両編成を製造〜",
+    "category": "cars",
+    "date": "2026-09-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/11/010000.html"
+    }
+  },
+  {
+    "title": "江ノ電，2026年度内に700形を新たに3編成導入へ",
+    "category": "cars",
+    "date": "2026-09-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/11/004000.html"
+    }
+  },
+  {
+    "title": "Suica利用可能駅，2030年代初めにJR東日本管内全駅に拡大へ",
+    "category": "news",
+    "date": "2026-09-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/11/002000.html"
+    }
+  },
+  {
+    "title": "JR九州，タッチ決済「クレカ乗車」の対象エリアを9月18日から拡大",
+    "category": "news",
+    "date": "2026-09-11",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/11/000000.html"
+    }
+  },
+  {
+    "title": "金子大臣「特急券不要で、乗車可能です!!」 新幹線で「在来線の振替輸送」実施へ 未だ不通の熊本県内",
+    "category": "news",
+    "date": "2026-09-11",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/708085"
+    }
+  },
+  {
+    "title": "利用者急増の「日本最西端を走る地下鉄」混雑緩和なるか？  360億円を投じる“抜本的な対策”の内容が明らかに",
+    "category": "news",
+    "date": "2026-09-11",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/707901"
+    }
+  },
+  {
     "title": "在来線で上野⇔仙台「直通」！ 東北本線を350km走破する「ロングラン列車」が今秋運行へ ハイグレード車両を使用",
     "category": "cars",
     "date": "2026-09-10",
@@ -276,6 +357,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75671/"
+    }
+  },
+  {
+    "title": "【伊豆箱】5000系5505編成「ミント・スペクタクル・トレイン」大場工場出場甲種輸送",
+    "category": "cars",
+    "date": "2026-09-10",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75692/"
     }
   },
   {
@@ -1707,96 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75571/"
-    }
-  },
-  {
-    "title": "【メトロ】16000系16113F 綾瀬工場出場試運転",
-    "category": "cars",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75570/"
-    }
-  },
-  {
-    "title": "【千葉モノ】1000形第13編成の解体作業が確認",
-    "category": "cars",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75597/"
-    }
-  },
-  {
-    "title": "【近鉄】電車de台湾マルシェin大阪上本町駅が開催(2026)",
-    "category": "news",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75596/"
-    }
-  },
-  {
-    "title": "【阪急】9300系9309F再び編成分割",
-    "category": "cars",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75595/"
-    }
-  },
-  {
-    "title": "【近鉄】2013系XT07「つどい」で「志摩醸造 クラフトビール列車」を運転",
-    "category": "news",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75594/"
-    }
-  },
-  {
-    "title": "【名鉄】4013Fに「第95回せともの祭」PRイラスト系統板",
-    "category": "news",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75593/"
-    }
-  },
-  {
-    "title": "【JR東】E653系K70編成で臨時特急「常磐鎌倉号」を運行(2026年9月)",
-    "category": "cars",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75592/"
-    }
-  },
-  {
-    "title": "【JR北】キハ261系5000番台「はまなす編成」使用 臨時特急「ニセコ」を運行",
-    "category": "cars",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75591/"
-    }
-  },
-  {
-    "title": "【JR東】臨時快速「風っこ錦秋湖号」を運行(2026年9月)",
-    "category": "news",
-    "date": "2026-09-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75590/"
-    }
-  },
-  {
-    "title": "「東京シティパス」がリニューアル。地下鉄乗り放題＋6つの観光体験＋グルメ、総額5550円相当を1日1900円で利用できる",
-    "category": "travel",
-    "date": "2026-09-04",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2138126.html"
     }
   }
 ]
