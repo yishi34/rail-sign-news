@@ -36,6 +36,15 @@
     }
   },
   {
+    "title": "出発が24分早くなった寝台特急「サンライズ」利用実態は？ あえて「1号車1番」を選択 一方で車両に忍び寄る「限界」",
+    "category": "cars",
+    "date": "2026-09-12",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/707260"
+    }
+  },
+  {
     "title": "シルバーウィークは新幹線「のぞみ」自由席なし。指定席の予約必須につき要注意、18日始発から",
     "category": "service",
     "date": "2026-09-11",
@@ -483,6 +492,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75693/"
+    }
+  },
+  {
+    "title": "【西鉄】6000形6005Fがワンマン対応工事を終え運用復帰",
+    "category": "news",
+    "date": "2026-09-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75717/"
     }
   },
   {
@@ -1779,24 +1797,6 @@
     "source": {
       "name": "レスポンス",
       "url": "https://response.jp/article/2026/09/06/416200.html"
-    }
-  },
-  {
-    "title": "9月7日〜10月5日「東急線のスポットを探そう！デジタルラリー」開催",
-    "category": "news",
-    "date": "2026-09-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/06/181500.html"
-    }
-  },
-  {
-    "title": "9月7日〜30日りんかい線開業30周年記念列車のつり手に「りんかる」を設置",
-    "category": "news",
-    "date": "2026-09-06",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/06/181000.html"
     }
   }
 ]
