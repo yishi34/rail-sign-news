@@ -36,6 +36,60 @@
     }
   },
   {
+    "title": "「3つの鉄道まつり」開催",
+    "category": "news",
+    "date": "2026-09-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/13/020000.html"
+    }
+  },
+  {
+    "title": "阪急6000系6013編成の撮影会開催",
+    "category": "cars",
+    "date": "2026-09-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/13/014000.html"
+    }
+  },
+  {
+    "title": "愛知環状鉄道で「岡崎市政110周年」記念ロゴ掲出車両の運転開始",
+    "category": "cars",
+    "date": "2026-09-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/13/010000.html"
+    }
+  },
+  {
+    "title": "鉄道博物館で星座にまつわるヘッドマークの掲出",
+    "category": "news",
+    "date": "2026-09-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/13/004500.html"
+    }
+  },
+  {
+    "title": "京福電気鉄道モボ301形に運行開始55周年マーク",
+    "category": "news",
+    "date": "2026-09-13",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/13/003000.html"
+    }
+  },
+  {
+    "title": "新幹線なぜアルミ車体？ 在来線はステンレスもあるのに…軽さだけじゃない採用理由 トンネルの“耳ツーン”も関係アリ",
+    "category": "news",
+    "date": "2026-09-13",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/707132"
+    }
+  },
+  {
     "title": "出発が24分早くなった寝台特急「サンライズ」利用実態は？ あえて「1号車1番」を選択 一方で車両に忍び寄る「限界」",
     "category": "cars",
     "date": "2026-09-12",
@@ -258,6 +312,51 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75719/"
+    }
+  },
+  {
+    "title": "筑波山ケーブルカー，新形車両を導入へ",
+    "category": "cars",
+    "date": "2026-09-12",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/12/220000.html"
+    }
+  },
+  {
+    "title": "【京成】人身事故で北習志野行きを運転し折り返し運転を実施",
+    "category": "news",
+    "date": "2026-09-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75738/"
+    }
+  },
+  {
+    "title": "【西武】元東急9000系の7000系が飯能〜西武秩父間で営業運転開始",
+    "category": "news",
+    "date": "2026-09-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75737/"
+    }
+  },
+  {
+    "title": "【JR西】キハ40-2092が後藤総合車両所へ入場回送",
+    "category": "cars",
+    "date": "2026-09-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75736/"
+    }
+  },
+  {
+    "title": "【トキ鉄】ET122形3両編成で臨時快速糸魚川行を運転",
+    "category": "cars",
+    "date": "2026-09-12",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75734/"
     }
   },
   {
@@ -1698,105 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/09/07/001500.html"
-    }
-  },
-  {
-    "title": "「1160kmを5日かけて走破する特急」が進化を遂げて再始動！ 鉄道車両とは思えない「超豪華個室」がスゴい",
-    "category": "cars",
-    "date": "2026-09-07",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/706269"
-    }
-  },
-  {
-    "title": "群馬県と栃木県を結ぶ「異色の東武特急」11月に運行へ 途中停車駅は1駅だけ 館林から東武日光まで直通",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/705987"
-    }
-  },
-  {
-    "title": "車両入退管理サービス「FLOWVIS」、古野電気が出展へ…国際物流総合展2026",
-    "category": "cars",
-    "date": "2026-09-07",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/09/07/416266.html"
-    }
-  },
-  {
-    "title": "カーシェア「関鉄×Raku-Pカーシェア」、つくば市内の21ステーションで開始…関東鉄道とRaku-Pが提携",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/09/07/416238.html"
-    }
-  },
-  {
-    "title": "自動運転トラックと貨物鉄道を組み合わせ、関東－中国エリア間で実証実験へ…エスビー食品・オタフクソースら4社",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/09/07/416230.html"
-    }
-  },
-  {
-    "title": "東海道新幹線「Supreme Class」のモバイルオーダー詳細発表。“完全個室”で限定ドリンクやおつまみ提供",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2138902.html"
-    }
-  },
-  {
-    "title": "東京駅直結「トフロム・ヤエス・タワー」のメシどころ、全部見てきた！　注目は名店12軒の集まる「YAESU 東京界」",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2138883.html"
-    }
-  },
-  {
-    "title": "鉄道運休で所要時間が5倍以上に。鹿児島本線・肥薩おれんじ代行バス、現地を見てきた",
-    "category": "service",
-    "date": "2026-09-07",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2138718.html"
-    }
-  },
-  {
-    "title": "11月3日「つくばエクスプレスまつり2026」開催",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/07/151000.html"
-    }
-  },
-  {
-    "title": "Nintendo Switch&trade;用ソフト「鉄道にっぽん！ RealPro JR東海 特急ひだ 名古屋－富山 JR西日本 編」を発売",
-    "category": "news",
-    "date": "2026-09-07",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/07/141500.html"
-    }
-  },
-  {
-    "title": "JR東日本，E5系“はやぶさ”デビュー15周年記念グッズ4種類を発売",
-    "category": "cars",
-    "date": "2026-09-07",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/07/140000.html"
     }
   }
 ]
