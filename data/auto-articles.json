@@ -36,6 +36,96 @@
     }
   },
   {
+    "title": "阪急交通社が考えた“旅行特化ショルダーバッグ”本日発売。大きく開いて自立/撥水生地/手回り品まとまる8ポケット",
+    "category": "travel",
+    "date": "2026-09-17",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2139429.html"
+    }
+  },
+  {
+    "title": "キハ110-4が盛岡色になり試運転を実施",
+    "category": "cars",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/020000.html"
+    }
+  },
+  {
+    "title": "E131系200番代 N13編成・N14編成が出場試運転を実施",
+    "category": "cars",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/015000.html"
+    }
+  },
+  {
+    "title": "西武101系1253編成が横瀬へ",
+    "category": "cars",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/014000.html"
+    }
+  },
+  {
+    "title": "「Les Saveurs 志摩」が近鉄名古屋線・山田線・鳥羽線・志摩線で試運転を実施",
+    "category": "cars",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/013000.html"
+    }
+  },
+  {
+    "title": "伊予鉄道郡中線，10月16日からワンマン運転を実施へ",
+    "category": "news",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/010000.html"
+    }
+  },
+  {
+    "title": "東急電鉄，「乗務員支援ホーム監視AIシステム」を東横線に導入",
+    "category": "news",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/002000.html"
+    }
+  },
+  {
+    "title": "JR貨物・ヒューテックノオリン・博多運輸・全国通運31フィート冷凍コンテナを活用した低温物流の鉄道モーダルシフトを推進",
+    "category": "news",
+    "date": "2026-09-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/17/000000.html"
+    }
+  },
+  {
+    "title": "「日本一短い新幹線」延伸で“分断状態”解消なるか？ いよいよ地盤状況を把握する地質調査に着手へ",
+    "category": "news",
+    "date": "2026-09-17",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/709539"
+    }
+  },
+  {
+    "title": "【JR西】115系N-16編成が下関総合車両所本所で構内試運転",
+    "category": "cars",
+    "date": "2026-09-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75810/"
+    }
+  },
+  {
     "title": "コスパ＆使い勝手よさそう？ JR北海道が“新”乗り放題きっぷ発売 平日2日8000円・特急OK 1日用も設定",
     "category": "travel",
     "date": "2026-09-16",
@@ -1707,96 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/09/11/100500.html"
-    }
-  },
-  {
-    "title": "「くま川鉄道全線運行再開2day乗車券」発売",
-    "category": "news",
-    "date": "2026-09-11",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/11/100000.html"
-    }
-  },
-  {
-    "title": "10月11日開催鉄道の日記念イベント「親子で行く鉄道施設見学会（高知地区）」参加者募集",
-    "category": "travel",
-    "date": "2026-09-11",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/11/092000.html"
-    }
-  },
-  {
-    "title": "10月18日開催筑紫車両基地で「にしてつ電車まつり」開催",
-    "category": "cars",
-    "date": "2026-09-11",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/11/091500.html"
-    }
-  },
-  {
-    "title": "10月10日JR西日本，下関総合車両所新山口支所一般公開「SLフェア2026」を開催",
-    "category": "cars",
-    "date": "2026-09-11",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/11/091000.html"
-    }
-  },
-  {
-    "title": "10月3日・4日JR東日本大宮事業本部，「戸田公園駅コミュニティフェスタ2026」を開催",
-    "category": "news",
-    "date": "2026-09-11",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/11/090500.html"
-    }
-  },
-  {
-    "title": "10月17日催行JR東日本房総事業本部，「房総鉄路～秋風薫る久留里線終着駅の旅～」「木更津写真部 キハE130形撮影会」の参加者募集",
-    "category": "news",
-    "date": "2026-09-11",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/11/090000.html"
-    }
-  },
-  {
-    "title": "リニア長野県駅、ついにデザイン案が公表 在来線は近いが「接続しない」単独駅に",
-    "category": "news",
-    "date": "2026-09-11",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/707583"
-    }
-  },
-  {
-    "title": "【名鉄】9100系9106Fが試運転",
-    "category": "cars",
-    "date": "2026-09-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75716/"
-    }
-  },
-  {
-    "title": "【JR東】高尾駅にE131系200番台対応の乗車位置案内が設置",
-    "category": "news",
-    "date": "2026-09-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75712/"
-    }
-  },
-  {
-    "title": "【JR東】255系Be-03編成が特急「さざなみ3号」を代走",
-    "category": "cars",
-    "date": "2026-09-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75711/"
     }
   }
 ]
