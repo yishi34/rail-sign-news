@@ -36,6 +36,60 @@
     }
   },
   {
+    "title": "三菱自動車、「車両運行サポートサービス」開始…法人向けに車両の運行管理業務を効率化",
+    "category": "cars",
+    "date": "2026-09-18",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/09/18/416757.html"
+    }
+  },
+  {
+    "title": "くま川鉄道、必要だった。「1本の列車の代わりがバス11台」代行輸送の記録からローカル線の役割を考える",
+    "category": "news",
+    "date": "2026-09-18",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2142003.html"
+    }
+  },
+  {
+    "title": "今日から新幹線「のぞみ」自由席なし。シルバーウィークで初めて全席指定席化",
+    "category": "news",
+    "date": "2026-09-18",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2139255.html"
+    }
+  },
+  {
+    "title": "都内随一の“巨大病院の玄関口”駅全ホームに「ホームドア」設置完了！ これまで以上に安全に",
+    "category": "news",
+    "date": "2026-09-18",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/710458"
+    }
+  },
+  {
+    "title": "JRは「自由席」を廃止したいのか？ 全車指定席の列車が増加 “60年来のモヤモヤ”に終止符",
+    "category": "news",
+    "date": "2026-09-18",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/709230"
+    }
+  },
+  {
+    "title": "阪急「異色の新駅」ついに完成イメージが明らかに 今年度から工事に着手へ 建設地は“川の真上”！",
+    "category": "news",
+    "date": "2026-09-18",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/710335"
+    }
+  },
+  {
     "title": "阪急交通社が考えた“旅行特化ショルダーバッグ”本日発売。大きく開いて自立/撥水生地/手回り品まとまる8ポケット",
     "category": "travel",
     "date": "2026-09-17",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/09/12/121000.html"
-    }
-  },
-  {
-    "title": "東葉高速鉄道，「イオンモール八千代緑が丘リニューアルオープン記念1日乗車券」を発売",
-    "category": "news",
-    "date": "2026-09-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/12/120500.html"
-    }
-  },
-  {
-    "title": "「豊橋鉄道 モ3200形製造70周年記念 市内線1日フリー乗車券セット」を発売",
-    "category": "news",
-    "date": "2026-09-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/12/120000.html"
-    }
-  },
-  {
-    "title": "10月8日〜13日京都鉄道博物館で「クモヤ145形」を特別展示",
-    "category": "news",
-    "date": "2026-09-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/12/111000.html"
-    }
-  },
-  {
-    "title": "北総鉄道「第4弾！C-Flyerを運転しよう！親子運転体験」の参加者募集",
-    "category": "news",
-    "date": "2026-09-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/12/110500.html"
-    }
-  },
-  {
-    "title": "地上は洪水、そのとき地下鉄は… 東京メトロは「危ないと分かったら止めて閉じる」 駅ごとに決めている避難計画",
-    "category": "news",
-    "date": "2026-09-12",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/707162"
-    }
-  },
-  {
-    "title": "「この駅、酒飲みは通過禁止!?」 駅前に伝説の“鳥貴族1号店”→350円＆限定酒という強烈な誘惑 マスコット像まで立っている!?",
-    "category": "news",
-    "date": "2026-09-12",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/708325"
     }
   }
 ]
