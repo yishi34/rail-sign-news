@@ -45,6 +45,114 @@
     }
   },
   {
+    "title": "JR北海道、在来線乗り放題の「どこパス」。1日5000円、連続する2日間8000円で特急指定席も乗車可",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2142258.html"
+    }
+  },
+  {
+    "title": "くま川鉄道が全線で運転を再開",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/030000.html"
+    }
+  },
+  {
+    "title": "近鉄「つどい」による「わんわん列車」第5弾運転",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/023000.html"
+    }
+  },
+  {
+    "title": "四日市あすなろう鉄道で「特別展 猫猫はくぶつかん」PRヘッドマーク",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/021500.html"
+    }
+  },
+  {
+    "title": "四日市あすなろう鉄道で「年間輸送人員300万人達成記念」ヘッドマーク",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/020000.html"
+    }
+  },
+  {
+    "title": "鉄道博物館で「夜の大人鉄博」開催",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/013000.html"
+    }
+  },
+  {
+    "title": "西武新宿線で101系による団臨運転",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/011500.html"
+    }
+  },
+  {
+    "title": "臨時特急“わかしお83号”運転",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/005000.html"
+    }
+  },
+  {
+    "title": "快速“風っこ奥久慈号”運転",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/003000.html"
+    }
+  },
+  {
+    "title": "ロマンスカーミュージアムで3000形「SE」のヘッドマークが「試運転」に",
+    "category": "cars",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/001000.html"
+    }
+  },
+  {
+    "title": "京阪宇治線の13000系にアニメ「響け！ユーフォニアム」コラボヘッドマーク",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/21/000000.html"
+    }
+  },
+  {
+    "title": "「新幹線の個室？昔あったよね」←今でもあります！ 3種の個室で“列島縦断”できた時代も",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/709318"
+    }
+  },
+  {
     "title": "「37年の歴史に幕」を目前に大盛況！ 北の名物「日本有数の“遅い列車”」に乗ったら「あの車両もそろそろだな…」と思いだした件",
     "category": "cars",
     "date": "2026-09-20",
@@ -159,6 +267,33 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75898/"
+    }
+  },
+  {
+    "title": "【京阪】「水都くらわんか花火大会」臨時特急に10002Fが充当",
+    "category": "news",
+    "date": "2026-09-20",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75916/"
+    }
+  },
+  {
+    "title": "【宇都宮LRT】HU313編成「あづま食品号」運行開始",
+    "category": "cars",
+    "date": "2026-09-20",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75914/"
+    }
+  },
+  {
+    "title": "【くま川】「くま川鉄道運転再開イベント」開催・記念特別列車を運行",
+    "category": "service",
+    "date": "2026-09-20",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75913/"
     }
   },
   {
@@ -1662,141 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75799/"
-    }
-  },
-  {
-    "title": "【JR東】E233系サイ101編成東京総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75798/"
-    }
-  },
-  {
-    "title": "【JR東】E131系200番台N13編成・N14編成がJ-TREC新津を出場",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75797/"
-    }
-  },
-  {
-    "title": "【JR東】E257系マリNB-01編成 大宮総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75796/"
-    }
-  },
-  {
-    "title": "【JR東】中央快速線 御茶ノ水駅のホームドアが稼働開始",
-    "category": "news",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75795/"
-    }
-  },
-  {
-    "title": "【京成】3200形3232Fが4両編成単独で試運転",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75794/"
-    }
-  },
-  {
-    "title": "【西武】新101系1253F(赤電カラー)が横瀬へ廃車回送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75793/"
-    }
-  },
-  {
-    "title": "FLEET PITLOCKとフタバ、法人リース車両の整備支援で提携…見積・承認・請求などのやり取りをクラウドで一元化",
-    "category": "cars",
-    "date": "2026-09-15",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/09/15/416585.html"
-    }
-  },
-  {
-    "title": "10月11日運転ふるさと銀河線廃止20周年記念特別企画 リバイバル列車「さよなら・ふるさと銀河線号」の旅の参加者募集",
-    "category": "news",
-    "date": "2026-09-15",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/15/070000.html"
-    }
-  },
-  {
-    "title": "京王電鉄2000系 2703編成が相模原線で試運転を実施",
-    "category": "cars",
-    "date": "2026-09-15",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/15/053000.html"
-    }
-  },
-  {
-    "title": "JR東日本，E723系5000番代の営業運転を9月19日から開始",
-    "category": "news",
-    "date": "2026-09-15",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/15/051500.html"
-    }
-  },
-  {
-    "title": "JR東海，在来線の駅・車内における多言語放送を試行",
-    "category": "news",
-    "date": "2026-09-15",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/15/050000.html"
-    }
-  },
-  {
-    "title": "ほぼ“別の電車”に一変!? 「製造メーカーに里帰り」してリニューアルされた車両たち 「よそで作ったやつもまとめてお願い!?」",
-    "category": "cars",
-    "date": "2026-09-15",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/708796"
-    }
-  },
-  {
-    "title": "375kmを走破する「急行」が10月に運転へ 所要時間は8時間超え 残り少ない国鉄型気動車キハ40形を使用",
-    "category": "cars",
-    "date": "2026-09-15",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/708837"
-    }
-  },
-  {
-    "title": "品川駅前“線路大移動”完了！ 試運転の映像を公式公開！ 連続立体交差事業での重要ステップのひとつ",
-    "category": "cars",
-    "date": "2026-09-15",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/708733"
-    }
-  },
-  {
-    "title": "「発想がやべぇ」「さすがレッドブル」地下鉄のレールを走ったレッドブルF1にファンも驚愕！",
-    "category": "news",
-    "date": "2026-09-15",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/09/15/416634.html"
     }
   }
 ]
