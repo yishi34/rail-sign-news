@@ -45,6 +45,15 @@
     }
   },
   {
+    "title": "水島臨海鉄道で「交通安全啓発列車」運転",
+    "category": "news",
+    "date": "2026-09-22",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/22/000000.html"
+    }
+  },
+  {
     "title": "JR北海道、在来線乗り放題の「どこパス」。1日5000円、連続する2日間8000円で特急指定席も乗車可",
     "category": "news",
     "date": "2026-09-21",
@@ -150,6 +159,105 @@
     "source": {
       "name": "乗りものニュース",
       "url": "https://trafficnews.jp/post/709318"
+    }
+  },
+  {
+    "title": "電車が道路を走る！ 相鉄13000系をGREEN×EXPO会場へ陸送",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/09/21/416862.html"
+    }
+  },
+  {
+    "title": "車両火災を1台で封じ込める、ドーム型消火装置「FIRE SHOKA DOME」…ホワイトハウス子会社が初公開へ",
+    "category": "cars",
+    "date": "2026-09-21",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/09/21/416857.html"
+    }
+  },
+  {
+    "title": "【JR西】西明石駅4番線から下りの網干行き快速が運転",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75928/"
+    }
+  },
+  {
+    "title": "【近鉄】「かぎろひ」2両編成で名古屋～上本町～賢島を結ぶツアー",
+    "category": "cars",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75927/"
+    }
+  },
+  {
+    "title": "【相鉄】11000系11001×10に休車札が設置",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75926/"
+    }
+  },
+  {
+    "title": "【嵯峨野】トロッコ列車に「京都丹波みどりの里まつり」ヘッドマーク",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75925/"
+    }
+  },
+  {
+    "title": "【メトロ】13000系13133F鷺沼工場出場試運転",
+    "category": "cars",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75921/"
+    }
+  },
+  {
+    "title": "【京成】台風25号接近で松戸線の千葉中央行きを新津田沼行きに変更、3200形も",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75920/"
+    }
+  },
+  {
+    "title": "【JR東】キハ48形「風っこ」使用の臨時快速「風っこ奥久慈号」を運行",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75919/"
+    }
+  },
+  {
+    "title": "【JR九】501系HM-2編成がATS-DK関連試運転を実施",
+    "category": "cars",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75918/"
+    }
+  },
+  {
+    "title": "【京王】SixTONESが味の素スタジアムでライブ開催に伴い7000系7728F(旧塗装)の急行新線新宿行が運転",
+    "category": "news",
+    "date": "2026-09-21",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75917/"
     }
   },
   {
@@ -1689,114 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/09/16/121500.html"
-    }
-  },
-  {
-    "title": "10月10日〜2027年2月28日大井川鐵道井川線で「星空列車」を運転",
-    "category": "news",
-    "date": "2026-09-16",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/16/121000.html"
-    }
-  },
-  {
-    "title": "地下鉄の「急行」なぜ少ない？ 計画時から“通過”想定の東京3路線には共通点 歴史と目的を比較",
-    "category": "news",
-    "date": "2026-09-16",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/709235"
-    }
-  },
-  {
-    "title": "【JR東】DD51-895とDE11-1041が秋田総合車両ベースから搬出",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75809/"
-    }
-  },
-  {
-    "title": "【JR西】221系NA412編成が下関総合車両所本所へ入場回送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75808/"
-    }
-  },
-  {
-    "title": "【JR九】813系RM2112編成が「赤坊主」化され小倉総合車両センター出場",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75806/"
-    }
-  },
-  {
-    "title": "【JR東】209系マリC426編成 大宮総合車両ベース出場回送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75805/"
-    }
-  },
-  {
-    "title": "【Humetro】釜山交通公社2号線新2000系2001Fが宇進産電出場甲種輸送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75804/"
-    }
-  },
-  {
-    "title": "【東急】6020系6050番台6162Fが新製後性能確認試運転",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75803/"
-    }
-  },
-  {
-    "title": "【JR東】キハ110-4が復刻カラーとなり郡山総合車両ベース出場試運転",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75802/"
-    }
-  },
-  {
-    "title": "【阪急】3300系3323FにC#3953を組み込み8両編成化",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75801/"
-    }
-  },
-  {
-    "title": "【京急】1500形1545編成が休車札設置",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75800/"
-    }
-  },
-  {
-    "title": "【SSK】ニューシャトル1050系53編成廃車陸送",
-    "category": "cars",
-    "date": "2026-09-16",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75799/"
     }
   }
 ]
