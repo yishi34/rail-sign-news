@@ -45,6 +45,24 @@
     }
   },
   {
+    "title": "【井上孝司の「鉄道旅行のヒント」】途中で種別が変わる列車がある",
+    "category": "travel",
+    "date": "2026-09-23",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2142566.html"
+    }
+  },
+  {
+    "title": "四日市あすなろう鉄道でデザインの異なる「年間輸送人員300万人達成記念」ヘッドマーク",
+    "category": "news",
+    "date": "2026-09-23",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/23/010000.html"
+    }
+  },
+  {
     "title": "水島臨海鉄道で「交通安全啓発列車」運転",
     "category": "news",
     "date": "2026-09-22",
@@ -276,6 +294,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75929/"
+    }
+  },
+  {
+    "title": "【京急】エアポート快特の品川行きが運転",
+    "category": "news",
+    "date": "2026-09-22",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75946/"
     }
   },
   {
@@ -1770,33 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75820/"
-    }
-  },
-  {
-    "title": "【JR東】E231系コツK-35編成 大宮総合車両ベース出場",
-    "category": "cars",
-    "date": "2026-09-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75819/"
-    }
-  },
-  {
-    "title": "【JR東】E235系トウ50編成　東京総合車両ベースから出場",
-    "category": "cars",
-    "date": "2026-09-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75818/"
-    }
-  },
-  {
-    "title": "【JR東】E235系クラJ-18編成　東京総合車両ベースから出場回送",
-    "category": "cars",
-    "date": "2026-09-17",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75817/"
     }
   }
 ]
