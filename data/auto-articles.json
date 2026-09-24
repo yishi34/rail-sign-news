@@ -45,6 +45,42 @@
     }
   },
   {
+    "title": "近鉄全線と生駒ケーブルが3日間乗り放題「近鉄週末おでかけデジタルフリーパス」発売。紙きっぷは10月末終了",
+    "category": "travel",
+    "date": "2026-09-25",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2142681.html"
+    }
+  },
+  {
+    "title": "JR九州，特急「海幸山幸」を2027年春にリニューアル〜グリーン席6席と車内販売カウンターを新設〜",
+    "category": "news",
+    "date": "2026-09-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/25/003000.html"
+    }
+  },
+  {
+    "title": "JR九州，鹿児島本線 宇土—八代間の運行を10月10日から再開へ",
+    "category": "news",
+    "date": "2026-09-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/25/000000.html"
+    }
+  },
+  {
+    "title": "千葉県内の鉄道が台風で「麻痺状態」に 復旧の見通しは？ 運転再開の見込みが立たない区間も 運行中の路線も減便",
+    "category": "service",
+    "date": "2026-09-25",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/711929"
+    }
+  },
+  {
     "title": "新幹線・特急も6000ptで3日間乗り放題「WESTERポイント関西・北陸フリーパス」10月1日発売",
     "category": "travel",
     "date": "2026-09-24",
@@ -348,6 +384,24 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75965/"
+    }
+  },
+  {
+    "title": "【JR西】クモヤ145-1103が下関総合車両所本所へ自走回送",
+    "category": "cars",
+    "date": "2026-09-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75985/"
+    }
+  },
+  {
+    "title": "【近鉄】2000系XT04五位堂検修車庫出場試運転",
+    "category": "cars",
+    "date": "2026-09-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/75979/"
     }
   },
   {
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/09/18/090500.html"
-    }
-  },
-  {
-    "title": "【空から撮った鉄道】線路の隣に名だたる武将が住んでいた!? 森と堀が街並みにぽっかり…山形・江戸・小田原の「城と鉄道」",
-    "category": "news",
-    "date": "2026-09-18",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/710415"
-    }
-  },
-  {
-    "title": "札幌～新千歳空港を結ぶ快速「エアポート」に新たな車両が登場！指定席の快適性も向上 2027年春デビューへ",
-    "category": "cars",
-    "date": "2026-09-18",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/710908"
-    }
-  },
-  {
-    "title": "全国初！ 道路を走る路面電車が「速度アップ」昭和以来の“ゆっくり運転”からついに脱却 広電",
-    "category": "news",
-    "date": "2026-09-18",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/709727"
-    }
-  },
-  {
-    "title": "【JR西】207系S64編成が網干総合車両所本所へ入場回送",
-    "category": "cars",
-    "date": "2026-09-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75861/"
-    }
-  },
-  {
-    "title": "【阪急】3300系3323Fが8両編成で営業運転復帰",
-    "category": "cars",
-    "date": "2026-09-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75856/"
-    }
-  },
-  {
-    "title": "【小田急】30000形30255F(30255×6)修繕明け試運転",
-    "category": "cars",
-    "date": "2026-09-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75855/"
     }
   }
 ]
