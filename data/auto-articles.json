@@ -45,6 +45,51 @@
     }
   },
   {
+    "title": "西武，10000系「レッドアロークラシック」を期間限定で再運行へ",
+    "category": "news",
+    "date": "2026-09-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/26/010000.html"
+    }
+  },
+  {
+    "title": "富山地方鉄道，JR東海から213系5000番代を譲受〜1編成は2026年度中の運行開始を予定〜",
+    "category": "cars",
+    "date": "2026-09-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/26/003000.html"
+    }
+  },
+  {
+    "title": "739系3000番代が甲種輸送される",
+    "category": "cars",
+    "date": "2026-09-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/26/000000.html"
+    }
+  },
+  {
+    "title": "ただの観光駅にあらず！「富士山駅」の深～い歴史 15年前まで別駅名…鉄道開業以前から続く“玄関口”の経緯",
+    "category": "travel",
+    "date": "2026-09-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/711994"
+    }
+  },
+  {
+    "title": "景色は贅沢なのに…JR東海のローカル線特急が衝撃の乗車率 「絶景ワイドビュー」がもったいない200kmの旅",
+    "category": "news",
+    "date": "2026-09-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/710793"
+    }
+  },
+  {
     "title": "近鉄全線と生駒ケーブルが3日間乗り放題「近鉄週末おでかけデジタルフリーパス」発売。紙きっぷは10月末終了",
     "category": "travel",
     "date": "2026-09-25",
@@ -1752,51 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75874/"
-    }
-  },
-  {
-    "title": "【山陽】板宿駅の駅名看板が東須磨駅に似たデザインへ変更",
-    "category": "news",
-    "date": "2026-09-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75873/"
-    }
-  },
-  {
-    "title": "【西武】101系使用「おかえり101系 新宿線里帰り旅」が催行",
-    "category": "news",
-    "date": "2026-09-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75872/"
-    }
-  },
-  {
-    "title": "【台鉄】EMU500型3編成を連結した12両編成の団体臨時列車が運転",
-    "category": "cars",
-    "date": "2026-09-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75871/"
-    }
-  },
-  {
-    "title": "【阪急】8300系8314F(8314×4R)が嵐山線転用のため桂へ回送",
-    "category": "news",
-    "date": "2026-09-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75870/"
-    }
-  },
-  {
-    "title": "【JR東】E723系5000番台が営業運転開始・福島駅で出発セレモニー",
-    "category": "news",
-    "date": "2026-09-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75869/"
     }
   }
 ]
