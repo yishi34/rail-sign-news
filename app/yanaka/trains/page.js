@@ -13,7 +13,7 @@ const CATEGORY_ORDER = ["特急車", "気動車特急車", "気動車", "無軌�
 function TrainCard({ car }) {
   const multi = car.photos.length > 1;
   return (
-    <div className={multi ? "tr-card tr-wide" : "tr-card"}>
+    <div className={multi || car.wide ? "tr-card tr-wide" : "tr-card"}>
       <div className="tr-band"></div>
       <div className="tr-head">
         <h2 className="tr-name">{car.name}</h2>
