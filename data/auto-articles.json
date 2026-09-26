@@ -45,6 +45,42 @@
     }
   },
   {
+    "title": "西武鉄道「レッドアロークラシック」が復活、10月4日から…10000系引退を飾る",
+    "category": "cars",
+    "date": "2026-09-27",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/09/27/417024.html"
+    }
+  },
+  {
+    "title": "「秋田総合車両ベースフェア2026」開催",
+    "category": "cars",
+    "date": "2026-09-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/27/043000.html"
+    }
+  },
+  {
+    "title": "団体臨時列車「碓氷峠号」，E653系K71編成で運転",
+    "category": "cars",
+    "date": "2026-09-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/09/27/040000.html"
+    }
+  },
+  {
+    "title": "混雑率177％で5年連続ワースト！ 「電車増やせばいいじゃん」が通用しない三つの壁",
+    "category": "news",
+    "date": "2026-09-27",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/704212"
+    }
+  },
+  {
     "title": "西武，10000系「レッドアロークラシック」を期間限定で再運行へ",
     "category": "news",
     "date": "2026-09-26",
@@ -195,6 +231,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76003/"
+    }
+  },
+  {
+    "title": "【JR東】「秋田総合車両ベースフェア2026」開催",
+    "category": "cars",
+    "date": "2026-09-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76018/"
     }
   },
   {
@@ -1752,51 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/09/19/000000.html"
-    }
-  },
-  {
-    "title": "「激安有料席」が大増殖！ 定着進む近畿の「のれん列車」 乗って分かった“あと一歩”の使い勝手",
-    "category": "news",
-    "date": "2026-09-19",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/710148"
-    }
-  },
-  {
-    "title": "【阪急】2000系2005Fが新製試運転",
-    "category": "cars",
-    "date": "2026-09-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75864/"
-    }
-  },
-  {
-    "title": "四日市あすなろう鉄道，「年間輸送人員300万人達成記念」入場券・鉄道印を発売",
-    "category": "news",
-    "date": "2026-09-19",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/19/083500.html"
-    }
-  },
-  {
-    "title": "杉並区・京王電鉄，ふるさと納税返礼品に「親子で電車運転・車内放送体験＆ピット（電車の検査場）内見学ツアー」を設定",
-    "category": "travel",
-    "date": "2026-09-19",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/09/19/083000.html"
-    }
-  },
-  {
-    "title": "10月24日「第16回 東葉車両基地まつり」開催",
-    "category": "cars",
-    "date": "2026-09-19",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/09/19/081000.html"
     }
   }
 ]
