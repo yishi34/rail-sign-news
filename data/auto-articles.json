@@ -45,6 +45,15 @@
     }
   },
   {
+    "title": "「東京と四国を結ぶ寝台特急」10月から延長運転へ 所要時間は11時間超えに 今秋に合計21本が設定",
+    "category": "news",
+    "date": "2026-09-28",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/712126"
+    }
+  },
+  {
     "title": "西武鉄道「レッドアロークラシック」が復活、10月4日から…10000系引退を飾る",
     "category": "cars",
     "date": "2026-09-27",
@@ -285,6 +294,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76019/"
+    }
+  },
+  {
+    "title": "【JR西】「森の京都QRトレイン貸切列車で行く和知ツアー」が催行",
+    "category": "travel",
+    "date": "2026-09-27",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76034/"
     }
   },
   {
@@ -1779,24 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/75925/"
-    }
-  },
-  {
-    "title": "【メトロ】13000系13133F鷺沼工場出場試運転",
-    "category": "cars",
-    "date": "2026-09-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75921/"
-    }
-  },
-  {
-    "title": "【京成】台風25号接近で松戸線の千葉中央行きを新津田沼行きに変更、3200形も",
-    "category": "news",
-    "date": "2026-09-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/75920/"
     }
   }
 ]
