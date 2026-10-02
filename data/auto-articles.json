@@ -45,6 +45,51 @@
     }
   },
   {
+    "title": "ことでんの新型車両「2000形」を見てきた。オールステンレスの66年ぶり新造車、最新装備多数で消費電力7割減",
+    "category": "cars",
+    "date": "2026-10-02",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2145003.html"
+    }
+  },
+  {
+    "title": "「秋の乗り放題パス」明日から利用対象。JR線の普通列車が3日間乗り放題、青春18きっぷよりもお得",
+    "category": "travel",
+    "date": "2026-10-02",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2145001.html"
+    }
+  },
+  {
+    "title": "北関東「最大の都市」が激変へ LRT「4.9km延伸」に向けた動きが本格化 12か所の停留所を新設",
+    "category": "news",
+    "date": "2026-10-02",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/714144"
+    }
+  },
+  {
+    "title": "【都営】6500形6512F 志村車両検修場出場試運転",
+    "category": "cars",
+    "date": "2026-10-02",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76121/"
+    }
+  },
+  {
+    "title": "【JR東】E233系青662編成が秋田総合車両ベースで構内試運転",
+    "category": "cars",
+    "date": "2026-10-02",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76120/"
+    }
+  },
+  {
     "title": "【近鉄】1252系VE52がA更新工事を終え高安検修センター出場試運転",
     "category": "cars",
     "date": "2026-10-01",
@@ -1752,51 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76032/"
-    }
-  },
-  {
-    "title": "【長電】「ながでん電車まつり2026」開催・8500系T5編成貸切列車運転",
-    "category": "cars",
-    "date": "2026-09-27",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76031/"
-    }
-  },
-  {
-    "title": "【能勢電】1757編成を使用した引退直前スペシャル企画の貸切列車が運転",
-    "category": "cars",
-    "date": "2026-09-27",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76030/"
-    }
-  },
-  {
-    "title": "【小田急箱根】「おだきゅうはこね のりものフェスタ 2026」開催",
-    "category": "news",
-    "date": "2026-09-27",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76029/"
-    }
-  },
-  {
-    "title": "【JR東】臨時特急・快速「秋田キャラバンMF号」が運転",
-    "category": "news",
-    "date": "2026-09-27",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76028/"
-    }
-  },
-  {
-    "title": "【西武】新101系1253F(赤電カラー)で部品取り外しが進む",
-    "category": "news",
-    "date": "2026-09-27",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76027/"
     }
   }
 ]
