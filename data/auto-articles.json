@@ -81,6 +81,78 @@
     }
   },
   {
+    "title": "日比谷線・千代田線の日比谷駅『ゴジラのテーマ』東京メトロ、発車メロディーを変更",
+    "category": "news",
+    "date": "2026-10-09",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92161"
+    }
+  },
+  {
+    "title": "埼玉・こうのす花火大会とブルーインパルス飛行で朝から交通規制。13時以降はJR鴻巣駅周辺にも範囲拡大",
+    "category": "news",
+    "date": "2026-10-09",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2146905.html"
+    }
+  },
+  {
+    "title": "3連休は新幹線「のぞみ」自由席なし。指定席の予約必須につき要注意",
+    "category": "news",
+    "date": "2026-10-09",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2146861.html"
+    }
+  },
+  {
+    "title": "【京成】3100形3153編成宗吾車両基地出場試運転(202610)",
+    "category": "cars",
+    "date": "2026-10-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76324/"
+    }
+  },
+  {
+    "title": "【JR西】289系HD603編成が吹田総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-10-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76323/"
+    }
+  },
+  {
+    "title": "【阪急】8008Fの中間車C#8608・C#8788が正雀車庫31番線に2両で留置",
+    "category": "news",
+    "date": "2026-10-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76322/"
+    }
+  },
+  {
+    "title": "【JR東】E233系サイ137編成東京総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-10-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76321/"
+    }
+  },
+  {
+    "title": "【京阪】700形707-708号車「京阪×二十世紀電氣目録-ユーレカ・エヴリカ-」ラッピング運行開始",
+    "category": "cars",
+    "date": "2026-10-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76320/"
+    }
+  },
+  {
     "title": "埼玉高速鉄道線の延伸、中間駅の開発区域「2案」環境手続きで提示　人口1万人目標",
     "category": "news",
     "date": "2026-10-08",
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76222/"
-    }
-  },
-  {
-    "title": "【京王】7000系7807Fの種別・行先表示器がフルカラーLED化",
-    "category": "news",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76221/"
-    }
-  },
-  {
-    "title": "【JR東】205系ナハW4編成使用 乗務員訓練",
-    "category": "cars",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76220/"
-    }
-  },
-  {
-    "title": "【都営】12-600形12-971F 新造車両性能確認試運転",
-    "category": "cars",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76219/"
-    }
-  },
-  {
-    "title": "【JR東】E6系Z4編成が初めてガーラ湯沢支線へ入線し試運転",
-    "category": "cars",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76218/"
-    }
-  },
-  {
-    "title": "【小田急】5000形5055F(5055×10) 全般検査明け試運転",
-    "category": "cars",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76217/"
-    }
-  },
-  {
-    "title": "【小田急】8000形8053F(8053×4)廃車に伴いクーラー・部品撤去が始まる",
-    "category": "cars",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76216/"
-    }
-  },
-  {
-    "title": "【台鉄】TEMU1000型TEMU1005-1006編成が台湾一周団臨で南迴線に入線",
-    "category": "cars",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76214/"
-    }
-  },
-  {
-    "title": "【東武】10030型11640F+11440F南栗橋工場出場回送(202610)",
-    "category": "news",
-    "date": "2026-10-05",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76213/"
     }
   }
 ]
