@@ -45,6 +45,78 @@
     }
   },
   {
+    "title": "JR西日本，新形レール輸送用気動車「キヤ145系」を導入へ〜2028年2月ごろから運用開始〜",
+    "category": "cars",
+    "date": "2026-10-10",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/10/043000.html"
+    }
+  },
+  {
+    "title": "信楽駅前の郵便ポストがSKR501ラッピングに",
+    "category": "cars",
+    "date": "2026-10-10",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/10/041500.html"
+    }
+  },
+  {
+    "title": "JR東日本「TRAIN SUITE 四季島」，2027年7月〜9月期のツアー参加者募集を開始",
+    "category": "travel",
+    "date": "2026-10-10",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/10/040000.html"
+    }
+  },
+  {
+    "title": "通常の3倍走った！ 引退目前「ノロッコ号」の“最後の長旅” JR北海道のサービス精神が凄かった",
+    "category": "cars",
+    "date": "2026-10-10",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/717179"
+    }
+  },
+  {
+    "title": "【近鉄】19400系「Les Saveurs 志摩」が近鉄名古屋～塩浜間で試運転",
+    "category": "cars",
+    "date": "2026-10-10",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76350/"
+    }
+  },
+  {
+    "title": "【JR東】E653系K71編成が日光集約臨に充当",
+    "category": "cars",
+    "date": "2026-10-10",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76349/"
+    }
+  },
+  {
+    "title": "【JR東】臨時特急「絶景赤コキア高崎号」を運行",
+    "category": "news",
+    "date": "2026-10-10",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76348/"
+    }
+  },
+  {
+    "title": "【横市交】10000形10071F川和出場試運転",
+    "category": "cars",
+    "date": "2026-10-10",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/76347/"
+    }
+  },
+  {
     "title": "京都鉄道博物館でクモヤ145形の特別展示",
     "category": "news",
     "date": "2026-10-09",
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76246/"
-    }
-  },
-  {
-    "title": "【東武】8000型8184Fが南栗橋工場出場試運転",
-    "category": "cars",
-    "date": "2026-10-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76244/"
-    }
-  },
-  {
-    "title": "【JR東】幕張車両ベース所属のE233系が営業運転を開始",
-    "category": "cars",
-    "date": "2026-10-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76243/"
-    }
-  },
-  {
-    "title": "【JR九】813系DM2009編成が試運転を実施",
-    "category": "cars",
-    "date": "2026-10-06",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76242/"
-    }
-  },
-  {
-    "title": "西武新宿線「シールドマシン」掘進開始　線路の地下化で踏切7カ所を解消",
-    "category": "news",
-    "date": "2026-10-05",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/92092"
-    }
-  },
-  {
-    "title": "西武鉄道で10000系「レッドアロークラシック」の運転開始",
-    "category": "news",
-    "date": "2026-10-05",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/05/004500.html"
-    }
-  },
-  {
-    "title": "「鉄道フェスティバル in 東北」開催",
-    "category": "news",
-    "date": "2026-10-05",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/05/004000.html"
-    }
-  },
-  {
-    "title": "「松島基地航空祭」にともない仙石線で臨時列車運転",
-    "category": "service",
-    "date": "2026-10-05",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/05/003000.html"
-    }
-  },
-  {
-    "title": "大阪モノレールで「お話しモノレール」が運転される",
-    "category": "news",
-    "date": "2026-10-05",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/05/002000.html"
     }
   }
 ]
