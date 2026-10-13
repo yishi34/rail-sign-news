@@ -81,6 +81,60 @@
     }
   },
   {
+    "title": "廃止された新潟交通電車線「全線走破」ツアー　「かぼちゃ電車」模したバスで巡る",
+    "category": "travel",
+    "date": "2026-10-13",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92350"
+    }
+  },
+  {
+    "title": "今週末は「第38回なにわ淀川花火大会」。十三・塚本駅、うめきた周辺の交通規制を事前に確認しよう",
+    "category": "news",
+    "date": "2026-10-13",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2147098.html"
+    }
+  },
+  {
+    "title": "新宿⇔奥多摩「直通特急」が運行へ “東京の最西端”まで乗り換えなし 青梅線に1日限定で特急が復活！",
+    "category": "news",
+    "date": "2026-10-13",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/716829"
+    }
+  },
+  {
+    "title": "踏切の“番人”を真っ二つ！ 鉄道会社が激怒公開 “遮断桿破壊の瞬間” 公式「絶対おやめください」と警鐘",
+    "category": "news",
+    "date": "2026-10-13",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/717104"
+    }
+  },
+  {
+    "title": "ほとんど「バス会社」なのになぜ「ちょっとだけ鉄道」やってるの？ その“本当の答え”とは",
+    "category": "news",
+    "date": "2026-10-13",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/716878"
+    }
+  },
+  {
+    "title": "【東急】5000系5101Fのクハ5101が長津田車両工場から廃車陸送",
+    "category": "cars",
+    "date": "2026-10-13",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79104/"
+    }
+  },
+  {
     "title": "沖縄モノレールの混雑緩和「3両化が本格始動」へ　新しい車両基地が完成",
     "category": "cars",
     "date": "2026-10-12",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76318/"
-    }
-  },
-  {
-    "title": "【阪神】5700系5727F「阪神タイガース JERA セ・リーグ 2026優勝記念ラッピングトレイン」運行開始",
-    "category": "cars",
-    "date": "2026-10-08",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76317/"
-    }
-  },
-  {
-    "title": "【能勢電】7200系7203F(旧阪急7005F)正雀で確認",
-    "category": "news",
-    "date": "2026-10-08",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76316/"
-    }
-  },
-  {
-    "title": "【阪急】8000系8004Fが神戸線への転属に伴い回送",
-    "category": "news",
-    "date": "2026-10-08",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76315/"
-    }
-  },
-  {
-    "title": "【阪急】8000系8003Fが正雀車庫へ回送(202610)",
-    "category": "news",
-    "date": "2026-10-08",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76314/"
-    }
-  },
-  {
-    "title": "【JR東】E6系Z3編成が全般検査を終えて出場試運転",
-    "category": "cars",
-    "date": "2026-10-08",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76313/"
-    }
-  },
-  {
-    "title": "【JR東】E6系Z21編成が新幹線総合車両ベース出場試運転",
-    "category": "cars",
-    "date": "2026-10-08",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76312/"
     }
   }
 ]
