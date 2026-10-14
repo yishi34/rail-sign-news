@@ -45,6 +45,51 @@
     }
   },
   {
+    "title": "三浦半島のホテル客室に「実物の電車」設置　京急2000形の運転台など",
+    "category": "news",
+    "date": "2026-10-15",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92467"
+    }
+  },
+  {
+    "title": "トヨタ『e-Palette』使用、自動運転バス実証を神奈川・海老名市で…NTTドコモビジネスや相鉄バス",
+    "category": "news",
+    "date": "2026-10-15",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/10/15/417788.html"
+    }
+  },
+  {
+    "title": "日産自動車、神戸・灘五郷エリアで自動運転実証実験…『セレナ』ベース車両でオンデマンド運行",
+    "category": "cars",
+    "date": "2026-10-15",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/10/15/417787.html"
+    }
+  },
+  {
+    "title": "「喜寿の電気機関車」が東武時代のカラーに 茶色とゼブラ柄に復刻",
+    "category": "cars",
+    "date": "2026-10-15",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/718335"
+    }
+  },
+  {
+    "title": "東武線と京成線「下町の小駅」が激変へ 周辺で巨大開発が本格始動 5.2ヘクタールに約2100戸の住宅などを整備",
+    "category": "news",
+    "date": "2026-10-15",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/718408"
+    }
+  },
+  {
     "title": "夢洲駅で「ミャクミャク×大阪メトロ」万博1周年フェスタ。花火上映やグッズ販売、10月31日～11月3日",
     "category": "news",
     "date": "2026-10-14",
@@ -375,6 +420,33 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79128/"
+    }
+  },
+  {
+    "title": "【JR東】E233系マト14編成東京総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-10-14",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79157/"
+    }
+  },
+  {
+    "title": "【都営】10-300形10-670Fが区間急行京王線新宿行きに充当",
+    "category": "news",
+    "date": "2026-10-14",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79156/"
+    }
+  },
+  {
+    "title": "【都営】10-300形10-700Fが京王線の34運行を代走し特急新宿行きに充当",
+    "category": "news",
+    "date": "2026-10-14",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79155/"
     }
   },
   {
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/10/09/003000.html"
-    }
-  },
-  {
-    "title": "阪神電鉄で一部の編成に阪神タイガース優勝記念ラッピング",
-    "category": "cars",
-    "date": "2026-10-09",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/09/002000.html"
-    }
-  },
-  {
-    "title": "信楽高原鐵道SKR312に「滋賀プレ DC」近江鉄道×信楽高原鐡道コラボヘッドマーク",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/09/001000.html"
-    }
-  },
-  {
-    "title": "東京メトロ・三菱電機，鉄道用「同期リラクタンスモータシステム」と「超小形VVVFインバータ装置」を組み合わせた新たな主回路システムを東京メトロ05系に導入",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/09/000000.html"
-    }
-  },
-  {
-    "title": "日比谷線・千代田線の日比谷駅『ゴジラのテーマ』東京メトロ、発車メロディーを変更",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/92161"
-    }
-  },
-  {
-    "title": "埼玉・こうのす花火大会とブルーインパルス飛行で朝から交通規制。13時以降はJR鴻巣駅周辺にも範囲拡大",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2146905.html"
-    }
-  },
-  {
-    "title": "3連休は新幹線「のぞみ」自由席なし。指定席の予約必須につき要注意",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2146861.html"
-    }
-  },
-  {
-    "title": "【京成】3100形3153編成宗吾車両基地出場試運転(202610)",
-    "category": "cars",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76324/"
-    }
-  },
-  {
-    "title": "【JR西】289系HD603編成が吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76323/"
     }
   }
 ]
