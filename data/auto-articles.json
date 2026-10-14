@@ -45,6 +45,60 @@
     }
   },
   {
+    "title": "夢洲駅で「ミャクミャク×大阪メトロ」万博1周年フェスタ。花火上映やグッズ販売、10月31日～11月3日",
+    "category": "news",
+    "date": "2026-10-14",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2147794.html"
+    }
+  },
+  {
+    "title": "JR特急かささぎ最大2000円引き「かささぎでGo！デジタルきっぷ」。博多～佐賀～肥前鹿島の旅がお得に",
+    "category": "travel",
+    "date": "2026-10-14",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2147774.html"
+    }
+  },
+  {
+    "title": "阪急2000系2005編成が神戸線で営業運転を開始",
+    "category": "cars",
+    "date": "2026-10-14",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/14/030000.html"
+    }
+  },
+  {
+    "title": "E131系200番代 N15編成・N18編成が配給輸送される",
+    "category": "cars",
+    "date": "2026-10-14",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/14/020000.html"
+    }
+  },
+  {
+    "title": "JR東日本など7社で，2027年春からQR乗車券サービスを開始へ",
+    "category": "news",
+    "date": "2026-10-14",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/14/010000.html"
+    }
+  },
+  {
+    "title": "福岡市交通局，11月24日に七隈線でダイヤ改正を実施",
+    "category": "service",
+    "date": "2026-10-14",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/14/000000.html"
+    }
+  },
+  {
     "title": "「第7回 鉄道フェスティバル in とくやま」開催",
     "category": "news",
     "date": "2026-10-13",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/76339/"
-    }
-  },
-  {
-    "title": "【阪急】5100系5128Fが営業運転に復帰",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76338/"
-    }
-  },
-  {
-    "title": "【阪急】6300系6352Fが正雀車庫へ回送",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76337/"
-    }
-  },
-  {
-    "title": "【相鉄】20000系20102×10がかしわ台〜和光市間でATO調整試運転",
-    "category": "cars",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76336/"
-    }
-  },
-  {
-    "title": "【横高】Y500系Y515編成が長津田車両工場へ入場回送",
-    "category": "cars",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76335/"
-    }
-  },
-  {
-    "title": "【京王】「JRAトレイン」ヘッドマーク掲出が8000系8729Fから8725Fに変更",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76334/"
-    }
-  },
-  {
-    "title": "【京急】港町駅1番線にホームドア・ホーム柵が設置",
-    "category": "news",
-    "date": "2026-10-09",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/76333/"
     }
   }
 ]
