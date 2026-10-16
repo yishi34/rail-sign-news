@@ -45,6 +45,69 @@
     }
   },
   {
+    "title": "東武90000系「ベスト100」に　2026年度グッドデザイン「荷物車」「電気式」なども",
+    "category": "news",
+    "date": "2026-10-17",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92550"
+    }
+  },
+  {
+    "title": "南海6200系に「いたずらぐまのグルーミー」ヘッドマーク",
+    "category": "news",
+    "date": "2026-10-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/17/041500.html"
+    }
+  },
+  {
+    "title": "南海8300系8320編成に「百鬼夜行～特別車両ラッピング～」",
+    "category": "cars",
+    "date": "2026-10-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/17/041000.html"
+    }
+  },
+  {
+    "title": "阪神，新形急行用車両3000系で関西大手私鉄初の「カラーユニバーサルデザイン認証」を取得",
+    "category": "cars",
+    "date": "2026-10-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/17/040500.html"
+    }
+  },
+  {
+    "title": "JR九州，「鉄道アップデート計画」の第2弾を発表",
+    "category": "news",
+    "date": "2026-10-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/17/040000.html"
+    }
+  },
+  {
+    "title": "ラピートと並走！ 南海“最古参”特急「こうや」乗ったらスゴかった 都会から一転“秘境”を走る75年の古豪",
+    "category": "news",
+    "date": "2026-10-17",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/714653"
+    }
+  },
+  {
+    "title": "【小田急】60000形60255×6大野総合車両所出場試運転",
+    "category": "cars",
+    "date": "2026-10-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79216/"
+    }
+  },
+  {
     "title": "JR貨物「ピンク色のコンテナ」運用中　乳がん早期発見・早期治療の重要性を訴える",
     "category": "news",
     "date": "2026-10-16",
@@ -546,6 +609,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79189/"
+    }
+  },
+  {
+    "title": "【JR東】211系ナノN602・N604・N605編成が長野総合車両ベースの工場側へ移動",
+    "category": "cars",
+    "date": "2026-10-16",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79215/"
     }
   },
   {
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "トラベル Watch",
       "url": "https://travel.watch.impress.co.jp/docs/news/2147399.html"
-    }
-  },
-  {
-    "title": "「赤い星」編成が旭川運転所へ",
-    "category": "cars",
-    "date": "2026-10-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/12/020700.html"
-    }
-  },
-  {
-    "title": "阪急8000系8004編成が神戸線へ移籍",
-    "category": "cars",
-    "date": "2026-10-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/12/020500.html"
-    }
-  },
-  {
-    "title": "伊予鉄道7000系が甲種輸送される",
-    "category": "cars",
-    "date": "2026-10-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/12/020400.html"
-    }
-  },
-  {
-    "title": "京阪大津線で「京阪×二十世紀電氣目録」ラッピング電車運行",
-    "category": "cars",
-    "date": "2026-10-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/12/020200.html"
-    }
-  },
-  {
-    "title": "「京阪電車×響け！ユーフォニアム 2026 秋」ラッピング電車のヘッドマークが変更される",
-    "category": "cars",
-    "date": "2026-10-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/12/020100.html"
-    }
-  },
-  {
-    "title": "伊豆急行で開業65周年記念ヘッドマーク",
-    "category": "news",
-    "date": "2026-10-12",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/12/020000.html"
-    }
-  },
-  {
-    "title": "南海フェリー撤退でどうなる？ 途中駅ゼロの激短鉄路「和歌山港線」じつは南海の持ち物じゃない!?",
-    "category": "news",
-    "date": "2026-10-12",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/715864"
-    }
-  },
-  {
-    "title": "「路面電車王国」81年ぶりの新線開業から1年 駅ビル乗り入れの裏で消えた大正期の石畳 “最後の日常”を振り返る",
-    "category": "news",
-    "date": "2026-10-12",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/715044"
     }
   }
 ]
