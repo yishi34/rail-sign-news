@@ -45,6 +45,60 @@
     }
   },
   {
+    "title": "東海道・山陽新幹線「のぞみ」特急料金など一部改定　東京～新大阪で700円値上げ",
+    "category": "news",
+    "date": "2026-10-19",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92646"
+    }
+  },
+  {
+    "title": "JR九州、「オリエンタルホテルJRハウステンボス」2027年10月開業。パークを一望できる部屋など320室",
+    "category": "news",
+    "date": "2026-10-19",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2148992.html"
+    }
+  },
+  {
+    "title": "「にしてつ電車まつり」開催",
+    "category": "news",
+    "date": "2026-10-19",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/19/010000.html"
+    }
+  },
+  {
+    "title": "こどもの国線で8500系・7000系による臨時列車運転",
+    "category": "service",
+    "date": "2026-10-19",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/19/003000.html"
+    }
+  },
+  {
+    "title": "E233系C9編成に「ももクロ桃神祭2026in長生村」ヘッドマーク",
+    "category": "cars",
+    "date": "2026-10-19",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/19/000000.html"
+    }
+  },
+  {
+    "title": "常磐線から「日光」まで直通する特急が今月に運行へ 茨城県と栃木県を異色のルートで直結",
+    "category": "news",
+    "date": "2026-10-19",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/719616"
+    }
+  },
+  {
     "title": "伊豆箱根鉄道「再び2段階の値上げ」運賃改定を申請、コロナ禍からの回復進まず",
     "category": "news",
     "date": "2026-10-18",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79187/"
-    }
-  },
-  {
-    "title": "【京王】7000系7726Fの種別・行先表示器がフルカラーLED化され営業運転に復帰",
-    "category": "news",
-    "date": "2026-10-15",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79186/"
-    }
-  },
-  {
-    "title": "【近鉄】5200系VX06が五位堂検修車庫出場試運転",
-    "category": "cars",
-    "date": "2026-10-15",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79169/"
-    }
-  },
-  {
-    "title": "夢洲駅で「ミャクミャク×大阪メトロ」万博1周年フェスタ。花火上映やグッズ販売、10月31日～11月3日",
-    "category": "news",
-    "date": "2026-10-14",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2147794.html"
-    }
-  },
-  {
-    "title": "JR特急かささぎ最大2000円引き「かささぎでGo！デジタルきっぷ」。博多～佐賀～肥前鹿島の旅がお得に",
-    "category": "travel",
-    "date": "2026-10-14",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2147774.html"
-    }
-  },
-  {
-    "title": "阪急2000系2005編成が神戸線で営業運転を開始",
-    "category": "cars",
-    "date": "2026-10-14",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/14/030000.html"
-    }
-  },
-  {
-    "title": "E131系200番代 N15編成・N18編成が配給輸送される",
-    "category": "cars",
-    "date": "2026-10-14",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/10/14/020000.html"
     }
   }
 ]
