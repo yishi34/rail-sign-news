@@ -45,6 +45,42 @@
     }
   },
   {
+    "title": "JR西日本「夜行やくも」出雲市→岡山で初運行　フラット席あり",
+    "category": "news",
+    "date": "2026-10-23",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92826"
+    }
+  },
+  {
+    "title": "11/19申込締切 モビリティサービスの進化を支える次世代整備戦略～車両の高度化と整備士不足に対応する新たな整備インフラの構築～",
+    "category": "cars",
+    "date": "2026-10-23",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/10/23/418115.html"
+    }
+  },
+  {
+    "title": "16時間も走る「日本一長い特急」に異変！ 今冬は所要時間が短縮へ 約950kmを走破",
+    "category": "news",
+    "date": "2026-10-23",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/721636"
+    }
+  },
+  {
+    "title": "【小田急】3000形3257Fが大野総合車両所を出場し試運転",
+    "category": "cars",
+    "date": "2026-10-23",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79369/"
+    }
+  },
+  {
     "title": "実現すれば西武新宿線が大変貌！ 新たな「連続立体交差化」調査へ 合計14か所の踏切を除却",
     "category": "news",
     "date": "2026-10-22",
@@ -1761,42 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79265/"
-    }
-  },
-  {
-    "title": "【西鉄】3000形3105F+3104F+3113Fが「にしてつ電車まつり」直通電車に充当",
-    "category": "news",
-    "date": "2026-10-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79264/"
-    }
-  },
-  {
-    "title": "【近鉄】2013系XT07「つどい」で「Tea Train Tsudoi」が運転",
-    "category": "news",
-    "date": "2026-10-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79263/"
-    }
-  },
-  {
-    "title": "【JR西】吹田総合車両所公開イベント「すいそうフェスティバル2026」開催",
-    "category": "cars",
-    "date": "2026-10-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79262/"
-    }
-  },
-  {
-    "title": "【東急】2020系2125FがCBTC関連装置設置後の確認試運転",
-    "category": "cars",
-    "date": "2026-10-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79261/"
     }
   }
 ]
