@@ -45,6 +45,87 @@
     }
   },
   {
+    "title": "『中国鉄道時刻表』2026年秋冬号　半年で開業「東京～米原」相当の新線を追加",
+    "category": "service",
+    "date": "2026-10-25",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/92711"
+    }
+  },
+  {
+    "title": "「鉄道ふくいフェスタ」で南福井駅が公開される",
+    "category": "news",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/053500.html"
+    }
+  },
+  {
+    "title": "臨時快速“弥彦Shu*Kura”運転",
+    "category": "news",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/053000.html"
+    }
+  },
+  {
+    "title": "「第16回東葉車両基地まつり」開催",
+    "category": "cars",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/052500.html"
+    }
+  },
+  {
+    "title": "「すっぴん7300形車両撮影会」開催",
+    "category": "cars",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/052000.html"
+    }
+  },
+  {
+    "title": "岐阜貨物ターミナル駅が一般公開される",
+    "category": "news",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/051000.html"
+    }
+  },
+  {
+    "title": "鉄道博物館で「顔認証改札機 体験展示」開始",
+    "category": "news",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/050500.html"
+    }
+  },
+  {
+    "title": "大阪市高速電気軌道中央線で「ミャクミャク列車」が復活",
+    "category": "news",
+    "date": "2026-10-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/25/050000.html"
+    }
+  },
+  {
+    "title": "「政治駅」は誤解だった!? 新幹線「岐阜羽島」に線路が6本もある理由と、動き出した「LRT構想」",
+    "category": "news",
+    "date": "2026-10-25",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/719212"
+    }
+  },
+  {
     "title": "久留里線の台風被災区間「そのまま廃止」代行輸送を継続　JR東日本、復旧を断念",
     "category": "news",
     "date": "2026-10-24",
@@ -1716,87 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79317/"
-    }
-  },
-  {
-    "title": "【阪急】阪急1000系1017Fが乗務員訓練",
-    "category": "news",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79316/"
-    }
-  },
-  {
-    "title": "【京阪】6000系6006F寝屋川車庫出場試運転",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79315/"
-    }
-  },
-  {
-    "title": "【京王】5000系5736F若葉台工場出場試運転(202610)",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79314/"
-    }
-  },
-  {
-    "title": "【JR西】221系F01編成 吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79313/"
-    }
-  },
-  {
-    "title": "【JR東】E129系A6編成大宮総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79312/"
-    }
-  },
-  {
-    "title": "【阪急】6000系6014Fが正雀から返却",
-    "category": "news",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79311/"
-    }
-  },
-  {
-    "title": "【小田急】8000形8053F(8053×4)新宿方2両が廃車搬出",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79310/"
-    }
-  },
-  {
-    "title": "【JR東】209系マリC617編成が郡山総合車両ベースへ入場配給",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79309/"
-    }
-  },
-  {
-    "title": "【JR西】221系F01編成吹田総合車両所本所構内出場試運転",
-    "category": "cars",
-    "date": "2026-10-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79308/"
     }
   }
 ]
