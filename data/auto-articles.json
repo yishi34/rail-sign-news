@@ -45,6 +45,87 @@
     }
   },
   {
+    "title": "北海道新幹線の札幌延伸工事「初のレール送り出し」渡島トンネルで始まる",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/93043"
+    }
+  },
+  {
+    "title": "JR東日本びゅう「ブラックフライデーセール」第1弾。往復新幹線セットの東北温泉/函館グルメ旅/サフィール踊り子で行く南伊豆ほか",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2151693.html"
+    }
+  },
+  {
+    "title": "静岡鉄道，全線で「QR乗車券システム」を導入へ〜2027年3月から順次開始〜",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/28/064500.html"
+    }
+  },
+  {
+    "title": "東京メトロ，夜間線路保守車両にAI運転者支援システム「ポイントAI」を導入へ",
+    "category": "cars",
+    "date": "2026-10-28",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/28/063000.html"
+    }
+  },
+  {
+    "title": "西武7000系の導入計画が変更に 「離れ小島ローカル線」には別の車両を導入へ",
+    "category": "cars",
+    "date": "2026-10-28",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/722761"
+    }
+  },
+  {
+    "title": "【近鉄】23000系iL01が五位堂検修車庫を出場し回送",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79515/"
+    }
+  },
+  {
+    "title": "【東武】30000系31605F+31405F 車掌養成現車訓練",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79514/"
+    }
+  },
+  {
+    "title": "【JR東】中央・総武線各駅停車 新宿駅16番線にホームドアが設置",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79513/"
+    }
+  },
+  {
+    "title": "【東武】10000系11608F 車掌養成現車訓練",
+    "category": "news",
+    "date": "2026-10-28",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79512/"
+    }
+  },
+  {
     "title": "西武新宿線・野方～井荻の立体化「3者協定」都区で分かれる事業を一体整備へ",
     "category": "news",
     "date": "2026-10-27",
@@ -1716,87 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/event/2026/10/23/103000.html"
-    }
-  },
-  {
-    "title": "車体はほぼガラス張り!? 京都の「新トロッコ列車」3月デビュー 1室だけの特別室も名称決定",
-    "category": "cars",
-    "date": "2026-10-23",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/721757"
-    }
-  },
-  {
-    "title": "【JR九】813系RM615+RM616編成が6両固定編成化・ワンマン対応改造を終え小倉総合車両センター出場試運転",
-    "category": "cars",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79399/"
-    }
-  },
-  {
-    "title": "【近鉄】1252系VE52が橿原線・天理線・奈良線・京都線で性能確認試運転",
-    "category": "cars",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79398/"
-    }
-  },
-  {
-    "title": "【近鉄】1A系1A05とポムポムプリンラッピングの1201系RC02が初併結",
-    "category": "cars",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79397/"
-    }
-  },
-  {
-    "title": "【JR東】E531系K421編成郡山総合車両ベース入場",
-    "category": "cars",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79396/"
-    }
-  },
-  {
-    "title": "【東急】3000系3108Fのリニューアル作業が進み排障器が水色に",
-    "category": "news",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79395/"
-    }
-  },
-  {
-    "title": "【近鉄】15200系PN07+PN09+PN08による団体臨時列車",
-    "category": "service",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79394/"
-    }
-  },
-  {
-    "title": "【小田急】経堂駅のホームドアが稼働開始(3・4番ホーム)",
-    "category": "news",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79393/"
-    }
-  },
-  {
-    "title": "【JR九】817系VG1514編成が鹿児島車両センターへの貸出を終え返却回送",
-    "category": "cars",
-    "date": "2026-10-23",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79392/"
     }
   }
 ]
