@@ -45,6 +45,60 @@
     }
   },
   {
+    "title": "アゼルバイジャン「旅客列車の再開・拡充」進む　中国中車に新型電車を発注",
+    "category": "news",
+    "date": "2026-10-31",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/93114"
+    }
+  },
+  {
+    "title": "名鉄9500系9531編成が甲種輸送される",
+    "category": "cars",
+    "date": "2026-10-31",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/31/043000.html"
+    }
+  },
+  {
+    "title": "JR北海道739系第2編成が甲種輸送される",
+    "category": "cars",
+    "date": "2026-10-31",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/31/041500.html"
+    }
+  },
+  {
+    "title": "209系2000番代が秋田総合車両ベースへ",
+    "category": "cars",
+    "date": "2026-10-31",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/10/31/040000.html"
+    }
+  },
+  {
+    "title": "【JR北】739系3000番台第1編成が函館本線で日中に試運転",
+    "category": "cars",
+    "date": "2026-10-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79579/"
+    }
+  },
+  {
+    "title": "【都営】5500形5507-1・5507-2 総合車両製作所横浜事業所へ入場陸送",
+    "category": "cars",
+    "date": "2026-10-31",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79578/"
+    }
+  },
+  {
     "title": "東武8000系8158編成が北館林へ",
     "category": "cars",
     "date": "2026-10-30",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79483/"
-    }
-  },
-  {
-    "title": "【阪急】9300系9307Fが正雀出場試運転、洛西口・上牧で確認",
-    "category": "cars",
-    "date": "2026-10-26",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79482/"
-    }
-  },
-  {
-    "title": "【JR東】701系N30編成が秋田総合車両ベースを出場し本線試運転",
-    "category": "cars",
-    "date": "2026-10-26",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79480/"
-    }
-  },
-  {
-    "title": "【山形】YR-880形4両編成の特別列車が運転",
-    "category": "cars",
-    "date": "2026-10-26",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79478/"
-    }
-  },
-  {
-    "title": "【JR東】E5系U4編成が全般検査を終え出場試運転",
-    "category": "cars",
-    "date": "2026-10-26",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79477/"
-    }
-  },
-  {
-    "title": "【IR】521系IR24編成吹田総合車両所本所出場回送",
-    "category": "cars",
-    "date": "2026-10-26",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79476/"
-    }
-  },
-  {
-    "title": "【JR西】221系F03編成吹田総合車両所本所入場回送",
-    "category": "cars",
-    "date": "2026-10-26",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79475/"
     }
   }
 ]
