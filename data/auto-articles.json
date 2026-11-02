@@ -45,6 +45,60 @@
     }
   },
   {
+    "title": "北条鉄道「すべてJR東日本」に　フラワ2000形を更新へ",
+    "category": "news",
+    "date": "2026-11-02",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/93186"
+    }
+  },
+  {
+    "title": "今週末は「土浦の花火」交通規制。国道6号出入口閉鎖や駅周辺通行止め、イオンモール土浦は全館休業",
+    "category": "news",
+    "date": "2026-11-02",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2152929.html"
+    }
+  },
+  {
+    "title": "JR東海「EX旅先予約 秋冬の大セール」で観光施設やグルメパスが10％オフに。横浜エジプト展/ハルカス展望台/京都の寺院巡りほか",
+    "category": "travel",
+    "date": "2026-11-02",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2152926.html"
+    }
+  },
+  {
+    "title": "東京メトロ、QR乗車券を2028年度中に導入。磁気乗車券は2029年末までに終了へ",
+    "category": "news",
+    "date": "2026-11-02",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2152813.html"
+    }
+  },
+  {
+    "title": "京成押上線“仮上り線”に切り替え 途中駅も大変貌 「下町の踏切密集区間」解消に向け一歩前進",
+    "category": "news",
+    "date": "2026-11-02",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/723624"
+    }
+  },
+  {
+    "title": "JR車両で部品盗難が相次ぎ「自動放送流れず」  立て続けに3件発生、「厳正に対処」へ 被害の状況が公開",
+    "category": "cars",
+    "date": "2026-11-02",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/723531"
+    }
+  },
+  {
     "title": "東海道本線「往年の国鉄急行」モチーフの貸切列車ツアー　「東海」「エキスポこだま」",
     "category": "travel",
     "date": "2026-11-01",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79529/"
-    }
-  },
-  {
-    "title": "【JR東】 209系 「Mue-train」山手貨物線試運転",
-    "category": "cars",
-    "date": "2026-10-28",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79528/"
-    }
-  },
-  {
-    "title": "【近鉄】1253系VC57がA更新工事を終え高安出場試運転",
-    "category": "cars",
-    "date": "2026-10-28",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79527/"
-    }
-  },
-  {
-    "title": "【JR西】キハ120-305後藤総合車両所出場配給輸送",
-    "category": "cars",
-    "date": "2026-10-28",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79526/"
-    }
-  },
-  {
-    "title": "【近鉄】8A系8A17が五位堂検修車庫へ入場回送",
-    "category": "news",
-    "date": "2026-10-28",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79525/"
-    }
-  },
-  {
-    "title": "【南海】1000系1031Fが千代田工場出場試運転",
-    "category": "cars",
-    "date": "2026-10-28",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79524/"
-    }
-  },
-  {
-    "title": "【近鉄】2430系W42が高安出場試運転",
-    "category": "cars",
-    "date": "2026-10-28",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79523/"
     }
   }
 ]
