@@ -45,6 +45,33 @@
     }
   },
   {
+    "title": "「ダイワロイネットホテル静岡駅前」2027年4月12日開業。駅徒歩5分に全224室、サウナ付き大浴場完備",
+    "category": "news",
+    "date": "2026-11-05",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2153733.html"
+    }
+  },
+  {
+    "title": "東急の電車が「名古屋駅」に出現！ いよいよ“三重県”まで乗り入れへ 何がスゴいのか体験してみた",
+    "category": "news",
+    "date": "2026-11-05",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/724627"
+    }
+  },
+  {
+    "title": "【JR東】中央総武線各駅停車 船橋駅2番線にホームドア設置",
+    "category": "news",
+    "date": "2026-11-05",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79738/"
+    }
+  },
+  {
     "title": "東京メトロの紙の切符も「QR化」「磁気終了」大まかなスケジュールを発表",
     "category": "travel",
     "date": "2026-11-04",
@@ -1770,33 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79599/"
-    }
-  },
-  {
-    "title": "【JR東】E653系K70編成で臨時特急「常磐日光号」を運行",
-    "category": "cars",
-    "date": "2026-10-31",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79598/"
-    }
-  },
-  {
-    "title": "【伊豆急】2100系R5編成「THE ROYAL EXPRESS」が関西本線で試運転",
-    "category": "cars",
-    "date": "2026-10-31",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79597/"
-    }
-  },
-  {
-    "title": "【山陽】「山陽 鉄道フェスティバル2026」開催",
-    "category": "news",
-    "date": "2026-10-31",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79596/"
     }
   }
 ]
