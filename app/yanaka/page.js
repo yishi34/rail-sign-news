@@ -52,7 +52,18 @@ export default function YanakaPage() {
           <div className="yk-news">
             <div className="yk-news-band"></div>
             <div className="yk-news-inner">
-              <img src={page.topNews.image} alt={page.topNews.imageAlt} />
+              {page.topNews.video ? (
+                  <video
+                    src={page.topNews.video}
+                    poster={page.topNews.image}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    aria-label={page.topNews.imageAlt}
+                  />
+                ) : (
+                  <img src={page.topNews.image} alt={page.topNews.imageAlt} />
+                )}
               <div className="yk-news-text">
                 <span className="yk-flag">{page.topNews.flag}</span>
                 <h3>{page.topNews.title}</h3>
