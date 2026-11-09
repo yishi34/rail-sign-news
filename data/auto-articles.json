@@ -45,6 +45,87 @@
     }
   },
   {
+    "title": "「交通フェスティバル2026 in 名谷車両基地」開催",
+    "category": "cars",
+    "date": "2026-11-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/09/053000.html"
+    }
+  },
+  {
+    "title": "肥薩線でキハ40形国鉄色による臨時列車運転",
+    "category": "service",
+    "date": "2026-11-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/09/052500.html"
+    }
+  },
+  {
+    "title": "長良川鉄道，「さわやかウォーキング」開催にともない3両編成で運転",
+    "category": "cars",
+    "date": "2026-11-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/09/051500.html"
+    }
+  },
+  {
+    "title": "キハ200形による団体臨時列車運転",
+    "category": "service",
+    "date": "2026-11-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/09/051000.html"
+    }
+  },
+  {
+    "title": "秩父鉄道で「SL秩父鉄道創立記念日号」運転",
+    "category": "news",
+    "date": "2026-11-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/09/050500.html"
+    }
+  },
+  {
+    "title": "もと神戸市電1103号車に神戸市電車両移籍55周年記念ヘッドマーク",
+    "category": "cars",
+    "date": "2026-11-09",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/09/045500.html"
+    }
+  },
+  {
+    "title": "「総武線と東武線の乗換駅」に大変貌の兆し 駅前で再開発に向けた検討が本格化",
+    "category": "news",
+    "date": "2026-11-09",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/726045"
+    }
+  },
+  {
+    "title": "【JR貨】「八王子駅ではたらく貨物列車を見に行こう！」開催でEF65-2083・HD300-21を展示",
+    "category": "news",
+    "date": "2026-11-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79839/"
+    }
+  },
+  {
+    "title": "【阪急】5100系5104Fが宝塚線で乗務員訓練を実施",
+    "category": "news",
+    "date": "2026-11-09",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79838/"
+    }
+  },
+  {
     "title": "神戸電鉄「関東大手私鉄系のAIプラットフォーム」導入　日常業務の効率化図る",
     "category": "news",
     "date": "2026-11-08",
@@ -267,6 +348,15 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79820/"
+    }
+  },
+  {
+    "title": "【JR東】塩尻鉄道せつび体験ラリー2026で多機能鉄道重機の実演",
+    "category": "news",
+    "date": "2026-11-08",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79836/"
     }
   },
   {
@@ -1707,96 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79729/"
-    }
-  },
-  {
-    "title": "【JR東】中央・総武線各駅停車 船橋駅1番線にホームドアが設置",
-    "category": "news",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79728/"
-    }
-  },
-  {
-    "title": "【JR四】N2000系気動車2425号車が検査を終えて多度津工場出場試運転",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79727/"
-    }
-  },
-  {
-    "title": "【JR東】E235系クラF-23編成 東京総合車両ベース入場",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79726/"
-    }
-  },
-  {
-    "title": "【JR東】EV-E301系ヤマV2編成 大宮総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79725/"
-    }
-  },
-  {
-    "title": "【JR西】キロ189系H5編成「はなあかり」がJR京都線、琵琶湖線にて試運転を実施",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79724/"
-    }
-  },
-  {
-    "title": "【あい鉄】521系AK04編成 吹田総合車両所本所入場回送",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79723/"
-    }
-  },
-  {
-    "title": "【JR西】521系U09編成吹田総合車両所本所出場試運転",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79721/"
-    }
-  },
-  {
-    "title": "【JR九】DE10-1755牽引のロンチキ10両編成による吉富・中津工臨の実施",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79720/"
-    }
-  },
-  {
-    "title": "【秩鉄】6000系6003号「旧500形カラー」熊谷工場出場試運転",
-    "category": "cars",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79719/"
-    }
-  },
-  {
-    "title": "【近鉄】15200系PN09+PN08を使用した貸切列車",
-    "category": "news",
-    "date": "2026-11-04",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79718/"
     }
   }
 ]
