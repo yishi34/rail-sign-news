@@ -45,6 +45,60 @@
     }
   },
   {
+    "title": "JR東日本「タッチ不要の自動改札機」導入時期など明らかに　まずモニター試験",
+    "category": "news",
+    "date": "2026-11-11",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/93760"
+    }
+  },
+  {
+    "title": "マツダとSOLIZE、AIナレッジ管理で車両設計の品質向上・安定化を実現",
+    "category": "cars",
+    "date": "2026-11-11",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/11/418857.html"
+    }
+  },
+  {
+    "title": "アイシン「みちログ」、日本郵便の集配車両で実証…道路巡回の網羅率向上へ",
+    "category": "cars",
+    "date": "2026-11-11",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/11/418855.html"
+    }
+  },
+  {
+    "title": "新幹線の真正面に「ドローン直撃」→前面ガラスはどうなった？ JRが敢えて車体に衝突させた理由とは",
+    "category": "news",
+    "date": "2026-11-11",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/726597"
+    }
+  },
+  {
+    "title": "【JR東】中央・総武線各駅停車 高円寺駅1番線にホームドアが設置",
+    "category": "news",
+    "date": "2026-11-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79878/"
+    }
+  },
+  {
+    "title": "【大阪メトロ】30000系31615F「正露丸」ラッピング電車が運行開始",
+    "category": "cars",
+    "date": "2026-11-11",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79877/"
+    }
+  },
+  {
     "title": "京成スカイライナーの上野～成田空港「ちょうど3000円」料金と運賃を順次値上げ",
     "category": "news",
     "date": "2026-11-10",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "鉄道プレスネット",
       "url": "https://news.railway-pressnet.com/archives/93467"
-    }
-  },
-  {
-    "title": "ナビタイム、バス停にスポンサー名を表示するネーミングライツの営業支援システム開発…西日本鉄道が販売へ",
-    "category": "news",
-    "date": "2026-11-05",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/05/418639.html"
-    }
-  },
-  {
-    "title": "宮城トヨタ自動車、全店舗に「AutoWEB」採用…3D車両コンテンツで商談をデジタル化",
-    "category": "cars",
-    "date": "2026-11-05",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/05/418637.html"
-    }
-  },
-  {
-    "title": "東急不動産、初の1棟専用冷凍冷蔵倉庫「LOGI'Q松戸コールドセンター」着工…2028年5月竣工予定",
-    "category": "news",
-    "date": "2026-11-05",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/05/418635.html"
-    }
-  },
-  {
-    "title": "モバイルSuica定期券、IC非対応駅やJR東海線またぎに対応。2027年3月から新機能「みせるモバイル定期券」導入",
-    "category": "news",
-    "date": "2026-11-05",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2154008.html"
-    }
-  },
-  {
-    "title": "JR九州の列車がレトロかわいい文房具に。レターセット/ポチ袋/マッチ箱メモなど全17点、イオン九州で発売",
-    "category": "news",
-    "date": "2026-11-05",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2153964.html"
-    }
-  },
-  {
-    "title": "今日から年末年始の新幹線のぞみ「EX早特☆期間限定セール！」。東京～新大阪2920円引き/広島4960円引き",
-    "category": "news",
-    "date": "2026-11-05",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2153827.html"
     }
   }
 ]
