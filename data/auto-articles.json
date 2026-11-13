@@ -54,6 +54,42 @@
     }
   },
   {
+    "title": "日産自動車とキリンビール、「横浜ものづくり共創プロジェクト」開始…コラボ車両展示やスタンプラリー実施",
+    "category": "cars",
+    "date": "2026-11-13",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/13/418959.html"
+    }
+  },
+  {
+    "title": "なぜ「人口156万人の大都市」川崎市に地下鉄がない？ 着工寸前だった“壮大な構想”が中止に追い込まれたワケ",
+    "category": "news",
+    "date": "2026-11-13",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/727154"
+    }
+  },
+  {
+    "title": "【JR東】E501系カツK703編成が郡山総合車両ベースへ回送",
+    "category": "cars",
+    "date": "2026-11-13",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79922/"
+    }
+  },
+  {
+    "title": "【阪急】5100系5132FのC#5133・C#5682が廃車陸送",
+    "category": "cars",
+    "date": "2026-11-13",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/79921/"
+    }
+  },
+  {
     "title": "C61 20が信越本線で試運転",
     "category": "cars",
     "date": "2026-11-12",
@@ -1761,42 +1797,6 @@
     "source": {
       "name": "鉄道プレスネット",
       "url": "https://news.railway-pressnet.com/archives/93315"
-    }
-  },
-  {
-    "title": "【若林直樹のトラベルフォトギャラリー】嵯峨野トロッコ列車（京都府）",
-    "category": "news",
-    "date": "2026-11-07",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/series/wakabayashi/2154291.html"
-    }
-  },
-  {
-    "title": "【東武】500系505F南栗橋工場出場試運転",
-    "category": "cars",
-    "date": "2026-11-07",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79789/"
-    }
-  },
-  {
-    "title": "【JR東】キハ101-12が郡山総合車両ベースを出場 出場試運転",
-    "category": "cars",
-    "date": "2026-11-07",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79788/"
-    }
-  },
-  {
-    "title": "【JR北】739系3000番台E-3101+E-3201編成が函館本線で試運転",
-    "category": "cars",
-    "date": "2026-11-07",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79787/"
     }
   }
 ]
