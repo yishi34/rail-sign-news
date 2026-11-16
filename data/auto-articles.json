@@ -90,6 +90,33 @@
     }
   },
   {
+    "title": "那覇市の路面電車構想「交差点への影響」調査　国道と県道の12カ所",
+    "category": "news",
+    "date": "2026-11-16",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/94050"
+    }
+  },
+  {
+    "title": "【JR九】九州一大花火まつりに伴う臨時列車にYC1系が充当、ハウステンボス行き表示で運転",
+    "category": "service",
+    "date": "2026-11-16",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80003/"
+    }
+  },
+  {
+    "title": "【南海】7100系7167F+7187F使用の団体臨時列車運転",
+    "category": "service",
+    "date": "2026-11-16",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80002/"
+    }
+  },
+  {
     "title": "上越新幹線でE6系による団臨運転 〜ガーラ湯沢駅にも入線〜",
     "category": "news",
     "date": "2026-11-15",
@@ -1770,33 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79882/"
-    }
-  },
-  {
-    "title": "【JR東】E233系5000番台ケヨ551編成+F51編成東京総合車両ベース入場回送",
-    "category": "cars",
-    "date": "2026-11-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79881/"
-    }
-  },
-  {
-    "title": "【東武】60000系61613Fが南栗橋工場を出場し津覇車輌へ入場回送",
-    "category": "news",
-    "date": "2026-11-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79880/"
-    }
-  },
-  {
-    "title": "【西武】4000系4003F 武蔵丘車両検修場出場試運転",
-    "category": "cars",
-    "date": "2026-11-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79879/"
     }
   }
 ]
