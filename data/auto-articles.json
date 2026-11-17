@@ -81,6 +81,87 @@
     }
   },
   {
+    "title": "近鉄特急「最大5倍近い値上げ」デラックス席や個室の料金を改定",
+    "category": "news",
+    "date": "2026-11-17",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/94131"
+    }
+  },
+  {
+    "title": "大宮駅「Suicaのペンギン」グッズ専門店が11月末に閉店。ほか3店舗の営業終了日は未定",
+    "category": "news",
+    "date": "2026-11-17",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2156869.html"
+    }
+  },
+  {
+    "title": "JR九州，「こどもぼうけんきっぷ」を冬休み期間に発売",
+    "category": "travel",
+    "date": "2026-11-17",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/17/113500.html"
+    }
+  },
+  {
+    "title": "神奈川県と新潟県を結ぶ「夜行列車」が運行へ 鎌倉市と南魚沼市を直結！ 新宿駅にも停車",
+    "category": "news",
+    "date": "2026-11-17",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/728148"
+    }
+  },
+  {
+    "title": "【メトロ】18000系18111F 鷺沼工場出場試運転",
+    "category": "cars",
+    "date": "2026-11-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80021/"
+    }
+  },
+  {
+    "title": "【JR海】385系E1編成 長野入線試運転",
+    "category": "cars",
+    "date": "2026-11-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80020/"
+    }
+  },
+  {
+    "title": "【東武】9050型9152F    南栗橋工場出場試運転",
+    "category": "cars",
+    "date": "2026-11-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80019/"
+    }
+  },
+  {
+    "title": "【阪急】1000系1006Fが川西能勢口駅2号線でのイベントに伴い回送",
+    "category": "travel",
+    "date": "2026-11-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80018/"
+    }
+  },
+  {
+    "title": "【近鉄】15200系PN10+PN07+PN08が白塚から高安へ回送",
+    "category": "news",
+    "date": "2026-11-17",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80017/"
+    }
+  },
+  {
     "title": "埼玉新都市交通で大宮行き臨時列車運転",
     "category": "service",
     "date": "2026-11-16",
@@ -1716,87 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/79907/"
-    }
-  },
-  {
-    "title": "【小田急】70000形70052F(GSE)大野総合車両所出場試運転",
-    "category": "cars",
-    "date": "2026-11-12",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79906/"
-    }
-  },
-  {
-    "title": "【阪急】5000系5006FのC#5006・C#5057が廃車陸送",
-    "category": "cars",
-    "date": "2026-11-12",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79905/"
-    }
-  },
-  {
-    "title": "JR東日本「タッチ不要の自動改札機」導入時期など明らかに　まずモニター試験",
-    "category": "news",
-    "date": "2026-11-11",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/93760"
-    }
-  },
-  {
-    "title": "マツダとSOLIZE、AIナレッジ管理で車両設計の品質向上・安定化を実現",
-    "category": "cars",
-    "date": "2026-11-11",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/11/418857.html"
-    }
-  },
-  {
-    "title": "アイシン「みちログ」、日本郵便の集配車両で実証…道路巡回の網羅率向上へ",
-    "category": "cars",
-    "date": "2026-11-11",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/11/418855.html"
-    }
-  },
-  {
-    "title": "新幹線の真正面に「ドローン直撃」→前面ガラスはどうなった？ JRが敢えて車体に衝突させた理由とは",
-    "category": "news",
-    "date": "2026-11-11",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/726597"
-    }
-  },
-  {
-    "title": "【JR東】中央・総武線各駅停車 高円寺駅1番線にホームドアが設置",
-    "category": "news",
-    "date": "2026-11-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79878/"
-    }
-  },
-  {
-    "title": "【大阪メトロ】30000系31615F「正露丸」ラッピング電車が運行開始",
-    "category": "cars",
-    "date": "2026-11-11",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79877/"
-    }
-  },
-  {
-    "title": "東武鉄道「次世代新型特急」導入時期など明らかに　先頭部のイメージも公表",
-    "category": "news",
-    "date": "2026-11-11",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/93808"
     }
   }
 ]
