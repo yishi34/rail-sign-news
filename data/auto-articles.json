@@ -45,6 +45,60 @@
     }
   },
   {
+    "title": "明日から3連休は新幹線「のぞみ」自由席なし。指定席の予約必須につき要注意",
+    "category": "news",
+    "date": "2026-11-20",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2156507.html"
+    }
+  },
+  {
+    "title": "大船軒コラボ駅弁「Suicaのペンギンの推し寿し」本日発売！　ペンギンがお寿司を握るランチクロス付き、1万5000食限定",
+    "category": "travel",
+    "date": "2026-11-20",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2156504.html"
+    }
+  },
+  {
+    "title": "「京成ドリームトレイン」の作品を募集",
+    "category": "news",
+    "date": "2026-11-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/11/20/070500.html"
+    }
+  },
+  {
+    "title": "2027年版 鉄道カレンダー「ザ・国鉄形電気機関車“PLUS アーカイブ”」発売",
+    "category": "cars",
+    "date": "2026-11-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/20/063500.html"
+    }
+  },
+  {
+    "title": "ひたちなか海浜鉄道，元日に初詣列車～“急行あじがうら号”～を運転",
+    "category": "news",
+    "date": "2026-11-20",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/20/063000.html"
+    }
+  },
+  {
+    "title": "延伸が実現すれば「日本一長～い地下鉄」に！ 早期の事業着手を目指す 新幹線へのアクセスも向上",
+    "category": "news",
+    "date": "2026-11-20",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/729505"
+    }
+  },
+  {
     "title": "名鉄500系511編成が甲種輸送される",
     "category": "cars",
     "date": "2026-11-19",
@@ -1743,60 +1797,6 @@
     "source": {
       "name": "乗りものニュース",
       "url": "https://trafficnews.jp/post/727311"
-    }
-  },
-  {
-    "title": "理由は「危険な木の集中伐採」 5日間の“計画運休”予告 大井川鐵道",
-    "category": "service",
-    "date": "2026-11-14",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/727990"
-    }
-  },
-  {
-    "title": "【JR東】E6系Z7編成が上越新幹線に初の営業運転で入線 団体専用列車「朱き流線の目撃者号」",
-    "category": "cars",
-    "date": "2026-11-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79975/"
-    }
-  },
-  {
-    "title": "【JR九】大分車両センターで「2026トレインフェスタ in 大分」開催",
-    "category": "cars",
-    "date": "2026-11-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79974/"
-    }
-  },
-  {
-    "title": "【名鉄】6000系6010Fに「蒲郡線全線開通90周年×温泉むすめ」PR系統板を掲出",
-    "category": "news",
-    "date": "2026-11-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79973/"
-    }
-  },
-  {
-    "title": "【北総】7300形7318編成が9000形リバイバルカラーで送迎列車に充当",
-    "category": "cars",
-    "date": "2026-11-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79972/"
-    }
-  },
-  {
-    "title": "【伊予鉄】坊っちゃん列車が車両整備を終えて古町から道後温泉へ臨時回送",
-    "category": "cars",
-    "date": "2026-11-14",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/79970/"
     }
   }
 ]
