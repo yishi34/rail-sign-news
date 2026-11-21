@@ -13,38 +13,33 @@
     "companyEn": "YANAKA JAPAN RAILWAY CO., LTD. — YNR",
     "topNews": {
       "label": "トップニュース",
-      "flag": "動画公開 / OPENING MOVIE",
-      "title": "公式オープニング動画、できました！",
-      "body": "谷中日本鉄道の公式オープニング動画が完成しました。Y526系からキハ3560系まで、当社の車両たちが勢ぞろい。特急いずみのご案内と、私たちのメッセージ「全ての人に交通を―」を詰め込んだ映像です。下のプレーヤーからそのままご覧いただけます。",
-      "image": "/yanaka/opening-poster.jpg",
-      "imageAlt": "谷中日本鉄道 公式オープニング動画(キハ3560系)",
-      "video": "/yanaka/opening.mp4",
+      "flag": "新機能 / ROUTE MAP MAKER",
+      "title": "路線図メーカー登場！",
+      "body": "谷中日本鉄道の路線図をブラウザ上で自由に作れる「路線図メーカー」が登場しました。路線名、停車駅、種別色、停車パターンを入力して「路線図を生成」ボタンを押すと、駅名標風の路線図が右側に反映されます。支線分岐やPDF・PNG・SVG出力にも対応しているので、架空鉄道のアイデアをそのまま形にして遊べます。※現在も開発中のため、実際の操作画面とは異なる場合があります。",
+      "image": "/yanaka/routemap-maker-screen.png",
+      "imageAlt": "谷中日本鉄道 路線図メーカーの作成画面",
       "info": [
-        { "label": "公開", "value": "谷中日本鉄道公式サイト トップページ" },
-        { "label": "内容", "value": "全車両のご紹介とメッセージ" },
-        { "label": "時間", "value": "約24秒(BGM付き)" }
+        { "label": "公開", "value": "谷中日本鉄道公式サイト ごあんない YN 06" },
+        { "label": "機能", "value": "路線名・停車駅・種別色・支線分岐を編集" },
+        { "label": "出力", "value": "PDF・PNG・SVGに対応" }
       ],
       "highlights": {
-        "label": "見どころ",
+        "label": "ここが楽しい",
         "items": [
-          "個性豊かな車両たちが次々に登場",
-          "特急いずみで東京〜大阪の移動をご案内",
-          "フィナーレはメッセージ「全ての人に交通を―」"
+          "駅名を入れるだけで縦型の路線図が育つ",
+          "急行・特急・普通などの種別色を自由に選べる",
+          "停車駅をチェックするだけで停車パターンを作れる",
+          "各駅停車限定の支線分岐も追加できる",
+          "完成した路線図をPDF・PNG・SVGで残せる",
+          "架空鉄道の路線案を親子で試せる"
         ]
       },
-      "note": "※音が出る動画です(BGM)。再生ボタンを押してご覧ください。"
+      "note": "※路線図メーカーは架空鉄道を楽しむための試作機能です。"
     },
     "news": {
       "label": "お知らせ",
       "en": "NEWS",
       "items": [
-        {
-          "flag": "新機能 / ROUTE MAP MAKER",
-          "title": "路線図メーカー登場！",
-          "body": "谷中日本鉄道の路線図をブラウザ上で自由に作れる「路線図メーカー」が登場しました。路線名、停車駅、種別色、停車パターンを入力して「路線図を生成」ボタンを押すと、駅名標風の路線図が右側に反映されます。支線分岐やPDF・PNG・SVG出力にも対応しているので、架空鉄道のアイデアをそのまま形にして遊べます。※現在も開発中のため、実際の操作画面とは異なる場合があります。",
-          "image": "/yanaka/routemap-maker-screen.png",
-          "imageAlt": "谷中日本鉄道 路線図メーカーの作成画面"
-        },
         {
           "flag": "優勝記念グッズ / MEMORIAL",
           "date": "2026-06-22",
@@ -88,7 +83,9 @@
       { "title": "社史", "en": "COMPANY HISTORY", "code": "YN", "num": "04", "status": "年表をみる", "href": "/yanaka/history" },
       { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" },
       { "title": "路線図メーカー", "en": "ROUTE MAP MAKER", "code": "YN", "num": "06", "status": "作成する", "href": "/yanaka/routemap-maker" },
-      { "title": "特急ネットワーク図", "en": "LIMITED EXPRESS", "code": "YN", "num": "07", "status": "特急図をみる", "href": "/yanaka/limited-express" }
+      { "title": "特急ネットワーク図", "en": "LIMITED EXPRESS", "code": "YN", "num": "07", "status": "特急図をみる", "href": "/yanaka/limited-express" },
+      { "title": "首都圏3D路線図", "en": "METRO 3D MAP", "code": "YN", "num": "08", "status": "3D地図をみる", "href": "/yanaka/map-3d" },
+      { "title": "首都圏路線網図", "en": "METRO NETWORK", "code": "YN", "num": "09", "status": "平面図をみる", "href": "/yanaka/metro-map" }
     ]
   },
   "history": {
@@ -262,25 +259,28 @@
         "id": "tono",
         "name": "谷鉄 東野線",
         "nameEn": "TONO LINE",
-        "note": "これはイメージ路線図です。谷鉄東京から神田・秋葉原を経て谷鉄上野へ向かい、東北ラインへつなぐ都心短絡路線です。",
+        "note": "これはイメージ路線図です。谷鉄東京から神田・秋葉原を経て谷鉄上野へ向かい、その先は東北ラインへ続きます。特急みちのくが東野線・東北ラインを直通します。",
         "distanceKm": 4.2,
+        "continuesTo": { "name": "谷鉄 東北ライン", "area": "大宮・仙台・盛岡方面" },
         "stationGap": 132,
         "types": [
+          { "id": "limited", "label": "特急", "color": "#e60012", "rank": 4 },
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "谷鉄東京", "rank": 1, "transfer": ["谷鉄 武蔵環状線", "谷鉄 東海ライン", "JR各線", "東京メトロ丸ノ内線"] },
+          { "name": "谷鉄東京", "rank": 4, "transfer": ["谷鉄 武蔵環状線", "谷鉄 東海ライン", "JR各線", "東京メトロ丸ノ内線"] },
           { "name": "神田", "rank": 1, "transfer": ["JR山手線", "JR京浜東北線", "JR中央線", "東京メトロ銀座線"] },
           { "name": "秋葉原", "rank": 1, "transfer": ["JR各線", "東京メトロ日比谷線", "つくばエクスプレス"] },
-          { "name": "谷鉄上野", "rank": 1, "transfer": ["谷鉄 東北ライン", "JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] }
+          { "name": "谷鉄上野", "rank": 4, "transfer": ["谷鉄 東北ライン", "JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] }
         ]
       },
       {
         "id": "tohoku",
         "name": "谷鉄 東北ライン",
         "nameEn": "TOHOKU LINE",
-        "note": "これはイメージ路線図です。谷鉄東京から谷鉄上野・大宮・宇都宮・郡山・福島・谷鉄仙台を経て谷鉄盛岡へ向かう東北方面の幹線です。谷鉄仙台からは山形線が分岐します。",
-        "distanceKm": 535.8,
+        "note": "これはイメージ路線図です。谷鉄上野から大宮・宇都宮・郡山・福島・谷鉄仙台を経て谷鉄盛岡へ向かう東北方面の幹線です。特急みちのくは東野線に直通し、谷鉄東京まで運転します。谷鉄仙台からは山形線が分岐します。",
+        "distanceKm": null,
+        "continuesFrom": { "name": "谷鉄 東野線", "area": "谷鉄東京" },
         "stationGap": 104,
         "types": [
           { "id": "limited", "label": "特急", "color": "#e60012", "rank": 4 },
@@ -288,7 +288,6 @@
           { "id": "loc", "label": "各駅停車", "color": "#1b7a40", "rank": 1 }
         ],
         "stations": [
-          { "name": "谷鉄東京", "rank": 4, "transfer": ["谷鉄 東海ライン", "谷鉄 東野線", "谷鉄 武蔵環状線", "東海道新幹線", "JR各線", "東京メトロ丸ノ内線"] },
           { "name": "谷鉄上野", "rank": 4, "transfer": ["谷鉄 東野線", "JR各線", "東京メトロ銀座線", "東京メトロ日比谷線"] },
           { "name": "赤羽", "rank": 3, "transfer": ["JR各線"] },
           { "name": "浦和", "rank": 3, "transfer": ["JR宇都宮線", "JR高崎線", "JR京浜東北線"] },
@@ -1162,6 +1161,14 @@
         "description": "YT5000系は、谷中日本鉄道の特急用車両です。1990年に登場し、JR九州の783系をベースに開発されました。クリーム色の車体に緑と黄のラインをまとい、谷中日本鉄道のさまざまな特急列車で活躍しています。",
         "photos": [
           { "image": "/yanaka/trains/yt5000.jpg", "imageAlt": "谷鉄YT5000系 特急車両", "built": "1990年製造", "focus": "right" }
+        ]
+      },
+      {
+        "name": "YT4780系",
+        "category": "特急車",
+        "description": "YT4780系は、1993年に登場した特急形交直流電車です。制御機器には東洋電機製造製GTO素子VVVFインバータ制御、駆動方式には垂直カルダン駆動を採用しています。最高速度は130km/h、起動加速度は1.9km/h/sを誇り、白い車体に緑と黄色のラインをまとっています。主に西日本路線の特急列車で運用されています。",
+        "photos": [
+          { "image": "/yanaka/trains/yt4780.jpg", "imageAlt": "谷鉄YT4780系 西日本路線特急車両", "built": "1993年製造", "ratio": "1678/937" }
         ]
       },
       {

@@ -108,10 +108,10 @@
       "label": "特急みちのく",
       "name": "みちのく",
       "color": "#2563eb",
-      "subtitle": "東北ライン盛岡方面",
+      "subtitle": "東野線直通・東北ライン盛岡方面",
       "baseRoute": "tohoku-axis",
       "route": ["tokyo", "ueno", "omiya", "utsunomiya", "koriyama", "fukushima", "sendai", "morioka"],
-      "summary": "谷鉄東京から東北ラインを北上し、谷鉄仙台を経て谷鉄盛岡まで向かう東北幹線の特急です。"
+      "summary": "谷鉄東京から東野線を経由し、谷鉄上野から東北ラインへ直通。谷鉄仙台を経て谷鉄盛岡まで結ぶ特急です。"
     }
   ],
   "nodes": [

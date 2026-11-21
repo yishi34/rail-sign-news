@@ -4,13 +4,20 @@
   "private": true,
   "description": "鉄道ニュースまとめサイト RAIL SIGN NEWS",
   "scripts": {
+    "predev": "node scripts/prepare-map-worker.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/prepare-map-worker.mjs",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "d3-selection": "^3.0.0",
+    "d3-zoom": "^3.0.0",
+    "lucide-react": "^1.48.0",
+    "maplibre-gl": "^6.11.2",
     "next": "^16.2.9",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "three": "^0.186.1"
   }
 }

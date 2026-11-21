@@ -487,6 +487,12 @@ export default function YanakaRouteMapPage() {
 
       <main className="yk-main">
         <section>
+          <Link className="rm-network-link" href="/yanaka/metro-map">
+            首都圏の平面路線図を開く
+          </Link>
+          <Link className="rm-network-link" href="/yanaka/map-3d">
+            首都圏3D路線図を開く
+          </Link>
           <div className="rm-group">
             <div className="rm-group-head">
               <h2>特急・優等列車</h2>

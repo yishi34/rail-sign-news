@@ -4,6 +4,7 @@
 # ビルド成果物
 /.next
 /out
+/public/vendor/maplibre
 
 # 環境変数・ログ
 .env*
