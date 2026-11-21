@@ -4,9 +4,7 @@
   "private": true,
   "description": "鉄道ニュースまとめサイト RAIL SIGN NEWS",
   "scripts": {
-    "predev": "node scripts/prepare-map-worker.mjs",
     "dev": "next dev",
-    "prebuild": "node scripts/prepare-map-worker.mjs",
     "build": "next build",
     "start": "next start"
   },
