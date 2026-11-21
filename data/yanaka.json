@@ -84,8 +84,7 @@
       { "title": "車両紹介", "en": "ROLLING STOCK", "code": "YN", "num": "05", "status": "車両をみる", "href": "/yanaka/trains" },
       { "title": "路線図メーカー", "en": "ROUTE MAP MAKER", "code": "YN", "num": "06", "status": "作成する", "href": "/yanaka/routemap-maker" },
       { "title": "特急ネットワーク図", "en": "LIMITED EXPRESS", "code": "YN", "num": "07", "status": "特急図をみる", "href": "/yanaka/limited-express" },
-      { "title": "首都圏3D路線図", "en": "METRO 3D MAP", "code": "YN", "num": "08", "status": "3D地図をみる", "href": "/yanaka/map-3d" },
-      { "title": "首都圏路線網図", "en": "METRO NETWORK", "code": "YN", "num": "09", "status": "平面図をみる", "href": "/yanaka/metro-map" }
+      { "title": "首都圏路線網図", "en": "METRO NETWORK", "code": "YN", "num": "08", "status": "平面図をみる", "href": "/yanaka/metro-map" }
     ]
   },
   "history": {
@@ -1166,7 +1165,7 @@
       {
         "name": "YT4780系",
         "category": "特急車",
-        "description": "YT4780系は、1993年に登場した特急形交直流電車です。制御機器には東洋電機製造製GTO素子VVVFインバータ制御、駆動方式には垂直カルダン駆動を採用しています。最高速度は130km/h、起動加速度は1.9km/h/sを誇り、白い車体に緑と黄色のラインをまとっています。主に西日本路線の特急列車で運用されています。",
+        "description": "YT4780系は、1993年に登場した特急形直流電車です。制御機器には東洋電機製造製GTO素子VVVFインバータ制御、駆動方式には垂直カルダン駆動を採用しています。最高速度は130km/h、起動加速度は1.9km/h/sを誇り、白い車体に緑と黄色のラインをまとっています。主に西日本路線の特急列車で運用されています。",
         "photos": [
           { "image": "/yanaka/trains/yt4780.jpg", "imageAlt": "谷鉄YT4780系 西日本路線特急車両", "built": "1993年製造", "ratio": "1678/937" }
         ]

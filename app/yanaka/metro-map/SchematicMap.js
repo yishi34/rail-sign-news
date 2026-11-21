@@ -76,7 +76,6 @@ export default function SchematicMap({ diagram }) {
         <button className={styles.all} aria-pressed={!active} onClick={()=>setActive(null)}>全路線</button>
         {routes.map(r=><button key={r.id} aria-pressed={active===r.id} onClick={()=>{setActive(active===r.id?null:r.id);setSelected(null);}} className={styles.route}><span style={{background:r.color}}/><span>{r.name}</span><small>{r.stops.length}駅</small></button>)}
         <p className={styles.note}>架空鉄道の路線図です。駅間距離・位置関係は模式化しています。</p>
-        <Link href='/yanaka/map-3d' className={styles.other}>3D路線図</Link>
       </aside>
       <section className={styles.viewport} ref={viewportRef} aria-label='首都圏路線網図'>
         <svg ref={svgRef} viewBox={`0 0 ${sheet.width} ${sheet.height}`} className={styles.svg} role='img' aria-label={`谷中日本鉄道 首都圏${routes.length}路線 ${stations.length}駅の平面路線図`}>
