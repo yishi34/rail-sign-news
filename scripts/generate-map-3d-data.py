@@ -14,8 +14,8 @@ OUT_PATH = ROOT / "data" / "map-3d-kml.json"
 
 ROUTES_SPEC = [
     ("yanaka-line", "谷中線", "谷中線", "#15834e", None, None, False),
-    ("tokai", "東海ライン", "東海ライン（土肥まで）", "#df6721", 91, "土肥", False),
-    ("tohoku", "東北ライン", "東北ライン（新豊原まで）", "#2468b4", 47, "新豊原", False),
+    ("tokai", "東海ライン", "東海ライン（小田原まで）", "#df6721", 80, "小田原", False),
+    ("tohoku", "東北ライン", "東北ライン（谷鉄宇都宮まで）", "#2468b4", 36, "谷鉄宇都宮", False),
     ("musashi-loop", "武蔵環状線", "武蔵環状線", "#7b9922", None, None, True),
     ("okumusashi", "奥武蔵線", "奥武蔵線", "#9b326e", None, None, False),
     ("musashi-branch", "武蔵支線", "武蔵支線", "#b84a8a", None, None, False),
@@ -169,20 +169,20 @@ def main():
         lines_out.append(obj)
 
     assert len(lines_out) == 25, f"Expected 25 lines, got {len(lines_out)}"
-    assert total_stations == 672, f"Expected 672 stations, got {total_stations}"
-    assert total_vertices == 4806, f"Expected 4806 vertices, got {total_vertices}"
+    assert total_stations == 650, f"Expected 650 stations, got {total_stations}"
+    assert total_vertices == 4532, f"Expected 4532 vertices, got {total_vertices}"
 
     tokai_line = next(l for l in lines_out if l["id"] == "tokai")
-    assert tokai_line["stations"][-1]["name"] == "土肥"
-    assert len(tokai_line["stations"]) == 92 and len(tokai_line["path"]) == 1070
+    assert tokai_line["stations"][-1]["name"] == "小田原"
+    assert len(tokai_line["stations"]) == 81 and len(tokai_line["path"]) == 835
 
     tohoku_line = next(l for l in lines_out if l["id"] == "tohoku")
-    assert tohoku_line["stations"][-1]["name"] == "新豊原"
-    assert len(tohoku_line["stations"]) == 48 and len(tohoku_line["path"]) == 218
+    assert tohoku_line["stations"][-1]["name"] == "谷鉄宇都宮"
+    assert len(tohoku_line["stations"]) == 37 and len(tohoku_line["path"]) == 179
 
     payload = {
         "source": "空想鉄道 No.522953 谷中日本鐵道 (yanaka_ku-tetsu_522953.kml)",
-        "note": "経路・駅位置は空想鉄道 No.522953 の KML 正データ準拠（首都圏25路線・672駅）。高さと配色は仮置き（識別用）です。",
+        "note": f"経路・駅位置は空想鉄道 No.522953 の KML 正データ準拠（首都圏25路線・{total_stations}駅）。高さと配色は仮置き（識別用）です。",
         "summary": {
             "lineCount": len(lines_out),
             "stationCount": total_stations,
