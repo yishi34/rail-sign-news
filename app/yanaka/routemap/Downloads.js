@@ -80,14 +80,15 @@ function buildSvg(line) {
   out.appendChild(textEl(24 + line.types.length * 108, 88, metaText, "ex-note"));
 
   // 路線図本体(ヘッダーのぶん下にずらして配置)
-  const g = el("g", { transform: `translate(0 ${HEADER})` });
+  const vbMinX = Number((svg.getAttribute("viewBox") || "0").split(/\s+/)[0]) || 0;
+  const g = el("g", { transform: `translate(${-vbMinX} ${HEADER})` });
   Array.from(svg.childNodes).forEach((n) => g.appendChild(n.cloneNode(true)));
   out.appendChild(g);
 
   return { str: new XMLSerializer().serializeToString(out), w, h };
 }
 
-// SVG → canvas(scale倍の高解像度)
+// SVG → canvas(scale倍の高解像度、長大路線はブラウザ上限に合わせて自動縮小)
 async function toCanvas(line, scale = 2) {
   const info = buildSvg(line);
   if (!info) return null;
@@ -100,9 +101,16 @@ async function toCanvas(line, scale = 2) {
       img.onerror = reject;
       img.src = url;
     });
+    const MAX_CANVAS_DIM = 16000;
+    const MAX_CANVAS_AREA = 16000000;
+    const effectiveScale = Math.min(
+      scale,
+      MAX_CANVAS_DIM / Math.max(info.w, info.h),
+      Math.sqrt(MAX_CANVAS_AREA / (info.w * info.h))
+    );
     const canvas = document.createElement("canvas");
-    canvas.width = info.w * scale;
-    canvas.height = info.h * scale;
+    canvas.width = Math.max(1, Math.round(info.w * effectiveScale));
+    canvas.height = Math.max(1, Math.round(info.h * effectiveScale));
     const ctx = canvas.getContext("2d");
     ctx.fillStyle = "#fff";
     ctx.fillRect(0, 0, canvas.width, canvas.height);

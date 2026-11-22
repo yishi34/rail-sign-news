@@ -39,12 +39,12 @@ const LINE_GROUPS = [
   {
     title: "支線・直通連絡",
     en: "BRANCH & THROUGH SERVICES",
-    ids: ["tohoku-yamagata", "tono", "zushi-hayama", "oora", "wakayama"],
+    ids: ["tohoku-yamagata", "tono", "zushi-hayama", "meifu", "osaka", "oora", "wakayama"],
   },
   {
     title: "首都圏エリア",
     en: "METRO AREA",
-    ids: ["yanaka-line", "rinkai", "asano", "sagami-tanzawa", "okumusashi", "tama", "musashi-loop", "yamanote-west"],
+    ids: ["yanaka-line", "rinkai", "asano", "gotanda", "oimachi", "sagami-tanzawa", "okumusashi", "musashi", "tama", "hachioji", "hinotama", "musashi-loop", "yamanote-west", "yoto", "tako-branch", "moriya", "takasaki", "matsusato"],
   },
   {
     title: "モノレール",
@@ -54,7 +54,7 @@ const LINE_GROUPS = [
   {
     title: "広域・観光路線",
     en: "REGIONAL & SCENIC LINES",
-    ids: ["toyama", "nagano", "gatama", "hamasaki", "kitadake-climb", "takachiho-aso-trolley"],
+    ids: ["toyama", "nagano", "gatama", "hamasaki", "kitadake-climb", "tsuyama", "oita", "takachiho-aso-trolley"],
   },
 ];
 
