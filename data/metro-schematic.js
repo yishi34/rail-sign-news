@@ -1,42 +1,43 @@
-export const sheet = { width: 7400, height: 6320 };
-const Y_OFFSET = 260;
+export const sheet = { width: 11200, height: 10450 };
+const Y_OFFSET = 340;
+const P = 76;
 
 // 地理的相対位置（北=上・南=下・東=右・西=左）を保持した乗換ハブの基準座標（Y_OFFSET加算前）
 const hubs = {
   // 都心コア
-  '谷鉄東京': [3640, 3300],
-  '神田': [3640, 3000],
-  '秋葉原': [3640, 2800],
-  '谷鉄上野': [3640, 2500],
-  '汐留': [3640, 3500],
-  '新浜松町': [3640, 3680],
-  '谷鉄品川': [3360, 3960],
-  '大井町': [3360, 4460],
-  '谷鉄渋谷': [2880, 3480],
+  '谷鉄東京': [5560, 5040],
+  '神田': [5560, 4440],
+  '秋葉原': [5560, 4080],
+  '谷鉄上野': [5560, 3480],
+  '汐留': [5560, 5480],
+  '新浜松町': [5560, 5800],
+  '谷鉄品川': [5080, 6280],
+  '大井町': [5080, 7140],
+  '谷鉄渋谷': [4340, 5360],
   // 多摩・西東京
-  '谷鉄調布': [2260, 3540],
-  '谷鉄府中': [1840, 3360],
-  '国分寺': [1840, 3040],
-  '菅仙谷': [2140, 3780],
-  '仲町': [1840, 2760],
-  '谷鉄小平': [1840, 2620],
-  '奈良橋': [1420, 2620],
-  '武蔵村山': [1100, 2620],
-  '谷鉄八王子': [960, 3460],
+  '谷鉄調布': [3560, 5360],
+  '谷鉄府中': [2600, 5140],
+  '国分寺': [2600, 4640],
+  '菅仙谷': [3060, 6300],
+  '仲町': [2600, 4140],
+  '谷鉄小平': [2600, 3860],
+  '奈良橋': [1840, 3860],
+  '武蔵村山': [1300, 3860],
+  '谷鉄八王子': [1320, 5260],
   // 神奈川・湘南
-  '谷鉄川崎': [2820, 4800],
-  '谷鉄横浜': [2460, 5020],
-  '新大船': [1860, 5220],
-  '酒匂': [560, 5220],
-  '小田原': [320, 5460],
+  '谷鉄川崎': [4280, 7880],
+  '谷鉄横浜': [3300, 8580],
+  '新大船': [2560, 8960],
+  '酒匂': [740, 8960],
+  '小田原': [340, 9360],
   // 北部（埼玉・栃木・群馬）
-  '新戸田': [3260, 1980],
-  '谷鉄大宮': [2960, 1680],
-  '大成': [2960, 1560],
+  '新戸田': [4960, 2660],
+  '谷鉄大宮': [4460, 2240],
+  '大成': [4460, 1980],
   // 東部・北東（千葉・茨城）
-  '谷鉄松戸': [4440, 2120],
-  '谷鉄我孫子': [4960, 1740],
-  '立沢': [6260, 3220],
+  '谷鉄松戸': [6820, 3060],
+  '谷鉄我孫子': [7640, 2500],
+  '立沢': [9480, 4920],
 };
 
 // 同名異駅（11組・7〜121km離隔）を誤統合しないよう lineId:stationIndex で明示的にハブを割り当てる
@@ -80,14 +81,14 @@ for (const [hubId, keys] of Object.entries(HUB_GROUPS)) {
 }
 
 // 各路線の八方位模式アンカー: [stationIndex, expectedName, x?, y?, viaPoints?]
-// 北が上・東が右、並走区間は ±48px オフセットで分離
+// 北が上・東が右、並走区間は ±P (76px) オフセットで分離
 const PLANS = {
   'yanaka-line': [
     [0, '谷鉄品川'],
     [5, '谷鉄渋谷'],
-    [9, '高田馬場', 2880, 2940],
-    [10, '目白', 2880, 2820],
-    [13, '谷中（日暮里）', 3400, 2420, [[3040, 2420]]],
+    [9, '高田馬場', 4340, 4440],
+    [10, '目白', 4340, 4220],
+    [13, '谷中（日暮里）', 5140, 3480, [[4620, 3480]]],
   ],
   tokai: [
     [0, '谷鉄東京'],
@@ -96,75 +97,75 @@ const PLANS = {
     [7, '谷鉄品川'],
     [13, '大井町'],
     [27, '谷鉄川崎'],
-    [49, '新大船', null, null, [[2520, 5080]]],
+    [49, '新大船', null, null, [[3200, 8960]]],
     [75, '酒匂'],
     [80, '小田原'],
   ],
   tohoku: [
     [0, '谷鉄上野'],
-    [7, '新戸田', null, null, [[3640, 2320]]],
+    [7, '新戸田', null, null, [[5560, 3260]]],
     [15, '谷鉄大宮'],
     [17, '大成'],
-    [36, '谷鉄宇都宮', 3700, 120],
+    [36, '谷鉄宇都宮', 5560, 160],
   ],
   'musashi-loop': [
-    [0, '谷鉄東京', 3640, 3348],
-    [2, '谷鉄渋谷', 2880, 3480, [[3496, 3480]]],
+    [0, '谷鉄東京', 5560, 5040 + P],
+    [2, '谷鉄渋谷', 4340, 5360, [[5060, 5116], [4816, 5360]]],
     [7, '谷鉄調布'],
-    [11, '谷鉄府中', 1840, 3360],
-    [13, '新国分寺', 1840, 3040],
-    [25, '谷鉄朝霧', 2600, 1980, [[2360, 2440]]],
+    [11, '谷鉄府中', 2600, 5140],
+    [13, '新国分寺', 2600, 4640],
+    [25, '谷鉄朝霧', 3900, 2660, [[3520, 3560]]],
     [27, '新戸田'],
-    [31, '草加', 4200, 1980],
+    [31, '草加', 6420, 2660],
     [33, '谷鉄松戸'],
-    [35, '小岩', 4440, 2860],
-    [39, '門前仲町', 4060, 3348, [[4440, 3348]]],
-    [40, '谷鉄東京', 3640, 3348],
+    [35, '小岩', 6820, 4100],
+    [39, '門前仲町', 6180, 5040 + P, [[6820, 5040 + P]]],
+    [40, '谷鉄東京', 5560, 5040 + P],
   ],
   okumusashi: [
     [0, '谷鉄横浜'],
-    [20, '菅仙谷'],
-    [31, '国分寺', 1888, 3040, [[2140, 3292]]],
-    [34, '仲町', 1888, 2760],
-    [36, '谷鉄小平', 1888, 2620],
-    [42, '奈良橋', 1420, 2620],
-    [45, '武蔵村山', 1100, 2620],
-    [55, '新飯能', 980, 2040],
-    [73, '熊谷', 1440, 740],
-    [94, '谷鉄秩父', 320, 1340],
+    [20, '菅仙谷', null, null, [[2920, 8580], [2920, 6440]]],
+    [31, '国分寺', 2600 + P, 4640, [[3060, 5024]]],
+    [34, '仲町', 2600 + P, 4140],
+    [36, '谷鉄小平', 2600 + P, 3860],
+    [42, '奈良橋', 1840, 3860],
+    [45, '武蔵村山', 1300, 3860],
+    [55, '新飯能', 1220, 2960],
+    [73, '熊谷', 1980, 1040],
+    [94, '谷鉄秩父', 360, 1940],
   ],
   'musashi-branch': [
-    [0, '武蔵村山', 1100, 2668],
-    [2, '奈良橋', 1420, 2668],
-    [3, '新玉川上水', 1520, 2800],
+    [0, '武蔵村山', 1300, 3860 + P],
+    [2, '奈良橋', 1840, 3860 + P],
+    [3, '新玉川上水', 2020, 4120],
   ],
   tama: [
-    [0, '新百合ヶ丘', 1860, 4080],
-    [7, '菅仙谷', 2092, 3780, [[2092, 3960]]],
-    [13, '谷鉄府中', 1792, 3360],
-    [16, '国分寺', 1792, 3040],
+    [0, '新百合ヶ丘', 2620, 6840],
+    [7, '菅仙谷', 3060 - P, 6300, [[3060 - P, 6580]]],
+    [13, '谷鉄府中', 2600 - P, 5140],
+    [16, '国分寺', 2600 - P, 4640],
   ],
   'yamanote-west': [
-    [0, '谷鉄渋谷', 2832, 3480],
-    [8, '谷鉄中野', 2740, 2960],
-    [15, '武蔵境', 2260, 2960],
-    [19, '谷鉄調布', 2308, 3492],
-    [24, '谷鉄府中', 1840, 3312],
+    [0, '谷鉄渋谷', 4340 - P, 5360],
+    [8, '谷鉄中野', 4140, 4320],
+    [15, '武蔵境', 3560, 4320],
+    [19, '谷鉄調布', 3560 + P, 5360 - P],
+    [24, '谷鉄府中', 2600, 5140 - P],
   ],
   'sagami-tanzawa': [
-    [0, '橋本', 960, 4060],
-    [14, '谷鉄厚木', 960, 4640],
-    [30, '酒匂', 512, 5172],
-    [35, '小田原', 272, 5412],
+    [0, '橋本', 1320, 6240],
+    [14, '谷鉄厚木', 1320, 7620],
+    [30, '酒匂', 740 - P, 8960 - P],
+    [35, '小田原', 340 - P, 9360 - P],
   ],
   hamasaki: [
-    [0, '谷鉄川崎', 2820, 4752],
-    [9, '谷鉄横浜', 2460, 4972],
+    [0, '谷鉄川崎', 4140, 7740],
+    [9, '谷鉄横浜', 3300, 8580],
   ],
   'zushi-hayama': [
     [0, '新大船'],
-    [2, '谷鉄鎌倉', 1980, 5340],
-    [6, '逗子・葉山', 2220, 5480],
+    [2, '谷鉄鎌倉', 2760, 9160],
+    [6, '逗子・葉山', 3140, 9420],
   ],
   tono: [
     [0, '谷鉄東京'],
@@ -174,82 +175,82 @@ const PLANS = {
   ],
   'bay-monorail': [
     [0, '谷鉄品川'],
-    [3, '有明', 3920, 3960],
-    [4, '豊洲', 3920, 3680],
+    [3, '有明', 5980, 6280],
+    [4, '豊洲', 5980, 5800],
     [7, '新浜松町'],
   ],
   rinkai: [
     [0, '汐留'],
-    [2, '勝どき', 3980, 3500],
-    [5, '谷中帝都国立臨海公園', 4360, 3880],
+    [2, '勝どき', 6100, 5480],
+    [5, '谷中帝都国立臨海公園', 6680, 6060],
   ],
   asano: [
-    [0, '三ノ輪橋', 4160, 2180],
-    [7, '浅草', 4160, 2580],
-    [10, '上野', 3688, 2500, [[3980, 2580]]],
-    [15, '秋葉原', 3688, 2800],
-    [18, '新神田', 3688, 3000],
-    [23, '東京駅北口', 3688, 3300],
-    [24, '銀座一丁目', 3688, 3420],
+    [0, '三ノ輪橋', 6460, 3300],
+    [7, '浅草', 6460, 3880],
+    [10, '上野', 5560 + P, 3480, [[6060, 3480]]],
+    [15, '秋葉原', 5560 + P, 4080],
+    [18, '新神田', 5560 + P, 4440],
+    [23, '東京駅北口', 5560 + P, 5040],
+    [24, '銀座一丁目', 5560 + P, 5240],
   ],
   gotanda: [
-    [0, '五反田', 3080, 3960],
+    [0, '五反田', 4460, 6280],
     [3, '谷鉄品川'],
   ],
   oimachi: [
-    [0, '大井町', 3408, 4460],
-    [9, '谷鉄品川', 3408, 3960, [[3540, 4328], [3540, 4092]]],
+    [0, '大井町', 5080 + P, 7140],
+    [9, '谷鉄品川', 5080 + P, 6280, [[5480, 6816], [5480, 6604]]],
   ],
   hachioji: [
     [0, '谷鉄八王子'],
-    [9, '谷鉄立川', 1400, 3060],
-    [17, '仲町', 1840, 2760],
-    [18, '谷鉄小平', 1840, 2620],
-    [27, '谷鉄清瀬', 2260, 2200],
+    [9, '谷鉄立川', 1980, 4600],
+    [17, '仲町', 2600, 4140],
+    [18, '谷鉄小平', 2600, 3860],
+    [27, '谷鉄清瀬', 3300, 3160],
   ],
   hinotama: [
     [0, '谷鉄八王子'],
-    [9, '谷鉄五日市', 600, 3100],
-    [15, '神宮寺', 220, 3100],
+    [9, '谷鉄五日市', 800, 4740],
+    [15, '神宮寺', 200, 4740],
   ],
   musashi: [
     [0, '武蔵村山'],
-    [5, '谷鉄拝島', 820, 2900],
+    [5, '谷鉄拝島', 940, 4220],
   ],
   yoto: [
     [0, '谷鉄東京'],
-    [1, '日本橋', 3820, 3300],
-    [11, '谷鉄船橋', 4760, 3300],
-    [23, '谷鉄千葉', 5360, 3720],
-    [32, '八街ろ', 5960, 3520],
+    [1, '日本橋', 5980, 5040],
+    [11, '谷鉄船橋', 7300, 5040],
+    [23, '谷鉄千葉', 8220, 5700],
+    [32, '八街ろ', 9060, 5380],
     [36, '立沢'],
-    [38, '富里市', 6260, 3060],
+    [38, '富里市', 9480, 4640],
   ],
   'tako-branch': [
     [0, '立沢'],
-    [11, '多古町', 7040, 3140],
+    [11, '多古町', 10700, 4920],
   ],
   moriya: [
-    [0, '我孫子', 4960, 1740],
-    [5, '谷鉄守谷', 4840, 1180],
+    [0, '我孫子', 7640, 2500],
+    [5, '谷鉄守谷', 7480, 1660],
   ],
   takasaki: [
-    [0, '谷鉄大宮', 2912, 1680],
-    [1, '大成', 2912, 1560],
-    [14, '谷鉄行田', 2240, 880],
-    [22, '大泉', 1840, 480],
-    [26, '本庄', 1320, 480],
-    [31, '谷鉄高崎', 800, 280],
+    [0, '谷鉄大宮', 4460 - P, 2240],
+    [1, '大成', 4460 - P, 1980],
+    [14, '谷鉄行田', 3360, 1160],
+    [22, '大泉', 2720, 600],
+    [26, '本庄', 1940, 600],
+    [31, '谷鉄高崎', 1120, 340],
   ],
   matsusato: [
     [0, '谷鉄上野'],
     [8, '谷鉄松戸'],
     [20, '谷鉄我孫子'],
-    [30, '谷鉄取手', 5640, 1700],
-    [55, '谷鉄潮来', 7080, 1640],
-    [67, '谷鉄鉾田', 7080, 1080],
-    [78, '谷鉄水戸', 7080, 580],
-    [87, '城里中央', 6780, 160],
+    [30, '谷鉄取手', 8620, 2420],
+    [55, '谷鉄潮来', 10780, 2340],
+    [67, '谷鉄鉾田', 10780, 1520],
+    [78, '谷鉄水戸', 10780, 760],
+    [87, '城里中央', 10320, 160],
   ],
 };
 
@@ -291,7 +292,7 @@ function along(points, t) {
 const overlap = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
 
 // 線分 p1-p2 と矩形 box（+pad余白）の交差判定（Liang-Barsky）
-function segIntersectsBox(p1, p2, box, pad = 12) {
+function segIntersectsBox(p1, p2, box, pad = 21) {
   const minX = box.x - pad;
   const maxX = box.x + box.w + pad;
   const minY = box.y - pad;
@@ -321,45 +322,6 @@ function segIntersectsBox(p1, p2, box, pad = 12) {
     }
   }
   return t0 <= t1;
-}
-
-function directionPriority(dx, dy) {
-  const len = Math.hypot(dx, dy) || 1;
-  const nx = Math.round(-dy / len);
-  const ny = Math.round(dx / len);
-  const normals = [
-    [nx, ny],
-    [-nx, -ny],
-  ];
-  const base = [
-    [1, 0],
-    [-1, 0],
-    [0, -1],
-    [0, 1],
-    [1, -0.5],
-    [1, 0.5],
-    [-1, -0.5],
-    [-1, 0.5],
-    [0.5, -1],
-    [0.5, 1],
-    [-0.5, -1],
-    [-0.5, 1],
-    [1, -1],
-    [1, 1],
-    [-1, -1],
-    [-1, 1],
-  ];
-  const seen = new Set();
-  const dirs = [];
-  for (const [vx, vy] of [...normals, ...base]) {
-    if (vx === 0 && vy === 0) continue;
-    const key = `${vx},${vy}`;
-    if (!seen.has(key)) {
-      seen.add(key);
-      dirs.push([vx, vy]);
-    }
-  }
-  return dirs;
 }
 
 export function buildSchematic(source) {
@@ -451,60 +413,138 @@ export function buildSchematic(source) {
     };
   });
 
-  // 衝突回避ラベル配置（乗換ハブ・終端駅を優先）
+  // 引出線なし・駅ドット直近（<=62px）に横書き／縦書きで文字・ドット・路線線分すべて非重複配置
   const stations = [...nodes.values()].sort(
     (a, b) => b.routes.length - a.routes.length || Number(b.endpoint) - Number(a.endpoint) || a.firstIndex - b.firstIndex
   );
   const occupied = [];
-  const markers = stations.flatMap((s) => s.platforms.map((p) => ({ x: p.x - 20, y: p.y - 20, w: 40, h: 40 })));
-  const allSegments = routes.flatMap((r) =>
-    r.path.slice(1).map((pt, i) => [r.path[i], pt])
-  );
+  const markers = stations.flatMap((s) => s.platforms.map((p) => ({ x: p.x - 28, y: p.y - 28, w: 56, h: 56 })));
+  const allSegments = routes.flatMap((r) => r.path.slice(1).map((pt, i) => [r.path[i], pt]));
+
+  const HORIZ_DIRS = [
+    [1, 0],
+    [-1, 0],
+    [0, -1],
+    [0, 1],
+    [1, -0.6],
+    [1, 0.6],
+    [-1, -0.6],
+    [-1, 0.6],
+    [1, -1],
+    [1, 1],
+    [-1, -1],
+    [-1, 1],
+    [0.6, -1.3],
+    [0.6, 1.3],
+    [-0.6, -1.3],
+    [-0.6, 1.3],
+  ];
 
   for (const s of stations) {
     const isHub = s.routes.length > 1;
-    const size = isHub ? 44 : 32;
-    const textForWidth = s.name.trimEnd();
+    const size = isHub ? 48 : 36;
+    const chars = [...s.name.trimEnd()];
     const charScale = isHub ? 1.09 : 1.05;
-    const width =
-      [...textForWidth].reduce((w, ch) => w + size * (ch.charCodeAt(0) < 128 ? 0.65 : charScale), 0) +
-      (isHub ? 20 : 14);
-    const dirs = directionPriority(s.dx, s.dy);
+    const horizW = chars.reduce((w, ch) => w + size * (ch.charCodeAt(0) < 128 ? 0.65 : charScale), 0) + (isHub ? 18 : 12);
+    const horizH = size * 1.40;
+    const vertW = size * 1.44;
+    const vertH = chars.length * size * 1.10 + 12;
+
+    const minPx = Math.min(...s.platforms.map((p) => p.x), s.x);
+    const maxPx = Math.max(...s.platforms.map((p) => p.x), s.x);
+    const minPy = Math.min(...s.platforms.map((p) => p.y), s.y);
+    const maxPy = Math.max(...s.platforms.map((p) => p.y), s.y);
+
+    const isHorizontalTrack = Math.abs(s.dx) > Math.abs(s.dy) * 1.5;
     const nearbySegments = allSegments.filter(
       ([p1, p2]) =>
-        Math.min(p1[0], p2[0]) <= s.x + 560 &&
-        Math.max(p1[0], p2[0]) >= s.x - 560 &&
-        Math.min(p1[1], p2[1]) <= s.y + 560 &&
-        Math.max(p1[1], p2[1]) >= s.y - 560
+        Math.min(p1[0], p2[0]) <= maxPx + 650 &&
+        Math.max(p1[0], p2[0]) >= minPx - 650 &&
+        Math.min(p1[1], p2[1]) <= maxPy + 650 &&
+        Math.max(p1[1], p2[1]) >= minPy - 650
     );
 
-    let best = null;
-    for (const distance of [28, 42, 58, 78, 102, 130, 165, 205, 250, 305, 370]) {
-      for (const [vx, vy] of dirs) {
-        const x = s.x + vx * distance;
-        const y = s.y + vy * distance;
-        const anchor = vx < 0 ? 'end' : vx === 0 ? 'middle' : 'start';
-        const box = {
-          x: x - (anchor === 'end' ? width : anchor === 'middle' ? width / 2 : 0) - 6,
-          y: y - size / 2 - 7,
-          w: width + 12,
-          h: size + 14,
-        };
-        if (box.x < 35 || box.y < 290 || box.x + box.w > sheet.width - 35 || box.y + box.h > 5770) {
-          continue;
-        }
-        const collisions = occupied.filter((b) => overlap(box, b)).length;
-        const markerHits = markers.filter((b) => overlap(box, b)).length;
-        const lineHits = nearbySegments.filter(([p1, p2]) => segIntersectsBox(p1, p2, box)).length;
-        const score = collisions * 1e7 + markerHits * 1e5 + lineHits * 3e3 + distance + (vx === 0 ? 6 : 0);
-        if (!best || score < best.score) {
-          best = { x, y, anchor, box, score, size, distance, collisions };
+    const candidates = [];
+    // 縦書き候補（水平区間で最優先、他区間の非ハブでも衝突回避に利用）
+    if (isHorizontalTrack || !isHub) {
+      const orientPenalty = isHorizontalTrack ? 0 : 120;
+      for (const gap of [28, 38, 48, 58]) {
+        for (const dirY of [-1, 1]) {
+          for (const shiftX of [0, -18, 18]) {
+            const x = s.x + shiftX;
+            const anchor = dirY < 0 ? 'end' : 'start';
+            const y = dirY < 0 ? minPy - gap : maxPy + gap;
+            const topY = dirY < 0 ? y - vertH : y;
+            const box = { x: x - vertW * 0.44 - 5, y: topY - 4, w: vertW + 10, h: vertH + 8 };
+            candidates.push({
+              vertical: true,
+              x,
+              y,
+              anchor,
+              box,
+              gap,
+              orientPenalty: orientPenalty + Math.abs(shiftX),
+            });
+          }
         }
       }
-      if (best && best.score < 3e3) break;
     }
 
-    if (!best) throw new Error(`No label space for ${s.name} (${s.id})`);
+    // 横書き候補（縦・斜め区間とハブ駅で優先）
+    const horizOrientPenalty = isHorizontalTrack && !isHub ? 60 : 0;
+    for (const gap of [30, 40, 50, 62]) {
+      for (const [vx, vy] of HORIZ_DIRS) {
+        const baseX = vx > 0 ? maxPx : vx < 0 ? minPx : s.x;
+        const baseY = vy > 0 ? maxPy : vy < 0 ? minPy : s.y;
+        const x = baseX + vx * gap;
+        const y = baseY + vy * gap;
+        const anchor = vx < 0 ? 'end' : vx === 0 ? 'middle' : 'start';
+        const box = {
+          x: x - (anchor === 'end' ? horizW : anchor === 'middle' ? horizW / 2 : 0) - 5,
+          y: y - horizH / 2 - 5,
+          w: horizW + 10,
+          h: horizH + 10,
+        };
+        candidates.push({
+          vertical: false,
+          x,
+          y,
+          anchor,
+          box,
+          gap,
+          orientPenalty: horizOrientPenalty + (vx === 0 ? 8 : 0),
+        });
+      }
+    }
+
+    let best = null;
+    for (const c of candidates) {
+      const b = c.box;
+      if (b.x < 35 || b.y < 360 || b.x + b.w > sheet.width - 35 || b.y + b.h > 9850) {
+        continue;
+      }
+      const collisions = occupied.filter((o) => overlap(b, o)).length;
+      const markerHits = markers.filter((m) => overlap(b, m)).length;
+      const lineHits = nearbySegments.filter(([p1, p2]) => segIntersectsBox(p1, p2, b)).length;
+      const score = collisions * 1e7 + markerHits * 2e5 + lineHits * 5e4 + c.orientPenalty + c.gap;
+      if (!best || score < best.score) {
+        best = {
+          x: c.x,
+          y: c.y,
+          anchor: c.anchor,
+          box: c.box,
+          score,
+          size,
+          distance: c.gap,
+          vertical: c.vertical,
+          collisions,
+          markerHits,
+          lineHits,
+        };
+      }
+    }
+
+    if (!best) throw new Error(`No adjacent label space for ${s.name} (${s.id})`);
     s.label = best;
     occupied.push(best.box);
   }
@@ -515,5 +555,7 @@ export function buildSchematic(source) {
     sheet,
     totalStops: routes.reduce((sum, r) => sum + r.stops.length, 0),
     labelOverlaps: stations.reduce((n, s) => n + s.label.collisions, 0),
+    labelMarkerHits: stations.reduce((n, s) => n + s.label.markerHits, 0),
+    labelLineHits: stations.reduce((n, s) => n + s.label.lineHits, 0),
   };
 }

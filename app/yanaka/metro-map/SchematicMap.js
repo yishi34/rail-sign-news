@@ -57,7 +57,7 @@ export default function SchematicMap({ diagram }) {
     };
 
     const behavior = zoom()
-      .scaleExtent([0.45, 30])
+      .scaleExtent([0.45, 36])
       .clickDistance(4)
       .wheelDelta(calcWheelDelta)
       .on('zoom', (event) => {
@@ -97,7 +97,7 @@ export default function SchematicMap({ diagram }) {
     setActive(null);
   }
 
-  function focusStation(station, k = 4.5) {
+  function focusStation(station, k = 5.5) {
     if (!zoomRef.current) return;
     setSelected(station.id);
     setQuery('');
@@ -113,7 +113,7 @@ export default function SchematicMap({ diagram }) {
     if (!hub || !zoomRef.current) return;
     select(svgRef.current).call(
       zoomRef.current.transform,
-      zoomIdentity.translate(sheet.width / 2 - hub.x * 2.8, sheet.height / 2 - hub.y * 2.8).scale(2.8)
+      zoomIdentity.translate(sheet.width / 2 - hub.x * 3.4, sheet.height / 2 - hub.y * 3.4).scale(3.4)
     );
   }
 
@@ -174,7 +174,7 @@ export default function SchematicMap({ diagram }) {
   }
 
   const chosen = stations.find((s) => s.id === selected);
-  const northX = sheet.width - 170;
+  const northX = sheet.width - 230;
 
   return (
     <main className={styles.app}>
@@ -283,26 +283,26 @@ export default function SchematicMap({ diagram }) {
               <rect width={sheet.width} height={sheet.height} fill="#ffffff" />
 
               {/* シート上部ヘッダー */}
-              <rect x="75" y="64" width="20" height="132" fill="#e5b92b" />
-              <rect x="108" y="64" width="20" height="132" fill="#18804a" />
-              <text x="165" y="130" fontSize="92" fontWeight="700" fill="#17252a">
+              <rect x="100" y="80" width="28" height="180" fill="#e5b92b" />
+              <rect x="142" y="80" width="28" height="180" fill="#18804a" />
+              <text x="210" y="168" fontSize="128" fontWeight="700" fill="#17252a">
                 谷中日本鉄道　首都圏路線網図
               </text>
-              <text x="167" y="192" fontSize="36" letterSpacing="0.6" fill="#667176">
+              <text x="212" y="248" fontSize="50" letterSpacing="0.8" fill="#667176">
                 YANAKA JAPAN RAILWAY / METROPOLITAN NETWORK (25 LINES)
               </text>
               <g fill="#526268" stroke="#526268" aria-label="北が上">
-                <text x={northX} y="108" textAnchor="middle" fontSize="50" fontWeight="700" stroke="none">
+                <text x={northX} y="144" textAnchor="middle" fontSize="68" fontWeight="700" stroke="none">
                   北
                 </text>
                 <path
-                  d={`M${northX} 204 V124 M${northX - 22} 148 L${northX} 124 L${northX + 22} 148`}
+                  d={`M${northX} 274 V168 M${northX - 28} 198 L${northX} 168 L${northX + 28} 198`}
                   fill="none"
-                  strokeWidth="6.5"
+                  strokeWidth="9"
                   strokeLinejoin="round"
                 />
               </g>
-              <line x1="75" x2={sheet.width - 75} y1="228" y2="228" stroke="#18804a" strokeWidth="8" />
+              <line x1="100" x2={sheet.width - 100} y1="304" y2="304" stroke="#18804a" strokeWidth="11" />
 
               {/* 25路線の八方位模式パス */}
               {routes.map((r) => (
@@ -311,7 +311,7 @@ export default function SchematicMap({ diagram }) {
                     points={r.path.map((p) => p.join(',')).join(' ')}
                     fill="none"
                     stroke="#ffffff"
-                    strokeWidth="34"
+                    strokeWidth="46"
                     strokeLinejoin="round"
                     strokeLinecap="round"
                   />
@@ -319,14 +319,14 @@ export default function SchematicMap({ diagram }) {
                     points={r.path.map((p) => p.join(',')).join(' ')}
                     fill="none"
                     stroke={r.color}
-                    strokeWidth="22"
+                    strokeWidth="30"
                     strokeLinejoin="round"
                     strokeLinecap="round"
                   />
                 </g>
               ))}
 
-              {/* 全駅マーカー・乗換カプセル・駅名ラベル */}
+              {/* 全駅マーカー・乗換カプセル・駅名ラベル（引出線なし・縦書き併用） */}
               {stations.map((s) => (
                 <g
                   key={s.id}
@@ -334,16 +334,13 @@ export default function SchematicMap({ diagram }) {
                   opacity={active && !s.routes.includes(active) ? 0.14 : 1}
                   onClick={() => setSelected(s.id)}
                 >
-                  {s.label.distance > 52 && (
-                    <line x1={s.x} y1={s.y} x2={s.label.x} y2={s.label.y} stroke="#8d999e" strokeWidth="2.4" />
-                  )}
                   {s.routes.length > 1 && (
                     <g strokeLinecap="round">
                       {s.platforms.map((p, i) => (
-                        <line key={`outline-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#243239" strokeWidth="36" />
+                        <line key={`outline-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#243239" strokeWidth="46" />
                       ))}
                       {s.platforms.map((p, i) => (
-                        <line key={`fill-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#ffffff" strokeWidth="26" />
+                        <line key={`fill-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#ffffff" strokeWidth="32" />
                       ))}
                     </g>
                   )}
@@ -352,25 +349,26 @@ export default function SchematicMap({ diagram }) {
                       key={i}
                       cx={p.x}
                       cy={p.y}
-                      r="12"
+                      r="15"
                       fill="#ffffff"
                       stroke={routesById.get(p.route).color}
-                      strokeWidth="4"
+                      strokeWidth="5"
                     />
                   ))}
                   {selected === s.id && (
-                    <circle data-selection="" cx={s.x} cy={s.y} r="38" fill="none" stroke="#ec562c" strokeWidth="7" />
+                    <circle data-selection="" cx={s.x} cy={s.y} r="46" fill="none" stroke="#ec562c" strokeWidth="8" />
                   )}
                   <text
                     x={s.label.x}
                     y={s.label.y}
                     textAnchor={s.label.anchor}
                     dominantBaseline="central"
+                    writingMode={s.label.vertical ? 'vertical-rl' : undefined}
                     fontSize={s.label.size}
                     fontWeight={s.routes.length > 1 ? '700' : '600'}
                     fill="#17252a"
                     stroke="#ffffff"
-                    strokeWidth="10"
+                    strokeWidth="11"
                     paintOrder="stroke"
                     strokeLinejoin="round"
                   >
@@ -381,16 +379,16 @@ export default function SchematicMap({ diagram }) {
               ))}
 
               {/* 下部凡例（25路線・5列×5行） */}
-              <line x1="75" x2={sheet.width - 75} y1="5780" y2="5780" stroke="#dce2e3" strokeWidth="4" />
+              <line x1="100" x2={sheet.width - 100} y1="9880" y2="9880" stroke="#dce2e3" strokeWidth="6" />
               {routes.map((r, i) => (
-                <g key={r.id} transform={`translate(${90 + (i % 5) * 1445}, ${5855 + Math.floor(i / 5) * 68})`}>
-                  <line x1="0" y1="0" x2="76" y2="0" stroke={r.color} strokeWidth="20" strokeLinecap="round" />
-                  <text x="96" y="13" fontSize="40" fill="#243239">
+                <g key={r.id} transform={`translate(${120 + (i % 5) * 2190}, ${9965 + Math.floor(i / 5) * 78})`}>
+                  <line x1="0" y1="0" x2="104" y2="0" stroke={r.color} strokeWidth="26" strokeLinecap="round" />
+                  <text x="128" y="16" fontSize="52" fill="#243239">
                     {r.name}
                   </text>
                 </g>
               ))}
-              <text x="90" y="6255" fontSize="32" fill="#626c70">
+              <text x="120" y="10385" fontSize="38" fill="#626c70">
                 ○ 駅　◎ 乗換駅　｜　空想鉄道No.522953 KML準拠・位置関係を保ち線形を模式化　｜　東海ラインは小田原まで・東北ラインは谷鉄宇都宮まで掲載
               </text>
             </g>

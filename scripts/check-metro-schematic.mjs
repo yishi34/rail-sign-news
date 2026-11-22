@@ -8,7 +8,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const mapData = JSON.parse(fs.readFileSync(path.join(root, 'data', 'map-3d-kml.json'), 'utf8'));
 
 const diagram = buildSchematic(mapData.lines);
-const { routes, stations, sheet, totalStops, labelOverlaps } = diagram;
+const { routes, stations, sheet, totalStops, labelOverlaps, labelMarkerHits, labelLineHits } = diagram;
 
 assert.equal(routes.length, 25, `Expected 25 routes, got ${routes.length}`);
 assert.equal(totalStops, 650, `Expected 650 total stops, got ${totalStops}`);
@@ -28,7 +28,7 @@ for (let i = 0; i < mapData.lines.length; i++) {
 for (const r of routes) {
   for (const [x, y] of r.path) {
     assert(Number.isFinite(x) && Number.isFinite(y), `Non-finite path coord on ${r.id}`);
-    assert(x >= 0 && x <= sheet.width && y >= 250 && y <= 5780, `Out-of-bounds path coord on ${r.id}: ${x},${y}`);
+    assert(x >= 0 && x <= sheet.width && y >= 330 && y <= 9880, `Out-of-bounds path coord on ${r.id}: ${x},${y}`);
   }
   for (let i = 1; i < r.path.length; i++) {
     const [x1, y1] = r.path[i - 1];
@@ -40,10 +40,14 @@ for (const r of routes) {
   }
 }
 
+assert.equal(labelOverlaps, 0, `Expected 0 label overlaps, got ${labelOverlaps}`);
+assert.equal(labelMarkerHits, 0, `Expected 0 label marker hits, got ${labelMarkerHits}`);
+assert.equal(labelLineHits, 0, `Expected 0 label line hits, got ${labelLineHits}`);
 for (const s of stations) {
   assert(Number.isFinite(s.x) && Number.isFinite(s.y) && Number.isFinite(s.label.x) && Number.isFinite(s.label.y));
+  assert(s.label.distance <= 62, `Leader-line distance exceeded limit on ${s.name}: ${s.label.distance}`);
   const b = s.label.box;
-  assert(b.x >= 35 && b.y >= 290 && b.x + b.w <= sheet.width - 35 && b.y + b.h <= 5770, `Label out of bounds: ${s.name}`);
+  assert(b.x >= 35 && b.y >= 360 && b.x + b.w <= sheet.width - 35 && b.y + b.h <= 9850, `Label out of bounds: ${s.name}`);
 }
 
 // 3. Verify 11 false-positive same-name pairs are NOT merged
