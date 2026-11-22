@@ -11,7 +11,7 @@ const diagram = buildSchematic(mapData.lines);
 const { routes, stations, sheet, totalStops, labelOverlaps, labelMarkerHits, labelLineHits } = diagram;
 
 assert.equal(routes.length, 25, `Expected 25 routes, got ${routes.length}`);
-assert.equal(stations.length, 610, `Expected 610 unique nodes, got ${stations.length}`);
+assert.equal(stations.length, 612, `Expected 612 unique nodes, got ${stations.length}`);
 assert.equal(totalStops, 650, `Expected 650 total stops, got ${totalStops}`);
 
 // 1. Verify exact station count & names per line
@@ -133,6 +133,28 @@ assert(
 );
 assert.equal(routeById.get('okumusashi').color, '#f8b500');
 assert.equal(routeById.get('musashi-branch').color, '#d99100');
+
+// 4c. Verify 谷鉄東京 vs 東京北口 (asano) and 神田 (tono) vs 新神田 (asano) separation
+const tokyoNode = stations.find((s) => s.id === '谷鉄東京');
+assert(tokyoNode, 'Missing 谷鉄東京 node');
+assert.deepEqual([...tokyoNode.routes].sort(), ['musashi-loop', 'tokai', 'tono', 'yoto']);
+const asanoTokyoStop = findStop('asano', 23);
+assert.notEqual(asanoTokyoStop.id, '谷鉄東京');
+const tokyoKitaguchiNode = stations.find((s) => s.id === asanoTokyoStop.id);
+assert(tokyoKitaguchiNode, 'Missing 東京北口 node');
+assert.equal(tokyoKitaguchiNode.name, '東京北口');
+assert.deepEqual(tokyoKitaguchiNode.routes, ['asano']);
+assert(tokyoKitaguchiNode.y < tokyoNode.y, '東京北口 must be north of 谷鉄東京');
+
+const tonoKandaStop = findStop('tono', 1);
+const asanoKandaStop = findStop('asano', 18);
+assert.notEqual(tonoKandaStop.id, asanoKandaStop.id);
+const tonoKandaNode = stations.find((s) => s.id === tonoKandaStop.id);
+const asanoKandaNode = stations.find((s) => s.id === asanoKandaStop.id);
+assert(tonoKandaNode && tonoKandaNode.name === '神田');
+assert.deepEqual(tonoKandaNode.routes, ['tono']);
+assert(asanoKandaNode && asanoKandaNode.name === '新神田');
+assert.deepEqual(asanoKandaNode.routes, ['asano']);
 
 // 5. Report spacing and overlaps per route
 console.log(`Routes: ${routes.length}, Unique nodes: ${stations.length}, Total stops: ${totalStops}`);

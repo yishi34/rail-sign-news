@@ -7,11 +7,16 @@ const ROUTE_COLOR_OVERRIDES = {
   'musashi-branch': '#d99100',
 };
 
+const DISPLAY_NAME_OVERRIDES = {
+  'okumusashi:31': '谷鉄国分寺',
+  'tama:16': '谷鉄国分寺',
+  'asano:23': '東京北口',
+};
+
 // 地理的相対位置（北=上・南=下・東=右・西=左）を保持した乗換ハブの基準座標（Y_OFFSET加算前）
 const hubs = {
   // 都心コア
   '谷鉄東京': [5560, 5040],
-  '神田': [5560, 4440],
   '秋葉原': [5560, 4080],
   '谷鉄上野': [5560, 3480],
   '汐留': [5560, 5480],
@@ -47,8 +52,7 @@ const hubs = {
 
 // 同名異駅（11組・7〜121km離隔）を誤統合しないよう lineId:stationIndex で明示的にハブを割り当てる
 const HUB_GROUPS = {
-  '谷鉄東京': ['tokai:0', 'musashi-loop:0', 'tono:0', 'yoto:0', 'asano:23'],
-  '神田': ['tono:1', 'asano:18'],
+  '谷鉄東京': ['tokai:0', 'musashi-loop:0', 'tono:0', 'yoto:0'],
   '秋葉原': ['tono:2', 'asano:15'],
   '谷鉄上野': ['tohoku:0', 'tono:3', 'matsusato:0', 'asano:10'],
   '汐留': ['tokai:2', 'rinkai:0'],
@@ -174,7 +178,7 @@ const PLANS = {
   ],
   tono: [
     [0, '谷鉄東京'],
-    [1, '神田'],
+    [1, '神田', 5560, 4440],
     [2, '秋葉原'],
     [3, '谷鉄上野'],
   ],
@@ -194,8 +198,8 @@ const PLANS = {
     [7, '浅草', 6460, 3880],
     [10, '上野', 5560 + P, 3480, [[6060, 3480]]],
     [15, '秋葉原', 5560 + P, 4080],
-    [18, '新神田', 5560 + P, 4440],
-    [23, '東京駅北口', 5560 + P, 5040],
+    [18, '新神田', 5560 + P, 4410],
+    [23, '東京駅北口', 5560 + P, 4950],
     [24, '銀座一丁目', 5560 + P, 5240],
   ],
   gotanda: [
@@ -376,6 +380,7 @@ export function buildSchematic(source) {
         const stopKey = `${line.id}:${n}`;
         const hubId = HUB_BY_STOP[stopKey];
         const id = hubId || stopKey;
+        const displayName = DISPLAY_NAME_OVERRIDES[stopKey] || station.name;
         const p = along(segment, (n - a.stationIndex) / (b.stationIndex - a.stationIndex));
         stops.push({ id, index: n, name: station.name, ...p });
 
@@ -383,7 +388,7 @@ export function buildSchematic(source) {
           const center = hubId ? hubs[hubId] : null;
           nodes.set(id, {
             id,
-            name: hubId || station.name,
+            name: hubId || displayName,
             names: [],
             routes: [],
             x: center ? center[0] : p.x,
@@ -397,7 +402,6 @@ export function buildSchematic(source) {
         }
         const node = nodes.get(id);
         node.platforms.push({ route: line.id, x: p.x, y: p.y });
-        const displayName = hubId === '谷鉄国分寺' ? '谷鉄国分寺' : station.name;
         if (!node.names.includes(displayName)) node.names.push(displayName);
         if (!node.routes.includes(line.id)) node.routes.push(line.id);
         node.endpoint ||= !line.loop && (n === 0 || n === line.stations.length - 1);
