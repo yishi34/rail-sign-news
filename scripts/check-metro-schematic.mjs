@@ -156,6 +156,16 @@ assert.deepEqual(tonoKandaNode.routes, ['tono']);
 assert(asanoKandaNode && asanoKandaNode.name === '新神田');
 assert.deepEqual(asanoKandaNode.routes, ['asano']);
 
+// 4d. Verify matsusato つくし野 vs 新つくし野 and 布施 vs 新布施 distinction
+const tsukushinoNode = stations.find((s) => s.id === 'matsusato:22');
+const shinTsukushinoNode = stations.find((s) => s.id === 'matsusato:23');
+assert.equal(tsukushinoNode?.name, 'つくし野');
+assert.equal(shinTsukushinoNode?.name, '新つくし野');
+const fuseNode = stations.find((s) => s.id === 'matsusato:25');
+const shinFuseNode = stations.find((s) => s.id === 'matsusato:26');
+assert.equal(fuseNode?.name, '布施');
+assert.equal(shinFuseNode?.name, '新布施');
+
 // 5. Report spacing and overlaps per route
 console.log(`Routes: ${routes.length}, Unique nodes: ${stations.length}, Total stops: ${totalStops}`);
 console.log(`Computed labelOverlaps: ${labelOverlaps}`);

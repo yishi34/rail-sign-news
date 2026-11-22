@@ -11,6 +11,8 @@ const DISPLAY_NAME_OVERRIDES = {
   'okumusashi:31': '谷鉄国分寺',
   'tama:16': '谷鉄国分寺',
   'asano:23': '東京北口',
+  'matsusato:23': '新つくし野',
+  'matsusato:26': '新布施',
 };
 
 // 地理的相対位置（北=上・南=下・東=右・西=左）を保持した乗換ハブの基準座標（Y_OFFSET加算前）
