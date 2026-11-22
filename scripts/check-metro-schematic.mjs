@@ -11,6 +11,7 @@ const diagram = buildSchematic(mapData.lines);
 const { routes, stations, sheet, totalStops, labelOverlaps, labelMarkerHits, labelLineHits } = diagram;
 
 assert.equal(routes.length, 25, `Expected 25 routes, got ${routes.length}`);
+assert.equal(stations.length, 610, `Expected 610 unique nodes, got ${stations.length}`);
 assert.equal(totalStops, 650, `Expected 650 total stops, got ${totalStops}`);
 
 // 1. Verify exact station count & names per line
@@ -112,6 +113,26 @@ assert(shibuya.x < tokyo.x, '渋谷 must be west of 東京');
 assert(hachioji.x < fuchu.x, '八王子 must be west of 府中');
 assert(jinguji.x < hachioji.x && jinguji.y < hachioji.y, '神宮寺 must be NW of 八王子');
 assert(ueno.y < tokyo.y, '上野 must be north of 東京');
+
+// 4b. Verify 谷鉄国分寺 vs 新国分寺 separation and 奥武蔵線/武蔵支線 colors
+assert.equal(findStop('okumusashi', 31).id, '谷鉄国分寺');
+assert.equal(findStop('tama', 16).id, '谷鉄国分寺');
+const shinkokubunjiStop = findStop('musashi-loop', 13);
+assert.notEqual(shinkokubunjiStop.id, '谷鉄国分寺');
+const kokubunjiNode = stations.find((s) => s.id === '谷鉄国分寺');
+const shinkokubunjiNode = stations.find((s) => s.id === shinkokubunjiStop.id);
+assert(kokubunjiNode, 'Missing 谷鉄国分寺 node');
+assert.equal(kokubunjiNode.name, '谷鉄国分寺');
+assert.deepEqual([...kokubunjiNode.routes].sort(), ['okumusashi', 'tama']);
+assert(shinkokubunjiNode, 'Missing 新国分寺 node');
+assert.equal(shinkokubunjiNode.name, '新国分寺');
+assert.deepEqual(shinkokubunjiNode.routes, ['musashi-loop']);
+assert(
+  shinkokubunjiNode.x > kokubunjiNode.x && shinkokubunjiNode.y < kokubunjiNode.y,
+  '新国分寺 must be NE of 谷鉄国分寺'
+);
+assert.equal(routeById.get('okumusashi').color, '#f8b500');
+assert.equal(routeById.get('musashi-branch').color, '#d99100');
 
 // 5. Report spacing and overlaps per route
 console.log(`Routes: ${routes.length}, Unique nodes: ${stations.length}, Total stops: ${totalStops}`);

@@ -2,6 +2,11 @@ export const sheet = { width: 11200, height: 10450 };
 const Y_OFFSET = 340;
 const P = 76;
 
+const ROUTE_COLOR_OVERRIDES = {
+  okumusashi: '#f8b500',
+  'musashi-branch': '#d99100',
+};
+
 // 地理的相対位置（北=上・南=下・東=右・西=左）を保持した乗換ハブの基準座標（Y_OFFSET加算前）
 const hubs = {
   // 都心コア
@@ -17,7 +22,7 @@ const hubs = {
   // 多摩・西東京
   '谷鉄調布': [3560, 5360],
   '谷鉄府中': [2600, 5140],
-  '国分寺': [2600, 4640],
+  '谷鉄国分寺': [2638, 4640],
   '菅仙谷': [3060, 6300],
   '仲町': [2600, 4140],
   '谷鉄小平': [2600, 3860],
@@ -53,7 +58,7 @@ const HUB_GROUPS = {
   '谷鉄渋谷': ['yanaka-line:5', 'musashi-loop:2', 'yamanote-west:0'],
   '谷鉄調布': ['musashi-loop:7', 'yamanote-west:19'],
   '谷鉄府中': ['musashi-loop:11', 'tama:13', 'yamanote-west:24'],
-  '国分寺': ['okumusashi:31', 'tama:16', 'musashi-loop:13'],
+  '谷鉄国分寺': ['okumusashi:31', 'tama:16'],
   '菅仙谷': ['okumusashi:20', 'tama:7'],
   '仲町': ['okumusashi:34', 'hachioji:17'],
   '谷鉄小平': ['okumusashi:36', 'hachioji:18'],
@@ -113,7 +118,7 @@ const PLANS = {
     [2, '谷鉄渋谷', 4340, 5360, [[5060, 5116], [4816, 5360]]],
     [7, '谷鉄調布'],
     [11, '谷鉄府中', 2600, 5140],
-    [13, '新国分寺', 2600, 4640],
+    [13, '新国分寺', 2900, 4530, [[2600, 4830]]],
     [25, '谷鉄朝霧', 3900, 2660, [[3520, 3560]]],
     [27, '新戸田'],
     [31, '草加', 6420, 2660],
@@ -143,7 +148,7 @@ const PLANS = {
     [0, '新百合ヶ丘', 2620, 6840],
     [7, '菅仙谷', 3060 - P, 6300, [[3060 - P, 6580]]],
     [13, '谷鉄府中', 2600 - P, 5140],
-    [16, '国分寺', 2600 - P, 4640],
+    [16, '国分寺', 2600, 4640, [[2600 - P, 4716]]],
   ],
   'yamanote-west': [
     [0, '谷鉄渋谷', 4340 - P, 5360],
@@ -392,7 +397,8 @@ export function buildSchematic(source) {
         }
         const node = nodes.get(id);
         node.platforms.push({ route: line.id, x: p.x, y: p.y });
-        if (!node.names.includes(station.name)) node.names.push(station.name);
+        const displayName = hubId === '谷鉄国分寺' ? '谷鉄国分寺' : station.name;
+        if (!node.names.includes(displayName)) node.names.push(displayName);
         if (!node.routes.includes(line.id)) node.routes.push(line.id);
         node.endpoint ||= !line.loop && (n === 0 || n === line.stations.length - 1);
       }
@@ -405,7 +411,7 @@ export function buildSchematic(source) {
     return {
       id: line.id,
       name: line.name,
-      color: line.color,
+      color: ROUTE_COLOR_OVERRIDES[line.id] || line.color,
       code: String(lineOrder + 1).padStart(2, '0'),
       loop: !!line.loop,
       path,
