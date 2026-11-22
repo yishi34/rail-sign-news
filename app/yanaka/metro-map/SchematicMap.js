@@ -183,7 +183,7 @@ export default function SchematicMap({ diagram }) {
           <ArrowLeft size={20} />
         </Link>
         <div className={styles.title}>
-          <strong>首都圏平面路線図</strong>
+          <strong>首都圏路線図</strong>
           <span>谷中日本鉄道（25路線・{totalStops}駅）</span>
         </div>
         <div className={styles.search}>
@@ -270,15 +270,15 @@ export default function SchematicMap({ diagram }) {
           </div>
         </aside>
 
-        <section className={styles.viewport} ref={viewportRef} aria-label="首都圏平面路線図">
+        <section className={styles.viewport} ref={viewportRef} aria-label="首都圏路線図">
           <svg
             ref={svgRef}
             viewBox={`0 0 ${sheet.width} ${sheet.height}`}
             className={styles.svg}
             role="img"
-            aria-label={`谷中日本鉄道 首都圏${routes.length}路線 延べ${totalStops}駅の平面路線図`}
+            aria-label={`谷中日本鉄道 首都圏${routes.length}路線 延べ${totalStops}駅の首都圏路線図`}
           >
-            <title>谷中日本鉄道 首都圏路線網図</title>
+            <title>谷中日本鉄道 首都圏路線図</title>
             <g ref={groupRef} data-map-content="" fontFamily='Arial, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif'>
               <rect width={sheet.width} height={sheet.height} fill="#ffffff" />
 
@@ -286,7 +286,7 @@ export default function SchematicMap({ diagram }) {
               <rect x="100" y="80" width="28" height="180" fill="#e5b92b" />
               <rect x="142" y="80" width="28" height="180" fill="#18804a" />
               <text x="210" y="168" fontSize="128" fontWeight="700" fill="#17252a">
-                谷中日本鉄道　首都圏路線網図
+                谷中日本鉄道　首都圏路線図
               </text>
               <text x="212" y="248" fontSize="50" letterSpacing="0.8" fill="#667176">
                 YANAKA JAPAN RAILWAY / METROPOLITAN NETWORK (25 LINES)
