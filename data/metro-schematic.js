@@ -1,4 +1,4 @@
-export const sheet = { width: 7400, height: 6250 };
+export const sheet = { width: 7400, height: 6320 };
 const Y_OFFSET = 260;
 
 // 地理的相対位置（北=上・南=下・東=右・西=左）を保持した乗換ハブの基準座標（Y_OFFSET加算前）
@@ -80,7 +80,7 @@ for (const [hubId, keys] of Object.entries(HUB_GROUPS)) {
 }
 
 // 各路線の八方位模式アンカー: [stationIndex, expectedName, x?, y?, viaPoints?]
-// 北が上・東が右、並走区間は ±36px オフセットで分離
+// 北が上・東が右、並走区間は ±48px オフセットで分離
 const PLANS = {
   'yanaka-line': [
     [0, '谷鉄品川'],
@@ -108,7 +108,7 @@ const PLANS = {
     [36, '谷鉄宇都宮', 3700, 120],
   ],
   'musashi-loop': [
-    [0, '谷鉄東京', 3640, 3340],
+    [0, '谷鉄東京', 3640, 3348],
     [2, '谷鉄渋谷', 2880, 3480, [[3496, 3480]]],
     [7, '谷鉄調布'],
     [11, '谷鉄府中', 1840, 3360],
@@ -118,15 +118,15 @@ const PLANS = {
     [31, '草加', 4200, 1980],
     [33, '谷鉄松戸'],
     [35, '小岩', 4440, 2860],
-    [39, '門前仲町', 4060, 3340, [[4440, 3340]]],
-    [40, '谷鉄東京', 3640, 3340],
+    [39, '門前仲町', 4060, 3348, [[4440, 3348]]],
+    [40, '谷鉄東京', 3640, 3348],
   ],
   okumusashi: [
     [0, '谷鉄横浜'],
     [20, '菅仙谷'],
-    [31, '国分寺', 1876, 3040, [[2140, 3304]]],
-    [34, '仲町', 1876, 2760],
-    [36, '谷鉄小平', 1876, 2620],
+    [31, '国分寺', 1888, 3040, [[2140, 3292]]],
+    [34, '仲町', 1888, 2760],
+    [36, '谷鉄小平', 1888, 2620],
     [42, '奈良橋', 1420, 2620],
     [45, '武蔵村山', 1100, 2620],
     [55, '新飯能', 980, 2040],
@@ -134,32 +134,32 @@ const PLANS = {
     [94, '谷鉄秩父', 320, 1340],
   ],
   'musashi-branch': [
-    [0, '武蔵村山', 1100, 2656],
-    [2, '奈良橋', 1420, 2656],
-    [3, '新玉川上水', 1500, 2780],
+    [0, '武蔵村山', 1100, 2668],
+    [2, '奈良橋', 1420, 2668],
+    [3, '新玉川上水', 1520, 2800],
   ],
   tama: [
     [0, '新百合ヶ丘', 1860, 4080],
-    [7, '菅仙谷', 2104, 3780, [[2104, 3960]]],
-    [13, '谷鉄府中', 1804, 3360],
-    [16, '国分寺', 1804, 3040],
+    [7, '菅仙谷', 2092, 3780, [[2092, 3960]]],
+    [13, '谷鉄府中', 1792, 3360],
+    [16, '国分寺', 1792, 3040],
   ],
   'yamanote-west': [
-    [0, '谷鉄渋谷', 2844, 3480],
+    [0, '谷鉄渋谷', 2832, 3480],
     [8, '谷鉄中野', 2740, 2960],
     [15, '武蔵境', 2260, 2960],
-    [19, '谷鉄調布', 2296, 3504],
-    [24, '谷鉄府中', 1840, 3324],
+    [19, '谷鉄調布', 2308, 3492],
+    [24, '谷鉄府中', 1840, 3312],
   ],
   'sagami-tanzawa': [
     [0, '橋本', 960, 4060],
     [14, '谷鉄厚木', 960, 4640],
-    [30, '酒匂', 524, 5184],
-    [35, '小田原', 284, 5424],
+    [30, '酒匂', 512, 5172],
+    [35, '小田原', 272, 5412],
   ],
   hamasaki: [
-    [0, '谷鉄川崎', 2820, 4764],
-    [9, '谷鉄横浜', 2460, 4984],
+    [0, '谷鉄川崎', 2820, 4752],
+    [9, '谷鉄横浜', 2460, 4972],
   ],
   'zushi-hayama': [
     [0, '新大船'],
@@ -186,19 +186,19 @@ const PLANS = {
   asano: [
     [0, '三ノ輪橋', 4160, 2180],
     [7, '浅草', 4160, 2580],
-    [10, '上野', 3676, 2500, [[3980, 2580]]],
-    [15, '秋葉原', 3676, 2800],
-    [18, '新神田', 3676, 3000],
-    [23, '東京駅北口', 3676, 3300],
-    [24, '銀座一丁目', 3676, 3400],
+    [10, '上野', 3688, 2500, [[3980, 2580]]],
+    [15, '秋葉原', 3688, 2800],
+    [18, '新神田', 3688, 3000],
+    [23, '東京駅北口', 3688, 3300],
+    [24, '銀座一丁目', 3688, 3420],
   ],
   gotanda: [
     [0, '五反田', 3080, 3960],
     [3, '谷鉄品川'],
   ],
   oimachi: [
-    [0, '大井町', 3396, 4460],
-    [9, '谷鉄品川', 3396, 3960, [[3520, 4336], [3520, 4084]]],
+    [0, '大井町', 3408, 4460],
+    [9, '谷鉄品川', 3408, 3960, [[3540, 4328], [3540, 4092]]],
   ],
   hachioji: [
     [0, '谷鉄八王子'],
@@ -234,8 +234,8 @@ const PLANS = {
     [5, '谷鉄守谷', 4840, 1180],
   ],
   takasaki: [
-    [0, '谷鉄大宮', 2924, 1680],
-    [1, '大成', 2924, 1560],
+    [0, '谷鉄大宮', 2912, 1680],
+    [1, '大成', 2912, 1560],
     [14, '谷鉄行田', 2240, 880],
     [22, '大泉', 1840, 480],
     [26, '本庄', 1320, 480],
@@ -291,7 +291,7 @@ function along(points, t) {
 const overlap = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
 
 // 線分 p1-p2 と矩形 box（+pad余白）の交差判定（Liang-Barsky）
-function segIntersectsBox(p1, p2, box, pad = 5) {
+function segIntersectsBox(p1, p2, box, pad = 12) {
   const minX = box.x - pad;
   const maxX = box.x + box.w + pad;
   const minY = box.y - pad;
@@ -332,14 +332,22 @@ function directionPriority(dx, dy) {
     [-nx, -ny],
   ];
   const base = [
-    [1, -1],
-    [1, 1],
-    [-1, -1],
-    [-1, 1],
     [1, 0],
     [-1, 0],
     [0, -1],
     [0, 1],
+    [1, -0.5],
+    [1, 0.5],
+    [-1, -0.5],
+    [-1, 0.5],
+    [0.5, -1],
+    [0.5, 1],
+    [-0.5, -1],
+    [-0.5, 1],
+    [1, -1],
+    [1, 1],
+    [-1, -1],
+    [-1, 1],
   ];
   const seen = new Set();
   const dirs = [];
@@ -448,41 +456,41 @@ export function buildSchematic(source) {
     (a, b) => b.routes.length - a.routes.length || Number(b.endpoint) - Number(a.endpoint) || a.firstIndex - b.firstIndex
   );
   const occupied = [];
-  const markers = stations.flatMap((s) => s.platforms.map((p) => ({ x: p.x - 14, y: p.y - 14, w: 28, h: 28 })));
+  const markers = stations.flatMap((s) => s.platforms.map((p) => ({ x: p.x - 20, y: p.y - 20, w: 40, h: 40 })));
   const allSegments = routes.flatMap((r) =>
     r.path.slice(1).map((pt, i) => [r.path[i], pt])
   );
 
   for (const s of stations) {
     const isHub = s.routes.length > 1;
-    const size = isHub ? 26 : 20;
+    const size = isHub ? 44 : 32;
     const textForWidth = s.name.trimEnd();
-    const charScale = isHub ? 1.08 : 1.04;
+    const charScale = isHub ? 1.09 : 1.05;
     const width =
       [...textForWidth].reduce((w, ch) => w + size * (ch.charCodeAt(0) < 128 ? 0.65 : charScale), 0) +
-      (isHub ? 16 : 12);
+      (isHub ? 20 : 14);
     const dirs = directionPriority(s.dx, s.dy);
     const nearbySegments = allSegments.filter(
       ([p1, p2]) =>
-        Math.min(p1[0], p2[0]) <= s.x + 420 &&
-        Math.max(p1[0], p2[0]) >= s.x - 420 &&
-        Math.min(p1[1], p2[1]) <= s.y + 420 &&
-        Math.max(p1[1], p2[1]) >= s.y - 420
+        Math.min(p1[0], p2[0]) <= s.x + 560 &&
+        Math.max(p1[0], p2[0]) >= s.x - 560 &&
+        Math.min(p1[1], p2[1]) <= s.y + 560 &&
+        Math.max(p1[1], p2[1]) >= s.y - 560
     );
 
     let best = null;
-    for (const distance of [22, 34, 48, 66, 90, 120, 160, 210, 270, 340]) {
+    for (const distance of [28, 42, 58, 78, 102, 130, 165, 205, 250, 305, 370]) {
       for (const [vx, vy] of dirs) {
         const x = s.x + vx * distance;
         const y = s.y + vy * distance;
         const anchor = vx < 0 ? 'end' : vx === 0 ? 'middle' : 'start';
         const box = {
-          x: x - (anchor === 'end' ? width : anchor === 'middle' ? width / 2 : 0) - 5,
-          y: y - size / 2 - 6,
-          w: width + 10,
-          h: size + 12,
+          x: x - (anchor === 'end' ? width : anchor === 'middle' ? width / 2 : 0) - 6,
+          y: y - size / 2 - 7,
+          w: width + 12,
+          h: size + 14,
         };
-        if (box.x < 40 || box.y < 290 || box.x + box.w > sheet.width - 40 || box.y + box.h > 5760) {
+        if (box.x < 35 || box.y < 290 || box.x + box.w > sheet.width - 35 || box.y + box.h > 5770) {
           continue;
         }
         const collisions = occupied.filter((b) => overlap(box, b)).length;

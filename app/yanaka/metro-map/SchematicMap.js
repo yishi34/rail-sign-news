@@ -33,6 +33,7 @@ export default function SchematicMap({ diagram }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [legendOpen, setLegendOpen] = useState(false);
+  const [zoomPct, setZoomPct] = useState(100);
 
   const routesById = useMemo(() => new Map(routes.map((r) => [r.id, r])), [routes]);
 
@@ -45,16 +46,46 @@ export default function SchematicMap({ diagram }) {
   }, [stations, trimmedQuery]);
 
   useEffect(() => {
-    const svg = select(svgRef.current);
+    const svgEl = svgRef.current;
+    const viewportEl = viewportRef.current;
+    const svg = select(svgEl);
+
+    const calcWheelDelta = (event) => {
+      const unit = event.deltaMode === 1 ? 3 : event.deltaMode === 2 ? 1 : 100;
+      const step = Math.max(-2, Math.min(2, -event.deltaY / unit));
+      return step * 0.55 * (event.ctrlKey ? 1.8 : 1);
+    };
+
     const behavior = zoom()
-      .scaleExtent([0.5, 18])
+      .scaleExtent([0.45, 30])
+      .clickDistance(4)
+      .wheelDelta(calcWheelDelta)
       .on('zoom', (event) => {
         select(groupRef.current).attr('transform', event.transform);
+        setZoomPct(Math.round(event.transform.k * 100));
       });
+
     svg.call(behavior);
     zoomRef.current = behavior;
+
+    const handleViewportWheel = (event) => {
+      if (event.deltaY === 0) return;
+      event.preventDefault();
+      // SVG外のオーバーレイ（コントロールバー・駅情報カード等）でのホイール操作もズームに連動させる
+      if (svgEl && svgEl.contains(event.target)) return;
+      const factor = Math.pow(2, calcWheelDelta(event));
+      svg.call(behavior.scaleBy, factor);
+    };
+
+    if (viewportEl) {
+      viewportEl.addEventListener('wheel', handleViewportWheel, { passive: false });
+    }
+
     return () => {
       svg.on('.zoom', null);
+      if (viewportEl) {
+        viewportEl.removeEventListener('wheel', handleViewportWheel);
+      }
       zoomRef.current = null;
     };
   }, []);
@@ -227,7 +258,7 @@ export default function SchematicMap({ diagram }) {
             </button>
           ))}
           <p className={styles.note}>
-            空想鉄道 No.522953 のKML正データを基に、地理的位置関係を保って白紙上に直線模式化しています。
+            空想鉄道 No.522953 のKML正データを基に、地理的位置関係を保って白紙上に直線模式化しています。マウスホイールで拡大縮小・ドラッグで移動できます。
           </p>
           <div className={styles.links}>
             <Link href="/yanaka/map-3d" className={styles.other}>
@@ -252,26 +283,26 @@ export default function SchematicMap({ diagram }) {
               <rect width={sheet.width} height={sheet.height} fill="#ffffff" />
 
               {/* シート上部ヘッダー */}
-              <rect x="75" y="70" width="16" height="122" fill="#e5b92b" />
-              <rect x="102" y="70" width="16" height="122" fill="#18804a" />
-              <text x="155" y="128" fontSize="64" fontWeight="700" fill="#17252a">
+              <rect x="75" y="64" width="20" height="132" fill="#e5b92b" />
+              <rect x="108" y="64" width="20" height="132" fill="#18804a" />
+              <text x="165" y="130" fontSize="92" fontWeight="700" fill="#17252a">
                 谷中日本鉄道　首都圏路線網図
               </text>
-              <text x="157" y="186" fontSize="26" letterSpacing="0.5" fill="#667176">
+              <text x="167" y="192" fontSize="36" letterSpacing="0.6" fill="#667176">
                 YANAKA JAPAN RAILWAY / METROPOLITAN NETWORK (25 LINES)
               </text>
               <g fill="#526268" stroke="#526268" aria-label="北が上">
-                <text x={northX} y="108" textAnchor="middle" fontSize="36" fontWeight="700" stroke="none">
+                <text x={northX} y="108" textAnchor="middle" fontSize="50" fontWeight="700" stroke="none">
                   北
                 </text>
                 <path
-                  d={`M${northX} 198 V126 M${northX - 18} 146 L${northX} 126 L${northX + 18} 146`}
+                  d={`M${northX} 204 V124 M${northX - 22} 148 L${northX} 124 L${northX + 22} 148`}
                   fill="none"
-                  strokeWidth="5"
+                  strokeWidth="6.5"
                   strokeLinejoin="round"
                 />
               </g>
-              <line x1="75" x2={sheet.width - 75} y1="228" y2="228" stroke="#18804a" strokeWidth="5" />
+              <line x1="75" x2={sheet.width - 75} y1="228" y2="228" stroke="#18804a" strokeWidth="8" />
 
               {/* 25路線の八方位模式パス */}
               {routes.map((r) => (
@@ -280,7 +311,7 @@ export default function SchematicMap({ diagram }) {
                     points={r.path.map((p) => p.join(',')).join(' ')}
                     fill="none"
                     stroke="#ffffff"
-                    strokeWidth="18"
+                    strokeWidth="34"
                     strokeLinejoin="round"
                     strokeLinecap="round"
                   />
@@ -288,7 +319,7 @@ export default function SchematicMap({ diagram }) {
                     points={r.path.map((p) => p.join(',')).join(' ')}
                     fill="none"
                     stroke={r.color}
-                    strokeWidth="10"
+                    strokeWidth="22"
                     strokeLinejoin="round"
                     strokeLinecap="round"
                   />
@@ -303,16 +334,16 @@ export default function SchematicMap({ diagram }) {
                   opacity={active && !s.routes.includes(active) ? 0.14 : 1}
                   onClick={() => setSelected(s.id)}
                 >
-                  {s.label.distance > 40 && (
-                    <line x1={s.x} y1={s.y} x2={s.label.x} y2={s.label.y} stroke="#9ba6ab" strokeWidth="1.2" />
+                  {s.label.distance > 52 && (
+                    <line x1={s.x} y1={s.y} x2={s.label.x} y2={s.label.y} stroke="#8d999e" strokeWidth="2.4" />
                   )}
                   {s.routes.length > 1 && (
                     <g strokeLinecap="round">
                       {s.platforms.map((p, i) => (
-                        <line key={`outline-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#243239" strokeWidth="22" />
+                        <line key={`outline-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#243239" strokeWidth="36" />
                       ))}
                       {s.platforms.map((p, i) => (
-                        <line key={`fill-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#ffffff" strokeWidth="16" />
+                        <line key={`fill-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#ffffff" strokeWidth="26" />
                       ))}
                     </g>
                   )}
@@ -321,14 +352,14 @@ export default function SchematicMap({ diagram }) {
                       key={i}
                       cx={p.x}
                       cy={p.y}
-                      r="7"
+                      r="12"
                       fill="#ffffff"
                       stroke={routesById.get(p.route).color}
-                      strokeWidth="2.5"
+                      strokeWidth="4"
                     />
                   ))}
                   {selected === s.id && (
-                    <circle data-selection="" cx={s.x} cy={s.y} r="24" fill="none" stroke="#ec562c" strokeWidth="5" />
+                    <circle data-selection="" cx={s.x} cy={s.y} r="38" fill="none" stroke="#ec562c" strokeWidth="7" />
                   )}
                   <text
                     x={s.label.x}
@@ -336,10 +367,10 @@ export default function SchematicMap({ diagram }) {
                     textAnchor={s.label.anchor}
                     dominantBaseline="central"
                     fontSize={s.label.size}
-                    fontWeight={s.routes.length > 1 ? '700' : '500'}
+                    fontWeight={s.routes.length > 1 ? '700' : '600'}
                     fill="#17252a"
                     stroke="#ffffff"
-                    strokeWidth="6"
+                    strokeWidth="10"
                     paintOrder="stroke"
                     strokeLinejoin="round"
                   >
@@ -350,16 +381,16 @@ export default function SchematicMap({ diagram }) {
               ))}
 
               {/* 下部凡例（25路線・5列×5行） */}
-              <line x1="75" x2={sheet.width - 75} y1="5780" y2="5780" stroke="#dce2e3" strokeWidth="3" />
+              <line x1="75" x2={sheet.width - 75} y1="5780" y2="5780" stroke="#dce2e3" strokeWidth="4" />
               {routes.map((r, i) => (
-                <g key={r.id} transform={`translate(${90 + (i % 5) * 1445}, ${5842 + Math.floor(i / 5) * 62})`}>
-                  <line x1="0" y1="0" x2="62" y2="0" stroke={r.color} strokeWidth="13" strokeLinecap="round" />
-                  <text x="80" y="10" fontSize="31" fill="#243239">
+                <g key={r.id} transform={`translate(${90 + (i % 5) * 1445}, ${5855 + Math.floor(i / 5) * 68})`}>
+                  <line x1="0" y1="0" x2="76" y2="0" stroke={r.color} strokeWidth="20" strokeLinecap="round" />
+                  <text x="96" y="13" fontSize="40" fill="#243239">
                     {r.name}
                   </text>
                 </g>
               ))}
-              <text x="90" y="6185" fontSize="26" fill="#626c70">
+              <text x="90" y="6255" fontSize="32" fill="#626c70">
                 ○ 駅　◎ 乗換駅　｜　空想鉄道No.522953 KML準拠・位置関係を保ち線形を模式化　｜　東海ラインは小田原まで・東北ラインは谷鉄宇都宮まで掲載
               </text>
             </g>
@@ -367,6 +398,7 @@ export default function SchematicMap({ diagram }) {
 
           <div className={styles.controls}>
             <button
+              type="button"
               title="拡大"
               aria-label="拡大"
               onClick={() => zoomRef.current && select(svgRef.current).call(zoomRef.current.scaleBy, 1.5)}
@@ -374,19 +406,30 @@ export default function SchematicMap({ diagram }) {
               <Plus size={20} />
             </button>
             <button
+              type="button"
               title="縮小"
               aria-label="縮小"
               onClick={() => zoomRef.current && select(svgRef.current).call(zoomRef.current.scaleBy, 1 / 1.5)}
             >
               <Minus size={20} />
             </button>
-            <button title="都心を表示" aria-label="都心を表示" onClick={focusCenter}>
+            <button
+              type="button"
+              className={styles.zoomBadge}
+              title="倍率をリセット（全体を表示）"
+              aria-label={`現在倍率 ${zoomPct}%・全体を表示`}
+              onClick={reset}
+            >
+              {zoomPct}%
+            </button>
+            <button type="button" title="都心を表示" aria-label="都心を表示" onClick={focusCenter}>
               <Crosshair size={19} />
             </button>
-            <button title="全体を表示" aria-label="全体を表示" onClick={reset}>
+            <button type="button" title="全体を表示" aria-label="全体を表示" onClick={reset}>
               <Maximize size={19} />
             </button>
             <button
+              type="button"
               className={styles.mobileLegend}
               title="路線一覧"
               aria-label="路線一覧"

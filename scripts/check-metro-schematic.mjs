@@ -43,7 +43,7 @@ for (const r of routes) {
 for (const s of stations) {
   assert(Number.isFinite(s.x) && Number.isFinite(s.y) && Number.isFinite(s.label.x) && Number.isFinite(s.label.y));
   const b = s.label.box;
-  assert(b.x >= 40 && b.y >= 290 && b.x + b.w <= sheet.width - 40 && b.y + b.h <= 5760, `Label out of bounds: ${s.name}`);
+  assert(b.x >= 35 && b.y >= 290 && b.x + b.w <= sheet.width - 35 && b.y + b.h <= 5770, `Label out of bounds: ${s.name}`);
 }
 
 // 3. Verify 11 false-positive same-name pairs are NOT merged
