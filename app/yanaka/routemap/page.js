@@ -489,6 +489,37 @@ export default function YanakaRouteMapPage() {
         <section>
           <div className="rm-group">
             <div className="rm-group-head">
+              <h2>首都圏路線図</h2>
+              <span className="en">METRO ROUTE MAP</span>
+            </div>
+            <details className="rm-card" open>
+              <summary className="rm-card-summary">
+                <span className="rm-line-band"></span>
+                <span className="rm-card-title">
+                  <span className="rm-line-title">谷鉄 首都圏路線図</span>
+                  <span className="rm-line-en en">METROPOLITAN ROUTE MAP (25 LINES)</span>
+                </span>
+                <span className="rm-toggle" aria-hidden="true"></span>
+              </summary>
+              <div className="rm-card-body">
+                <div className="rm-legend">
+                  <span className="rm-note">
+                    首都圏25路線・650駅を地理的位置関係を保って1枚にまとめた拡大縮小対応の路線図です（SVG/PNG保存・印刷対応）。
+                  </span>
+                </div>
+                <div className="rm-downloads" style={{ marginTop: 0 }}>
+                  <Link className="rm-dl-btn" style={{ textDecoration: "none" }} href="/yanaka/metro-map">
+                    首都圏路線図を開く
+                  </Link>
+                  <Link className="rm-dl-btn" style={{ textDecoration: "none" }} href="/yanaka/map-3d">
+                    首都圏3D路線図を見る
+                  </Link>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div className="rm-group">
+            <div className="rm-group-head">
               <h2>特急・優等列車</h2>
               <span className="en">LIMITED EXPRESS</span>
             </div>
