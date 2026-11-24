@@ -45,6 +45,24 @@
     }
   },
   {
+    "title": "JR東海，東海道新幹線“のぞみ”停車駅におけるホーム上の案内設備を増設へ",
+    "category": "news",
+    "date": "2026-11-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/25/010000.html"
+    }
+  },
+  {
+    "title": "都営新宿線の急行停車駅に岩本町駅を追加〜2027年3月13日のダイヤ改正から実施〜",
+    "category": "service",
+    "date": "2026-11-25",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/25/000000.html"
+    }
+  },
+  {
     "title": "中国・モンゴル「第2の国際鉄道」順調に工事進む　国境のT字桁設置完了",
     "category": "news",
     "date": "2026-11-24",
@@ -267,6 +285,105 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/80180/"
+    }
+  },
+  {
+    "title": "都営新宿線の岩本町駅「急行停車」へ　同一ホーム乗り換えにも対応",
+    "category": "news",
+    "date": "2026-11-24",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/94545"
+    }
+  },
+  {
+    "title": "「JR東海☆冬の乗り放題きっぷ」2026年も発売決定。年末年始も使える、新幹線の予約者限定で在来線がお得",
+    "category": "travel",
+    "date": "2026-11-24",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2158752.html"
+    }
+  },
+  {
+    "title": "都営新宿線の「急行」増やします！ 停車駅に「岩本町」追加へ 2027年3月ダイヤ改正",
+    "category": "service",
+    "date": "2026-11-24",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/730498"
+    }
+  },
+  {
+    "title": "【JR西】225系HF438編成が吹田総合車両所本所出場試運転",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80191/"
+    }
+  },
+  {
+    "title": "【JR海】313系N1編成が名古屋工場出場試運転",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80190/"
+    }
+  },
+  {
+    "title": "【JR西】221系K09編成が梅田貨物線で試運転",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80189/"
+    }
+  },
+  {
+    "title": "【JR九】883系Ao-5編成が前面パネルを取り外した状態で運転中",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80188/"
+    }
+  },
+  {
+    "title": "【阪急】京都線烏丸駅で可動式ホーム柵の運用が開始",
+    "category": "news",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80187/"
+    }
+  },
+  {
+    "title": "【千葉モノ】0形21編成に「俺ガイル15周年」ヘッドマークが掲出",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80186/"
+    }
+  },
+  {
+    "title": "【千葉モノ】0形33編成が営業運転を開始",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80185/"
+    }
+  },
+  {
+    "title": "【阪急】6両編成化された8000系8008Fが今津線入線確認試運転",
+    "category": "cars",
+    "date": "2026-11-24",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80184/"
     }
   },
   {
@@ -1680,123 +1797,6 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/80074/"
-    }
-  },
-  {
-    "title": "【JR北】789系HE-104＋HE-204編成が苗穂工場を出場し本線試運転",
-    "category": "cars",
-    "date": "2026-11-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80073/"
-    }
-  },
-  {
-    "title": "【京成】松戸線一部駅の改札がQR対応型に変更",
-    "category": "news",
-    "date": "2026-11-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80072/"
-    }
-  },
-  {
-    "title": "【JR西】115系A-17編成が下関総合車両所本所へ入場",
-    "category": "cars",
-    "date": "2026-11-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80071/"
-    }
-  },
-  {
-    "title": "【JR東】MUE-Train(209系多目的試験車)が東海道旅客線で試運転",
-    "category": "cars",
-    "date": "2026-11-19",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80070/"
-    }
-  },
-  {
-    "title": "福島県初、福祉車両の常設体感拠点が11月20日オープン…福島日産 郡山店に",
-    "category": "cars",
-    "date": "2026-11-18",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/18/419147.html"
-    }
-  },
-  {
-    "title": "一度の遠征で複数の絶景を巡る「ニッポン鉄道絶景攻略ガイド」本日発売。全国36路線のロケ地を厳選",
-    "category": "news",
-    "date": "2026-11-18",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2157286.html"
-    }
-  },
-  {
-    "title": "【井上孝司の「鉄道旅行のヒント」】通勤・通学ラッシュと駅名の関係",
-    "category": "travel",
-    "date": "2026-11-18",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/series/inoue/2156994.html"
-    }
-  },
-  {
-    "title": "12月12日・26日／2027年1月16日・30日開催阿武隈急行，「8100形ラストランイベント【運転体験】」の参加者募集",
-    "category": "travel",
-    "date": "2026-11-18",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/11/18/060000.html"
-    }
-  },
-  {
-    "title": "なぜ東海道新幹線と東北新幹線は「直通」しない？ 東京駅で“分断”されているワケ 幻と消えた直通運転計画",
-    "category": "service",
-    "date": "2026-11-18",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/728711"
-    }
-  },
-  {
-    "title": "【南海】6000系6027F+6909Fが千代田から小原田へ回送、車番撤去で廃車の可能性",
-    "category": "cars",
-    "date": "2026-11-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80040/"
-    }
-  },
-  {
-    "title": "【JR東】新潟車両ベース(新津)でC57-180の「SL“アフター5”撮影会」開催",
-    "category": "cars",
-    "date": "2026-11-18",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80039/"
-    }
-  },
-  {
-    "title": "JR東日本Suica「新しいキャラクター」ペンギンからウサギへ　続いて愛称を募集",
-    "category": "news",
-    "date": "2026-11-18",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/94226"
-    }
-  },
-  {
-    "title": "サウジアラビアの豪華列車「砂漠の夢」運行開始時期が決定　定員48人",
-    "category": "news",
-    "date": "2026-11-18",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/94206"
     }
   }
 ]
