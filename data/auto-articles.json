@@ -45,6 +45,69 @@
     }
   },
   {
+    "title": "京急1000形1841編成と1821編成が試運転を実施",
+    "category": "cars",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/020000.html"
+    }
+  },
+  {
+    "title": "東急・JR東海，「THE ROYAL EXPRESS 東海道クルーズトレイン」2027年春の新プランを発売",
+    "category": "travel",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/005000.html"
+    }
+  },
+  {
+    "title": "JR東海，東海道新幹線の特別列車「東海道ルミエールエクスプレス」を年末年始に運行",
+    "category": "news",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/004000.html"
+    }
+  },
+  {
+    "title": "つくばエクスプレス，12月・1月の金曜深夜帯に臨時列車を運転〜年末年始期間の運転計画も発表〜",
+    "category": "service",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/003000.html"
+    }
+  },
+  {
+    "title": "日立製作所，水戸事業所に鉄道信号システムの新試験棟を建設へ〜2028年3月竣工予定，試験能力は従来の2倍に〜",
+    "category": "news",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/002000.html"
+    }
+  },
+  {
+    "title": "東急テクノシステム，鉄道運転シミュレータ搭載マイクロバス「RideLIVE」を開発〜2027年2月からイベント展開へ〜",
+    "category": "travel",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/001000.html"
+    }
+  },
+  {
+    "title": "名鉄蒲郡線（吉良吉田駅—蒲郡駅間），2027年度から「みなし上下分離方式」へ移行へ",
+    "category": "news",
+    "date": "2026-11-27",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/27/000000.html"
+    }
+  },
+  {
     "title": "JR東海「新幹線セット」条件の普通列車フリーパス、再び発売",
     "category": "travel",
     "date": "2026-11-26",
@@ -114,6 +177,330 @@
     "source": {
       "name": "2nd-train",
       "url": "https://2nd-train.net/topics/article/80207/"
+    }
+  },
+  {
+    "title": "東急「逆レールバス」？　鉄道運転シミュレーター搭載のマイクロバスを開発",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/94688"
+    }
+  },
+  {
+    "title": "名鉄蒲郡線「鉄道存続」沿線自治体と合意　みなし上下分離方式を導入へ",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/94672"
+    }
+  },
+  {
+    "title": "マイクロバスに鉄道運転シミュレータ搭載、東急テクノシステムが「ライドライブ」開発…内外装は電車仕立て",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/26/419459.html"
+    }
+  },
+  {
+    "title": "カルノリレンタカー、府中駅前にオープン…東京3店舗目",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/26/419458.html"
+    }
+  },
+  {
+    "title": "最新のアストンマーティン・ホンダF1マシン「AMR26」が東京駅に登場！ 11月29日まで",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/26/419456.html"
+    }
+  },
+  {
+    "title": "年末年始に夜行新幹線「東海道ルミエールエクスプレス」運行。東京～新大阪の上下2本、新たに1人席とグループ席すみ分け",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2159562.html"
+    }
+  },
+  {
+    "title": "みなとアクルスに収容1万人規模「ららアリーナ名古屋」2028年1月開業へ。駅徒歩8分、ららぽーと隣接",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2159502.html"
+    }
+  },
+  {
+    "title": "東武トップツアーズ、熊本・大分の「九州ふっこう応援割」販売中。人気温泉宿やJR付も1人最大2万円引き",
+    "category": "travel",
+    "date": "2026-11-26",
+    "source": {
+      "name": "トラベル Watch",
+      "url": "https://travel.watch.impress.co.jp/docs/news/2159469.html"
+    }
+  },
+  {
+    "title": "JR西日本，「滑り止めの砂」をプレゼント",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/26/141500.html"
+    }
+  },
+  {
+    "title": "「JR西日本×Osaka Metro コラボグッズ」を発売",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/26/140500.html"
+    }
+  },
+  {
+    "title": "「東京モノレール2027カレンダー」発売",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/news/2026/11/26/140000.html"
+    }
+  },
+  {
+    "title": "12月12日西武，「鉄道部品販売会 in 横瀬車両基地」を開催",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/11/26/132000.html"
+    }
+  },
+  {
+    "title": "12月10日〜14日京都鉄道博物館で「205系0番台」を特別展示",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/11/26/131500.html"
+    }
+  },
+  {
+    "title": "IGRいわて銀河鉄道，「鉄道むすめ」デビューイベントを開催",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "railf.jp",
+      "url": "https://railf.jp/event/2026/11/26/131000.html"
+    }
+  },
+  {
+    "title": "東京⇔新大阪「8時間以上かけて走る列車」が上下線で運行へ 名古屋からも乗車可能！ 「夜発・朝着」の高い利便性",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/731321"
+    }
+  },
+  {
+    "title": "「東急どこでも大井町線」が誕生 部品も座席も本物の「鉄道体験バス」 その本気すぎる中身は？",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/731309"
+    }
+  },
+  {
+    "title": "製造総数1461両！ あんなにたくさんあった元山手線「205系電車」が風前の灯!? “33年前のレア編成”が再現される",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/730510"
+    }
+  },
+  {
+    "title": "【近鉄】1252系VE72 五位堂検修車庫出場回送",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80229/"
+    }
+  },
+  {
+    "title": "【近鉄】1440系VW37が明星から五位堂へ回送",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80227/"
+    }
+  },
+  {
+    "title": "【近鉄】1010系T13が五位堂検修車庫から富吉へ回送",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80226/"
+    }
+  },
+  {
+    "title": "【JR北】739系3000番台E-3102+E-3202編成が性能確認試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80225/"
+    }
+  },
+  {
+    "title": "【京急】新1000形1821編成+1841編成が夜間試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80224/"
+    }
+  },
+  {
+    "title": "【JR東】E231系ケヨMU11編成 東京総合車両ベース出場回送",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80223/"
+    }
+  },
+  {
+    "title": "【JR東】延命工事施工した211系N334編成が長野総合車両ベースで構内試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80222/"
+    }
+  },
+  {
+    "title": "【東武】80050型81556Fが性能確認試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80221/"
+    }
+  },
+  {
+    "title": "【JR東】E233系ケヨ505編成 秋田総合車両ベース入場配給",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80220/"
+    }
+  },
+  {
+    "title": "【名鉄】9500系9506Fが舞木検査場出場試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80219/"
+    }
+  },
+  {
+    "title": "【JR東】房総地区向けE233系3000番台C5編成が秋田総合車両ベースで構内試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80218/"
+    }
+  },
+  {
+    "title": "【阪急】3300系3323F(3323×8R)「3300系引退記念列車」の運行開始",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80217/"
+    }
+  },
+  {
+    "title": "【近鉄】1252系VE72が五位堂検修車庫出場試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80216/"
+    }
+  },
+  {
+    "title": "【JR東】中央・総武線各駅停車 西荻窪駅2番線にホームドアが設置",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80215/"
+    }
+  },
+  {
+    "title": "【神鉄】2000系2001編成使用 車両確認試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80214/"
+    }
+  },
+  {
+    "title": "【都営】12-600形12-981F 新造車両性能確認試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80213/"
+    }
+  },
+  {
+    "title": "【JR四】2700系気動車2765号車が検査を終えて多度津工場出場",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80212/"
+    }
+  },
+  {
+    "title": "【メトロ】05系05-137F 深川工場出場試運転(202611)",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80211/"
+    }
+  },
+  {
+    "title": "【西武】6050系6155F 武蔵丘車両検修場出場試運転",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80210/"
     }
   },
   {
@@ -1410,393 +1797,6 @@
     "source": {
       "name": "railf.jp",
       "url": "https://railf.jp/news/2026/11/21/234000.html"
-    }
-  },
-  {
-    "title": "JR東海，「検査支援システム」を2027年度から順次導入へ〜新幹線車両の検査品質をさらに向上へ〜",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/21/233000.html"
-    }
-  },
-  {
-    "title": "JR西日本，在来線営業線区に高性能セクションインシュレータを国内初導入へ",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/21/232000.html"
-    }
-  },
-  {
-    "title": "JR東日本，2027年秋以降に長野県のSuica利用駅を拡大へ",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/21/231000.html"
-    }
-  },
-  {
-    "title": "上田電鉄別所線，年末年始に試験ダイヤを実施〜大晦日は深夜2時ごろまで臨時運行，元日は平日ダイヤに〜",
-    "category": "service",
-    "date": "2026-11-21",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/21/230000.html"
-    }
-  },
-  {
-    "title": "「おい、見なよ。ヤギがいるぞ」 まるで四ツ谷駅のアイドル、目覚ましい仕事ぶり！ 迫る“別れ”のとき",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/729303"
-    }
-  },
-  {
-    "title": "【トキ鉄】ET127系V2編成+V6編成が臨時「オータム信越号」で長野駅まで直通運転",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80124/"
-    }
-  },
-  {
-    "title": "【阪急】部品撤去などが進んだ6300系6352Fと6300系C#6350が並びを見せる",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80123/"
-    }
-  },
-  {
-    "title": "【名鉄】9500系9531Fが営業運転開始",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80122/"
-    }
-  },
-  {
-    "title": "【近鉄】新塗装の1253系VC60が1A系1A05と併結して運用",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80121/"
-    }
-  },
-  {
-    "title": "【京阪】「もみじ」ヘッドマークを取り付け開始(京阪線)",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80120/"
-    }
-  },
-  {
-    "title": "【秩鉄】7000系7001Fが臨時快速「長瀞紅葉ライナー」に充当",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80118/"
-    }
-  },
-  {
-    "title": "【京王】若葉台車両基地で「新旧車両夜間撮影会」開催",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80116/"
-    }
-  },
-  {
-    "title": "【JR東】秋田総合車両ベースで「機関車撮影会」開催 EF81-141とEF81-136を展示",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80115/"
-    }
-  },
-  {
-    "title": "【近鉄】「明野航空祭2026」に伴い臨時普通列車が運転",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80114/"
-    }
-  },
-  {
-    "title": "【京阪】もみじHM掲出開始",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80113/"
-    }
-  },
-  {
-    "title": "【近鉄】2410系W19が五位堂検修車庫出場試運転",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80112/"
-    }
-  },
-  {
-    "title": "【JR東】「鉄道のまち大宮 鉄道ふれあいフェア2026」が開催",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80111/"
-    }
-  },
-  {
-    "title": "【多摩モノ】車両基地で「多摩モノまつり2026」開催 エキタグや車両見学",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80110/"
-    }
-  },
-  {
-    "title": "【札幌市交】3300形3302号車「雪ミク電車2027」運行開始",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80109/"
-    }
-  },
-  {
-    "title": "【名市交】桜通線で新瑞橋駅の車両発煙の影響により徳重〜野並間の区間運転が実施される",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80108/"
-    }
-  },
-  {
-    "title": "【京急】新1000形1025編成 久里浜工場出場前試運転",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80107/"
-    }
-  },
-  {
-    "title": "【京成】8800形8811編成の廃車体が陸送 菱形パンタ編成が消滅",
-    "category": "cars",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80106/"
-    }
-  },
-  {
-    "title": "【JR東】205系訓練車が横浜線仕様で「鉄道のまち大宮 鉄道ふれあいフェア」にて展示",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80105/"
-    }
-  },
-  {
-    "title": "【京王】7000系7801Fに「京王パラアート展2026」ヘッドマーク掲出",
-    "category": "news",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80104/"
-    }
-  },
-  {
-    "title": "【近鉄】「1A系 異経路運行＆撮影会ツアー」催行(2026/11/21)",
-    "category": "travel",
-    "date": "2026-11-21",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80103/"
-    }
-  },
-  {
-    "title": "明日から3連休は新幹線「のぞみ」自由席なし。指定席の予約必須につき要注意",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2156507.html"
-    }
-  },
-  {
-    "title": "大船軒コラボ駅弁「Suicaのペンギンの推し寿し」本日発売！　ペンギンがお寿司を握るランチクロス付き、1万5000食限定",
-    "category": "travel",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2156504.html"
-    }
-  },
-  {
-    "title": "「京成ドリームトレイン」の作品を募集",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/11/20/070500.html"
-    }
-  },
-  {
-    "title": "2027年版 鉄道カレンダー「ザ・国鉄形電気機関車“PLUS アーカイブ”」発売",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/20/063500.html"
-    }
-  },
-  {
-    "title": "ひたちなか海浜鉄道，元日に初詣列車～“急行あじがうら号”～を運転",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/20/063000.html"
-    }
-  },
-  {
-    "title": "延伸が実現すれば「日本一長～い地下鉄」に！ 早期の事業着手を目指す 新幹線へのアクセスも向上",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/729505"
-    }
-  },
-  {
-    "title": "相鉄本線・鶴ケ峰駅付近の地下化「シールドマシン発進」今後のスケジュール明らかに",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/94372"
-    }
-  },
-  {
-    "title": "飯田線・身延線で「特別列車」運行へ　特急電車の改造車で「非日常の上質な空間」演出",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "鉄道プレスネット",
-      "url": "https://news.railway-pressnet.com/archives/94343"
-    }
-  },
-  {
-    "title": "出光興産、VTホールディングスと業務提携…全国SSネットワークと車両販売網を融合",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "レスポンス",
-      "url": "https://response.jp/article/2026/11/20/419275.html"
-    }
-  },
-  {
-    "title": "「北陸・関西チケットレス」はじめての利用で最大1万ポイント当たる。北陸新幹線×特急サンダーバードがセットでお得",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2158292.html"
-    }
-  },
-  {
-    "title": "ディズニーパレードが千葉県柏市へ。朝8時からTX柏の葉キャンパス駅前などで交通規制、ダッフィーバス展示も",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2156509.html"
-    }
-  },
-  {
-    "title": "特急くろしおが約60％オフ、冬の和歌山へ行くなら「WESTERポイント超特典チケットレス」がお得",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2158255.html"
-    }
-  },
-  {
-    "title": "クレカ所有者なら山陽新幹線が最大65％オフ「J-WESTカード会員限定 WESTERポイント超特典きっぷ」2027冬の発売決定",
-    "category": "travel",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/news/2158246.html"
-    }
-  },
-  {
-    "title": "【週末駅弁】函館駅「天然岩海苔二段弁当」",
-    "category": "travel",
-    "date": "2026-11-20",
-    "source": {
-      "name": "トラベル Watch",
-      "url": "https://travel.watch.impress.co.jp/docs/series/ekiben/2155888.html"
-    }
-  },
-  {
-    "title": "12月31日関東鉄道，特別夜行列車「開運号」を運行",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/event/2026/11/20/190000.html"
-    }
-  },
-  {
-    "title": "伊豆箱根鉄道，「いずはこねふれあいフェスタ2026」で鉄道グッズの新商品を先行発売",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "railf.jp",
-      "url": "https://railf.jp/news/2026/11/20/143000.html"
-    }
-  },
-  {
-    "title": "覚えていますか「北総・公団線」 北総鉄道が“他社の車両”の復刻カラー電車を走らせるワケ",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/728889"
-    }
-  },
-  {
-    "title": "【空から撮った鉄道】路面電車の窓には城の姿が 「鳥の視点」で読み取る軌道と歴史の風景",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "乗りものニュース",
-      "url": "https://trafficnews.jp/post/729414"
     }
   }
 ]
