@@ -45,6 +45,78 @@
     }
   },
   {
+    "title": "JR東海「新幹線セット」条件の普通列車フリーパス、再び発売",
+    "category": "travel",
+    "date": "2026-11-26",
+    "source": {
+      "name": "鉄道プレスネット",
+      "url": "https://news.railway-pressnet.com/archives/94589"
+    }
+  },
+  {
+    "title": "都市部で法人車両の「整備難民」が顕在化…ナルネットコミュニケーションズの“差配”戦略",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/26/419450.html"
+    }
+  },
+  {
+    "title": "NearMeと東急不動産、シェア乗りサービス「RAKU MOVI by COMFORIA」開始…都内8物件が対象",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "レスポンス",
+      "url": "https://response.jp/article/2026/11/26/419446.html"
+    }
+  },
+  {
+    "title": "常磐線の「各駅停車しか停まらない駅」が大変貌へ 地上40階建て高さ約150mの超高層ビルが着工",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/730988"
+    }
+  },
+  {
+    "title": "鉄道やめて「タイヤで走る電車みたいな乗り物」実現へ本腰！ 将来は富士山－リニア直結「富士トラム」県が具体案公表 運賃は「1万円かからない」",
+    "category": "news",
+    "date": "2026-11-26",
+    "source": {
+      "name": "乗りものニュース",
+      "url": "https://trafficnews.jp/post/730544"
+    }
+  },
+  {
+    "title": "【阪急】3300系3323F(3323×8R)に引退記念ヘッドマークが掲出",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80209/"
+    }
+  },
+  {
+    "title": "【近鉄】天理教立教189年11月月次祭に伴う団体臨時列車",
+    "category": "service",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80208/"
+    }
+  },
+  {
+    "title": "【JR東】211系ナノN605編成のクハ211-5 長野総合車両ベースで解体が進む",
+    "category": "cars",
+    "date": "2026-11-26",
+    "source": {
+      "name": "2nd-train",
+      "url": "https://2nd-train.net/topics/article/80207/"
+    }
+  },
+  {
     "title": "JR東海，東海道新幹線“のぞみ”停車駅におけるホーム上の案内設備を増設へ",
     "category": "news",
     "date": "2026-11-25",
@@ -1725,78 +1797,6 @@
     "source": {
       "name": "乗りものニュース",
       "url": "https://trafficnews.jp/post/729414"
-    }
-  },
-  {
-    "title": "【京王】1000系1754Fの1704号車が構内入換",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80099/"
-    }
-  },
-  {
-    "title": "【名鉄】6500系6511Fが舞木検査場へ回送",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80098/"
-    }
-  },
-  {
-    "title": "【JR東】中央・総武線各駅停車 荻窪駅2番線にホームドアが設置",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80097/"
-    }
-  },
-  {
-    "title": "【JR西】223系W22編成網干総合車両所本所出場試運転(202611)",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80096/"
-    }
-  },
-  {
-    "title": "【JR東】E233系T27編成が長野総合車両ベースを出場し返却回送",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80095/"
-    }
-  },
-  {
-    "title": "【東急】9000系デハ9414・9020系デハ9223が長津田車両工場から廃車陸送",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80093/"
-    }
-  },
-  {
-    "title": "【西鉄】5000形5140F筑紫車両基地検査出場試運転",
-    "category": "cars",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80091/"
-    }
-  },
-  {
-    "title": "【東武】8000系・10030系列が船橋から撤退",
-    "category": "news",
-    "date": "2026-11-20",
-    "source": {
-      "name": "2nd-train",
-      "url": "https://2nd-train.net/topics/article/80090/"
     }
   }
 ]
