@@ -3,9 +3,27 @@ import yanaka from "../../data/yanaka.json";
 import ImageZoom from "./ImageZoom";
 
 export const metadata = {
-  title: "谷中日本鉄道公式サイト | RAIL SIGN NEWS",
+  title: "谷中日本鉄道公式サイト（谷鉄・YNR）",
   description:
-    "架空鉄道「谷中日本鉄道株式会社(YNR)」の公式ページ。実在の鉄道会社とは関係ありません。",
+    "架空鉄道「谷中日本鉄道株式会社（谷鉄・YNR）」の公式ページ。全国41路線・1,685駅の全国路線図、首都圏路線図、3D路線図、車両紹介、時刻表、社史を公開中（実在の鉄道会社とは関係ありません）。",
+  keywords: [
+    "谷中日本鉄道",
+    "谷鉄",
+    "YNR",
+    "架空鉄道",
+    "全国路線図",
+    "首都圏路線図",
+    "路線図メーカー",
+  ],
+  alternates: {
+    canonical: "/yanaka",
+  },
+  openGraph: {
+    title: "谷中日本鉄道公式サイト（谷鉄・YNR） | RAIL SIGN NEWS",
+    description:
+      "架空鉄道「谷中日本鉄道株式会社（谷鉄・YNR）」の公式ページ。全国路線図・首都圏路線図・車両紹介・時刻表を公開中。",
+    url: "https://rail-sign-news.vercel.app/yanaka",
+  },
 };
 
 // 日付 "2026-08-23" → 駅サイン風表記 "2026.08.23"
