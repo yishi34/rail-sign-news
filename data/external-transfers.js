@@ -152,6 +152,10 @@ export const EXTERNAL_TRANSFERS = {
     short: '新幹線・JR・地下鉄',
     lines: ['東海道・山陽新幹線', 'JR京都線', 'Osaka Metro御堂筋線'],
   },
+  'daira:31': {
+    short: '大阪メトロ御堂筋線直通',
+    lines: ['Osaka Metro御堂筋線（直通運転）'],
+  },
   'sanyo:11': {
     short: 'JR・阪急・阪神・市営地下鉄',
     lines: ['JR神戸線', '阪急線', '阪神線', '神戸市営地下鉄'],

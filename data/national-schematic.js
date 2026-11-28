@@ -586,24 +586,40 @@ export function buildNationalSchematic(source) {
   const allSegments = routes.flatMap((r) => r.path.slice(1).map((pt, i) => [r.path[i], pt]));
 
   const hashimoto = stations.find((s) => s.id === 'sagami-tanzawa:0');
-  const externalThroughLines = hashimoto
-    ? [
-        {
-          id: 'keio-sagamihara-through',
-          routeId: 'sagami-tanzawa',
-          fromId: hashimoto.id,
-          name: '京王線直通（調布・新宿方面）',
-          label: '京王線直通',
-          color: '#dd0077',
-          path: [
-            [hashimoto.x, hashimoto.y],
-            [hashimoto.x, hashimoto.y - 140],
-            [hashimoto.x + 280, hashimoto.y - 420],
-          ],
-          labelPos: { x: hashimoto.x + 318, y: hashimoto.y - 438 },
-        },
-      ]
-    : [];
+  const esaka = stations.find((s) => s.id === 'daira:31');
+  const externalThroughLines = [];
+  if (hashimoto) {
+    externalThroughLines.push({
+      id: 'keio-sagamihara-through',
+      routeId: 'sagami-tanzawa',
+      fromId: hashimoto.id,
+      name: '京王線直通（調布・新宿方面）',
+      label: '京王線直通',
+      color: '#dd0077',
+      path: [
+        [hashimoto.x, hashimoto.y],
+        [hashimoto.x, hashimoto.y - 140],
+        [hashimoto.x + 280, hashimoto.y - 420],
+      ],
+      labelPos: { x: hashimoto.x + 318, y: hashimoto.y - 438 },
+    });
+  }
+  if (esaka) {
+    externalThroughLines.push({
+      id: 'midosuji-through',
+      routeId: 'daira',
+      fromId: esaka.id,
+      name: '大阪メトロ御堂筋線直通（新大阪・梅田方面）',
+      label: '大阪メトロ御堂筋線直通',
+      color: '#e5171f',
+      path: [
+        [esaka.x, esaka.y],
+        [esaka.x - 120, esaka.y],
+        [esaka.x - 120, esaka.y + 380],
+      ],
+      labelPos: { x: esaka.x - 120 + 36, y: esaka.y + 380 + 10 },
+    });
+  }
 
   for (const t of externalThroughLines) {
     for (let i = 1; i < t.path.length; i++) {
