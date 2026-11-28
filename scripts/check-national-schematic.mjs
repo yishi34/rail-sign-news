@@ -86,11 +86,12 @@ assert(toyama.x < nagano.x && nagano.y < osaka.y, '富山 must be west of 長野
 assert(morioka.y < sendai.y && sendai.y < tokyo.y && sendai.x > tokyo.x, '仙台・盛岡 must be NE of 東京');
 
 // External transfer checks (major stations only, no false-positive Fujisawa in Iwate)
-for (const id of ['谷鉄東京', '谷鉄品川', 'yanaka-line:7', 'sagami-tanzawa:0', 'daira:31', '小田原', 'tokai:52']) {
+for (const id of ['谷鉄東京', '谷鉄品川', 'yanaka-line:7', 'sagami-tanzawa:0', 'daira:31', 'gotanda:0', '大井町', '小田原', 'tokai:52']) {
   const st = stations.find((s) => s.id === id);
   assert(st && st.externalTransfers?.length > 0, `Expected external transfers on ${id}`);
 }
 const iwateFujisawa = stations.find((s) => s.id === 'tohoku:139');
 assert.equal(iwateFujisawa?.externalTransfers?.length || 0, 0, 'Iwate Fujisawa must not get Kanagawa Fujisawa transfers');
-assert(diagram.externalThroughLines?.some((t) => t.id === 'keio-sagamihara-through'), 'Expected Keio through-line from Hashimoto');
-assert(diagram.externalThroughLines?.some((t) => t.id === 'midosuji-through'), 'Expected Midosuji through-line from Esaka');
+for (const tid of ['keio-sagamihara-through', 'midosuji-through', 'tokyu-gotanda-through', 'tokyu-oimachi-through']) {
+  assert(diagram.externalThroughLines?.some((t) => t.id === tid), `Expected through-line ${tid}`);
+}

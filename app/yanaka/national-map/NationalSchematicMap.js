@@ -340,7 +340,7 @@ export default function NationalSchematicMap({ diagram }) {
                     <text
                       x={t.labelPos.x}
                       y={t.labelPos.y}
-                      textAnchor="start"
+                      textAnchor={t.labelAnchor || 'start'}
                       dominantBaseline="central"
                       fontSize="38"
                       fontWeight="700"

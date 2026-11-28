@@ -587,6 +587,8 @@ export function buildNationalSchematic(source) {
 
   const hashimoto = stations.find((s) => s.id === 'sagami-tanzawa:0');
   const esaka = stations.find((s) => s.id === 'daira:31');
+  const gotanda = stations.find((s) => s.id === 'gotanda:0');
+  const oimachi = stations.find((s) => s.id === '大井町');
   const externalThroughLines = [];
   if (hashimoto) {
     externalThroughLines.push({
@@ -602,6 +604,7 @@ export function buildNationalSchematic(source) {
         [hashimoto.x + 280, hashimoto.y - 420],
       ],
       labelPos: { x: hashimoto.x + 318, y: hashimoto.y - 438 },
+      labelAnchor: 'start',
     });
   }
   if (esaka) {
@@ -618,6 +621,40 @@ export function buildNationalSchematic(source) {
         [esaka.x - 120, esaka.y + 380],
       ],
       labelPos: { x: esaka.x - 120 + 36, y: esaka.y + 380 + 10 },
+      labelAnchor: 'start',
+    });
+  }
+  if (gotanda) {
+    externalThroughLines.push({
+      id: 'tokyu-gotanda-through',
+      routeId: 'gotanda',
+      fromId: gotanda.id,
+      name: '東急五反田線直通',
+      label: '東急五反田線直通',
+      color: '#e60012',
+      path: [
+        [gotanda.x, gotanda.y],
+        [gotanda.x - 320, gotanda.y],
+      ],
+      labelPos: { x: gotanda.x - 364, y: gotanda.y },
+      labelAnchor: 'end',
+    });
+  }
+  if (oimachi) {
+    const plat = oimachi.platforms.find((p) => p.route === 'oimachi') || oimachi;
+    externalThroughLines.push({
+      id: 'tokyu-oimachi-through',
+      routeId: 'oimachi',
+      fromId: oimachi.id,
+      name: '東急大井町線直通',
+      label: '東急大井町線直通',
+      color: '#e60012',
+      path: [
+        [plat.x, plat.y],
+        [plat.x + 280, plat.y + 280],
+      ],
+      labelPos: { x: plat.x + 318, y: plat.y + 292 },
+      labelAnchor: 'start',
     });
   }
 
@@ -625,10 +662,12 @@ export function buildNationalSchematic(source) {
     for (let i = 1; i < t.path.length; i++) {
       allSegments.push([t.path[i - 1], t.path[i]]);
     }
+    const labelW = t.label.length * 42 + 24;
+    const boxX = t.labelAnchor === 'end' ? t.labelPos.x - labelW + 10 : t.labelPos.x - 10;
     occupied.push({
-      x: t.labelPos.x - 10,
+      x: boxX,
       y: t.labelPos.y - 34,
-      w: t.label.length * 42 + 24,
+      w: labelW,
       h: 68,
     });
   }
