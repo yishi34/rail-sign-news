@@ -33,6 +33,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "tkZzfDRBVVku_TqohlmXZ3wOBVk6KS4AS7Le4QNGqZ4",
+  },
   other: {
     rating: "general",
   },
