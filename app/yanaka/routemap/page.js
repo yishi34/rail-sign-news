@@ -520,6 +520,34 @@ export default function YanakaRouteMapPage() {
           </div>
           <div className="rm-group">
             <div className="rm-group-head">
+              <h2>全国路線図</h2>
+              <span className="en">NATIONWIDE ROUTE MAP</span>
+            </div>
+            <details className="rm-card" open>
+              <summary className="rm-card-summary">
+                <span className="rm-line-band"></span>
+                <span className="rm-card-title">
+                  <span className="rm-line-title">谷鉄 全国路線図</span>
+                  <span className="rm-line-en en">NATIONWIDE ROUTE MAP (41 LINES)</span>
+                </span>
+                <span className="rm-toggle" aria-hidden="true"></span>
+              </summary>
+              <div className="rm-card-body">
+                <div className="rm-legend">
+                  <span className="rm-note">
+                    全国41路線・延べ1,685駅と主要駅の他社線乗換・直通運転（東急東谷線含む）を1枚にまとめた拡大縮小対応の路線図です（SVG/PNG保存・印刷対応）。
+                  </span>
+                </div>
+                <div className="rm-downloads" style={{ marginTop: 0 }}>
+                  <Link className="rm-dl-btn" style={{ textDecoration: "none" }} href="/yanaka/national-map">
+                    全国路線図を開く
+                  </Link>
+                </div>
+              </div>
+            </details>
+          </div>
+          <div className="rm-group">
+            <div className="rm-group-head">
               <h2>特急・優等列車</h2>
               <span className="en">LIMITED EXPRESS</span>
             </div>

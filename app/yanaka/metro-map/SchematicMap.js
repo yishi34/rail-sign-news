@@ -261,6 +261,9 @@ export default function SchematicMap({ diagram }) {
             空想鉄道 No.522953 のKML正データを基に、地理的位置関係を保って白紙上に直線模式化しています。マウスホイールで拡大縮小・ドラッグで移動できます。
           </p>
           <div className={styles.links}>
+            <Link href="/yanaka/national-map" className={styles.other}>
+              全国路線図を見る
+            </Link>
             <Link href="/yanaka/map-3d" className={styles.other}>
               3D路線図を見る
             </Link>
