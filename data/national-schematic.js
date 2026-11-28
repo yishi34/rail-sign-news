@@ -585,6 +585,38 @@ export function buildNationalSchematic(source) {
   const markers = stations.flatMap((s) => s.platforms.map((p) => ({ x: p.x - 28, y: p.y - 28, w: 56, h: 56 })));
   const allSegments = routes.flatMap((r) => r.path.slice(1).map((pt, i) => [r.path[i], pt]));
 
+  const hashimoto = stations.find((s) => s.id === 'sagami-tanzawa:0');
+  const externalThroughLines = hashimoto
+    ? [
+        {
+          id: 'keio-sagamihara-through',
+          routeId: 'sagami-tanzawa',
+          fromId: hashimoto.id,
+          name: '京王線直通（調布・新宿方面）',
+          label: '京王線直通',
+          color: '#dd0077',
+          path: [
+            [hashimoto.x, hashimoto.y],
+            [hashimoto.x, hashimoto.y - 140],
+            [hashimoto.x + 280, hashimoto.y - 420],
+          ],
+          labelPos: { x: hashimoto.x + 318, y: hashimoto.y - 438 },
+        },
+      ]
+    : [];
+
+  for (const t of externalThroughLines) {
+    for (let i = 1; i < t.path.length; i++) {
+      allSegments.push([t.path[i - 1], t.path[i]]);
+    }
+    occupied.push({
+      x: t.labelPos.x - 10,
+      y: t.labelPos.y - 34,
+      w: t.label.length * 42 + 24,
+      h: 68,
+    });
+  }
+
   const HORIZ_DIRS = [
     [1, 0],
     [-1, 0],
@@ -714,6 +746,7 @@ export function buildNationalSchematic(source) {
   return {
     routes,
     stations,
+    externalThroughLines,
     sheet,
     totalStops: routes.reduce((sum, r) => sum + r.stops.length, 0),
     labelOverlaps: stations.reduce((n, s) => n + s.label.collisions, 0),

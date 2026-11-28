@@ -21,7 +21,7 @@ import styles from '../metro-map/map.module.css';
 const MAX_PNG_PIXELS = 16_000_000;
 
 export default function NationalSchematicMap({ diagram }) {
-  const { routes, stations, sheet, totalStops } = diagram;
+  const { routes, stations, externalThroughLines = [], sheet, totalStops } = diagram;
   const svgRef = useRef(null);
   const groupRef = useRef(null);
   const zoomRef = useRef(null);
@@ -304,6 +304,59 @@ export default function NationalSchematicMap({ diagram }) {
               </g>
               <line x1="140" x2={sheet.width - 140} y1="395" y2="395" stroke="#18804a" strokeWidth="14" />
 
+              {/* 他社線直通（橋本→京王線など） */}
+              {externalThroughLines.map((t) => {
+                const end = t.path[t.path.length - 1];
+                const prev = t.path[t.path.length - 2];
+                const angle = (Math.atan2(end[1] - prev[1], end[0] - prev[0]) * 180) / Math.PI;
+                return (
+                  <g key={t.id} opacity={active && active !== t.routeId ? 0.1 : 1}>
+                    <polyline
+                      points={t.path.map((p) => p.join(',')).join(' ')}
+                      fill="none"
+                      stroke="#ffffff"
+                      strokeWidth="40"
+                      strokeLinejoin="round"
+                      strokeLinecap="round"
+                    />
+                    <polyline
+                      points={t.path.map((p) => p.join(',')).join(' ')}
+                      fill="none"
+                      stroke={t.color}
+                      strokeWidth="22"
+                      strokeDasharray="44 26"
+                      strokeLinejoin="round"
+                      strokeLinecap="butt"
+                    />
+                    <polygon
+                      points="-8,-22 36,0 -8,22 4,0"
+                      transform={`translate(${end[0]}, ${end[1]}) rotate(${angle})`}
+                      fill={t.color}
+                      stroke="#ffffff"
+                      strokeWidth="6"
+                      paintOrder="stroke"
+                      strokeLinejoin="round"
+                    />
+                    <text
+                      x={t.labelPos.x}
+                      y={t.labelPos.y}
+                      textAnchor="start"
+                      dominantBaseline="central"
+                      fontSize="38"
+                      fontWeight="700"
+                      fill={t.color}
+                      stroke="#ffffff"
+                      strokeWidth="10"
+                      paintOrder="stroke"
+                      strokeLinejoin="round"
+                    >
+                      {t.label}
+                    </text>
+                    <title>{t.name}</title>
+                  </g>
+                );
+              })}
+
               {/* 41路線の八方位模式パス */}
               {routes.map((r) => (
                 <g key={r.id} opacity={active && active !== r.id ? 0.1 : 1}>
@@ -400,7 +453,7 @@ export default function NationalSchematicMap({ diagram }) {
                 </g>
               ))}
               <text x="180" y="25880" fontSize="72" fill="#626c70">
-                ○ 駅　◎ 乗換駅　◎(青枠) 他社線乗換（駅をクリックして詳細表示）　｜　空想鉄道No.522953 KML準拠・全国41路線（延べ1,685駅）
+                ○ 駅　◎ 乗換駅　◎(青枠) 他社線乗換（駅をクリックして詳細表示）　╌▶ 他社線直通　｜　空想鉄道No.522953 KML準拠・全国41路線（延べ1,685駅）
               </text>
             </g>
           </svg>

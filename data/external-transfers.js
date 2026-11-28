@@ -71,8 +71,8 @@ export const EXTERNAL_TRANSFERS = {
     lines: ['JR中央線', 'JR横浜線', 'JR八高線'],
   },
   'sagami-tanzawa:0': {
-    short: '京王相模原線・JR横浜/相模線',
-    lines: ['京王相模原線', 'JR横浜線', 'JR相模線'],
+    short: '京王線直通・JR横浜/相模線',
+    lines: ['京王相模原線（直通運転）', 'JR横浜線', 'JR相模線'],
   },
   'hachioji:9': {
     short: 'JR・多摩モノレール',
