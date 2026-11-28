@@ -2,6 +2,7 @@ import Link from "next/link";
 import autoArticles from "../../../data/auto-articles.json";
 import manualArticles from "../../../data/manual-articles.json";
 import categories from "../../../data/categories.json";
+import { safeExternalUrl } from "../../../lib/safe-url";
 
 // 日付 "2026-06-13" → 駅サイン風表記 "2026.06.13"
 function formatDate(date) {
@@ -78,7 +79,7 @@ export default async function CategoryArchive({ params }) {
               {items.map((article, i) => (
                 <a
                   className="card"
-                  href={article.source.url}
+                  href={safeExternalUrl(article.source.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   key={`${id}-${i}`}

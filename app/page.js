@@ -5,6 +5,7 @@ import categories from "../data/categories.json";
 import officialLinks from "../data/official-links.json";
 import channels from "../data/channels.json";
 import yanaka from "../data/yanaka.json";
+import { safeExternalUrl } from "../lib/safe-url";
 
 // 各カテゴリに表示する記事の最大数(データ自体は data/ に最大200件保持)
 const MAX_PER_CATEGORY = 6;
@@ -49,7 +50,7 @@ function CategorySection({ category, items, total }) {
         {items.map((article, i) => (
           <a
             className="card"
-            href={article.source.url}
+            href={safeExternalUrl(article.source.url)}
             target="_blank"
             rel="noopener noreferrer"
             key={`${category.id}-${i}`}
@@ -104,7 +105,7 @@ export default function Home() {
       {breaking && (
         <a
           className="direction-sign"
-          href={breaking.source.url}
+          href={safeExternalUrl(breaking.source.url)}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -166,7 +167,7 @@ export default function Home() {
               {channels.map((ch) => (
                 <a
                   className="channel-card"
-                  href={ch.url}
+                  href={safeExternalUrl(ch.url)}
                   target="_blank"
                   rel="noopener noreferrer"
                   key={ch.name}
@@ -192,7 +193,7 @@ export default function Home() {
             </div>
             <div className="transfer">
               {officialLinks.map((link) => (
-                <a href={link.url} target="_blank" rel="noopener noreferrer" key={link.name}>
+                <a href={safeExternalUrl(link.url)} target="_blank" rel="noopener noreferrer" key={link.name}>
                   <span className="chip" style={{ background: link.color }}></span>
                   <span>
                     {link.name}
