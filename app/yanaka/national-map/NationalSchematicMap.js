@@ -275,7 +275,7 @@ export default function NationalSchematicMap({ diagram }) {
                 >
                   <span style={{ background: r.color }} />
                   <span>{r.name}</span>
-                  <small>{r.stops.length}駅</small>
+                  <small>{r.operator || '他社線'}</small>
                 </button>
               ))}
             </>
