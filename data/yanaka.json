@@ -85,7 +85,8 @@
       { "title": "路線図メーカー", "en": "ROUTE MAP MAKER", "code": "YN", "num": "06", "status": "作成する", "href": "/yanaka/routemap-maker" },
       { "title": "特急ネットワーク図", "en": "LIMITED EXPRESS", "code": "YN", "num": "07", "status": "特急図をみる", "href": "/yanaka/limited-express" },
       { "title": "首都圏3D路線図", "en": "METRO 3D MAP", "code": "YN", "num": "08", "status": "3D地図をみる", "href": "/yanaka/map-3d" },
-      { "title": "首都圏路線図", "en": "METRO ROUTE MAP", "code": "YN", "num": "09", "status": "路線図をみる", "href": "/yanaka/metro-map" }
+      { "title": "首都圏路線図", "en": "METRO ROUTE MAP", "code": "YN", "num": "09", "status": "路線図をみる", "href": "/yanaka/metro-map" },
+      { "title": "全国路線図", "en": "NATIONWIDE ROUTE MAP", "code": "YN", "num": "10", "status": "路線図をみる", "href": "/yanaka/national-map" }
     ]
   },
   "history": {
