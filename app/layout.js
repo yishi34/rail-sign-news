@@ -4,6 +4,9 @@ export const metadata = {
   title: "鉄道ニュースまとめ | RAIL SIGN NEWS",
   description:
     "「駅の案内サインで読むニュース」— 鉄道ニュースを一次ソース(公式サイト・公式SNS)へのリンク付きでまとめるサイト。",
+  other: {
+    rating: "general",
+  },
 };
 
 export default function RootLayout({ children }) {

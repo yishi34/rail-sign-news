@@ -1,0 +1,3 @@
+Contact: https://github.com/yishi34/rail-sign-news/security
+Preferred-Languages: ja, en
+Policy: Static educational & hobby railway information site (no tracking, no user data collection).
