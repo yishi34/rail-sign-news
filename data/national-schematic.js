@@ -611,12 +611,8 @@ export function buildNationalSchematic(source) {
       let node;
       if (idx === 0) {
         node = yokohamaNode;
-        if (!node.routes.includes('tokyu-toya')) node.routes.push('tokyu-toya');
-        node.platforms.push({ route: 'tokyu-toya', x: node.x, y: node.y });
       } else if (idx === toyaSpecs.length - 1) {
         node = fujisawaNode;
-        if (!node.routes.includes('tokyu-toya')) node.routes.push('tokyu-toya');
-        node.platforms.push({ route: 'tokyu-toya', x: node.x, y: node.y });
       } else {
         const sid = `tokyu-toya:${idx}`;
         node = {

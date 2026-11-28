@@ -531,7 +531,11 @@ export default function NationalSchematicMap({ diagram }) {
               </button>
               <strong>{chosen.name}</strong>
               {chosen.names.length > 1 && <small>{chosen.names.join(' / ')}</small>}
-              <span>{chosen.routes.map((id) => routesById.get(id).name).join('・')}</span>
+              <span>
+                {chosen.isExternalStation
+                  ? `${chosen.routes.map((id) => routesById.get(id).name).join('・')}（他社線）`
+                  : chosen.routes.map((id) => routesById.get(id).name).join('・')}
+              </span>
               {chosen.externalTransfers?.length > 0 && (
                 <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid #e5eaec' }}>
                   <strong style={{ fontSize: 12, color: '#0072bc', display: 'block', marginBottom: 2 }}>他社線乗換</strong>
