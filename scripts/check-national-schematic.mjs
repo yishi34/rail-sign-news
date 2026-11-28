@@ -92,6 +92,6 @@ for (const id of ['谷鉄東京', '谷鉄品川', 'yanaka-line:7', 'sagami-tanza
 }
 const iwateFujisawa = stations.find((s) => s.id === 'tohoku:139');
 assert.equal(iwateFujisawa?.externalTransfers?.length || 0, 0, 'Iwate Fujisawa must not get Kanagawa Fujisawa transfers');
-for (const tid of ['keio-sagamihara-through', 'midosuji-through', 'tokyu-gotanda-through', 'tokyu-oimachi-through']) {
+for (const tid of ['keio-sagamihara-through', 'midosuji-through', 'tokyu-gotanda-through', 'tokyu-oimachi-through', 'keikyu-zushi-through']) {
   assert(diagram.externalThroughLines?.some((t) => t.id === tid), `Expected through-line ${tid}`);
 }

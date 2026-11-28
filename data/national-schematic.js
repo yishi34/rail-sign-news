@@ -589,6 +589,7 @@ export function buildNationalSchematic(source) {
   const esaka = stations.find((s) => s.id === 'daira:31');
   const gotanda = stations.find((s) => s.id === 'gotanda:0');
   const oimachi = stations.find((s) => s.id === '大井町');
+  const zushi = stations.find((s) => s.id === 'zushi-hayama:6');
   const externalThroughLines = [];
   if (hashimoto) {
     externalThroughLines.push({
@@ -654,6 +655,22 @@ export function buildNationalSchematic(source) {
         [plat.x + 280, plat.y + 280],
       ],
       labelPos: { x: plat.x + 318, y: plat.y + 292 },
+      labelAnchor: 'start',
+    });
+  }
+  if (zushi) {
+    externalThroughLines.push({
+      id: 'keikyu-zushi-through',
+      routeId: 'zushi-hayama',
+      fromId: zushi.id,
+      name: '京急逗子線直通（金沢八景・横浜方面）',
+      label: '京急逗子線直通',
+      color: '#e60012',
+      path: [
+        [zushi.x, zushi.y],
+        [zushi.x + 320, zushi.y],
+      ],
+      labelPos: { x: zushi.x + 364, y: zushi.y },
       labelAnchor: 'start',
     });
   }
