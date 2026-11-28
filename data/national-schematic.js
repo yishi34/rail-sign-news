@@ -1,3 +1,5 @@
+import { EXTERNAL_TRANSFERS } from './external-transfers.js';
+
 export const sheet = { width: 36000, height: 26000 };
 const Y_OFFSET = 420;
 const P = 76;
@@ -536,6 +538,7 @@ export function buildNationalSchematic(source) {
 
         if (!nodes.has(id)) {
           const center = hubId ? hubs[hubId] : null;
+          const ext = EXTERNAL_TRANSFERS[id] || null;
           nodes.set(id, {
             id,
             name: hubId || displayName,
@@ -548,6 +551,8 @@ export function buildNationalSchematic(source) {
             platforms: [],
             endpoint: false,
             firstIndex: n,
+            externalTransfers: ext ? ext.lines : [],
+            transferNote: ext ? ext.short : '',
           });
         }
         const node = nodes.get(id);

@@ -84,3 +84,11 @@ assert(moji.x < hiroshima.x && hiroshima.x < okayama.x && okayama.x < osaka.x &&
 assert(matsuyama.y > okayama.y && matsuyama.x < okayama.x, '松山 must be SW of 岡山');
 assert(toyama.x < nagano.x && nagano.y < osaka.y, '富山 must be west of 長野');
 assert(morioka.y < sendai.y && sendai.y < tokyo.y && sendai.x > tokyo.x, '仙台・盛岡 must be NE of 東京');
+
+// External transfer checks (major stations only, no false-positive Fujisawa in Iwate)
+for (const id of ['谷鉄東京', '谷鉄品川', 'yanaka-line:7', 'sagami-tanzawa:0', '小田原', 'tokai:52']) {
+  const st = stations.find((s) => s.id === id);
+  assert(st && st.externalTransfers?.length > 0, `Expected external transfers on ${id}`);
+}
+const iwateFujisawa = stations.find((s) => s.id === 'tohoku:139');
+assert.equal(iwateFujisawa?.externalTransfers?.length || 0, 0, 'Iwate Fujisawa must not get Kanagawa Fujisawa transfers');

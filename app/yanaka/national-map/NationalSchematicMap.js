@@ -336,6 +336,10 @@ export default function NationalSchematicMap({ diagram }) {
                 >
                   {s.routes.length > 1 && (
                     <g strokeLinecap="round">
+                      {s.externalTransfers?.length > 0 &&
+                        s.platforms.map((p, i) => (
+                          <line key={`ext-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#0072bc" strokeWidth="56" />
+                        ))}
                       {s.platforms.map((p, i) => (
                         <line key={`outline-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#243239" strokeWidth="46" />
                       ))}
@@ -343,6 +347,9 @@ export default function NationalSchematicMap({ diagram }) {
                         <line key={`fill-${i}`} x1={s.x} y1={s.y} x2={p.x} y2={p.y} stroke="#ffffff" strokeWidth="32" />
                       ))}
                     </g>
+                  )}
+                  {s.routes.length === 1 && s.externalTransfers?.length > 0 && (
+                    <circle cx={s.x} cy={s.y} r="23" fill="none" stroke="#0072bc" strokeWidth="4.5" />
                   )}
                   {s.platforms.map((p, i) => (
                     <circle
@@ -374,7 +381,11 @@ export default function NationalSchematicMap({ diagram }) {
                   >
                     {s.name}
                   </text>
-                  <title>{`${s.names.join(' / ')}: ${s.routes.map((id) => routesById.get(id).name).join('・')}`}</title>
+                  <title>
+                    {`${s.names.join(' / ')}: ${s.routes.map((id) => routesById.get(id).name).join('・')}${
+                      s.externalTransfers?.length ? ` ｜ 他社線乗換: ${s.externalTransfers.join('・')}` : ''
+                    }`}
+                  </title>
                 </g>
               ))}
 
@@ -389,7 +400,7 @@ export default function NationalSchematicMap({ diagram }) {
                 </g>
               ))}
               <text x="180" y="25880" fontSize="72" fill="#626c70">
-                ○ 駅　◎ 乗換駅　｜　空想鉄道No.522953 KML準拠・全国41路線（延べ1,685駅）の地理的位置関係を保ち直線模式化
+                ○ 駅　◎ 乗換駅　◎(青枠) 他社線乗換（駅をクリックして詳細表示）　｜　空想鉄道No.522953 KML準拠・全国41路線（延べ1,685駅）
               </text>
             </g>
           </svg>
@@ -446,6 +457,12 @@ export default function NationalSchematicMap({ diagram }) {
               <strong>{chosen.name}</strong>
               {chosen.names.length > 1 && <small>{chosen.names.join(' / ')}</small>}
               <span>{chosen.routes.map((id) => routesById.get(id).name).join('・')}</span>
+              {chosen.externalTransfers?.length > 0 && (
+                <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid #e5eaec' }}>
+                  <strong style={{ fontSize: 12, color: '#0072bc', display: 'block', marginBottom: 2 }}>他社線乗換</strong>
+                  <span style={{ fontSize: 12, color: '#243239' }}>{chosen.externalTransfers.join('・')}</span>
+                </div>
+              )}
             </div>
           )}
 
