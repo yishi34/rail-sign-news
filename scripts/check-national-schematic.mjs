@@ -95,3 +95,5 @@ assert.equal(iwateFujisawa?.externalTransfers?.length || 0, 0, 'Iwate Fujisawa m
 for (const tid of ['keio-sagamihara-through', 'midosuji-through', 'tokyu-gotanda-through', 'tokyu-oimachi-through', 'keikyu-zushi-through']) {
   assert(diagram.externalThroughLines?.some((t) => t.id === tid), `Expected through-line ${tid}`);
 }
+const toya = diagram.externalRoutes?.find((r) => r.id === 'tokyu-toya');
+assert(toya && toya.stops.length === 7, `Expected 7 stops on tokyu-toya, got ${toya?.stops.length}`);

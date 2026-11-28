@@ -21,7 +21,7 @@ import styles from '../metro-map/map.module.css';
 const MAX_PNG_PIXELS = 16_000_000;
 
 export default function NationalSchematicMap({ diagram }) {
-  const { routes, stations, externalThroughLines = [], sheet, totalStops } = diagram;
+  const { routes, externalRoutes = [], stations, externalThroughLines = [], sheet, totalStops } = diagram;
   const svgRef = useRef(null);
   const groupRef = useRef(null);
   const zoomRef = useRef(null);
@@ -35,7 +35,7 @@ export default function NationalSchematicMap({ diagram }) {
   const [legendOpen, setLegendOpen] = useState(false);
   const [zoomPct, setZoomPct] = useState(100);
 
-  const routesById = useMemo(() => new Map(routes.map((r) => [r.id, r])), [routes]);
+  const routesById = useMemo(() => new Map([...routes, ...externalRoutes].map((r) => [r.id, r])), [routes, externalRoutes]);
 
   const trimmedQuery = query.trim();
   const searchResults = useMemo(() => {
@@ -257,6 +257,29 @@ export default function NationalSchematicMap({ diagram }) {
               <small>{r.stops.length}駅</small>
             </button>
           ))}
+          {externalRoutes.length > 0 && (
+            <>
+              <div className={styles.legendHeading} style={{ marginTop: 12 }}>
+                <strong>他社線</strong>
+                <span>{externalRoutes.length}路線</span>
+              </div>
+              {externalRoutes.map((r) => (
+                <button
+                  key={r.id}
+                  aria-pressed={active === r.id}
+                  onClick={() => {
+                    setActive(active === r.id ? null : r.id);
+                    setSelected(null);
+                  }}
+                  className={styles.route}
+                >
+                  <span style={{ background: r.color }} />
+                  <span>{r.name}</span>
+                  <small>{r.stops.length}駅</small>
+                </button>
+              ))}
+            </>
+          )}
           <p className={styles.note}>
             空想鉄道 No.522953 のKML正データを基に、全国41路線・延べ{totalStops.toLocaleString()}駅の地理的位置関係を保って白紙上に直線模式化しています。マウスホイールで拡大縮小・ドラッグで移動できます。
           </p>
@@ -356,6 +379,28 @@ export default function NationalSchematicMap({ diagram }) {
                   </g>
                 );
               })}
+
+              {/* 他社線（東急東谷線など） */}
+              {externalRoutes.map((r) => (
+                <g key={r.id} opacity={active && active !== r.id ? 0.1 : 1}>
+                  <polyline
+                    points={r.path.map((p) => p.join(',')).join(' ')}
+                    fill="none"
+                    stroke="#ffffff"
+                    strokeWidth="44"
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                  <polyline
+                    points={r.path.map((p) => p.join(',')).join(' ')}
+                    fill="none"
+                    stroke={r.color}
+                    strokeWidth="26"
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
+                  />
+                </g>
+              ))}
 
               {/* 41路線の八方位模式パス */}
               {routes.map((r) => (

@@ -581,9 +581,80 @@ export function buildNationalSchematic(source) {
   const stations = [...nodes.values()].sort(
     (a, b) => b.routes.length - a.routes.length || Number(b.endpoint) - Number(a.endpoint) || a.firstIndex - b.firstIndex
   );
+
+  // 東急東谷線（谷鉄横浜〜藤沢、他社新線・全線描画）
+  const externalRoutes = [];
+  const yokohamaNode = stations.find((s) => s.id === '谷鉄横浜');
+  const fujisawaNode = stations.find((s) => s.id === 'tokai:52');
+  if (yokohamaNode && fujisawaNode) {
+    const toyaPath = [
+      [yokohamaNode.x, yokohamaNode.y],
+      [25920, 20000],
+      [25680, 20000],
+      [25460, 19780],
+      [25260, 19780],
+      [25150, 19890],
+      [fujisawaNode.x, fujisawaNode.y],
+    ];
+    const toyaSpecs = [
+      { name: '谷鉄横浜', x: yokohamaNode.x, y: yokohamaNode.y, dx: -1, dy: 1 },
+      { name: '保土ケ谷', x: 25570, y: 19890, dx: -1, dy: -1 },
+      { name: '東戸塚', x: 25460, y: 19780, dx: -1, dy: 0 },
+      { name: '上矢部', x: 25330, y: 19780, dx: -1, dy: 0 },
+      { name: '湘南台', x: 25200, y: 19840, dx: -1, dy: 1 },
+      { name: '善行坂', x: 25150, y: 19960, dx: 0, dy: 1 },
+      { name: '藤沢', x: fujisawaNode.x, y: fujisawaNode.y, dx: 0, dy: 1 },
+    ];
+    const toyaStops = [];
+    for (let idx = 0; idx < toyaSpecs.length; idx++) {
+      const { name, x: px, y: py, dx, dy } = toyaSpecs[idx];
+      let node;
+      if (idx === 0) {
+        node = yokohamaNode;
+        if (!node.routes.includes('tokyu-toya')) node.routes.push('tokyu-toya');
+        node.platforms.push({ route: 'tokyu-toya', x: node.x, y: node.y });
+      } else if (idx === toyaSpecs.length - 1) {
+        node = fujisawaNode;
+        if (!node.routes.includes('tokyu-toya')) node.routes.push('tokyu-toya');
+        node.platforms.push({ route: 'tokyu-toya', x: node.x, y: node.y });
+      } else {
+        const sid = `tokyu-toya:${idx}`;
+        node = {
+          id: sid,
+          name,
+          names: [name],
+          routes: ['tokyu-toya'],
+          x: px,
+          y: py,
+          dx,
+          dy,
+          platforms: [{ route: 'tokyu-toya', x: px, y: py }],
+          endpoint: false,
+          firstIndex: idx,
+          externalTransfers: [],
+          transferNote: '東急電鉄',
+          isExternalStation: true,
+        };
+        stations.push(node);
+      }
+      toyaStops.push({ name, x: node.x, y: node.y, nodeId: node.id });
+    }
+    externalRoutes.push({
+      id: 'tokyu-toya',
+      name: '東急東谷線',
+      operator: '東急電鉄',
+      color: '#e60012',
+      path: toyaPath,
+      stops: toyaStops,
+    });
+  }
+
   const occupied = [];
   const markers = stations.flatMap((s) => s.platforms.map((p) => ({ x: p.x - 28, y: p.y - 28, w: 56, h: 56 })));
-  const allSegments = routes.flatMap((r) => r.path.slice(1).map((pt, i) => [r.path[i], pt]));
+  const allSegments = [
+    ...routes.flatMap((r) => r.path.slice(1).map((pt, i) => [r.path[i], pt])),
+    ...externalRoutes.flatMap((r) => r.path.slice(1).map((pt, i) => [r.path[i], pt])),
+  ];
 
   const hashimoto = stations.find((s) => s.id === 'sagami-tanzawa:0');
   const esaka = stations.find((s) => s.id === 'daira:31');
@@ -817,6 +888,7 @@ export function buildNationalSchematic(source) {
 
   return {
     routes,
+    externalRoutes,
     stations,
     externalThroughLines,
     sheet,

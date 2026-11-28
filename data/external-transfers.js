@@ -47,8 +47,8 @@ export const EXTERNAL_TRANSFERS = {
     lines: ['東急大井町線（直通運転）', 'JR京浜東北線', '東京臨海高速鉄道りんかい線'],
   },
   '谷鉄横浜': {
-    short: 'JR・京急・相鉄線',
-    lines: ['JR各線', '京急線', '相鉄線'],
+    short: 'JR・京急・相鉄・東急東谷線',
+    lines: ['JR各線', '京急線', '相鉄線', '東急東谷線'],
   },
   'okumusashi:5': {
     short: '新幹線・JR・相鉄・東急',
@@ -59,8 +59,8 @@ export const EXTERNAL_TRANSFERS = {
     lines: ['JR各線', '湘南モノレール'],
   },
   'tokai:52': {
-    short: 'JR・小田急・江ノ電',
-    lines: ['JR各線', '小田急江ノ島線', '江ノ電'],
+    short: 'JR・小田急・江ノ電・東急東谷線',
+    lines: ['JR各線', '小田急江ノ島線', '江ノ電', '東急東谷線'],
   },
   '谷鉄鎌倉': {
     short: 'JR横須賀線・江ノ電',
